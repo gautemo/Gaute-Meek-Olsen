@@ -7,7 +7,7 @@
 import ContentComing from '@/components/ContentComing.vue'
 
 export default {
-  name: 'home',
+  name: 'dev',
   components: {
     ContentComing
   }

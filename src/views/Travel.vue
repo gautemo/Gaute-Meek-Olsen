@@ -1,5 +1,7 @@
 <template>
-  <ContentComing/>
+    <div class="travel">
+        <ContentComing />
+    </div>
 </template>
 
 <script>
@@ -7,7 +9,7 @@
 import ContentComing from '@/components/ContentComing.vue'
 
 export default {
-  name: 'home',
+  name: 'travel',
   components: {
     ContentComing
   }
