@@ -27,6 +27,14 @@ export default new Router({
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
+    },
+    {
+      path: '/travel-blog/im-travelling',
+      component: () => import('./components/travel/2018-09-06TravelPlan.vue')
+    },
+    {
+      path: '/travel-blog/pack-list',
+      component: () => import('./components/travel/2018-09-07PackList.vue')
     }
   ]
 })

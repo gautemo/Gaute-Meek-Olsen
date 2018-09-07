@@ -67,6 +67,8 @@ body {
 }
 #main-area {
   flex: 5;
+  height: 100vh;
+  overflow: auto;
 }
 #mobile-header {
   display: none;

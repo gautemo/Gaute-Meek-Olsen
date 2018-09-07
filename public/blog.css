@@ -1,0 +1,33 @@
+article{
+    width: 800px;
+    margin: 70px auto;
+    font-size: 1.1em;
+}
+
+article img{
+    width: 100%;
+}
+
+article .date{
+    font-style: italic;
+}
+
+article section{
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    article{
+        width: initial;
+        margin-top: 5px;
+    }
+
+    article section{
+        margin: 25px 25px 0 25px;
+    }
+
+    article h1,
+    article p{
+        margin: 5px 25px;
+    }
+}
