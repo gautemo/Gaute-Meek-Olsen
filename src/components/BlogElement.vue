@@ -36,5 +36,6 @@ img{
 }
 .text{
     margin-left: 25px;
+    flex: 1;
 }
 </style>

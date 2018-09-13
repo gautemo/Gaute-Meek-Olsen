@@ -35,6 +35,26 @@ export default new Router({
     {
       path: '/travel-blog/pack-list',
       component: () => import('./components/travel/2018-09-07PackList.vue')
+    },
+    {
+      path: '/travel-blog/moscow',
+      component: () => import('./components/travel/2018-09-08ToughStart.vue')
+    },
+    {
+      path: '/travel-blog/train',
+      component: () => import('./components/travel/2018-09-09Train.vue')
+    },
+    {
+      path: '/travel-blog/towards-time',
+      component: () => import('./components/travel/2018-09-11TowardsTime.vue')
+    },
+    {
+      path: '/travel-blog/novosibirsk',
+      component: () => import('./components/travel/2018-09-12Novosibirsk.vue')
+    },
+    {
+      path: '/travel-blog/shift-in-scenery',
+      component: () => import('./components/travel/2018-09-13Train2.vue')
     }
   ]
 })

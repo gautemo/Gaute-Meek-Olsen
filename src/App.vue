@@ -16,8 +16,37 @@
     <div id="main-area">
       <router-view/>
     </div>
+    <div id="follow-me">
+      <Twitter />
+      <Instagram />
+      <Github />
+      <GooglePlay />
+      <Tumblr />
+      <Snapchat />
+    </div>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Twitter from '@/components/follow/Twitter.vue'
+import Instagram from '@/components/follow/Instagram.vue'
+import Github from '@/components/follow/Github.vue'
+import GooglePlay from '@/components/follow/GooglePlay.vue'
+import Tumblr from '@/components/follow/Tumblr.vue'
+import Snapchat from '@/components/follow/Snapchat.vue'
+
+export default {
+  components: {
+    Twitter,
+    Instagram,
+    Github,
+    GooglePlay,
+    Tumblr,
+    Snapchat
+  }
+}
+</script>
 
 <style>
 :root {
@@ -79,14 +108,26 @@ body {
 #mobile-header.transparant {
   background: transparent;
 }
+#follow-me {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+#follow-me a{
+  margin-bottom: 5px;
+}
 @media only screen and (max-width: 768px) {
-  #main-area{
+  #main-area {
     margin-top: 60px;
   }
   #mobile-header {
     display: block;
     width: 100vw;
-    z-index: 2;
+    z-index: 5;
   }
   #nav {
     display: none;
@@ -99,6 +140,10 @@ body {
     position: fixed;
     height: 100vh;
     width: 100vw;
+    z-index: 4;
+  }
+  #follow-me{
+    display: none;
   }
 }
 </style>

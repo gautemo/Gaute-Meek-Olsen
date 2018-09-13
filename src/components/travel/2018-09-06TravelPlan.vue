@@ -1,6 +1,6 @@
 <template>
   <article>
-      <h1>I'm travelling</h1>
+      <h1>I'm Travelling</h1>
       <p class="date">06.09.2018</p>
       <img src="https://78.media.tumblr.com/6b1e36e1da7e19b7418823312906921e/tumblr_pemnoxdnJe1xfbgtko1_1280.png" />
       <section>

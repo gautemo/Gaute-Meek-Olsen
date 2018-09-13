@@ -3,8 +3,8 @@
       <h1>My packing list</h1>
       <p class="date">07.09.2018</p>
       <section>
-        I'm going to Russia, Mongolia, China and Japan for a little over five weeks. This is what I'm bringing,
-        either on my body or in the backpack. This is for anyone thats interested, read me in the future.
+        I'm going to Russia, Mongolia, China, and Japan for a little over five weeks. This is what I'm bringing,
+        either on my body or in the backpack. This is for anyone that's interested, read me in the future.
       </section>
         <img src="https://78.media.tumblr.com/b34d0d90d3818ac47e8f6e01332902c3/tumblr_pepbilKGIQ1w9240l_1280.jpg" />
       <section>
@@ -28,6 +28,7 @@
             <li>Slippers</li>
             <li>Walking Shoes</li>
             <li>Light shoes</li>
+            <li>Pocket poncho</li>
         </ul>
         <p>Tech</p>
         <ul>
@@ -38,13 +39,15 @@
             <li>Noise canceling headset</li>
             <li>Smartphone</li>
             <li>Old backup smartphone</li>
-            <li>Tablet <span>with netflic content downloaded</span></li>
+            <li>Tablet <span>with netflix content downloaded</span></li>
             <li>Travel charger adapter</li>
             <li>Laptop</li>
         </ul>
         <p>Stuff</p>
         <ul>
+            <li>Book <span>The Power of Habit and The Solo Travel Handbook</span></li>
             <li>Tickets</li>
+            <li>Pass with visas</li>
             <li>Headlight</li>
             <li>Eye mask</li>
             <li>Eear plugs</li>
@@ -53,12 +56,10 @@
             <li>Spork</li>
             <li>Toilet paper</li>
             <li>Lock</li>
-            <li>Book <span>The Power of Habit and The Solo Travel Handbook</span></li>
             <li>Toothbrush and toothpaste</li>
             <li>Soap</li>
             <li>Wet wipes</li>
             <li>Deodorant</li>
-            <li>Pass with visas</li>
             <li>Body pocket</li>
             <li>Deck of cards</li>
             <li>Hair paste</li>
@@ -67,7 +68,6 @@
             <li>Wallet</li>
             <li>Suncream</li>
             <li>Drinking bottle</li>
-            <li>Small backpack</li>
             <li>Driving licence</li>
             <li>Watch</li>
             <li>Sunglasses</li>
@@ -78,7 +78,9 @@
             <li>Fitnessband</li>
             <li>Travel details <span>Where to be, addresses, flight comfirmation numbers, picture of pass, etc.</span></li>
             <li>Debit card <b>x2</b> and mastercard</li>
-            <li>Backpack</li>
+            <li>Backpack 70 litres</li>
+            <li>Small backpack</li>
+            <li>Thread</li>
         </ul>
       </section>
   </article>
@@ -91,19 +93,16 @@ export default {
 </script>
 
 <style scoped>
-img{
-    margin-top: 20px;
+ul {
+  list-style: none;
 }
-ul{
-    list-style: none;
+span {
+  font-style: italic;
+  font-size: 0.9em;
 }
-span{
-    font-style: italic;
-    font-size: 0.9em;
-}
-p{
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.05em;
+p {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.05em;
 }
 </style>

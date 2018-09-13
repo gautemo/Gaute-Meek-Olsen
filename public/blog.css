@@ -8,12 +8,31 @@ article img{
     width: 100%;
 }
 
+article .smiley{
+    font-size: 1.7em;
+}
+
 article .date{
     font-style: italic;
 }
 
 article section{
-    margin-top: 25px;
+    margin: 20px 0;
+}
+
+article figcaption{
+    font-style: italic;
+    text-align: center;
+}
+
+article .initial-width{
+    width: initial;
+}
+
+article .center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -23,7 +42,7 @@ article section{
     }
 
     article section{
-        margin: 25px 25px 0 25px;
+        margin: 20px 25px;
     }
 
     article h1,
