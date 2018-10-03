@@ -23,6 +23,8 @@ article section{
 article figcaption{
     font-style: italic;
     text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
 }
 
 article .initial-width{
@@ -33,6 +35,11 @@ article .center-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+article img.small{
+    width: 450px;
 }
 
 @media only screen and (max-width: 768px) {

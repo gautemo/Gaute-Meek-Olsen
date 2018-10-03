@@ -12,10 +12,11 @@ export default {
 </script>
 
 <style scoped>
-.tumblr:hover .path{
-    fill: #303D4D;
+.tumblr:hover .path {
+  fill: #303d4d;
 }
-.path{
-    fill: var(--orange);
+.path {
+  fill: var(--orange);
+  transition: fill 0.4s ease;
 }
 </style>

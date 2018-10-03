@@ -46,5 +46,6 @@ export default {
 }
 .st0, .st1, .st2, .st3{
     fill: var(--orange);
+    transition: fill .4s ease;
 }
 </style>

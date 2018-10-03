@@ -55,6 +55,46 @@ export default new Router({
     {
       path: '/travel-blog/shift-in-scenery',
       component: () => import('./components/travel/2018-09-13Train2.vue')
+    },
+    {
+      path: '/travel-blog/lake-baikal',
+      component: () => import('./components/travel/2018-09-14Irkutsk.vue')
+    },
+    {
+      path: '/travel-blog/chineese-train',
+      component: () => import('./components/travel/2018-09-16Train3.vue')
+    },
+    {
+      path: '/travel-blog/ger-camp',
+      component: () => import('./components/travel/2018-09-19Wild.vue')
+    },
+    {
+      path: '/travel-blog/ulaanbaatar',
+      component: () => import('./components/travel/2018-09-20Ulaanbaatar.vue')
+    },
+    {
+      path: '/travel-blog/pink-train',
+      component: () => import('./components/travel/2018-09-21Train4.vue')
+    },
+    {
+      path: '/travel-blog/beijing-part-one',
+      component: () => import('./components/travel/2018-09-23Beijing1.vue')
+    },
+    {
+      path: '/travel-blog/great-wall',
+      component: () => import('./components/travel/2018-09-25GreatWall.vue')
+    },
+    {
+      path: '/travel-blog/beijing-part-two',
+      component: () => import('./components/travel/2018-09-26Beijing2.vue')
+    },
+    {
+      path: '/travel-blog/storm',
+      component: () => import('./components/travel/2018-09-29Storm.vue')
+    },
+    {
+      path: '/travel-blog/ishigaki',
+      component: () => import('./components/travel/2018-10-02Ishigaki.vue')
     }
   ]
 })

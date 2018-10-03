@@ -39,14 +39,15 @@ export default {
 </script>
 
 <style scoped>
-.snapchat{
-    cursor: pointer;
+.snapchat {
+  cursor: pointer;
 }
 .snapchat:hover .around {
   fill: #fffc00;
 }
 .around {
   fill: var(--orange);
+  transition: fill 0.4s ease;
 }
 #snapchat-modal {
   display: flex;
@@ -59,7 +60,7 @@ export default {
   align-items: center;
   cursor: pointer;
 }
-img{
-    border-radius: 25px;
+img {
+  border-radius: 25px;
 }
 </style>

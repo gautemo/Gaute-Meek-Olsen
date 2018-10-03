@@ -25,5 +25,6 @@ export default {
 }
 .path{
     fill: var(--orange);
+    transition: fill .4s ease;
 }
 </style>

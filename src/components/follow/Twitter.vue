@@ -21,10 +21,11 @@ export default {
 </script>
 
 <style scoped>
-.twitter:hover .circle{
-    fill: #2daae1;
+.twitter:hover .circle {
+  fill: #2daae1;
 }
-.circle{
-    fill: var(--orange);
+.circle {
+  fill: var(--orange);
+  transition: fill 0.4s ease;
 }
 </style>
