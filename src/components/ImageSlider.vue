@@ -2,8 +2,11 @@
   <div>
     <div class="container">
       <div v-if="current > 0" @click="current = current - 1" class="left arrow">❮</div>
-      <img :src="images[current].src" />
+      <transition name="fade">
+      <img :src="images[current].src" :key="images[current].src" />
+      </transition>
       <div v-if="current < images.length - 1" @click="current = current + 1" class="right arrow">❯</div>
+      <img :src="loadNext(current)" style="display: none" />
     </div>
     <figcaption>{{images[current].cap}}</figcaption>
   </div>
@@ -13,6 +16,14 @@
 export default {
   name: 'ImageSlider',
   props: ['images'],
+  methods: {
+    loadNext: function (index) {
+      if (index + 1 < this.images.length) {
+        return this.images[index + 1].src
+      }
+      return ''
+    }
+  },
   data () {
     return {
       current: 0
@@ -59,6 +70,13 @@ img {
 }
 figcaption {
   min-height: 2em;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 768px) {

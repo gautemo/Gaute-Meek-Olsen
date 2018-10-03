@@ -4,16 +4,16 @@
         <p class="date">02.10.2018</p>
         <img src="https://66.media.tumblr.com/3d0de6dfa0d1dd3d79f43bfc392eefb1/tumblr_pg11mv3Kx01w9240l_1280.jpg" />
         <section>
-          As the storm has passed Ishigaki and I'm getting the lovely weather Ishigaki usually has, it's time to enjoy the island!
           First, let me tell you how lovely Ishigaki is. The place does not have many tourists, so finding a beach completely for yourself is really easy.
-          The water shifts between blue, green and transparent as I have never seen before. Beaches of fine grain sand and a lot of interesting and beautiful shells.
+          The water shifts between transparent, green and blue as I have never seen before. Beaches of fine grain sand and a lot of interesting and beautiful shells.
           Yes, I picked someone to bring back to Norway. Smaller islands around you can take a ferry to visit, gives you a lot to explore.
           Sunrises, sunsets and starry nightsky.
         </section>
-        <section>
-          Because of the storm, I only had two full days to enjoy the weather Ishigaki usually have. So let me tell you about my days.
-        </section>
         <ImageSlider :images="stones" />
+        <section>
+          As the storm has passed Ishigaki and I'm getting the lovely weather Ishigaki usually has, it's time to enjoy the island!
+          So let me tell you about my two days with beautiful weather.
+        </section>
         <section>
           First I took the ferry to Taketomi Island, which is a must visit when you are in Ishigaki. Ramon decided to join.
           It was a really nice day. A lot of swimming in the ocean, walking around exploring the island, eating, seeing hundreds of butterflies.
