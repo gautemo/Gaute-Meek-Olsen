@@ -18,7 +18,26 @@ export default {
     return {
       blogs: [
         {
-          img: 'https://66.media.tumblr.com/0391d768fa6fe805a48492ebfe14e509/tumblr_pfyzeitBsf1w9240l_1280.jpg',
+          img:
+            'https://66.media.tumblr.com/c272b480028840a971cafad735da563a/tumblr_pg2w4z6qC11w9240l_1280.jpg',
+          header: 'Nara😍',
+          text:
+            'Nara; home of the deers!',
+          tags: [],
+          url: '/travel-blog/nara'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/2380edbec2ebf86fc33dea6013b5275c/tumblr_pg1sd1dj6o1w9240l_1280.jpg',
+          header: 'Japans Belly',
+          text:
+            "3 days in Osaka, also known as Japans belly. Why? Because it's in the center of Japan or that they are known for the food. Probably a combination.",
+          tags: [],
+          url: '/travel-blog/osaka'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/0391d768fa6fe805a48492ebfe14e509/tumblr_pfyzeitBsf1w9240l_1280.jpg',
           header: '💖Ishigaki💖',
           text: 'Ishigaki is a wonderfull island in Japan.',
           tags: [],

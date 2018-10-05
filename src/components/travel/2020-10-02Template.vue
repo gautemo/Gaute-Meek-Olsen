@@ -1,7 +1,7 @@
 <template>
   <article>
         <h1>Into the Storm</h1>
-        <p class="date">29.09.2018</p>
+        <p class="date">29.10.2018</p>
         <section>
         </section>
   </article>

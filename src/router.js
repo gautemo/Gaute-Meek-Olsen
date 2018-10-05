@@ -95,6 +95,14 @@ export default new Router({
     {
       path: '/travel-blog/ishigaki',
       component: () => import('./components/travel/2018-10-02Ishigaki.vue')
+    },
+    {
+      path: '/travel-blog/osaka',
+      component: () => import('./components/travel/2018-10-03Osaka.vue')
+    },
+    {
+      path: '/travel-blog/nara',
+      component: () => import('./components/travel/2018-10-05Nara.vue')
     }
   ]
 })
