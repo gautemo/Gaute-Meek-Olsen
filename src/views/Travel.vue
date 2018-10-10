@@ -19,10 +19,25 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/355586f71abbfd91bcdf234f197c7d5a/tumblr_pgd2a3FeT21w9240l_1280.jpg',
+          header: 'Worlds Biggest City',
+          text: 'Entering the big Tokyo!',
+          tags: [],
+          url: '/travel-blog/tokyo-one'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/e1d6bcc0bb030768cdea53cc9b1fc1d7/tumblr_pg8f3nMtO31w9240l_1280.jpg',
+          header: 'Kyoto',
+          text: 'Kyoto! A cool city in Japan with a lot to see.',
+          tags: [],
+          url: '/travel-blog/kyoto'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/c272b480028840a971cafad735da563a/tumblr_pg2w4z6qC11w9240l_1280.jpg',
           header: 'Nara😍',
-          text:
-            'Nara; home of the deers!',
+          text: 'Nara; home of the deers!',
           tags: [],
           url: '/travel-blog/nara'
         },

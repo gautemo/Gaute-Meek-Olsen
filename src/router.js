@@ -103,6 +103,14 @@ export default new Router({
     {
       path: '/travel-blog/nara',
       component: () => import('./components/travel/2018-10-05Nara.vue')
+    },
+    {
+      path: '/travel-blog/kyoto',
+      component: () => import('./components/travel/2018-10-08Kyoto.vue')
+    },
+    {
+      path: '/travel-blog/tokyo-one',
+      component: () => import('./components/travel/2018-10-09Tokyo1.vue')
     }
   ]
 })

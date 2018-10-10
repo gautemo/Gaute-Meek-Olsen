@@ -103,7 +103,6 @@
           <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/RnoIEER-Ty3fh7U8QsIIEA/178696073923" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://gautemeekolsen.tumblr.com/post/178696073923">https://gautemeekolsen.tumblr.com/post/178696073923</a></div>  <script type="application/javascript" async src="https://assets.tumblr.com/post.js"></script>
         </div>
         <figcaption>If you want some crappy Japanese music! Played on a sanshin, an Okinawan (Ishigaki is part of the Okinawa islands) musical instrument and precursor of the mainland Japanese shamisen</figcaption>
-        <section>P.S. you might want to come back to this blog, as I haven't gotten the pictures from Ramon for our day on Taketomi, as he had a water camera.</section>
         <div v-if="info.length > 0" class="infobox" @click="info = ''">
           <span>{{info}}</span>
         </div>
@@ -151,6 +150,12 @@ export default {
           src:
             'https://66.media.tumblr.com/57e0ad6dbddd19acfeb1ea53779d3bda/tumblr_pfyyffDYzD1w9240l_1280.jpg',
           cap: 'Like this dude!'
+        },
+        {
+          src: 'https://66.media.tumblr.com/4c8b068ffabac8c95a9ad890f3a0c39f/tumblr_pg6jqtHbFZ1xfbgtko2_1280.jpg'
+        },
+        {
+          src: 'https://66.media.tumblr.com/0cf7d2a10974b4b0ed0dd54b2fc1c462/tumblr_pg6jqtHbFZ1xfbgtko1_1280.jpg'
         }
       ],
       sun2: [
