@@ -53,6 +53,7 @@ export default {
   --orange: #df815a;
   --yellow: #e7ca52;
   --green: #7dbf94;
+  --green-light: #bbddc7;
   --blue: #639bb4;
   --blue-dark: hsla(199, 36%, 30%, 0.6);
   --white: rgb(245, 245, 245);

@@ -111,6 +111,14 @@ export default new Router({
     {
       path: '/travel-blog/tokyo-one',
       component: () => import('./components/travel/2018-10-09Tokyo1.vue')
+    },
+    {
+      path: '/travel-blog/tokyo-two',
+      component: () => import('./components/travel/2018-10-12Tokyo2.vue')
+    },
+    {
+      path: '/travel-blog/home',
+      component: () => import('./components/travel/2018-10-15Home.vue')
     }
   ]
 })

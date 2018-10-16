@@ -112,7 +112,8 @@ export default {
           src: 'https://66.media.tumblr.com/56dd69b0e195ee1451175cc379f580cb/tumblr_pg8hy7Sgpu1w9240l_1280.jpg'
         },
         {
-          src: 'https://66.media.tumblr.com/39dc931e4abd99fa238133471bf76fce/tumblr_pg8hxvHKYO1w9240l_1280.jpg'
+          src: 'https://66.media.tumblr.com/39dc931e4abd99fa238133471bf76fce/tumblr_pg8hxvHKYO1w9240l_1280.jpg',
+          cap: 'A woman drinking from a bottle.'
         },
         {
           src: 'https://66.media.tumblr.com/2ecfb87c46722d03bd54a6258a46ad0b/tumblr_pg8ii18jNM1w9240l_1280.jpg'

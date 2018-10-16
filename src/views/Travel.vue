@@ -19,6 +19,24 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/e1611f1e20349dd398f8fffdf2201528/tumblr_pgngna5GML1w9240l_1280.jpg',
+          header: 'The End',
+          text:
+            "I'm going home from Tokyo and ending my trip!",
+          tags: [],
+          url: '/travel-blog/home'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/8e3de69b76bdc5d8339d0f6653b71569/tumblr_pghpujqzma1w9240l_1280.jpg',
+          header: 'Tokyo',
+          text:
+            'The rest of the days I spent in Tokyo and my final days in Japan.',
+          tags: [],
+          url: '/travel-blog/tokyo-two'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/355586f71abbfd91bcdf234f197c7d5a/tumblr_pgd2a3FeT21w9240l_1280.jpg',
           header: 'Worlds Biggest City',
           text: 'Entering the big Tokyo!',
