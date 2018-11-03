@@ -2,7 +2,7 @@
     <div class="travel">
         <h1>My Travel Blog</h1>
         <p>I don't usually travel much, but when I do, you might see some content here.</p>
-        <div v-for="blog in blogs">
+        <div v-for="blog in blogs" v-bind:key="blog.url">
             <BlogElement :img="blog.img" :header="blog.header" :text="blog.text" :tags="blog.tags" :url="blog.url"/>
         </div>
     </div>
@@ -19,10 +19,17 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/07b47c3b21104c3217fe3fb134e651cd/tumblr_ph9pb0V8hV1w9240l_1280.jpg',
+          header: '4 days trip to Prague',
+          text: 'I took a short solo trip to Prague.',
+          tags: [],
+          url: '/travel-blog/prague'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/e1611f1e20349dd398f8fffdf2201528/tumblr_pgngna5GML1w9240l_1280.jpg',
           header: 'The End',
-          text:
-            "I'm going home from Tokyo and ending my trip!",
+          text: "I'm going home from Tokyo and ending my trip!",
           tags: [],
           url: '/travel-blog/home'
         },

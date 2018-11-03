@@ -48,7 +48,12 @@
           <HoverText :hoverMeClasses="'answer'" :hoverMe="'Answer'" :hoverText="'35 seconds'"/>
         </figcaption>
         <section>
-          On Thursday I met up with Eden, Nicola, and Lauren. We went to the light museum, which was amazing. A labyrinth,
+          On Thursday I started the day at the famous Tsukiji Market to taste some Sushi,
+          just because I'm in Japan and romours has it sushi in Japan is something else and amazing.
+          I found this popular restaurant with a lot of locals where the chefs are lined up and prepares the sushi in front of you.
+          Everything was set up to finaly surender to the sushi hype. You know what?
+          Sushi still sucks, even in Japan they forgot to fry or boil the fish.
+          Afterwards I met up with Erran, Nicola, and Lauren. We went to the light museum, which was amazing. A labyrinth,
           with lots of different rooms. It was a maze trying to find every room. And it was amazing. There were so many cool lightings.
         </section>
         <ImageSlider :images="lightmuseum" />
@@ -60,7 +65,7 @@
           We were really close to the Tokyo tower when we were at the subway planning to go home.
           So I decided to leave the others and see it for myself. It was after all my last full day.
           I would have been angry at myself if I had overseen such a momentum when I was only 15-minutes walk away.
-          Eden said 'You have such an endless energy', as we parted our different ways. I liked the Scottish trio,
+          Erran said 'You have such an endless energy', as we parted our different ways. I liked the Scottish trio,
           they were really lively.
         </section>
         <ImageSlider :images="imgs2" />

@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lintfix": "vue-cli-service lint --fix"
+    "lintfix": "vue-cli-service lint --fix",
+    "done": "vue-cli-service lint && vue-cli-service build && git add . && git commit -m \"auto commit\" && git push && firebase deploy",
+    "ja": "git add ."
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",

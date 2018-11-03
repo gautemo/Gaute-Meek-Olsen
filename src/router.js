@@ -119,6 +119,10 @@ export default new Router({
     {
       path: '/travel-blog/home',
       component: () => import('./components/travel/2018-10-15Home.vue')
+    },
+    {
+      path: '/travel-blog/prague',
+      component: () => import('./components/travel/2018-10-30Prague.vue')
     }
   ]
 })
