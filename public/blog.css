@@ -62,7 +62,7 @@ article a:hover {
 @media only screen and (max-width: 768px) {
     article{
         width: initial;
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     article section{

@@ -16,13 +16,14 @@
     <div id="main-area">
       <router-view/>
     </div>
-    <div id="follow-me">
+    <div id="follow-me" v-if="$route.path!=='/'">
       <Twitter />
-      <Instagram />
+      <LinkedIn />
       <Github />
+      <Instagram />
+      <Snapchat />
       <GooglePlay />
       <Tumblr />
-      <Snapchat />
     </div>
   </div>
 </template>
@@ -35,6 +36,7 @@ import Github from '@/components/follow/Github.vue'
 import GooglePlay from '@/components/follow/GooglePlay.vue'
 import Tumblr from '@/components/follow/Tumblr.vue'
 import Snapchat from '@/components/follow/Snapchat.vue'
+import LinkedIn from '@/components/follow/LinkedIn.vue'
 
 export default {
   components: {
@@ -43,7 +45,8 @@ export default {
     Github,
     GooglePlay,
     Tumblr,
-    Snapchat
+    Snapchat,
+    LinkedIn
   }
 }
 </script>
@@ -56,7 +59,7 @@ export default {
   --green-light: #bbddc7;
   --blue: #639bb4;
   --blue-dark: hsla(199, 36%, 30%, 0.6);
-  --white: rgb(235, 235, 235);
+  --white: rgb(245, 245, 245);
   --black: rgb(30, 30, 30);
 }
 body {
@@ -123,7 +126,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   #main-area {
-    margin-top: 60px;
+    margin-top: 55px;
   }
   #mobile-header {
     display: block;
