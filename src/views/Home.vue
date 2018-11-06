@@ -324,7 +324,7 @@ section p {
   }
 
   section {
-    margin: 0 10px;
+    margin: 10px;
   }
   section p {
     width: 85%;
