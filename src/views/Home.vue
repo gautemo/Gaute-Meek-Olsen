@@ -192,11 +192,12 @@ header p {
 .gaute {
   position: absolute;
   font-size: 1.1em;
-  background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   animation: gauteanim 9s forwards;
+  color: #0dbee6;
+  /*background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;*/
 }
 @keyframes typing {
   from {
@@ -242,6 +243,7 @@ section p {
   width: 70%;
   justify-content: space-around;
   padding-top: 30px;
+  position: relative;
 }
 
 .twitter::before {
@@ -302,7 +304,7 @@ section p {
 }
 
 @media only screen and (max-width: 768px) {
-  #content{
+  #content {
     --gaute-translate: translate(2px, 5px);
   }
   header {
