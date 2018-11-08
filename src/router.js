@@ -24,6 +24,11 @@ export default new Router({
       component: () => import('./views/Dev.vue')
     },
     {
+      path: '/talks',
+      name: 'talks',
+      component: () => import('./views/Talks.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')

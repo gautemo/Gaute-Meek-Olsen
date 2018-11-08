@@ -10,6 +10,7 @@
     <div id="nav">
       <router-link to="/">HOME</router-link>
       <router-link to="/projects">PROJECTS</router-link>
+      <router-link to="/talks">TALKS</router-link>
       <router-link to="/dev-blog">DEV BLOG</router-link>
       <router-link to="/travel-blog">TRAVEL BLOG</router-link>
     </div>
@@ -82,6 +83,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 #nav a {
   font-size: 1.2em;

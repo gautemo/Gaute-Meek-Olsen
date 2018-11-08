@@ -12,9 +12,7 @@
       </header>
       <section>
         <p>
-          I love being a developer, both at work and in my free time. Welcome to my website. What is this website? Is it a portfolio,
-          a developer blog, a travel blog, a place to show my projects? I don't know and I don't care.
-          This is a place to show what intrest me and a place for me to play around.
+          I'm a full stack developer, with a wide set of skills!
         </p>
         <div id="follow">
           <Twitter class="twitter"/>
@@ -26,7 +24,8 @@
           <Tumblr class="tumblr"/>
         </div>
         <p>
-          Check out the menu to see what this site has to offer and feel free to follow and contact me anyway you want.
+          Use the menu to see my own projects, talks I've given, developer blog and travel blog.
+          Always feel free to follow and contact me anyway you want.
         </p>
       </section>
     </div>
@@ -315,12 +314,12 @@ section p {
   }
 
   header p {
-    font-size: 1.15em;
+    font-size: 1.10em;
   }
 
   #profile-img {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
 
   section {
