@@ -10,6 +10,7 @@
     "done": "vue-cli-service lint && vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "postscribe": "^2.0.8",
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"

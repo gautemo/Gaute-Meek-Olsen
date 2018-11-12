@@ -1,5 +1,7 @@
 # gaute-meek-olsen
 
+My personal website: https://gaute.app
+
 ## Project setup
 ```
 npm install

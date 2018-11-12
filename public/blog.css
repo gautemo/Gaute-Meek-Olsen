@@ -59,6 +59,24 @@ article a:hover {
     text-decoration: none;
 }
 
+.cmd{
+    font-family: consolas;
+    background-color: var(--black);
+    color: var(--white);
+    display: block;
+    padding: 10px 50px;
+    margin: 5px 0;
+    position: relative;
+    border-radius: 10px;
+    border: 3px solid #32b903;
+}
+
+.cmd::before{
+    content: '›';
+    position: absolute;
+    left: 15px;
+}
+
 @media only screen and (max-width: 768px) {
     article{
         width: initial;

@@ -41,8 +41,8 @@ img {
 
 .text span {
   background-color: var(--yellow);
-  border-radius: 15px;
-  padding: 5px 10px;
+  border-radius: 3px;
+  padding: 5px 8px;
   margin: 3px;
   white-space: nowrap;
   display: inline-block;

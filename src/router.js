@@ -19,14 +19,18 @@ export default new Router({
       component: () => import('./views/MyProjects.vue')
     },
     {
+      path: '/talks',
+      name: 'talks',
+      component: () => import('./views/Talks.vue')
+    },
+    {
       path: '/dev-blog',
       name: 'dev',
       component: () => import('./views/Dev.vue')
     },
     {
-      path: '/talks',
-      name: 'talks',
-      component: () => import('./views/Talks.vue')
+      path: '/dev-blog/workbox-in-vue',
+      component: () => import('./views/dev/ServiceWorkerVue.vue')
     },
     {
       path: '/travel-blog',
