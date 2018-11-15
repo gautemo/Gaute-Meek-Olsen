@@ -30,7 +30,11 @@ export default new Router({
     },
     {
       path: '/dev-blog/workbox-in-vue',
-      component: () => import('./views/dev/ServiceWorkerVue.vue')
+      component: () => import('./views/dev/2018-11-10ServiceWorkerVue.vue')
+    },
+    {
+      path: '/dev-blog/script-in-vue',
+      component: () => import('./views/dev/2018-11-14ScriptInVue.vue')
     },
     {
       path: '/travel-blog',

@@ -63,6 +63,14 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/a7c27e08870bd607014e6655749b2721/tumblr_pi8y4gKXRI1xfbgtko1_1280.jpg',
+          header: 'How to Add a Script Tag in a Vue Component',
+          text: 'Adding a script tag in a Vue component gives you errors, unless you do this.',
+          tags: ['Vue'],
+          url: '/dev-blog/script-in-vue'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/ee6f77a5a7dd3575440f4746fee3932c/tumblr_pi3n3pE5ez1xfbgtko1_1280.jpg',
           header: 'Setting up a custom Service Worker with the Vue CLI',
           text: 'Creating a PWA with Vue is easy, this is how you customize the caching strategy with workbox.',

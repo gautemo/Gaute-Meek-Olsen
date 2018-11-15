@@ -1,5 +1,5 @@
 <template>
-    <div :id="id + file"></div>
+    <div :id="id + file" class="my-gist"></div>
 </template>
 
 <script>
@@ -20,3 +20,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.my-gist{
+  margin-top: 10px;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <article>
-      <h1>Setting up a custom Service Worker with the Vue CLI</h1>
+      <h1>{{title}}</h1>
       <section>
         Creating a Progressive Web App (PWA) is painlessly simple with the Vue CLI.
         You can use the default set up, by either selecting the feature 'Progressive Web App (PWA) Support' during project creation.
@@ -10,7 +10,7 @@
       </section>
       <section>
           But the default service worker you got now uses the Cache First or Stale-While-Revalidate strategy.
-          But often you would like the Network First strategy, atleast for some files.
+          But often you would like the Network First strategy, at least for some files.
           But this depends on your application and how it's used.
           Read more about the <a href="https://developers.google.com/web/tools/workbox/modules/workbox-strategies" target="_blank">cache strategies here</a>.
           I'll show you how to customize the service worker, it's really simple.
@@ -28,18 +28,26 @@
       <section>
           3. Now you can register your sw.js file and listen for events in the registerServiceWorker.js file created by the vue cli when you initiated a PWA project.
           <p>The file should be in the src folder. Add the events you need.</p>
-          <gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'registerServiceWorker.js'" />
+          <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'registerServiceWorker.js'" />
       </section>
+      <!--Share :url="'https://gaute.app' + $route.path" :text="title"/-->
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
+import Share from '@/components/Share.vue'
 
 export default {
   name: 'ServiceWorkerVue',
+  data () {
+    return {
+      title: 'Setting up a Custom Service Worker with the Vue CLI'
+    }
+  },
   components: {
-    Gist
+    Gist,
+    Share
   }
 }
 </script>
