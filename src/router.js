@@ -37,6 +37,14 @@ export default new Router({
       component: () => import('./views/dev/2018-11-14ScriptInVue.vue')
     },
     {
+      path: '/dev-blog/cursor-image',
+      component: () => import('./views/dev/2018-11-15ImageCursor.vue')
+    },
+    {
+      path: '/dev-blog/npm-publish',
+      component: () => import('./views/dev/2018-11-16PublishLibrary.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
