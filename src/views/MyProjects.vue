@@ -1,5 +1,5 @@
 <template>
-    <div class="project-grid">
+    <div class="project-grid cover">
       <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
     </div>
 </template>
@@ -165,16 +165,10 @@ export default {
   padding: 50px 150px;
 }
 .project-grid::before{
-  content: "";
   background: url('https://66.media.tumblr.com/8851f8fdc343ce509c43df9b28b9d74a/tumblr_phubgwZw9l1xfbgtko1_1280.jpg');
   background-size: cover;
   opacity: 0.3;
   filter: blur(2px);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 @media only screen and (max-width: 768px) {

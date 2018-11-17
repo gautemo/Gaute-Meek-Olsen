@@ -2,22 +2,22 @@
   <div>
     <div class="container" @click="showDetails = true">
       <div class="overlay" :style="faintcolor" ></div>
-      <img :src="p.img"/>
+      <img :src="t.img"/>
       <div :style="banner" class="banner">
-        <h2 class="header">{{p.header}}</h2>
-        <p class="small-header">{{p.smallheader}}</p>
+        <h2 class="header">{{t.headerShort}} <span class="symbol">{{t.type.symbol}}</span></h2>
       </div>
     </div>
     <div v-if="showDetails" class="modal-background" @click="showDetails = false">
       <div class="details cover" :style="border" v-on:click.stop>
         <div class="det-container">
-          <h1>{{p.header}}</h1>
-          <img :src="p.img"/>
-          <p>{{p.text}}</p>
-          <a v-if="p.googleplay" :href="p.googleplay" target="_blank"><img style="width: 200px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-          <a v-if="p.github" :href="p.github" target="_blank"><img style="width: 180px; margin-bottom: 15px;" alt='Open on GitHub' src='https://66.media.tumblr.com/cd17a74e0c6f61a0e898d5d70e3d5d4b/tumblr_phucw7yOPp1xfbgtko1_540.png'/></a>
-          <div class="tech-container">
-            <b>Tech:</b> <span class="tech" v-for="t in p.tech" v-bind:key="t">{{t}}</span>
+          <h1>{{t.header}}</h1>
+          <img :src="t.img"/>
+          <div class="text-block cover">
+            <b>Type:</b> {{t.type.text}} {{t.type.symbol}}
+            <p>{{t.text}}</p>
+            <div class="tech-container">
+              <b>Tech:</b> <span class="tech" v-for="tech in t.tech" v-bind:key="tech">{{tech}}</span>
+            </div>
           </div>
         </div>
       </div>
@@ -27,8 +27,8 @@
 
 <script>
 export default {
-  name: 'blogElement',
-  props: ['p'],
+  name: 'talk',
+  props: ['t'],
   data () {
     return {
       showDetails: false
@@ -36,13 +36,13 @@ export default {
   },
   computed: {
     banner () {
-      return 'background-color: ' + this.p.color
+      return 'background-color: ' + this.t.color
     },
     faintcolor () {
-      return `background-color: ${this.p.color}40`
+      return `background-color: ${this.t.color}30`
     },
     border () {
-      return 'border-color: ' + this.p.color
+      return 'border-color: ' + this.t.color
     }
   }
 }
@@ -89,7 +89,7 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #639ab459;
+  background-color: #2f3138b7;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -110,8 +110,8 @@ export default {
 }
 
 .details::before{
-  opacity: 0.4;
-  background: url("https://66.media.tumblr.com/73830c6dffb2f01967b29e26248b3ed2/tumblr_phubuhvCMl1xfbgtko1_1280.jpg");
+  opacity: 0.2;
+  background: url("https://66.media.tumblr.com/a24363551bee0d27fdcc09bde4f7b90f/tumblr_pic3dyNSPC1xfbgtko1_1280.jpg");
 }
 
 .det-container {
@@ -135,6 +135,23 @@ export default {
   border-radius: 15px;
   padding: 5px 10px;
   margin: 3px;
+}
+
+.text-block{
+  position: relative;
+}
+
+.text-block::before{
+  background-color: var(--white);
+  opacity: 0.7;
+  z-index: -1;
+  box-shadow: 0 0 30px 8px var(--white);
+}
+
+.symbol{
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {

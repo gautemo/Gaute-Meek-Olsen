@@ -21,7 +21,6 @@
           <Instagram class="instagram"/>
           <Snapchat class="snapchat"/>
           <GooglePlay class="googleplay"/>
-          <Tumblr class="tumblr"/>
         </div>
         <p>
           Use the menu to see my own projects, talks I've given, developer blog and travel blog.
@@ -38,7 +37,6 @@ import Twitter from '@/components/follow/Twitter.vue'
 import Instagram from '@/components/follow/Instagram.vue'
 import Github from '@/components/follow/Github.vue'
 import GooglePlay from '@/components/follow/GooglePlay.vue'
-import Tumblr from '@/components/follow/Tumblr.vue'
 import Snapchat from '@/components/follow/Snapchat.vue'
 import LinkedIn from '@/components/follow/LinkedIn.vue'
 
@@ -108,7 +106,6 @@ export default {
     Instagram,
     Github,
     GooglePlay,
-    Tumblr,
     Snapchat,
     LinkedIn
   }

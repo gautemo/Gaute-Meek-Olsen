@@ -7,7 +7,7 @@
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'selectors.js'" />
       </section>
       <section>
-        Now it's time to publish our library so it can be installed with NPM and imported by script from a CDN.
+        Now it's time to publish our library so it can be installed with NPM or imported by script from a CDN, so it can be used in other projects.
       </section>
       <section>
         First let's create our package.json file.
@@ -81,13 +81,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.example {
-  display: block;
-  text-align: center;
-  background-color: #eee;
-  margin: 2em 0;
-  padding: 5px 0;
-}
-</style>

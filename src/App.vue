@@ -24,7 +24,6 @@
       <Instagram />
       <Snapchat />
       <GooglePlay />
-      <Tumblr />
     </div>
   </div>
 </template>
@@ -35,7 +34,6 @@ import Twitter from '@/components/follow/Twitter.vue'
 import Instagram from '@/components/follow/Instagram.vue'
 import Github from '@/components/follow/Github.vue'
 import GooglePlay from '@/components/follow/GooglePlay.vue'
-import Tumblr from '@/components/follow/Tumblr.vue'
 import Snapchat from '@/components/follow/Snapchat.vue'
 import LinkedIn from '@/components/follow/LinkedIn.vue'
 
@@ -45,7 +43,6 @@ export default {
     Instagram,
     Github,
     GooglePlay,
-    Tumblr,
     Snapchat,
     LinkedIn
   }
@@ -125,6 +122,15 @@ body {
 }
 #follow-me a{
   margin-bottom: 5px;
+}
+.cover::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   #main-area {

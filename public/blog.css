@@ -1,7 +1,9 @@
 article{
     width: 800px;
     margin: 70px auto;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    letter-spacing: 0.003em;
+    line-height: 1.58;
 }
 
 article img{
@@ -61,6 +63,7 @@ article a:hover {
 
 .cmd{
     font-family: consolas;
+    font-size: 0.93em;
     background-color: var(--black);
     color: var(--white);
     display: block;
@@ -76,6 +79,14 @@ article a:hover {
     position: absolute;
     left: 15px;
 }
+
+.example {
+    font-size: 0.93em;
+    display: block;
+    background-color: #eee;
+    margin: 1em 0;
+    padding: 5px 15px;
+  }
 
 @media only screen and (max-width: 768px) {
     article{
