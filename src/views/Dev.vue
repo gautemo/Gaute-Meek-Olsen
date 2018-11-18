@@ -63,6 +63,14 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
+          header: 'Intro to the easiest DB ever, Firestore',
+          text: 'Firestore is a DB in the cloud by Google. You only write frontend code so it is easty to get started, but it also scales really well. You also get snacks such as real-time updates, offline mode, and an administration UI.',
+          tags: ['Firebase', 'Firestore', 'JavaScript'],
+          url: '/dev-blog/intro-firestore'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/f73cbf4aa693e80e5d1814c0e8a7aac4/tumblr_pib34ssvM41xfbgtko1_1280.jpg',
           header: 'How to publish a js library to NPM and CDN',
           text: 'Simple guide for how to publish your module and make it accesible through npm install and a script tag',

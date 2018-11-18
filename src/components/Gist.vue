@@ -15,8 +15,16 @@ export default {
     },
     file: String
   },
+  methods: {
+    fileparam: function () {
+      if (this.file) {
+        return `?file=${this.file}`
+      }
+      return ''
+    }
+  },
   mounted: function () {
-    postscribe('#' + this.id + this.file, `<script src="https://gist.github.com/gautemo/${this.id}.js?file=${this.file}"><\/script>`)
+    postscribe('#' + this.id + this.file, `<script src="https://gist.github.com/gautemo/${this.id}.js${this.fileparam()}"><\/script>`)
   }
 }
 </script>

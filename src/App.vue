@@ -65,6 +65,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
   color: var(--black);
+  position: relative;
 }
 #app {
   display: flex;
@@ -130,7 +131,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
 }
 @media only screen and (max-width: 768px) {
   #main-area {

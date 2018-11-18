@@ -102,7 +102,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
   border-width: 12px;
   border-style: solid;
   position: relative;
@@ -112,11 +111,14 @@ export default {
 .details::before{
   opacity: 0.2;
   background: url("https://66.media.tumblr.com/a24363551bee0d27fdcc09bde4f7b90f/tumblr_pic3dyNSPC1xfbgtko1_1280.jpg");
+  background-size: cover;
 }
 
 .det-container {
-  width: 50%;
+  width: 100%;
   height: 100%;
+  overflow: auto;
+  padding: 0 25%;
   z-index: 2;
 }
 
@@ -162,7 +164,11 @@ export default {
   }
 
   .det-container{
-    width: 80%;
+    padding: 0 10%;
+  }
+
+  .det-container h1{
+    font-size: 1.8em;
   }
 
   .tech-container > b{
@@ -172,6 +178,9 @@ export default {
 
   .tech-container > span{
     display: inline-block;
+  }
+  .header{
+    font-size: 1.3em;
   }
 }
 </style>

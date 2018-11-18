@@ -89,7 +89,7 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #639ab459;
+  background-color: #2f3138b7;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -102,7 +102,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
   border-width: 12px;
   border-style: solid;
   position: relative;
@@ -112,11 +111,14 @@ export default {
 .details::before{
   opacity: 0.4;
   background: url("https://66.media.tumblr.com/73830c6dffb2f01967b29e26248b3ed2/tumblr_phubuhvCMl1xfbgtko1_1280.jpg");
+  background-size: cover;
 }
 
 .det-container {
-  width: 50%;
+  width: 100%;
   height: 100%;
+  overflow: auto;
+  padding: 0 25%;
   z-index: 2;
 }
 
@@ -145,7 +147,7 @@ export default {
   }
 
   .det-container{
-    width: 80%;
+    padding: 0 10%;
   }
 
   .tech-container > b{

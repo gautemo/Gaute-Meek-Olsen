@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-//symbols 👨‍💻⚡👨‍🏫 or 💁‍♂️
+// symbols 👨‍💻⚡👨‍🏫 or 💁‍♂️
 import Talk from '@/components/Talk.vue'
 
 export default {
@@ -48,6 +48,9 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+.talk-header{
+  margin: 0 15px;
+}
 .talk-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -68,6 +71,9 @@ export default {
   .talk-grid {
     grid-template-columns: 1fr;
     padding: 40px 20px;
+  }
+  .talk-header h1{
+    display: none;
   }
 }
 </style>

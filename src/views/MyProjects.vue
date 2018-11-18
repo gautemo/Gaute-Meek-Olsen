@@ -133,7 +133,6 @@ export default {
           smallheader: 'I have made my house smarter',
           text:
             'I have set up an Alexa, which controlls a Raspberry pi. The Raspberry then talks to my Phillips Hue lights and a Android tablet which plays music back to the alexa and displays my photos through the Google Photos API.',
-          github: 'https://github.com/gautemo/fake-movie-database-api',
           tech: ['Alexa Skills', 'Raspberry PI', 'Android', 'Google Photos API'],
           color: '#d03f8f'
         },
