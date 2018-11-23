@@ -65,7 +65,7 @@ export default {
           img:
             'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
           header: 'Intro to the easiest DB ever, Firestore',
-          text: 'Firestore is a DB in the cloud by Google. You only write frontend code so it is easty to get started, but it also scales really well. You also get snacks such as real-time updates, offline mode, and an administration UI.',
+          text: 'Firestore is a DB in the cloud by Google. You only write frontend code so it is easy to get started, but it also scales really well. You also get snacks such as real-time updates, offline support, and an administration UI.',
           tags: ['Firebase', 'Firestore', 'JavaScript'],
           url: '/dev-blog/intro-firestore'
         },

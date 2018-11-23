@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-// symbols 👨‍💻⚡👨‍🏫 or 💁‍♂️
+// symbols 👨‍💻⚡👨‍🏫
 import Talk from '@/components/Talk.vue'
 
 export default {
@@ -32,6 +32,19 @@ export default {
           text: 'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
           tech: ['Firebase', 'Web', 'JavaScript', 'NoSQL'],
           color: '#FFA000'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/32e6864d3184fcb13ba1a14e576caecc/tumblr_pinzimXE8w1xfbgtko1_1280.png',
+          header: 'Intro to TypeScript',
+          headerShort: 'Intro to TypeScript',
+          type: {
+            text: 'Presentation & live coding',
+            symbol: '👨‍🏫'
+          },
+          text: 'JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.',
+          tech: ['TypeScript'],
+          color: '#178fcf'
         }
       ]
     }

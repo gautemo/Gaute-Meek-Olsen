@@ -89,7 +89,6 @@ export default {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #2f3138b7;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -102,14 +101,17 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-width: 12px;
-  border-style: solid;
+  border-top-width: 15px;
+  border-top-style: solid;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   position: relative;
   background-color: var(--white);
+  box-shadow: 5px 5px 20px 7px #000000bf;
 }
 
 .details::before{
-  opacity: 0.4;
+  opacity: 0.15;
   background: url("https://66.media.tumblr.com/73830c6dffb2f01967b29e26248b3ed2/tumblr_phubuhvCMl1xfbgtko1_1280.jpg");
   background-size: cover;
 }
