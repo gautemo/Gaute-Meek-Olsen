@@ -122,7 +122,7 @@
       </section>
       <h3>All code</h3>
       <Gist :id="'64ec43734e05d8839b18b1643de21ffc'"/>
-      <!--Share :url="'https://gaute.app' + $route.path" :text="title"/-->
+      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 

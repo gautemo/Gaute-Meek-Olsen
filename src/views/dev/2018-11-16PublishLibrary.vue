@@ -60,7 +60,7 @@
         That's it! Example <a href="https://www.npmjs.com/package/selector-library" target="_blank">NPM</a> and <a href="https://github.com/gautemo/selector-library" target="_blank">GitHub</a>.
         Of course, this is just a demo library, but this is how creating an NPM module is done that's also available to a script tag for people not using a build tool.
       </section>
-      <!--Share :url="'https://gaute.app' + $route.path" :text="title"/-->
+      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 

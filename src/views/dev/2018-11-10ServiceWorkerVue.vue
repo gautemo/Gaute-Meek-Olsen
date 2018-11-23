@@ -30,7 +30,7 @@
           <p>The file should be in the src folder. Add the events you need.</p>
           <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'registerServiceWorker.js'" />
       </section>
-      <!--Share :url="'https://gaute.app' + $route.path" :text="title"/-->
+      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
