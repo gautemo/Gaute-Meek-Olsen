@@ -49,6 +49,10 @@ export default new Router({
       component: () => import('./views/dev/2018-11-17IntroFirestore.vue')
     },
     {
+      path: '/dev-blog/firestore-security',
+      component: () => import('./views/dev/2018-11-25FirestoreSecurity.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')

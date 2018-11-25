@@ -118,7 +118,7 @@ export default {
         {
           img:
             'https://66.media.tumblr.com/61bc637a26ece1774e3839bdee1fa574/tumblr_phvyl4CIN41xfbgtko1_1280.jpg',
-          header: 'fake-movie-database-api',
+          header: 'fake-movie-database api',
           smallheader: 'REST API',
           text:
             "I was doing a Pluralsight's course learning iOS development. When the course used an API wich after they published the course became a closed API. So I made an open API with a few movies for me and everyone else strugling to finish the course.",

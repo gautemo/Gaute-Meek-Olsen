@@ -63,6 +63,14 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/437164da521400873a3a93230655ee7b/tumblr_pir1ppqovW1xfbgtko1_1280.png',
+          header: 'Firestore and Security',
+          text: 'How to secure your Firestore DB server-side.',
+          tags: ['Firebase', 'Firestore'],
+          url: '/dev-blog/firestore-security'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
           header: 'Intro to the easiest DB ever, Firestore',
           text: 'Firestore is a DB in the cloud by Google. You only write frontend code so it is easy to get started, but it also scales really well. You also get snacks such as real-time updates, offline support, and an administration UI.',
