@@ -21,3 +21,8 @@ npm run build
 ```
 npm run lint
 ```
+
+### Lint, build and deploy to Firebase
+```
+npm run done
+```

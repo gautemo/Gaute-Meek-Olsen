@@ -53,6 +53,10 @@ export default new Router({
       component: () => import('./views/dev/2018-11-25FirestoreSecurity.vue')
     },
     {
+      path: '/dev-blog/gpgs-hide-player',
+      component: () => import('./views/dev/2019-01-19GooglePlayGamesApi.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')

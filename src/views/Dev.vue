@@ -63,6 +63,14 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/1382352f0f20610670889b4f72082c90/tumblr_plkov6LVHO1xfbgtko6_1280.png',
+          header: 'Removing Player from Your Google Play Games Services Leaderboard',
+          text: 'This is how you remove a cheater from your Google Play Games Services Leaderboard.',
+          tags: ['Google Play Games Services'],
+          url: '/dev-blog/gpgs-hide-player'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/437164da521400873a3a93230655ee7b/tumblr_pir1ppqovW1xfbgtko1_1280.png',
           header: 'Firestore and Security',
           text: 'How to secure your Firestore DB server-side.',
