@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid-child">
     <div class="container" @click="showDetails = true">
       <div class="overlay" :style="faintcolor" ></div>
       <img :src="p.img"/>
@@ -49,6 +49,9 @@ export default {
 </script>
 
 <style scoped>
+.grid-child{
+  width: 100%;
+}
 .container {
   position: relative;
   display: flex;

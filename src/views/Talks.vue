@@ -1,5 +1,5 @@
 <template>
-  <div class="talk-container">
+  <div>
     <div class="talk-header">
       <h1>Talks</h1>
       <h3>Presentations, workshops and lightning talks I have given and are ready to give again</h3>
@@ -45,6 +45,19 @@ export default {
           text: 'JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.',
           tech: ['TypeScript'],
           color: '#178fcf'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/08adfe03c280ad4fb8388fecce8b47c0/tumblr_pm5t2evTEr1xfbgtko1_1280.png',
+          header: 'Getting Started with Vue.js & using it in SPFx',
+          headerShort: 'Vue.js & SPFx',
+          type: {
+            text: 'Live coding',
+            symbol: '👨‍🏫'
+          },
+          text: 'Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.',
+          tech: ['Vue.js', 'SPFx', 'SharePoint'],
+          color: '#2f5673'
         }
       ]
     }
@@ -56,22 +69,16 @@ export default {
 </script>
 
 <style scoped>
-.talk-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .talk-header{
-  margin: 0 15px;
+  text-align: center;
 }
 .talk-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
   justify-items: center;
   align-items: center;
-  padding: 25px 150px;
+  padding: 30px 8vw;
 }
 .talk-grid::before {
   background: url("https://66.media.tumblr.com/8492d5ff827729bcf2072af09380fa13/tumblr_pibwenYhi51xfbgtko1_1280.jpg");
@@ -81,10 +88,6 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-  .talk-grid {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-  }
   .talk-header h1{
     display: none;
   }

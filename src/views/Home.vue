@@ -3,17 +3,20 @@
     <div id="overlay">
       <header>
         <div id="profile-img">
-          <img v-if="!showAvatar" src="https://66.media.tumblr.com/2fc6d7850e43eb6d6dd89e2e63ae91bd/tumblr_phmhi0hp4D1xfbgtko1_1280.jpg" />
-          <img v-else :src="avatar" />
+          <img
+            v-if="!showAvatar"
+            src="https://66.media.tumblr.com/6fbdb030074dab5ea1d5c8db0dd65477/tumblr_pmasew4yag1xfbgtko1_1280.jpg"
+          >
+          <img v-else :src="avatar">
         </div>
         <div class="text">
-          <p>Hi, I'm <span class="gaute">Gaute</span>Gaute Meek Olsen</p>
+          <p>Hi, I'm
+            <span class="gaute">Gaute</span>Gaute Meek Olsen
+          </p>
         </div>
       </header>
       <section>
-        <p>
-          I'm a full stack developer, with a wide set of skills!
-        </p>
+        <p>I'm a full stack developer, with a wide set of skills!</p>
         <div id="follow">
           <Twitter class="twitter"/>
           <LinkedIn class="linkedin"/>
@@ -147,21 +150,22 @@ function getRandomInt (max) {
 }
 
 header {
-  display: flex;
-  padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-column-gap: 5vw;
+  padding: 5vw;
 }
 
 header .text {
-  flex: 1;
   display: flex;
   align-items: center;
-  padding-left: 50px;
   position: relative;
+  overflow: hidden;
 }
 
 header p {
   font-family: "Wendy One", sans-serif;
-  font-size: 4em;
+  font-size: 3vw;
   font-weight: bold;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -170,19 +174,16 @@ header p {
 }
 
 #profile-img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  background-color: #0dbee6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #profile-img img {
-  height: 95%;
   width: 95%;
   border-radius: 50%;
+  background-color: #0dbee6;
+  padding: 0.4vw;
 }
 
 .gaute {
@@ -303,20 +304,13 @@ section p {
   #content {
     --gaute-translate: translate(2px, 5px);
   }
-  header {
-    padding: 15px;
-  }
-  header .text {
-    padding-left: 10px;
+
+  header{
+    grid-template-columns: 1fr 4fr;
   }
 
   header p {
-    font-size: 1.10em;
-  }
-
-  #profile-img {
-    height: 90px;
-    width: 90px;
+    font-size: 4.5vw;
   }
 
   section {

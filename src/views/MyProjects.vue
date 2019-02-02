@@ -156,24 +156,16 @@ export default {
 <style scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 30px;
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
   justify-items: center;
   align-items: center;
-  padding: 50px 150px;
+  padding: 50px 8vw;
 }
 .project-grid::before{
   background: url('https://66.media.tumblr.com/8851f8fdc343ce509c43df9b28b9d74a/tumblr_phubgwZw9l1xfbgtko1_1280.jpg');
   background-size: cover;
   opacity: 0.3;
   filter: blur(2px);
-}
-
-@media only screen and (max-width: 768px) {
-  .project-grid{
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-  }
 }
 </style>

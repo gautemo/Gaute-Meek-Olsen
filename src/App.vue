@@ -77,7 +77,7 @@ body {
     var(--blue),
     var(--blue)
   );
-  flex: 1;
+  width: 280px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@ body {
   text-shadow: var(--black) -2px 2px 2px;
 }
 #main-area {
-  flex: 5;
+  flex: 1;
   height: 100vh;
   overflow: auto;
 }
@@ -127,6 +127,7 @@ body {
 .cover::before{
   content: "";
   position: absolute;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
