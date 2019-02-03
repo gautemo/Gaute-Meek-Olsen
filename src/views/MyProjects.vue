@@ -46,7 +46,7 @@ export default {
           text:
             'This website is made in Vue and hosted with Firebase. This is a place to show what intrest me, what I do and have done.',
           github: 'https://github.com/gautemo/Gaute-Meek-Olsen',
-          tech: ['Vue', 'Firebase', 'PWA'],
+          tech: ['Vue', 'Firebase', 'PWA', 'CSS Grid'],
           color: '#639bb4'
         },
         {
@@ -167,5 +167,11 @@ export default {
   background-size: cover;
   opacity: 0.3;
   filter: blur(2px);
+}
+
+@media only screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
 </style>

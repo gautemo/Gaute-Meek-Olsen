@@ -57,6 +57,10 @@ export default new Router({
       component: () => import('./views/dev/2019-01-19GooglePlayGamesApi.vue')
     },
     {
+      path: '/dev-blog/css-variables',
+      component: () => import('./views/dev/2019-02-03CSSVariables.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')

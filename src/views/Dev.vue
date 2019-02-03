@@ -63,6 +63,14 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/716eb9bf63bd7f6946e68dfc7eb43209/tumblr_pmde8c7tui1xfbgtko1_500.png',
+          header: 'CSS Variables',
+          text: 'Introducing CSS Variables. Makes you write cleaner and less CSS, makes it easier for changes later and they are controlable from JavaScript.',
+          tags: ['CSS'],
+          url: '/dev-blog/css-variables'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/1382352f0f20610670889b4f72082c90/tumblr_plkov6LVHO1xfbgtko6_1280.png',
           header: 'Removing Player from Your Google Play Games Services Leaderboard',
           text: 'This is how you remove a cheater from your Google Play Games Services Leaderboard.',

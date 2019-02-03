@@ -29,7 +29,8 @@ export default {
             text: 'Workshop',
             symbol: '👨‍💻'
           },
-          text: 'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
+          text:
+            'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
           tech: ['Firebase', 'Web', 'JavaScript', 'NoSQL'],
           color: '#FFA000'
         },
@@ -42,7 +43,8 @@ export default {
             text: 'Presentation & live coding',
             symbol: '👨‍🏫'
           },
-          text: 'JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.',
+          text:
+            'JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.',
           tech: ['TypeScript'],
           color: '#178fcf'
         },
@@ -55,7 +57,8 @@ export default {
             text: 'Live coding',
             symbol: '👨‍🏫'
           },
-          text: 'Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.',
+          text:
+            'Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.',
           tech: ['Vue.js', 'SPFx', 'SharePoint'],
           color: '#2f5673'
         }
@@ -69,7 +72,7 @@ export default {
 </script>
 
 <style scoped>
-.talk-header{
+.talk-header {
   text-align: center;
 }
 .talk-grid {
@@ -88,8 +91,12 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-  .talk-header h1{
+  .talk-header h1 {
     display: none;
+  }
+
+  .talk-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 </style>
