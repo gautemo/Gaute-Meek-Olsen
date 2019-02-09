@@ -50,6 +50,20 @@ export default {
         },
         {
           img:
+            'https://66.media.tumblr.com/154119852d73f0fc2d2978805f955b4c/tumblr_pmoa38Lpj81xfbgtko1_540.png',
+          header: 'Updating Your CSS Skills',
+          headerShort: 'Updating Your CSS Skills',
+          type: {
+            text: 'Live coding',
+            symbol: '👨‍🏫'
+          },
+          text:
+            'CSS are adding new modules from time to time. This talk will give you insight and show you how to use three of the new ones. I will demonstrate CSS variables, Flex and Grid.',
+          tech: ['CSS'],
+          color: '#ef1684'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/08adfe03c280ad4fb8388fecce8b47c0/tumblr_pm5t2evTEr1xfbgtko1_1280.png',
           header: 'Getting Started with Vue.js & using it in SPFx',
           headerShort: 'Vue.js & SPFx',
