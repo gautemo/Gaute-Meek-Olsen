@@ -1,7 +1,7 @@
 <template>
-    <div class="project-grid cover">
-      <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
-    </div>
+  <div class="project-grid cover">
+    <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
+  </div>
 </template>
 
 <script>
@@ -23,7 +23,8 @@ export default {
           smallheader: 'Android app, a math game',
           text:
             'Calc Fast is my biggest success so far! With daily players all over the world and many hundred thousands downloads. Calc Fast is a math game where you have 60 seconds to answer as many equations as possible. Giving you a score you can compete in the leaderboard with or just try to improve next time you play.',
-          googleplay: 'https://play.google.com/store/apps/details?id=gautemo.game.calcfast',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.game.calcfast',
           tech: ['Android', 'Java', 'Firebase'],
           color: '#43800c'
         },
@@ -34,7 +35,8 @@ export default {
           smallheader: 'Android app',
           text:
             "Are you in need of some dices, cards, need to flip a coin or get a random number, but you don't have the items on you? Fear not, this app will save you. Now you always can do this from your phone.",
-          googleplay: 'https://play.google.com/store/apps/details?id=gautemo.game.randomdicecoinnumber',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.game.randomdicecoinnumber',
           tech: ['Android', 'Java'],
           color: '#ff5200'
         },
@@ -56,7 +58,8 @@ export default {
           smallheader: 'Android app, game',
           text:
             "Run from Robots is a game where you need to survive for as long as you can. Don't get caught by the robots. This game is a re-creating of my first desktop game.",
-          googleplay: 'https://play.google.com/store/apps/details?id=gautemo.game.runaway',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.game.runaway',
           tech: ['Android', 'Java'],
           color: '#4d5d7b'
         },
@@ -67,7 +70,8 @@ export default {
           smallheader: 'Android app',
           text:
             'Word of the Day provides you with one new word every day. Your screensaver will automaticly be updated so you effortly can view the word with explanation about it.',
-          googleplay: 'https://play.google.com/store/apps/details?id=gautemo.app.wordoftheday',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.app.wordoftheday',
           tech: ['Android', 'Java'],
           color: '#ffd42a'
         },
@@ -78,7 +82,8 @@ export default {
           smallheader: 'libGDX cross platform app',
           text:
             'Fatty Bird is a fun twist based on the famous Flappy Bird game. Made with the cross platform game-development application framework libGDX.',
-          googleplay: 'https://play.google.com/store/apps/details?id=gautemo.game.fattybird',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.game.fattybird',
           tech: ['libGDX', 'Java'],
           color: '#09c7c7'
         },
@@ -89,7 +94,8 @@ export default {
           smallheader: 'Android app, drinking game',
           text:
             "Feed the Monster King was my first real Android app. It's mainly a drinking game where you don't want to be the one who kills the monster!",
-          googleplay: 'https://play.google.com/store/apps/details?id=game.gautemo.feedthemonsterking',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=game.gautemo.feedthemonsterking',
           tech: ['Android', 'Java', 'Kotlin'],
           color: '#842a57'
         },
@@ -133,7 +139,12 @@ export default {
           smallheader: 'I have made my house smarter',
           text:
             'I have set up an Alexa, which controlls a Raspberry pi. The Raspberry then talks to my Phillips Hue lights and a Android tablet which plays music back to the alexa and displays my photos through the Google Photos API.',
-          tech: ['Alexa Skills', 'Raspberry PI', 'Android', 'Google Photos API'],
+          tech: [
+            'Alexa Skills',
+            'Raspberry PI',
+            'Android',
+            'Google Photos API'
+          ],
           color: '#d03f8f'
         },
         {
@@ -143,9 +154,22 @@ export default {
           smallheader: 'Android workout game',
           text:
             'Exermon is co-created with Torbjørn Høivik. Exermon is inspired by tamagotchi, you need to do strength workout to keep you monster from dying and gaining strength.',
-          googleplay: 'https://play.google.com/store/apps/details?id=gautor.games.exermon',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautor.games.exermon',
           tech: ['Android', 'Java'],
           color: '#8fc5e4'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/3679b3c6b5e7bc651c4e60df9c97c50c/tumblr_pn2xobpH1m1xfbgtko1_1280.png',
+          header: 'Heart Keyboard',
+          smallheader: 'Android keyboard app',
+          text:
+            'My mom wanted a custom keyboard with hearts. So I made it and published it for anyone interested. With this keyboard you can quickly type all the hearts organized together.',
+          googleplay:
+            'https://play.google.com/store/apps/details?id=app.gautemo.heartkeyboard',
+          tech: ['Android', 'Kotlin'],
+          color: '#fd3099'
         }
       ]
     }
@@ -162,8 +186,8 @@ export default {
   align-items: center;
   padding: 50px 8vw;
 }
-.project-grid::before{
-  background: url('https://66.media.tumblr.com/8851f8fdc343ce509c43df9b28b9d74a/tumblr_phubgwZw9l1xfbgtko1_1280.jpg');
+.project-grid::before {
+  background: url("https://66.media.tumblr.com/8851f8fdc343ce509c43df9b28b9d74a/tumblr_phubgwZw9l1xfbgtko1_1280.jpg");
   background-size: cover;
   opacity: 0.3;
   filter: blur(2px);
