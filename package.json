@@ -11,17 +11,17 @@
   },
   "dependencies": {
     "postscribe": "^2.0.8",
-    "register-service-worker": "^1.0.0",
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.8",
+    "vue-router": "^3.0.2",
     "vue-socialmedia-share": "^1.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-eslint": "^3.1.4",
-    "@vue/cli-plugin-pwa": "^3.1.1",
-    "@vue/cli-service": "^3.1.2",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-plugin-pwa": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
     "@vue/eslint-config-standard": "^3.0.5",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.6.8"
   },
   "eslintConfig": {
     "root": true,
