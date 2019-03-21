@@ -75,6 +75,22 @@ export default {
             'Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.',
           tech: ['Vue.js', 'SPFx', 'SharePoint'],
           color: '#2f5673'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/4be37cb10e44b78590f3596f61c37d3c/tumblr_poqhr4S2Zh1xfbgtko1_1280.png',
+          header: 'An Intro & Comparisons of Serverless Functions',
+          headerShort: 'Serverless Functions',
+          type: {
+            text: 'Presentation & live coding',
+            symbol: '👨‍🏫'
+          },
+          text: `Serverless functions are functions you write and deploy to a cloud provider.
+            In this presentation I give an overview of what a serverless function is, what they can do and give an comparison
+            of the three big cloud providers Amazon with AWS Lambda, Microsoft with Azure Functions and Google with Firebase Functions.
+            Afterwards I give a demo of how you can implement firebase functions to save your project.`,
+          tech: ['Fireabase Functions', 'Azure Functions', 'AWS Lambda'],
+          color: '#9f7fdc'
         }
       ]
     }
