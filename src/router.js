@@ -61,6 +61,10 @@ export default new Router({
       component: () => import('./views/dev/2019-02-03CSSVariables.vue')
     },
     {
+      path: '/dev-blog/node-express-cors',
+      component: () => import('./views/dev/2019-03-31NodeExpressCors.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
