@@ -2,10 +2,10 @@
   <article>
       <h1>{{title}}</h1>
       <section>
-        If you are serving your own Node Express server, and calling your API from JavaScript, 
+        If you are serving your own Node Express server, and calling your API from JavaScript,
         you might get this error.
         <img src="https://66.media.tumblr.com/96518d312f520ddfa5d747441b771e1a/tumblr_pp8fy5wjs91xfbgtko1_1280.png" />
-        This happens because of security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts. 
+        This happens because of security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts.
       </section>
       <section>
           There is an easy fix for this. Open your project in the terminal.

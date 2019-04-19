@@ -65,6 +65,10 @@ export default new Router({
       component: () => import('./views/dev/2019-03-31NodeExpressCors.vue')
     },
     {
+      path: '/dev-blog/location-firebase-function',
+      component: () => import('./views/dev/2019-04-19FirebaseFunctionsLocation.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
