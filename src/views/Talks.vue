@@ -91,6 +91,36 @@ export default {
             Afterwards I give a demo of how you can implement firebase functions to save your project.`,
           tech: ['Fireabase Functions', 'Azure Functions', 'AWS Lambda'],
           color: '#9f7fdc'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/716eb9bf63bd7f6946e68dfc7eb43209/tumblr_pmde8c7tui1xfbgtko1_500.png',
+          header: 'CSS now has variables!',
+          headerShort: 'CSS now has variables!',
+          type: {
+            text: 'Lightning talk & live coding',
+            symbol: '⚡'
+          },
+          text: `Preprocessors such as Sass or Less is no longer necessary to use variables in CSS. Let me show you how to use them.
+          Variables make you write better and less CSS. Bonus is that they can be altered through JavaScript, making cool functionality very easy.`,
+          tech: ['CSS'],
+          color: '#50aec0'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/dc5a882a7f6480055a0b9e559e743444/tumblr_prihfxYstC1xfbgtko1_400.png',
+          header: 'New Things in JavaScript',
+          headerShort: 'New Things in JavaScript',
+          type: {
+            text: 'Presentation & live coding',
+            symbol: '👨‍🏫'
+          },
+          text: `JavaScript is the most used programming language! It's coming with improvements and features which makes life easier each year.
+          I'll go through what's new in ES6, ES7, and ES8. This is for you that wants to improve in JavaScript and keep updated with writing modern JavaScript.
+          Lean back and watch live coding and code samples, this talk is for the ones who have done a little JavaScript and the more experienced 
+          that doesn't have the latest syntax and functionality in their fingertips yet.`,
+          tech: ['JavaScript'],
+          color: '#efc034'
         }
       ]
     }

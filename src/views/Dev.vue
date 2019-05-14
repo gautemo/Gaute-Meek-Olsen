@@ -186,7 +186,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   .blogs {
-    margin: 25px 10px;
+    margin: 25px 15px;
   }
 }
 </style>

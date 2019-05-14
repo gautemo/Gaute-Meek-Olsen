@@ -90,7 +90,7 @@ article a:hover {
 
 @media only screen and (max-width: 768px) {
     article{
-        width: initial;
+        width: 95%;
         margin-top: 15px;
     }
 
