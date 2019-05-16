@@ -1,8 +1,8 @@
 <template>
   <div class="grid-child">
     <div class="container" @click="showDetails = true">
-      <div class="overlay" :style="faintcolor" ></div>
-      <img :src="p.img"/>
+      <div class="overlay" :style="faintcolor"></div>
+      <img :src="p.img">
       <div :style="banner" class="banner">
         <h2 class="header">{{p.header}}</h2>
         <p class="small-header">{{p.smallheader}}</p>
@@ -12,12 +12,25 @@
       <div class="details cover" :style="border" v-on:click.stop>
         <div class="det-container">
           <h1>{{p.header}}</h1>
-          <img :src="p.img"/>
+          <img :src="p.img">
           <p>{{p.text}}</p>
-          <a v-if="p.googleplay" :href="p.googleplay" target="_blank"><img style="width: 200px;" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
-          <a v-if="p.github" :href="p.github" target="_blank"><img style="width: 180px; margin-bottom: 15px;" alt='Open on GitHub' src='https://66.media.tumblr.com/cd17a74e0c6f61a0e898d5d70e3d5d4b/tumblr_phucw7yOPp1xfbgtko1_540.png'/></a>
+          <a v-if="p.googleplay" :href="p.googleplay" target="_blank">
+            <img
+              style="width: 200px;"
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+            >
+          </a>
+          <a v-if="p.github" :href="p.github" target="_blank">
+            <img
+              style="width: 180px; margin-bottom: 15px;"
+              alt="Open on GitHub"
+              src="https://66.media.tumblr.com/cd17a74e0c6f61a0e898d5d70e3d5d4b/tumblr_phucw7yOPp1xfbgtko1_540.png"
+            >
+          </a>
           <div class="tech-container">
-            <b>Tech:</b> <span class="tech" v-for="t in p.tech" v-bind:key="t">{{t}}</span>
+            <b>Tech:</b>
+            <span class="tech" v-for="t in p.tech" v-bind:key="t">{{t}}</span>
           </div>
         </div>
       </div>
@@ -27,29 +40,29 @@
 
 <script>
 export default {
-  name: 'blogElement',
-  props: ['p'],
-  data () {
+  name: "blogElement",
+  props: ["p"],
+  data() {
     return {
       showDetails: false
-    }
+    };
   },
   computed: {
-    banner () {
-      return 'background-color: ' + this.p.color
+    banner() {
+      return "background-color: " + this.p.color;
     },
-    faintcolor () {
-      return `background-color: ${this.p.color}40`
+    faintcolor() {
+      return `background-color: ${this.p.color}40`;
     },
-    border () {
-      return 'border-color: ' + this.p.color
+    border() {
+      return "border-color: " + this.p.color;
     }
   }
-}
+};
 </script>
 
 <style scoped>
-.grid-child{
+.grid-child {
   width: 100%;
 }
 .container {
@@ -113,7 +126,7 @@ export default {
   box-shadow: 5px 5px 20px 7px #000000bf;
 }
 
-.details::before{
+.details::before {
   opacity: 0.15;
   background: url("https://66.media.tumblr.com/73830c6dffb2f01967b29e26248b3ed2/tumblr_phubuhvCMl1xfbgtko1_1280.jpg");
   background-size: cover;
@@ -135,6 +148,9 @@ export default {
 
 .tech-container {
   margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .tech {
@@ -142,26 +158,23 @@ export default {
   border-radius: 15px;
   padding: 5px 10px;
   margin: 3px;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 768px) {
-  .details{
+  .details {
     margin: 10px;
     width: 80vw;
     border-width: 5px;
   }
 
-  .det-container{
+  .det-container {
     padding: 0 10%;
   }
 
-  .tech-container > b{
+  .tech-container > b {
     display: block;
     margin-bottom: 7px;
-  }
-
-  .tech-container > span{
-    display: inline-block;
   }
 }
 </style>

@@ -13,122 +13,129 @@
 <script>
 // @ is an alias to /src
 // symbols 👨‍💻⚡👨‍🏫
-import Talk from '@/components/Talk.vue'
+import Talk from "@/components/Talk.vue";
 
 export default {
-  name: 'talks',
-  data () {
+  name: "talks",
+  data() {
     return {
       talks: [
         {
           img:
-            'https://66.media.tumblr.com/897b0d2a83c4d90ad73f0dcf6721e678/tumblr_pibxatlDCU1xfbgtko1_r2_1280.png',
-          header: 'Serverless with Firebase in 1 2 3',
-          headerShort: 'Serverless with Firebase',
+            "https://66.media.tumblr.com/897b0d2a83c4d90ad73f0dcf6721e678/tumblr_pibxatlDCU1xfbgtko1_r2_1280.png",
+          header: "Serverless with Firebase in 1 2 3",
+          headerShort: "Serverless with Firebase",
           type: {
-            text: 'Workshop',
-            symbol: '👨‍💻'
+            text: "Workshop",
+            symbol: "👨‍💻"
           },
           text:
-            'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
-          tech: ['Firebase', 'Web', 'JavaScript', 'NoSQL'],
-          color: '#FFA000'
+            "Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.",
+          github: "https://github.com/gautemo/firebase-chat",
+          tech: ["Firebase", "Web", "JavaScript", "NoSQL"],
+          color: "#FFA000"
         },
         {
           img:
-            'https://66.media.tumblr.com/32e6864d3184fcb13ba1a14e576caecc/tumblr_pinzimXE8w1xfbgtko1_1280.png',
-          header: 'Intro to TypeScript',
-          headerShort: 'Intro to TypeScript',
+            "https://66.media.tumblr.com/32e6864d3184fcb13ba1a14e576caecc/tumblr_pinzimXE8w1xfbgtko1_1280.png",
+          header: "Intro to TypeScript",
+          headerShort: "Intro to TypeScript",
           type: {
-            text: 'Presentation & live coding',
-            symbol: '👨‍🏫'
+            text: "Presentation & live coding",
+            symbol: "👨‍🏫"
           },
           text:
-            'JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.',
-          tech: ['TypeScript'],
-          color: '#178fcf'
+            "JavaScript can be time consuming when the project get large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.",
+          github: "https://github.com/gautemo/TypeScript-Intro",
+          tech: ["TypeScript"],
+          color: "#178fcf"
         },
         {
           img:
-            'https://66.media.tumblr.com/154119852d73f0fc2d2978805f955b4c/tumblr_pmoa38Lpj81xfbgtko1_540.png',
-          header: 'Updating Your CSS Skills',
-          headerShort: 'Updating Your CSS Skills',
+            "https://66.media.tumblr.com/154119852d73f0fc2d2978805f955b4c/tumblr_pmoa38Lpj81xfbgtko1_540.png",
+          header: "Updating Your CSS Skills",
+          headerShort: "Updating Your CSS Skills",
           type: {
-            text: 'Live coding',
-            symbol: '👨‍🏫'
+            text: "Live coding",
+            symbol: "👨‍🏫"
           },
           text:
-            'CSS are adding new modules from time to time. This talk will give you insight and show you how to use three of the new ones. I will demonstrate CSS variables, Flex and Grid.',
-          tech: ['CSS'],
-          color: '#ef1684'
+            "CSS are adding new modules from time to time. This talk will give you insight and show you how to use three of the new ones. I will demonstrate CSS variables, Flex and Grid.",
+          tech: ["CSS"],
+          color: "#ef1684"
         },
         {
           img:
-            'https://66.media.tumblr.com/08adfe03c280ad4fb8388fecce8b47c0/tumblr_pm5t2evTEr1xfbgtko1_1280.png',
-          header: 'Getting Started with Vue.js & using it in SPFx',
-          headerShort: 'Vue.js & SPFx',
+            "https://66.media.tumblr.com/08adfe03c280ad4fb8388fecce8b47c0/tumblr_pm5t2evTEr1xfbgtko1_1280.png",
+          header: "Getting Started with Vue.js & using it in SPFx",
+          headerShort: "Vue.js & SPFx",
           type: {
-            text: 'Live coding',
-            symbol: '👨‍🏫'
+            text: "Live coding",
+            symbol: "👨‍🏫"
           },
           text:
-            'Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.',
-          tech: ['Vue.js', 'SPFx', 'SharePoint'],
-          color: '#2f5673'
+            "Vue.js is a great web development framework, I will show you how to master Vue.js. After you have gotten to know Vue, I will show you how to use it in your SharePoint site with SharePoint Framework (SPFx). We will build a webpart retrieving links from a SharePoint list and showing them in a Vue component with realtime search.",
+          github: "https://github.com/gautemo/links-webpart-vue-spfx",
+          tech: ["Vue.js", "SPFx", "SharePoint"],
+          color: "#2f5673"
         },
         {
           img:
-            'https://66.media.tumblr.com/4be37cb10e44b78590f3596f61c37d3c/tumblr_poqhr4S2Zh1xfbgtko1_1280.png',
-          header: 'An Intro & Comparisons of Serverless Functions',
-          headerShort: 'Serverless Functions',
+            "https://66.media.tumblr.com/4be37cb10e44b78590f3596f61c37d3c/tumblr_poqhr4S2Zh1xfbgtko1_1280.png",
+          header: "An Intro & Comparisons of Serverless Functions",
+          headerShort: "Serverless Functions",
           type: {
-            text: 'Presentation & live coding',
-            symbol: '👨‍🏫'
+            text: "Presentation & live coding",
+            symbol: "👨‍🏫"
           },
           text: `Serverless functions are functions you write and deploy to a cloud provider.
             In this presentation I give an overview of what a serverless function is, what they can do and give an comparison
             of the three big cloud providers Amazon with AWS Lambda, Microsoft with Azure Functions and Google with Firebase Functions.
             Afterwards I give a demo of how you can implement firebase functions to save your project.`,
-          tech: ['Fireabase Functions', 'Azure Functions', 'AWS Lambda'],
-          color: '#9f7fdc'
+          github: "https://github.com/gautemo/firebase-image-chat",
+          tech: ["Fireabase Functions", "Azure Functions", "AWS Lambda"],
+          color: "#9f7fdc"
         },
         {
           img:
-            'https://66.media.tumblr.com/716eb9bf63bd7f6946e68dfc7eb43209/tumblr_pmde8c7tui1xfbgtko1_500.png',
-          header: 'CSS now has variables!',
-          headerShort: 'CSS now has variables!',
+            "https://66.media.tumblr.com/716eb9bf63bd7f6946e68dfc7eb43209/tumblr_pmde8c7tui1xfbgtko1_500.png",
+          header: "CSS now has variables!",
+          headerShort: "CSS now has variables!",
           type: {
-            text: 'Lightning talk & live coding',
-            symbol: '⚡'
+            text: "Lightning talk & live coding",
+            symbol: "⚡"
           },
           text: `Preprocessors such as Sass or Less is no longer necessary to use variables in CSS. Let me show you how to use them.
           Variables make you write better and less CSS. Bonus is that they can be altered through JavaScript, making cool functionality very easy.`,
-          tech: ['CSS'],
-          color: '#50aec0'
+          github: "https://github.com/gautemo/css-variables-presentation",
+          tech: ["CSS"],
+          color: "#50aec0"
         },
         {
           img:
-            'https://66.media.tumblr.com/dc5a882a7f6480055a0b9e559e743444/tumblr_prihfxYstC1xfbgtko1_400.png',
-          header: 'New Things in JavaScript',
-          headerShort: 'New Things in JavaScript',
+            "https://66.media.tumblr.com/dc5a882a7f6480055a0b9e559e743444/tumblr_prihfxYstC1xfbgtko1_400.png",
+          header: "New Things in JavaScript",
+          headerShort: "New Things in JavaScript",
           type: {
-            text: 'Presentation & live coding',
-            symbol: '👨‍🏫'
+            text: "Presentation & live coding",
+            symbol: "👨‍🏫"
           },
           text: `JavaScript is the most used programming language! It's coming with improvements and features which makes life easier each year.
           I'll go through what's new in ES6, ES7, and ES8. This is for you that wants to improve in JavaScript and keep updated with writing modern JavaScript.
           Lean back and watch live coding and code samples, this talk is for the ones who have done a little JavaScript and the more experienced 
           that doesn't have the latest syntax and functionality in their fingertips yet.`,
-          tech: ['JavaScript'],
-          color: '#efc034'
+          github: "https://github.com/gautemo/ES-Intro",
+          slides: "https://es-intro.netlify.com/",
+          tech: ["JavaScript"],
+          color: "#efc034"
         }
       ]
-    }
+    };
   },
   components: {
     Talk
   }
-}
+};
 </script>
 
 <style scoped>
