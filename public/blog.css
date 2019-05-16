@@ -1,6 +1,7 @@
 article{
-    width: 800px;
-    margin: 70px auto;
+    width: calc(100% - 210px);
+    max-width: 800px;
+    margin: 70px 0;
     font-size: 1.2em;
     letter-spacing: 0.003em;
     line-height: 1.58;
@@ -90,16 +91,7 @@ article a:hover {
 
 @media only screen and (max-width: 768px) {
     article{
-        width: 95%;
         margin-top: 15px;
-    }
-
-    article section{
-        margin: 20px 25px;
-    }
-
-    article h1,
-    article p{
-        margin: 5px 25px;
+        width: 90%;
     }
 }

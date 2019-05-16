@@ -18,24 +18,24 @@
       <router-view/>
     </div>
     <div id="follow-me" v-if="$route.path!=='/'">
-      <Twitter />
-      <LinkedIn />
-      <Github />
-      <Instagram />
-      <Snapchat />
-      <GooglePlay />
+      <Twitter/>
+      <LinkedIn/>
+      <Github/>
+      <Instagram/>
+      <Snapchat/>
+      <GooglePlay/>
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Twitter from '@/components/follow/Twitter.vue'
-import Instagram from '@/components/follow/Instagram.vue'
-import Github from '@/components/follow/Github.vue'
-import GooglePlay from '@/components/follow/GooglePlay.vue'
-import Snapchat from '@/components/follow/Snapchat.vue'
-import LinkedIn from '@/components/follow/LinkedIn.vue'
+import Twitter from "@/components/follow/Twitter.vue";
+import Instagram from "@/components/follow/Instagram.vue";
+import Github from "@/components/follow/Github.vue";
+import GooglePlay from "@/components/follow/GooglePlay.vue";
+import Snapchat from "@/components/follow/Snapchat.vue";
+import LinkedIn from "@/components/follow/LinkedIn.vue";
 
 export default {
   components: {
@@ -46,7 +46,7 @@ export default {
     Snapchat,
     LinkedIn
   }
-}
+};
 </script>
 
 <style>
@@ -57,7 +57,7 @@ export default {
   --green-light: #bbddc7;
   --blue: #639bb4;
   --blue-dark: hsla(199, 36%, 30%, 0.6);
-  --white: #FCFCFC;
+  --white: #fcfcfc;
   --black: rgb(30, 30, 30);
 }
 body {
@@ -102,6 +102,8 @@ body {
   flex: 1;
   height: 100vh;
   overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 #mobile-header {
   display: none;
@@ -121,10 +123,10 @@ body {
   flex-direction: column;
   padding: 5px;
 }
-#follow-me a{
+#follow-me a {
   margin-bottom: 5px;
 }
-.cover::before{
+.cover::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -155,7 +157,9 @@ body {
     width: 100vw;
     z-index: 4;
   }
-  #follow-me{
+}
+@media only screen and (max-width: 1000px) {
+  #follow-me {
     display: none;
   }
 }
