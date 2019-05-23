@@ -14,9 +14,9 @@
 
 <script>
 export default {
-  name: "blogElement",
-  props: ["img", "header", "text", "tags", "url"]
-};
+  name: 'blogElement',
+  props: ['img', 'header', 'text', 'tags', 'url']
+}
 </script>
 
 <style scoped>

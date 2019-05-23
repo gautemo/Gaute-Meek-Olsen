@@ -54,25 +54,25 @@
 
 <script>
 export default {
-  name: "talk",
-  props: ["t"],
-  data() {
+  name: 'talk',
+  props: ['t'],
+  data () {
     return {
       showDetails: false
-    };
+    }
   },
   computed: {
-    banner() {
-      return "background-color: " + this.t.color;
+    banner () {
+      return 'background-color: ' + this.t.color
     },
-    faintcolor() {
-      return `background-color: ${this.t.color}30`;
+    faintcolor () {
+      return `background-color: ${this.t.color}30`
     },
-    border() {
-      return "border-color: " + this.t.color;
+    border () {
+      return 'border-color: ' + this.t.color
     }
   }
-};
+}
 </script>
 
 <style scoped>

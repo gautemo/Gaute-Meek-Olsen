@@ -47,10 +47,10 @@ import {
   Email,
   Telegram,
   WhatsApp
-} from "vue-socialmedia-share";
+} from 'vue-socialmedia-share'
 
 export default {
-  name: "Share",
+  name: 'Share',
   props: {
     url: {
       type: String,
@@ -59,21 +59,21 @@ export default {
     text: String
   },
   methods: {
-    copy: function() {
-      const el = document.createElement("textarea");
-      el.value = this.url;
-      el.setAttribute("readonly", "");
-      el.style = { visibility: "hidden", position: "absolute" };
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand("copy");
-      document.body.removeChild(el);
+    copy: function () {
+      const el = document.createElement('textarea')
+      el.value = this.url
+      el.setAttribute('readonly', '')
+      el.style = { visibility: 'hidden', position: 'absolute' }
+      document.body.appendChild(el)
+      el.select()
+      document.execCommand('copy')
+      document.body.removeChild(el)
 
-      const copytext = document.querySelector(".copied");
-      copytext.classList.add("is-visible");
+      const copytext = document.querySelector('.copied')
+      copytext.classList.add('is-visible')
       setTimeout(() => {
-        copytext.classList.remove("is-visible");
-      }, 3000);
+        copytext.classList.remove('is-visible')
+      }, 3000)
     }
   },
   components: {
@@ -85,7 +85,7 @@ export default {
     Telegram,
     WhatsApp
   }
-};
+}
 </script>
 
 <style scoped>

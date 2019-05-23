@@ -30,12 +30,12 @@
 
 <script>
 // @ is an alias to /src
-import Twitter from "@/components/follow/Twitter.vue";
-import Instagram from "@/components/follow/Instagram.vue";
-import Github from "@/components/follow/Github.vue";
-import GooglePlay from "@/components/follow/GooglePlay.vue";
-import Snapchat from "@/components/follow/Snapchat.vue";
-import LinkedIn from "@/components/follow/LinkedIn.vue";
+import Twitter from '@/components/follow/Twitter.vue'
+import Instagram from '@/components/follow/Instagram.vue'
+import Github from '@/components/follow/Github.vue'
+import GooglePlay from '@/components/follow/GooglePlay.vue'
+import Snapchat from '@/components/follow/Snapchat.vue'
+import LinkedIn from '@/components/follow/LinkedIn.vue'
 
 export default {
   components: {
@@ -46,7 +46,7 @@ export default {
     Snapchat,
     LinkedIn
   }
-};
+}
 </script>
 
 <style>

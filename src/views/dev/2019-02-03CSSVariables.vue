@@ -87,39 +87,39 @@ article {
 </style>
 
 <script>
-import Share from "@/components/Share.vue";
-import Gist from "@/components/Gist.vue";
+import Share from '@/components/Share.vue'
+import Gist from '@/components/Gist.vue'
 
 export default {
-  name: "CSSVariables",
-  data() {
+  name: 'CSSVariables',
+  data () {
     return {
-      title: "CSS Variables",
+      title: 'CSS Variables',
       dark: false
-    };
+    }
   },
   methods: {
-    toggleDark: function() {
-      let bgColor = "black";
-      let textColor = "white";
-      let mainColor = "#FB1";
+    toggleDark: function () {
+      let bgColor = 'black'
+      let textColor = 'white'
+      let mainColor = '#FB1'
       if (this.dark) {
-        bgColor = "white";
-        textColor = "black";
-        mainColor = "#5AD";
+        bgColor = 'white'
+        textColor = 'black'
+        mainColor = '#5AD'
       }
       document
-        .querySelector("article")
-        .style.setProperty("--main-color", mainColor);
-      const darkControl = document.querySelector("#dark-control");
-      darkControl.style.setProperty("--bg-color", bgColor);
-      darkControl.style.setProperty("--text-color", textColor);
-      this.dark = !this.dark;
+        .querySelector('article')
+        .style.setProperty('--main-color', mainColor)
+      const darkControl = document.querySelector('#dark-control')
+      darkControl.style.setProperty('--bg-color', bgColor)
+      darkControl.style.setProperty('--text-color', textColor)
+      this.dark = !this.dark
     }
   },
   components: {
     Share,
     Gist
   }
-};
+}
 </script>
