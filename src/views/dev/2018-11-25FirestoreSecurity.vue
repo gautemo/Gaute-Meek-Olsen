@@ -34,7 +34,7 @@
       </section>
       <h2>Read-only</h2>
       <section>
-        If you only need your user to read data, you can put your entire database in read-only mode. Notice that these rules don’t apply to the admin sdk, so you could for example still write to the database using Firebase Functions.
+        If you only need your user to read data, you can put your entire database in read-only mode. Notice that these rules don’t apply to the admin sdk, so you could for example still write to the database using Cloud Functions for Firebase.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-2.rules'" />
         We don’t need to specify false for write, because rules are secure by default.
       </section>
@@ -71,7 +71,7 @@
       <section>
         There is another way of handling roles, which doesn’t query our user collection. We can use custom user claims. Which simplify our rules and doesn’t eat of our quota.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-7.rules'" />
-        Custom claims are set by the admin sdk, for example in a Firebase Function like this.
+        Custom claims are set by the admin sdk, for example in a Cloud Functions for Firebase like this.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-8.js'" />
       </section>
       <h2>Validate authenticated profile data</h2>
@@ -81,11 +81,11 @@
         Security issue, users can alter the method and change the <i>name</i> and <i>profileimg</i> field and pretend to be someone else. This rule will prevent this.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-10.rules'" />
       </section>
-      <h3>The Firebase Function way</h3>
+      <h3>The Cloud Functions for Firebase way</h3>
       <section>
         You have another option when you want to prevent evil users to alter authenticated profile data. You can close all write to the messages collection.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-11.rules'" />
-        Then use Firestore Functions and retrieve the profile data there. Then use the admin sdk to add the message to the collection, which will bypass the security rules. Firebase Function is a great way to validate and secure data when the security rules become to complex.
+        Then use Cloud Functions for Firebase and retrieve the profile data there. Then use the admin sdk to add the message to the collection, which will bypass the security rules. Cloud Functions for Firebase is a great way to validate and secure data when the security rules become to complex.
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-12.js'" />
         Then trigger the function client side (web example).
         <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'sec-firestore-13.js'" />

@@ -82,9 +82,9 @@ export default {
         {
           img:
             'https://66.media.tumblr.com/385a3a08848e224fd77bec181cd0a07e/tumblr_pq7a6hgjFO1xfbgtko1_1280.png',
-          header: 'Location for Firebase Function',
+          header: 'Location for Cloud Functions for Firebase',
           text:
-            'Deciding the location where your Firebase Cloud Function run is easily configurable from your code.',
+            'Deciding the location where your Cloud Functions for Firebase run is easily configurable from your code.',
           tags: ['Firebase', 'Cloud Functions'],
           url: '/dev-blog/location-firebase-function'
         },

@@ -2,7 +2,7 @@
   <article>
     <h1>{{title}}</h1>
     <section>
-      Today Firebase Cloud Functions has four availible locations they can run from.
+      Today Cloud Functions for Firebase has four availible locations they can run from.
       It's not super important, but it could be smart to have them run close to the location of your Firestore or users for minimizing latency.
       By default the function will run in us-central1, which is Iowa. This is super easy to change by adding
       <span
@@ -35,7 +35,7 @@ export default {
   name: 'NodeExpressCors',
   data () {
     return {
-      title: 'Location for Firebase Function'
+      title: 'Location for Cloud Functions for Firebase'
     }
   },
   components: {
