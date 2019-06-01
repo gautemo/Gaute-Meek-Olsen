@@ -7,6 +7,20 @@ article{
     line-height: 1.58;
 }
 
+article > h1{
+    position: relative;
+}
+
+article > h1::before{
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient( -90deg, whitesmoke -60%, var(--blue), var(--blue) );
+}
+
 article img{
     width: 100%;
 }
