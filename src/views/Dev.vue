@@ -81,6 +81,15 @@ export default {
       blogs: [
         {
           img:
+            'https://66.media.tumblr.com/299b3d8067275b52073d566375b5af2c/tumblr_pt3vtdTq6w1xfbgtko1_r1_1280.png',
+          header: 'Hosting your website',
+          text:
+            'Hosting your website is super easy through Firebase or Netlify.',
+          tags: [],
+          url: '/dev-blog/hosting-website'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/385a3a08848e224fd77bec181cd0a07e/tumblr_pq7a6hgjFO1xfbgtko1_1280.png',
           header: 'Location for Cloud Functions for Firebase',
           text:

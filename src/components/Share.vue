@@ -92,6 +92,7 @@ export default {
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+  margin-bottom: 25px;
 }
 .icon {
   cursor: pointer;

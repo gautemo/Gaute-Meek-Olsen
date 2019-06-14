@@ -69,6 +69,10 @@ export default new Router({
       component: () => import('./views/dev/2019-04-19FirebaseFunctionsLocation.vue')
     },
     {
+      path: '/dev-blog/hosting-website',
+      component: () => import('./views/dev/2019-06-14HostingWebsite.vue')
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
