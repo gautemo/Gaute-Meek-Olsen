@@ -58,6 +58,7 @@ export default {
 <style scoped>
 div {
   font-size: 1.5em;
+  width: 75%;
 }
 
 h1 {
@@ -72,5 +73,7 @@ a {
   color: var(--black);
   font-weight: bold;
   box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  display: inline-block;
+  margin-bottom: 35px;
 }
 </style>
