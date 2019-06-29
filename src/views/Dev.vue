@@ -12,7 +12,7 @@
         :header="blog.header"
         :text="blog.text"
         :tags="blog.tags"
-        :url="blog.url"
+        :url="'dev-blog/' + blog.url"
       />
     </div>
     <p v-if="filteredBlogs.length === 0">
@@ -36,6 +36,7 @@
 // @ is an alias to /src
 import BlogElement from '@/components/BlogElement.vue'
 import SearchAndFilter from '@/components/SearchAndFilter.vue'
+import { blogs } from './dev/DevBlog.vue'
 
 export default {
   name: 'dev',
@@ -78,107 +79,7 @@ export default {
     return {
       filterSearch: '',
       filterTags: [],
-      blogs: [
-        {
-          img:
-            'https://66.media.tumblr.com/299b3d8067275b52073d566375b5af2c/tumblr_pt3vtdTq6w1xfbgtko1_r1_1280.png',
-          header: 'Hosting your website',
-          text:
-            'Hosting your website is super easy through Firebase or Netlify.',
-          tags: [],
-          url: '/dev-blog/hosting-website'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/385a3a08848e224fd77bec181cd0a07e/tumblr_pq7a6hgjFO1xfbgtko1_1280.png',
-          header: 'Location for Cloud Functions for Firebase',
-          text:
-            'Deciding the location where your Cloud Functions for Firebase run is easily configurable from your code.',
-          tags: ['Firebase', 'Cloud Functions'],
-          url: '/dev-blog/location-firebase-function'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/5dfac99b3d14ad94f293979842f0c84d/tumblr_pp8gq8hjCf1xfbgtko1_400.png',
-          header: 'How to allow CORS request with Node Express',
-          text:
-            'If your are fetching your own API from a Node Express server, this is how to fix CORS denial.',
-          tags: ['Node', 'Express', 'Cors'],
-          url: '/dev-blog/node-express-cors'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/716eb9bf63bd7f6946e68dfc7eb43209/tumblr_pmde8c7tui1xfbgtko1_500.png',
-          header: 'CSS Variables',
-          text:
-            'Introducing CSS Variables. Makes you write cleaner and less CSS, makes it easier for changes later and they are controlable from JavaScript.',
-          tags: ['CSS'],
-          url: '/dev-blog/css-variables'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/1382352f0f20610670889b4f72082c90/tumblr_plkov6LVHO1xfbgtko6_1280.png',
-          header:
-            'Removing Player from Your Google Play Games Services Leaderboard',
-          text:
-            'This is how you remove a cheater from your Google Play Games Services Leaderboard.',
-          tags: ['Google Play Games Services'],
-          url: '/dev-blog/gpgs-hide-player'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/437164da521400873a3a93230655ee7b/tumblr_pir1ppqovW1xfbgtko1_1280.png',
-          header: 'Firestore and Security',
-          text: 'How to secure your Firestore DB server-side.',
-          tags: ['Firebase', 'Firestore'],
-          url: '/dev-blog/firestore-security'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
-          header: 'Intro to the easiest DB ever, Firestore',
-          text:
-            'Firestore is a DB in the cloud by Google. You only write frontend code so it is easy to get started, but it also scales really well. You also get snacks such as real-time updates, offline support, and an administration UI.',
-          tags: ['Firebase', 'Firestore', 'JavaScript'],
-          url: '/dev-blog/intro-firestore'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/f73cbf4aa693e80e5d1814c0e8a7aac4/tumblr_pib34ssvM41xfbgtko1_1280.jpg',
-          header: 'How to publish a js library to NPM and CDN',
-          text:
-            'Simple guide for how to publish your module and make it accesible through npm install and a script tag',
-          tags: ['NPM', 'JavaScript'],
-          url: '/dev-blog/npm-publish'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/8becdba483fc55919cf2382d111239db/tumblr_pi95baoGkM1xfbgtko1_400.png',
-          header: 'How to Change the Cursor to an Image',
-          text:
-            'One line of css and you can change the cursor to whatever you like.',
-          tags: ['CSS'],
-          url: '/dev-blog/cursor-image'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/a7c27e08870bd607014e6655749b2721/tumblr_pi8y4gKXRI1xfbgtko1_1280.jpg',
-          header: 'How to Add a Script Tag in a Vue Component',
-          text:
-            'Adding a script tag in a Vue component gives you errors, unless you do this.',
-          tags: ['Vue'],
-          url: '/dev-blog/script-in-vue'
-        },
-        {
-          img:
-            'https://66.media.tumblr.com/ee6f77a5a7dd3575440f4746fee3932c/tumblr_pi3n3pE5ez1xfbgtko1_1280.jpg',
-          header: 'Setting up a custom Service Worker with the Vue CLI',
-          text:
-            'Creating a PWA with Vue is easy, this is how you customize the caching strategy with workbox.',
-          tags: ['Workbox', 'Vue', 'PWA'],
-          url: '/dev-blog/workbox-in-vue'
-        }
-      ]
+      blogs: blogs
     }
   },
   components: {
