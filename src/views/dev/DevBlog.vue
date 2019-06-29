@@ -6,6 +6,15 @@
 const blogs = [
   {
     img:
+      'https://66.media.tumblr.com/32e6864d3184fcb13ba1a14e576caecc/tumblr_pinzimXE8w1xfbgtko1_1280.png',
+    header: 'Intro to TypeScript',
+    text: `Let's learn the strict syntactical superset of JavaScript called TypeScript. Also reffered to as JavaScript that scales.`,
+    tags: [],
+    url: 'intro-typescript',
+    comp: '2019-06-28IntroTypeScript'
+  },
+  {
+    img:
       'https://66.media.tumblr.com/299b3d8067275b52073d566375b5af2c/tumblr_pt3vtdTq6w1xfbgtko1_r1_1280.png',
     header: 'Hosting your website',
     text: 'Hosting your website is super easy through Firebase or Netlify.',
