@@ -58,7 +58,7 @@ export default {
 <style scoped>
 div {
   font-size: 1.5em;
-  width: 75%;
+  max-width: 75%;
 }
 
 h1 {
