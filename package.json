@@ -10,16 +10,17 @@
     "done": "vue-cli-service lint && vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "firebase": "^6.3.4",
     "postscribe": "^2.0.8",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.6",
+    "vue-router": "^3.1.1",
     "vue-socialmedia-share": "^1.0.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-eslint": "^3.8.0",
-    "@vue/cli-plugin-pwa": "^3.8.0",
-    "@vue/cli-service": "^3.8.4",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-plugin-pwa": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "vue-template-compiler": "^2.6.10"
   },
