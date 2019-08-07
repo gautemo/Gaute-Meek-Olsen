@@ -12,18 +12,19 @@
       <router-link to="/projects">PROJECTS</router-link>
       <router-link to="/talks">TALKS</router-link>
       <router-link to="/dev-blog">DEV BLOG</router-link>
+      <router-link to="/today-i-learned">TODAY I LEARNED</router-link>
       <router-link to="/travel-blog">TRAVEL BLOG</router-link>
     </div>
     <div id="main-area">
-      <router-view/>
+      <router-view />
     </div>
     <div id="follow-me" v-if="$route.path!=='/'">
-      <Twitter/>
-      <LinkedIn/>
-      <Github/>
-      <Instagram/>
-      <Snapchat/>
-      <GooglePlay/>
+      <Twitter />
+      <LinkedIn />
+      <Github />
+      <Instagram />
+      <Snapchat />
+      <GooglePlay />
     </div>
   </div>
 </template>

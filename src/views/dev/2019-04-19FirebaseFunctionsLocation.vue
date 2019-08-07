@@ -43,17 +43,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.code {
-  background: rgb(194, 194, 194);
-  border-radius: 2px;
-  padding: 5px;
-}
-
-.block {
-  display: block;
-  margin: 15px 0;
-  padding: 15px;
-}
-</style>

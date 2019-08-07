@@ -126,11 +126,6 @@ export { blogs }
 
 export default {
   name: 'DevBlog',
-  data () {
-    return {
-      blogs: blogs
-    }
-  },
   created () {
     const blog = blogs.find(b => b.url === this.$route.params.url)
     if (blog) {

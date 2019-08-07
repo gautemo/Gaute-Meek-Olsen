@@ -92,7 +92,7 @@
       but if you want deployment automation with Firebase you need to combine it with a continious integration tool
       such as Gitlab CI or Travis CI.
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title"/>
+    <Share :url="'https://gaute.app' + $route.path" :text="title" />
   </article>
 </template>
 
@@ -111,11 +111,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.code {
-  background: rgb(194, 194, 194);
-  border-radius: 2px;
-  padding: 5px;
-}
-</style>

@@ -33,6 +33,15 @@ export default new Router({
       component: () => import(`./views/dev/DevBlog.vue`)
     },
     {
+      path: '/today-i-learned',
+      name: 'til',
+      component: () => import('./views/TIL.vue')
+    },
+    {
+      path: '/today-i-learned/:url',
+      component: () => import(`./views/til/TILBlog.vue`)
+    },
+    {
       path: '/travel-blog',
       name: 'travel',
       component: () => import('./views/Travel.vue')
