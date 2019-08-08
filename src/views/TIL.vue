@@ -3,7 +3,7 @@
     <h1>Today I learned</h1>
     <div class="grid">
       <div v-for="b in blogs" :key="b.type">
-        <h3>{{b.type}}</h3>
+        <h2>{{b.type}}</h2>
         <ul>
           <li v-for="link in b.links" :key="link.url">
             <a :href="'today-i-learned/' + link.url">{{link.title}}</a>
@@ -40,7 +40,7 @@ export default {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
   min-width: 70%;
 }
@@ -48,5 +48,13 @@ export default {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+h2 {
+  border-bottom: 1px solid var(--black);
 }
 </style>
