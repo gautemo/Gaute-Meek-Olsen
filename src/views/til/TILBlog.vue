@@ -26,6 +26,14 @@ const android = [
   }
 ]
 
+const security = [
+  {
+    title: 'CSP',
+    url: 'security-csp',
+    comp: '2019-08-08SecurityCSP'
+  }
+]
+
 const til = [
   {
     type: 'Android',
@@ -38,6 +46,10 @@ const til = [
   {
     type: 'Vue',
     links: vue
+  },
+  {
+    type: 'Security',
+    links: security
   }
 ]
 
