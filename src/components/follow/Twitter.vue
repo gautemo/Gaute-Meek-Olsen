@@ -5,13 +5,7 @@
     target="_blank"
     aria-label="Visit my Twitter"
   >
-    >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="50"
-      viewBox="126.444 2.281 589 589"
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="126.444 2.281 589 589">
       <circle cx="420.944" cy="296.781" r="294.5" class="circle" />
       <path
         d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779

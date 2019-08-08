@@ -5,7 +5,6 @@
     target="_blank"
     aria-label="Visit my Instagram"
   >
-    >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3364.7 3364.7" width="50" height="50">
       <defs>
         <radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse">

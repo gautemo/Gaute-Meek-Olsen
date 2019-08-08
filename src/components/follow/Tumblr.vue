@@ -5,7 +5,6 @@
     target="_blank"
     aria-label="Visit my Tumblr"
   >
-    >
     <svg
       width="50"
       height="50"

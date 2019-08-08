@@ -5,7 +5,7 @@
         <div id="profile-img">
           <img
             v-if="!showAvatar"
-            src="https://66.media.tumblr.com/d8487bef218e042992c43495ea2c7fb2/tumblr_pvx41i3UCx1xfbgtko1_r1_500.png"
+            src="https://66.media.tumblr.com/9823ec18bebb207226f06fe1b7f0278b/tumblr_pvx41i3UCx1xfbgtko1_r2_250.png"
             alt="image of Gaute Meek Olsen"
           />
           <img v-else :src="avatar" alt="avatar of Gaute Meek Olsen" />

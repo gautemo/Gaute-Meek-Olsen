@@ -2,7 +2,6 @@
   <main id="app">
     <header id="mobile-header">
       <button class="hamburger hamburger--spin" type="button" aria-label="Open navigation">
-        >
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>

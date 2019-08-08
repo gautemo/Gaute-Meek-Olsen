@@ -5,7 +5,6 @@
     target="_blank"
     aria-label="Visit my Android apps"
   >
-    >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 466.9" width="50" height="50">
       <linearGradient
         id="SVGID_1_"

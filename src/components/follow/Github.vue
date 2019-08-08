@@ -1,6 +1,5 @@
 <template>
   <a class="github" href="https://github.com/gautemo" target="_blank" aria-label="Visit my GitHub">
-    >
     <svg
       version="1.2"
       baseProfile="tiny"
