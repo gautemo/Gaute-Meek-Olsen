@@ -1,32 +1,33 @@
 <template>
-  <div id="app">
-    <div id="mobile-header">
-      <button class="hamburger hamburger--spin" type="button">
+  <main id="app">
+    <header id="mobile-header">
+      <button class="hamburger hamburger--spin" type="button" aria-label="Open navigation">
+        >
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-    </div>
-    <div id="nav">
+    </header>
+    <nav id="nav">
       <router-link to="/">HOME</router-link>
       <router-link to="/projects">PROJECTS</router-link>
       <router-link to="/talks">TALKS</router-link>
       <router-link to="/dev-blog">DEV BLOG</router-link>
       <router-link to="/today-i-learned">TODAY I LEARNED</router-link>
       <router-link to="/travel-blog">TRAVEL BLOG</router-link>
-    </div>
-    <div id="main-area">
+    </nav>
+    <main id="main-area">
       <router-view />
-    </div>
-    <div id="follow-me" v-if="$route.path!=='/'">
+    </main>
+    <aside id="follow-me" v-if="$route.path!=='/'">
       <Twitter />
       <LinkedIn />
       <Github />
       <Instagram />
       <Snapchat />
       <GooglePlay />
-    </div>
-  </div>
+    </aside>
+  </main>
 </template>
 
 <script>

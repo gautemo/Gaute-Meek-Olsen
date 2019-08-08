@@ -5,9 +5,10 @@
         <div id="profile-img">
           <img
             v-if="!showAvatar"
-            src="https://66.media.tumblr.com/6fbdb030074dab5ea1d5c8db0dd65477/tumblr_pmasew4yag1xfbgtko1_1280.jpg"
-          >
-          <img v-else :src="avatar">
+            src="https://66.media.tumblr.com/d8487bef218e042992c43495ea2c7fb2/tumblr_pvx41i3UCx1xfbgtko1_r1_500.png"
+            alt="image of Gaute Meek Olsen"
+          />
+          <img v-else :src="avatar" alt="avatar of Gaute Meek Olsen" />
         </div>
         <div class="text">
           <p>
@@ -19,12 +20,12 @@
       <section>
         <p>I'm a full stack developer, with a wide set of skills!</p>
         <div id="follow">
-          <Twitter class="twitter"/>
-          <LinkedIn class="linkedin"/>
-          <Github class="github"/>
-          <Instagram class="instagram"/>
-          <Snapchat class="snapchat"/>
-          <GooglePlay class="googleplay"/>
+          <Twitter class="twitter" />
+          <LinkedIn class="linkedin" />
+          <Github class="github" />
+          <Instagram class="instagram" />
+          <Snapchat class="snapchat" />
+          <GooglePlay class="googleplay" />
         </div>
         <p>
           Use the menu to see my own projects, talks I've given, developer blog and travel blog.

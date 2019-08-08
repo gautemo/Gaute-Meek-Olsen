@@ -1,7 +1,7 @@
 
 <template>
   <article>
-    <h1>Style elements without content</h1>
+    <h1>Empty selector</h1>
     <blockquote class="twitter-tweet">
       <p lang="en" dir="ltr">
         <a href="https://twitter.com/hashtag/CSS?src=hash&amp;ref_src=twsrc%5Etfw">#CSS</a> :empty Selector ∅
@@ -22,6 +22,11 @@
         href="https://twitter.com/samantha_ming/status/1157725595926581248?ref_src=twsrc%5Etfw"
       >August 3, 2019</a>
     </blockquote>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script
+      type="application/javascript"
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
   </article>
 </template>
