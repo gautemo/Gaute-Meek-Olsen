@@ -72,8 +72,8 @@
 
 <script>
 export default {
-  name: "GooglePlay"
-};
+  name: 'GooglePlay'
+}
 </script>
 
 <style scoped>

@@ -45,21 +45,21 @@
 </template>
 
 <script>
-import Gist from "@/components/Gist.vue";
-import Share from "@/components/Share.vue";
+import Gist from '@/components/Gist.vue'
+import Share from '@/components/Share.vue'
 
 export default {
-  name: "ServiceWorkerVue",
-  data() {
+  name: 'ServiceWorkerVue',
+  data () {
     return {
-      title: "Setting up a Custom Service Worker with the Vue CLI"
-    };
+      title: 'Setting up a Custom Service Worker with the Vue CLI'
+    }
   },
   components: {
     Gist,
     Share
   }
-};
+}
 </script>
 
 <style scoped>

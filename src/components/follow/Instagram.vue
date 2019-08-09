@@ -41,8 +41,8 @@
 
 <script>
 export default {
-  name: "Instagram"
-};
+  name: 'Instagram'
+}
 </script>
 
 <style scoped>

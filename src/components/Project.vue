@@ -40,25 +40,25 @@
 
 <script>
 export default {
-  name: "blogElement",
-  props: ["p"],
-  data() {
+  name: 'blogElement',
+  props: ['p'],
+  data () {
     return {
       showDetails: false
-    };
+    }
   },
   computed: {
-    banner() {
-      return "background-color: " + this.p.color;
+    banner () {
+      return 'background-color: ' + this.p.color
     },
-    faintcolor() {
-      return `background-color: ${this.p.color}40`;
+    faintcolor () {
+      return `background-color: ${this.p.color}40`
     },
-    border() {
-      return "border-color: " + this.p.color;
+    border () {
+      return 'border-color: ' + this.p.color
     }
   }
-};
+}
 </script>
 
 <style scoped>

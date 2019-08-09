@@ -37,8 +37,8 @@
 
 <script>
 export default {
-  name: "LinkedIn"
-};
+  name: 'LinkedIn'
+}
 </script>
 
 <style scoped>

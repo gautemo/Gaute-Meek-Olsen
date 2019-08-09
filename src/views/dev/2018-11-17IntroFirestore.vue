@@ -124,19 +124,19 @@
 </template>
 
 <script>
-import Gist from "@/components/Gist.vue";
-import Share from "@/components/Share.vue";
+import Gist from '@/components/Gist.vue'
+import Share from '@/components/Share.vue'
 
 export default {
-  name: "IntroFirestore",
-  data() {
+  name: 'IntroFirestore',
+  data () {
     return {
-      title: "Intro to the easiest DB ever, Firestore"
-    };
+      title: 'Intro to the easiest DB ever, Firestore'
+    }
   },
   components: {
     Gist,
     Share
   }
-};
+}
 </script>

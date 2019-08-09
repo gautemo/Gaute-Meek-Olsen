@@ -79,19 +79,19 @@
 </template>
 
 <script>
-import Gist from "@/components/Gist.vue";
-import Share from "@/components/Share.vue";
+import Gist from '@/components/Gist.vue'
+import Share from '@/components/Share.vue'
 
 export default {
-  name: "ServiceWorkerVue",
-  data() {
+  name: 'ServiceWorkerVue',
+  data () {
     return {
-      title: "How to publish a js library to NPM and CDN"
-    };
+      title: 'How to publish a js library to NPM and CDN'
+    }
   },
   components: {
     Gist,
     Share
   }
-};
+}
 </script>

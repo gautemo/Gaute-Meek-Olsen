@@ -37,21 +37,21 @@
 </template>
 
 <script>
-import Gist from "@/components/Gist.vue";
-import Share from "@/components/Share.vue";
+import Gist from '@/components/Gist.vue'
+import Share from '@/components/Share.vue'
 
 export default {
-  name: "ServiceWorkerVue",
-  data() {
+  name: 'ServiceWorkerVue',
+  data () {
     return {
-      title: "How to Add a Script Tag in a Vue Component"
-    };
+      title: 'How to Add a Script Tag in a Vue Component'
+    }
   },
   components: {
     Gist,
     Share
   }
-};
+}
 </script>
 
 <style scoped>

@@ -23,8 +23,8 @@
 
 <script>
 export default {
-  name: "Tumblr"
-};
+  name: 'Tumblr'
+}
 </script>
 
 <style scoped>
