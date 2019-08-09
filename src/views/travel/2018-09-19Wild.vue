@@ -37,7 +37,7 @@
         <section>
           The first day, being all alone at the camp made me feel lonely. It might have been getting little sleep the day before,
           the expectation of meeting other travelers at the camp, or sitting on top of the world listening to my music,
-          which is in this <a href="https://www.youtube.com/watch?v=AdD8Emu-T64" target="_blank" >depressing-heartache relaxing music</a> category, which can set you in that mood.
+          which is in this <a href="https://www.youtube.com/watch?v=AdD8Emu-T64" target="_blank" rel="noopener">depressing-heartache relaxing music</a> category, which can set you in that mood.
           But it's okay, I think I enjoy my own company more than the rest of the world and like spending time alone.
         </section>
         <img src="https://78.media.tumblr.com/8a4a7f490bdf306d56dd7320844856db/tumblr_pfeu8pMhR81w9240l_1280.jpg" />

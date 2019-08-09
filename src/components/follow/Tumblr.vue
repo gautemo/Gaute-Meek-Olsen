@@ -3,6 +3,7 @@
     class="tumblr"
     href="https://www.tumblr.com/blog/gautemeekolsen"
     target="_blank"
+    rel="noopener"
     aria-label="Visit my Tumblr"
   >
     <svg
@@ -22,8 +23,8 @@
 
 <script>
 export default {
-  name: 'Tumblr'
-}
+  name: "Tumblr"
+};
 </script>
 
 <style scoped>

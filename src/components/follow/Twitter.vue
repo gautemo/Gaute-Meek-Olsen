@@ -3,6 +3,7 @@
     class="twitter"
     href="https://twitter.com/GauteMeekOlsen"
     target="_blank"
+    rel="noopener"
     aria-label="Visit my Twitter"
   >
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="126.444 2.281 589 589">
@@ -24,8 +25,8 @@
 
 <script>
 export default {
-  name: 'Twitter'
-}
+  name: "Twitter"
+};
 </script>
 
 <style scoped>

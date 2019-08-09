@@ -13,7 +13,7 @@
       <section>
         <h2>Google Play Console</h2>
         <ol>
-          <li>Go to your <a href="https://play.google.com/apps/publish/" target="blank">Google play console</a>.</li>
+          <li>Go to your <a href="https://play.google.com/apps/publish/" target="blank" rel="noopener">Google play console</a>.</li>
           <li>Go to <b>Game services</b> in the left menu.</li>
           <li>Open your game.</li>
           <li>Copy the <b>applicationId</b> for later.</li>
@@ -33,7 +33,7 @@
       <section>
         <h2>APIs Console</h2>
         <ol>
-          <li>Go to the tab you opened in the previous step or use this <a href="https://console.developers.google.com/apis/credentials" target="_blank">link</a>.</li>
+          <li>Go to the tab you opened in the previous step or use this <a href="https://console.developers.google.com/apis/credentials" target="_blank" rel="noopener">link</a>.</li>
           <li>Click on the web application name you created in Google Play Console step 8.</li>
           <li>Copy the <b>Client ID</b> and <b>Client Secret</b> for later. If you don’t see it you can find it in the <b>DOWNLOAD JSON</b> file.</li>
           <li>Remove the link in the Authorized redirect URIs and add <b>https://developers.google.com/oauthplayground</b>. <i>N.B. dont end the url with a slash</i>. Then save.</li>
@@ -43,7 +43,7 @@
       <section>
         <h2>OAuth 2.0 Playground</h2>
         <ol>
-          <li>Open the <a href="https://developers.google.com/oauthplayground/" target="_blank">Google Developers OAuth 2.0 Playground</a>.</li>
+          <li>Open the <a href="https://developers.google.com/oauthplayground/" target="_blank" rel="noopener">Google Developers OAuth 2.0 Playground</a>.</li>
           <li>Click the settings wheel.</li>
           <li>Check <b>Use your own OAuth credentials</b> checkbox.</li>
           <li>Enter the <b>Client ID</b> and <b>Client Secret</b> from APIs Console step 3.</li>
@@ -52,11 +52,11 @@
           <li>Click <b>Authorize APIs</b>.</li>
           <li>Sign in with your account.</li>
           <li>Click <b>Exchange authorization code for tokens</b>.</li>
-          <li>Enter the <a href="https://developers.google.com/games/services/web/api/scores/list" target="_blank">GET request </a> <b>https://www.googleapis.com/games/v1/leaderboards/<mark>leaderboardId</mark>/scores/PUBLIC?maxResults=10&timeSpan=all_time</b> and change the leaderboardId with the id you got from Google Play Console step 5.</li>
+          <li>Enter the <a href="https://developers.google.com/games/services/web/api/scores/list" target="_blank" rel="noopener">GET request </a> <b>https://www.googleapis.com/games/v1/leaderboards/<mark>leaderboardId</mark>/scores/PUBLIC?maxResults=10&timeSpan=all_time</b> and change the leaderboardId with the id you got from Google Play Console step 5.</li>
           <li>Click <b>Send the request</b>.</li>
           <li>Search for the playerId in the response. You will find it under items. Copy the playerId for the players you want to hide from the leaderboard.</li>
           <li>Change HTTP Method to <b>POST</b>.</li>
-          <li>Enter the <a href="https://developers.google.com/games/services/management/api/players/hide" target="_blank">POST request </a> <b>https://www.googleapis.com/games/v1management/applications/<mark>applicationId</mark>/players/hidden/<mark>playerId</mark></b> and change the playerId from step 11 and applicationId from Google Play Console step 4.</li>
+          <li>Enter the <a href="https://developers.google.com/games/services/management/api/players/hide" target="_blank" rel="noopener">POST request </a> <b>https://www.googleapis.com/games/v1management/applications/<mark>applicationId</mark>/players/hidden/<mark>playerId</mark></b> and change the playerId from step 11 and applicationId from Google Play Console step 4.</li>
           <li>Click <b>Send the request</b>.</li>
         </ol>
       </section>
@@ -68,7 +68,7 @@
         </div>
         There you go, the player will be gone from your leaderboard!
         If you want, you can clean up by deleting your web app from the Google Play Console and the APIs Console.
-        If you regret your hiding, you can <a href="https://developers.google.com/games/services/management/api/players/unhide" target="_blank">unhide them</a>.
+        If you regret your hiding, you can <a href="https://developers.google.com/games/services/management/api/players/unhide" target="_blank" rel="noopener">unhide them</a>.
       </section>
       <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>

@@ -9,7 +9,7 @@
       </section>
       <img src="https://66.media.tumblr.com/437164da521400873a3a93230655ee7b/tumblr_pir1ppqovW1xfbgtko1_1280.png" />
       <section>
-        <i>If you’re not familiar with Firestore, check my <a href="/dev-blog/intro-firestore" target="_blank">past developer blog.</a></i>
+        <i>If you’re not familiar with Firestore, check my <a href="/dev-blog/intro-firestore" target="_blank" rel="noopener">past developer blog.</a></i>
       </section>
       <section>
         Introducing Firestore security rules. Which looks like this.

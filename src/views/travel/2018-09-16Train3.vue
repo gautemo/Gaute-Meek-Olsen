@@ -27,7 +27,7 @@
         </section>
         <section>
           After Ulan-Ude the trees are getting fewer and fewer, the view consists of big naked hills with wild horses and cows walking around. It's mesmerizing and relaxing
-          looking out the window with this stunning view and the train making the 'gudunk gudunk gudunk' sound, <a href="https://www.noisli.com/" target="_blank">like this</a>
+          looking out the window with this stunning view and the train making the 'gudunk gudunk gudunk' sound, <a href="https://www.noisli.com/" target="_blank" rel="noopener">like this</a>
           (click on the railway symbol).
         </section>
         <ImageSlider :images="imgs" />

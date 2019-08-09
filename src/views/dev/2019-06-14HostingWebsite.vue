@@ -11,6 +11,7 @@
       <a
         href="https://console.firebase.google.com/"
         target="_blank"
+        rel="noopener"
       >Firebase console</a>.
       Then go to your terminal and perform this commands and your site will be up and running.
     </section>
@@ -49,6 +50,7 @@
       <a
         href="https://app.netlify.com/"
         target="_blank"
+        rel="noopener"
       >Netlify</a>.
       Just sign in and click the "New site from Git" button. Select your git provider and give access to the wanted repository.
       If you have deployment commands you can easy add them in the build command input. Such as

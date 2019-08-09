@@ -3,6 +3,7 @@
     class="play"
     href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen"
     target="_blank"
+    rel="noopener"
     aria-label="Visit my Android apps"
   >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 466.9" width="50" height="50">
@@ -71,8 +72,8 @@
 
 <script>
 export default {
-  name: 'GooglePlay'
-}
+  name: "GooglePlay"
+};
 </script>
 
 <style scoped>

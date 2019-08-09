@@ -81,7 +81,7 @@
           You end up carrying all your garbage with you until the end of the day.
           If you are lucky, you will find a store you can throw away your garbage at.
           Still, Japan was so clean compared to China, where they had trash cans all over the place.
-          It must be their culture or something, as you probably have seen how the Japanese fans do after a <a href="https://www.youtube.com/watch?v=5iF1WSjN4uU" target="_blank"> match in the world cup</a>.
+          It must be their culture or something, as you probably have seen how the Japanese fans do after a <a href="https://www.youtube.com/watch?v=5iF1WSjN4uU" target="_blank" rel="noopener"> match in the world cup</a>.
         </section>
         <section>
           I am coming back to Japan. Yeah, I'm pretty sure I will be back someday. Now I traveled the perfect time weather-wise.

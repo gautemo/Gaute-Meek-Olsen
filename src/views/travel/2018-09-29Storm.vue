@@ -56,11 +56,13 @@
         As if somebody pulled the planet&#39;s gigantic plug. Staring down the eye of yet another fierce storm. Category 5 Super Typhoon Trami is unstoppable and heading for Japan and Taiwan. Be safe down there!
         <a
           href="https://twitter.com/hashtag/TyphoonTrami?src=hash&amp;ref_src=twsrc%5Etfw"
+          rel="noopener"
         >#TyphoonTrami</a>
-        <a href="https://t.co/4VmY2hhj2c">pic.twitter.com/4VmY2hhj2c</a>
+        <a href="https://t.co/4VmY2hhj2c" rel="noopener">pic.twitter.com/4VmY2hhj2c</a>
       </p>&mdash; Alexander Gerst (@Astro_Alex)
       <a
         href="https://twitter.com/Astro_Alex/status/1044633209454174213?ref_src=twsrc%5Etfw"
+        rel="noopener"
       >25. september 2018</a>
     </blockquote>
     <script

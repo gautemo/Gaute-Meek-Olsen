@@ -66,29 +66,29 @@
           <ul>
             <li>
               Google Trips
-              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.travel.onthego" class="smiley" target="_blank">🤖</a>
-              <a href="https://itunes.apple.com/app/id1081561570" class="smiley" target="_blank">🍎</a>
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.travel.onthego" class="smiley" target="_blank" rel="noopener">🤖</a>
+              <a href="https://itunes.apple.com/app/id1081561570" class="smiley" target="_blank" rel="noopener">🍎</a>
             </li>
           </ul>
           <h3>Map<HoverText :hoverMeClasses="'underline'" :hoverMe="'📵'" :hoverText="'I prefer Google Maps, but offline mode does not work in China or Japan. Then MAPS.ME works great.'"/></h3>
           <ul>
             <li>
               Google Maps
-              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" class="smiley" target="_blank">🤖</a>
-              <a href="https://itunes.apple.com/app/id585027354" class="smiley" target="_blank">🍎</a>
+              <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps" class="smiley" target="_blank" rel="noopener">🤖</a>
+              <a href="https://itunes.apple.com/app/id585027354" class="smiley" target="_blank" rel="noopener">🍎</a>
             </li>
             <li>
               MAPS.ME
-              <a href="https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro" class="smiley" target="_blank">🤖</a>
-              <a href="https://itunes.apple.com/app/id510623322" class="smiley" target="_blank">🍎</a>
+              <a href="https://play.google.com/store/apps/details?id=com.mapswithme.maps.pro" class="smiley" target="_blank" rel="noopener">🤖</a>
+              <a href="https://itunes.apple.com/app/id510623322" class="smiley" target="_blank" rel="noopener">🍎</a>
             </li>
           </ul>
           <h3>Currency converter</h3>
           <ul>
             <li>
               XE
-              <a href="https://play.google.com/store/apps/details?id=com.xe.currency" class="smiley" target="_blank">🤖</a>
-              <a href="https://itunes.apple.com/app/id315241195" class="smiley" target="_blank">🍎</a>
+              <a href="https://play.google.com/store/apps/details?id=com.xe.currency" class="smiley" target="_blank" rel="noopener">🤖</a>
+              <a href="https://itunes.apple.com/app/id315241195" class="smiley" target="_blank" rel="noopener">🍎</a>
             </li>
           </ul>
         </section>

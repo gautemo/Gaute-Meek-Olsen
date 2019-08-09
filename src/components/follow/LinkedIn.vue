@@ -3,6 +3,7 @@
     class="linkedin"
     href="https://www.linkedin.com/in/gaute-meek-olsen-8256b493/"
     target="_blank"
+    rel="noopener"
     aria-label="Visit my Linkedin"
   >
     <svg
@@ -36,8 +37,8 @@
 
 <script>
 export default {
-  name: 'LinkedIn'
-}
+  name: "LinkedIn"
+};
 </script>
 
 <style scoped>

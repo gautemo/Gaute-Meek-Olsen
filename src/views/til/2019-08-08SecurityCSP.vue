@@ -7,6 +7,7 @@
       <a
         href="https://youtu.be/kIo7DNAd_oo?t=1096"
         target="_blank"
+        rel="noopener"
       >here.</a>
     </p>
     <p>
@@ -24,6 +25,7 @@
       <a
         href="https://content-security-policy.com/"
         target="_blank"
+        rel="noopener"
       >this page.</a>
     </p>
     <h6>You will encounter problems if you have a Vue project. Maybe for other frameworks as well.</h6>

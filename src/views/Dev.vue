@@ -27,6 +27,7 @@
       <a
         href="https://twitter.com/GauteMeekOlsen"
         target="_blank"
+        rel="noopener"
       >@GauteMeekOlsen</a>, maybe I can make one.
     </p>
   </div>
@@ -34,59 +35,59 @@
 
 <script>
 // @ is an alias to /src
-import BlogElement from '@/components/BlogElement.vue'
-import SearchAndFilter from '@/components/SearchAndFilter.vue'
-import { blogs } from './dev/DevBlog.vue'
+import BlogElement from "@/components/BlogElement.vue";
+import SearchAndFilter from "@/components/SearchAndFilter.vue";
+import { blogs } from "./dev/DevBlog.vue";
 
 export default {
-  name: 'dev',
+  name: "dev",
   computed: {
-    filteredBlogs: function () {
+    filteredBlogs: function() {
       return this.blogs.filter(blog => {
         if (this.filterTags.length > 0) {
           for (const t of this.filterTags) {
             if (!blog.tags.includes(t)) {
-              return false
+              return false;
             }
           }
         }
         const some = blog.tags.some(tag => {
-          return tag.toLowerCase().includes(this.filterSearch.toLowerCase())
-        })
+          return tag.toLowerCase().includes(this.filterSearch.toLowerCase());
+        });
         return (
           some ||
           blog.header.toLowerCase().includes(this.filterSearch.toLowerCase())
-        )
-      })
+        );
+      });
     },
-    tags: function () {
+    tags: function() {
       const allTags = this.filteredBlogs.reduce(
         (tags, blog) => tags.concat(blog.tags),
         []
-      )
-      return [...new Set(allTags)].sort()
+      );
+      return [...new Set(allTags)].sort();
     }
   },
   methods: {
-    updateFilterSearch: function (search) {
-      this.filterSearch = search
+    updateFilterSearch: function(search) {
+      this.filterSearch = search;
     },
-    updateFilterTags: function (tags) {
-      this.filterTags = tags
+    updateFilterTags: function(tags) {
+      this.filterTags = tags;
     }
   },
-  data () {
+  data() {
     return {
-      filterSearch: '',
+      filterSearch: "",
       filterTags: [],
       blogs: blogs
-    }
+    };
   },
   components: {
     BlogElement,
     SearchAndFilter
   }
-}
+};
 </script>
 
 <style scoped>

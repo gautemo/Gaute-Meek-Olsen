@@ -6,14 +6,17 @@
         I may be the last person to know but
         <a
           href="https://twitter.com/hashtag/TIL?src=hash&amp;ref_src=twsrc%5Etfw"
+          rel="noopener"
         >#TIL</a> you can import files based on conditions.
         <a
           href="https://twitter.com/hashtag/CSS?src=hash&amp;ref_src=twsrc%5Etfw"
+          rel="noopener"
         >#CSS</a>
-        <a href="https://t.co/w0Bd9ZVrHw">pic.twitter.com/w0Bd9ZVrHw</a>
+        <a href="https://t.co/w0Bd9ZVrHw" rel="noopener">pic.twitter.com/w0Bd9ZVrHw</a>
       </p>&mdash; Ananya Neogi (@_ananyaneogi)
       <a
         href="https://twitter.com/_ananyaneogi/status/1148882328812281856?ref_src=twsrc%5Etfw"
+        rel="noopener"
       >10. juli 2019</a>
     </blockquote>
     <script

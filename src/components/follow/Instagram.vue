@@ -3,6 +3,7 @@
     class="insta"
     href="https://www.instagram.com/gautemeek/"
     target="_blank"
+    rel="noopener"
     aria-label="Visit my Instagram"
   >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3364.7 3364.7" width="50" height="50">
@@ -40,8 +41,8 @@
 
 <script>
 export default {
-  name: 'Instagram'
-}
+  name: "Instagram"
+};
 </script>
 
 <style scoped>

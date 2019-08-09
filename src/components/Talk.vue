@@ -2,7 +2,7 @@
   <div class="grid-child">
     <div class="container" @click="showDetails = true">
       <div class="overlay" :style="faintcolor"></div>
-      <img :src="t.img">
+      <img :src="t.img" />
       <div :style="banner" class="banner">
         <h2 class="header">
           {{t.headerShort}}
@@ -14,19 +14,19 @@
       <div class="details cover" :style="border" v-on:click.stop>
         <div class="det-container">
           <h1>{{t.header}}</h1>
-          <img :src="t.img">
+          <img :src="t.img" />
           <div class="text-block cover">
             <b>Type:</b>
             {{t.type.text}} {{t.type.symbol}}
             <p>{{t.text}}</p>
-            <a v-if="t.github" :href="t.github" target="_blank">
+            <a v-if="t.github" :href="t.github" target="_blank" rel="noopener">
               <img
                 style="width: 180px;"
                 alt="Open on GitHub"
                 src="https://66.media.tumblr.com/cd17a74e0c6f61a0e898d5d70e3d5d4b/tumblr_phucw7yOPp1xfbgtko1_540.png"
-              >
+              />
             </a>
-            <a class="slides" v-if="t.slides" :href="t.slides" target="_blank">
+            <a class="slides" v-if="t.slides" :href="t.slides" target="_blank" rel="noopener">
               <svg
                 style="margin-right: 10px;"
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@
                 height="48"
                 viewBox="0 0 24 24"
               >
-                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M0 0h24v24H0z" fill="none" />
                 <path
                   d="M10 8v8l5-4-5-4zm9-5H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"
-                ></path>
+                />
               </svg>
               Go to slides
             </a>
@@ -54,25 +54,25 @@
 
 <script>
 export default {
-  name: 'talk',
-  props: ['t'],
-  data () {
+  name: "talk",
+  props: ["t"],
+  data() {
     return {
       showDetails: false
-    }
+    };
   },
   computed: {
-    banner () {
-      return 'background-color: ' + this.t.color
+    banner() {
+      return "background-color: " + this.t.color;
     },
-    faintcolor () {
-      return `background-color: ${this.t.color}30`
+    faintcolor() {
+      return `background-color: ${this.t.color}30`;
     },
-    border () {
-      return 'border-color: ' + this.t.color
+    border() {
+      return "border-color: " + this.t.color;
     }
   }
-}
+};
 </script>
 
 <style scoped>

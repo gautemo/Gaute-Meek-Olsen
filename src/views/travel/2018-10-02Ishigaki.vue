@@ -68,7 +68,7 @@
               </defs>
             <g><g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)"><path class="fish" d="M4561.5,3767.6c-25-11.4-70.4-47.7-102.2-81.7l-56.8-61.3l-11.4-653.9c-9.1-585.8-15.9-658.4-52.2-699.3c-22.7-22.7-165.8-106.7-317.9-181.6c-535.8-267.9-960.4-579-1448.6-1060.3c-413.2-411-372.4-408.7-853.7-27.3c-465.4,367.8-1223.8,833.3-1362.3,833.3c-183.9,0-272.5-118.1-247.5-326.9c22.7-193,161.2-649.4,299.7-987.7c172.6-413.2,174.8-456.4,47.7-728.8C268-610,100-1157.1,100-1370.6c0-97.6,9.1-122.6,70.4-179.4c118.1-111.3,211.2-95.4,540.4,93.1c356.5,204.3,726.6,451.8,1008.1,674.3c345.1,274.7,354.2,279.3,451.8,279.3c86.3,0,109-18.2,433.7-336c190.7-183.9,451.8-415.5,583.5-513.1c267.9-199.8,685.7-454.1,940-569.9c274.7-127.1,263.4-95.4,263.4-799.2c0-638,9.1-697.1,113.5-790.1c95.4-86.3,208.9-63.6,510.9,109c508.6,290.6,978.6,619.9,1355.5,951.4c149.8,131.7,154.4,134,456.4,211.2c851.4,213.4,1668.8,681.2,2352.3,1339.6c347.4,336,606.2,667.5,687.9,883.2c38.6,99.9,40.9,124.9,15.9,215.7c-45.4,158.9-270.2,474.5-538.1,753.8c-717.5,749.3-1593.9,1276-2508.9,1505.3l-308.8,77.2l-188.4,165.8c-363.3,315.6-815.1,628.9-1316.9,915C4756.8,3767.6,4645.6,3803.9,4561.5,3767.6z M7944.6,600.2c199.8-93.1,311.1-267.9,311.1-490.4c0-574.4-765.2-751.5-1033.1-238.4c-65.8,127.2-63.6,351.9,2.3,481.4C7361.1,616.1,7678.9,725.1,7944.6,600.2z"/></g></g>
             </svg>
-            <a class="cred" href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+            <a class="cred" href="http://www.onlinewebfonts.com" target="_blank" rel="noopener">oNline Web Fonts</a>
           </div>
           <figcaption>I wish I had this skin color!</figcaption>
         </section>
@@ -100,7 +100,7 @@
           rare blue coral, which makes snorkeling(and diving) even more interesting.
         </section>
         <div class="center-container">
-          <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/RnoIEER-Ty3fh7U8QsIIEA/178696073923" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://gautemeekolsen.tumblr.com/post/178696073923">https://gautemeekolsen.tumblr.com/post/178696073923</a></div>  <script type="application/javascript" async src="https://assets.tumblr.com/post.js"></script>
+          <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/RnoIEER-Ty3fh7U8QsIIEA/178696073923" data-did="da39a3ee5e6b4b0d3255bfef95601890afd80709"><a href="https://gautemeekolsen.tumblr.com/post/178696073923" rel="noopener">https://gautemeekolsen.tumblr.com/post/178696073923</a></div>  <script type="application/javascript" async src="https://assets.tumblr.com/post.js"></script>
         </div>
         <figcaption>If you want some crappy Japanese music! Played on a sanshin, an Okinawan (Ishigaki is part of the Okinawa islands) musical instrument and precursor of the mainland Japanese shamisen</figcaption>
         <div v-if="info.length > 0" class="infobox" @click="info = ''">

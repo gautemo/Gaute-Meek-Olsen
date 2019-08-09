@@ -1,5 +1,11 @@
 <template>
-  <a class="github" href="https://github.com/gautemo" target="_blank" aria-label="Visit my GitHub">
+  <a
+    class="github"
+    href="https://github.com/gautemo"
+    target="_blank"
+    rel="noopener"
+    aria-label="Visit my GitHub"
+  >
     <svg
       version="1.2"
       baseProfile="tiny"
@@ -28,8 +34,8 @@
 
 <script>
 export default {
-  name: 'Github'
-}
+  name: "Github"
+};
 </script>
 
 <style scoped>

@@ -2,7 +2,7 @@
   <div class="grid-child">
     <div class="container" @click="showDetails = true">
       <div class="overlay" :style="faintcolor"></div>
-      <img :src="p.img">
+      <img :src="p.img" />
       <div :style="banner" class="banner">
         <h2 class="header">{{p.header}}</h2>
         <p class="small-header">{{p.smallheader}}</p>
@@ -12,21 +12,21 @@
       <div class="details cover" :style="border" v-on:click.stop>
         <div class="det-container">
           <h1>{{p.header}}</h1>
-          <img :src="p.img">
+          <img :src="p.img" />
           <p>{{p.text}}</p>
-          <a v-if="p.googleplay" :href="p.googleplay" target="_blank">
+          <a v-if="p.googleplay" :href="p.googleplay" target="_blank" rel="noopener">
             <img
               style="width: 200px;"
               alt="Get it on Google Play"
               src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-            >
+            />
           </a>
-          <a v-if="p.github" :href="p.github" target="_blank">
+          <a v-if="p.github" :href="p.github" target="_blank" rel="noopener">
             <img
               style="width: 180px; margin-bottom: 15px;"
               alt="Open on GitHub"
               src="https://66.media.tumblr.com/cd17a74e0c6f61a0e898d5d70e3d5d4b/tumblr_phucw7yOPp1xfbgtko1_540.png"
-            >
+            />
           </a>
           <div class="tech-container">
             <b>Tech:</b>
@@ -40,25 +40,25 @@
 
 <script>
 export default {
-  name: 'blogElement',
-  props: ['p'],
-  data () {
+  name: "blogElement",
+  props: ["p"],
+  data() {
     return {
       showDetails: false
-    }
+    };
   },
   computed: {
-    banner () {
-      return 'background-color: ' + this.p.color
+    banner() {
+      return "background-color: " + this.p.color;
     },
-    faintcolor () {
-      return `background-color: ${this.p.color}40`
+    faintcolor() {
+      return `background-color: ${this.p.color}40`;
     },
-    border () {
-      return 'border-color: ' + this.p.color
+    border() {
+      return "border-color: " + this.p.color;
     }
   }
-}
+};
 </script>
 
 <style scoped>

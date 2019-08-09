@@ -25,7 +25,7 @@
         <section>
           It's weird how new faces seems so familiar straight away. After just five minutes with them, its like they are someone I have been around before.
           But I haven't, they're completely new to me. I feel this now, but also on my backpacking trip. Sometimes after a while, I remember who they remind me of,
-          and sometimes not. It's like the <a href="https://www.youtube.com/watch?v=tlTKTTt47WE">simulation</a> is failing me!
+          and sometimes not. It's like the <a href="https://www.youtube.com/watch?v=tlTKTTt47WE" target="_blank" rel="noopener">simulation</a> is failing me!
         </section>
         <section>
           With the hostel people, they guessed I was 20 years old. Maybe I have a really young face? I don't know. Then I told them I was 38 years old,
