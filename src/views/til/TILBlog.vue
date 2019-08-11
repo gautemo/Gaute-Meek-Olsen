@@ -41,7 +41,7 @@ const vue = []
 
 const security = [
   {
-    title: 'CSP',
+    title: 'CSP (web)',
     url: 'security-csp',
     comp: '2019-08-08SecurityCSP'
   }
