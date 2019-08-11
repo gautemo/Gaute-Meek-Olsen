@@ -3,6 +3,19 @@
 </template>
 
 <script>
+const android = [
+  {
+    title: 'Fragment Transactions with Kotlin',
+    url: 'android-transaction-kotlin',
+    comp: '2019-08-11AndroidKotlinTransaction'
+  },
+  {
+    title: 'Button with image and text',
+    url: 'android-button-img-text',
+    comp: '2019-08-06AndroidButtonImgText'
+  }
+]
+
 const css = [
   {
     title: 'Empty selector',
@@ -16,15 +29,15 @@ const css = [
   }
 ]
 
-const vue = []
-
-const android = [
+const html = [
   {
-    title: 'Button with image and text',
-    url: 'android-button-img-text',
-    comp: '2019-08-06AndroidButtonImgText'
+    title: 'rel=noopener',
+    url: 'html-noopener',
+    comp: '2019-08-11HTMLNoOpener'
   }
 ]
+
+const vue = []
 
 const security = [
   {
@@ -42,6 +55,10 @@ const til = [
   {
     type: 'CSS',
     links: css
+  },
+  {
+    type: 'HTML',
+    links: html
   },
   {
     type: 'Vue',
