@@ -5,6 +5,11 @@
 <script>
 const android = [
   {
+    title: 'Efficient Bitmaps',
+    url: 'android-bitmap-efficient',
+    comp: '2019-08-12AndroidBitmapEfficient'
+  },
+  {
     title: 'Fragment Transactions with Kotlin',
     url: 'android-transaction-kotlin',
     comp: '2019-08-11AndroidKotlinTransaction'
