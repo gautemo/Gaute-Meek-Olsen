@@ -11,14 +11,13 @@
     />
     <figcaption>The wanted outcome</figcaption>
     <p>
-      <span class="code block">
-        &lt;Button
-        <br />android:text="Start"
-        <br />android:drawableTop="@drawable/start_wrap"
-        <br />android:drawableTint="@android:color/white"
-        <br />android:drawablePadding="10dp"
-        <br />android:background="@android:color/transparent"
-        <br />android:textColor="@android:color/white"/&gt;
+      <span class="code block">&lt;Button
+        android:text="Start"
+        android:drawableTop="@drawable/start_wrap"
+        android:drawableTint="@android:color/white"
+        android:drawablePadding="10dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"/&gt;
       </span>
     </p>
     <p>You can also place the image under, to the left or right.</p>
@@ -26,16 +25,14 @@
       The reason I have wrapped my drawable in another drawable is to control the size just for this button. Like this:
       <span
         class="code block"
-      >
-        &lt;?xml version="1.0" encoding="utf-8"?&gt;
-        <br />&lt;layer-list xmlns:android="http://schemas.android.com/apk/res/android" &gt;
-        <br />&nbsp;&nbsp;&lt;item
-        <br />&nbsp;&nbsp;android:drawable="@drawable/baseline_camera_enhance_24"
-        <br />&nbsp;&nbsp;android:width="40dp"
-        <br />&nbsp;&nbsp;android:height="40dp"
-        <br />&nbsp;&nbsp;/&gt;
-        <br />&lt;/layer-list &gt;
-        <br />
+      >&lt;?xml version="1.0" encoding="utf-8"?&gt;
+        &lt;layer-list xmlns:android="http://schemas.android.com/apk/res/android" &gt;
+        &nbsp;&nbsp;&lt;item
+        &nbsp;&nbsp;android:drawable="@drawable/baseline_camera_enhance_24"
+        &nbsp;&nbsp;android:width="40dp"
+        &nbsp;&nbsp;android:height="40dp"
+        &nbsp;&nbsp;/&gt;
+        &lt;/layer-list &gt;
       </span>
     </p>
   </article>

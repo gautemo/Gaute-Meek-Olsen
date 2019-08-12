@@ -38,12 +38,6 @@
 
 <script>
 // @ is an alias to /src
-import Twitter from '@/components/follow/Twitter.vue'
-import Instagram from '@/components/follow/Instagram.vue'
-import Github from '@/components/follow/Github.vue'
-import GooglePlay from '@/components/follow/GooglePlay.vue'
-import Snapchat from '@/components/follow/Snapchat.vue'
-import LinkedIn from '@/components/follow/LinkedIn.vue'
 
 const background = [
   'https://66.media.tumblr.com/06655912c488015222373ae8ad18930e/tumblr_phmfvgJI3u1xfbgtko1_1280.jpg',
@@ -107,12 +101,12 @@ export default {
     }
   },
   components: {
-    Twitter,
-    Instagram,
-    Github,
-    GooglePlay,
-    Snapchat,
-    LinkedIn
+    Twitter: () => import(`@/components/follow/Twitter`),
+    Instagram: () => import(`@/components/follow/Instagram`),
+    Github: () => import(`@/components/follow/Github`),
+    GooglePlay: () => import(`@/components/follow/GooglePlay`),
+    Snapchat: () => import(`@/components/follow/Snapchat`),
+    LinkedIn: () => import(`@/components/follow/LinkedIn`)
   }
 }
 

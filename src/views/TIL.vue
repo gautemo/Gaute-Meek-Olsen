@@ -3,7 +3,10 @@
     <h1>Today I learned</h1>
     <div class="grid">
       <div v-for="b in blogs" :key="b.type">
-        <h2>{{b.type}}</h2>
+        <header>
+          <div class="icon" v-html="b.icon"></div>
+          <h2>{{b.type}}</h2>
+        </header>
         <ul>
           <li v-for="link in b.links" :key="link.url">
             <a :href="'today-i-learned/' + link.url">{{link.title}}</a>
@@ -54,7 +57,16 @@ li {
   margin: 10px 0;
 }
 
-h2 {
+header {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 10px;
+  align-items: center;
   border-bottom: 1px solid var(--black);
+}
+
+.icon >>> svg {
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -1,8 +1,10 @@
 <template>
-  <component :is="comp"></component>
+  <component class="til" :is="comp"></component>
 </template>
 
 <script>
+import icons from './icons'
+
 const android = [
   {
     title: 'Efficient Bitmaps',
@@ -36,13 +38,24 @@ const css = [
 
 const html = [
   {
+    title: 'Dropdown with Searchable Text',
+    url: 'html-input-search-dropdown',
+    comp: '2019-08-12HTMLInputDropdownSearch'
+  },
+  {
     title: 'rel=noopener',
     url: 'html-noopener',
     comp: '2019-08-11HTMLNoOpener'
   }
 ]
 
-const vue = []
+const vue = [
+  {
+    title: 'Break Scoped CSS',
+    url: 'vue-break-scoped-css',
+    comp: '2019-08-12VueBreakScopedCSS'
+  }
+]
 
 const security = [
   {
@@ -55,23 +68,28 @@ const security = [
 const til = [
   {
     type: 'Android',
-    links: android
+    links: android,
+    icon: icons.android
   },
   {
     type: 'CSS',
-    links: css
+    links: css,
+    icon: icons.css
   },
   {
     type: 'HTML',
-    links: html
-  },
-  {
-    type: 'Vue',
-    links: vue
+    links: html,
+    icon: icons.html
   },
   {
     type: 'Security',
-    links: security
+    links: security,
+    icon: icons.security
+  },
+  {
+    type: 'Vue',
+    links: vue,
+    icon: icons.vue
   }
 ]
 
@@ -98,3 +116,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.til > :last-child {
+  margin-bottom: 40px;
+}
+</style>

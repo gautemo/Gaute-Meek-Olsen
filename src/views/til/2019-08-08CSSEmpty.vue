@@ -8,8 +8,8 @@
           href="https://twitter.com/hashtag/CSS?src=hash&amp;ref_src=twsrc%5Etfw"
           rel="noopener"
         >#CSS</a> :empty Selector ∅
-        <br />
-        <br />Often, we want to style elements that contain content. How about when an element has no children or text at all? Easy, you can use the :empty selector 🤩
+
+        Often, we want to style elements that contain content. How about when an element has no children or text at all? Easy, you can use the :empty selector 🤩
         <a
           href="https://twitter.com/hashtag/100DaysOfCode?src=hash&amp;ref_src=twsrc%5Etfw"
           rel="noopener"

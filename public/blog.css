@@ -114,6 +114,7 @@ article a:hover {
   margin: 15px 0;
   padding: 15px;
   overflow-wrap: break-word;
+  white-space: pre-line;
 }
 
 @media only screen and (max-width: 768px) {
