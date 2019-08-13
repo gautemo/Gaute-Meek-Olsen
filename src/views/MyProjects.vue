@@ -62,18 +62,6 @@ export default {
         },
         {
           img:
-            'https://66.media.tumblr.com/3a62762bec5b8388d1ab581ec7ba623f/tumblr_phvyyuvYC21xfbgtko6_1280.png',
-          header: 'Run from Robots',
-          smallheader: 'Android app, game',
-          text:
-            "Run from Robots is a game where you need to survive for as long as you can. Don't get caught by the robots. This game is a re-creating of my first desktop game.",
-          googleplay:
-            'https://play.google.com/store/apps/details?id=gautemo.game.runaway',
-          tech: ['Android', 'Java'],
-          color: '#4d5d7b'
-        },
-        {
-          img:
             'https://66.media.tumblr.com/d8bd9995781f3cb1eae489a0d1d0582e/tumblr_phvyyuvYC21xfbgtko7_1280.png',
           header: 'Word of the Day',
           smallheader: 'Android app',
@@ -83,6 +71,18 @@ export default {
             'https://play.google.com/store/apps/details?id=gautemo.app.wordoftheday',
           tech: ['Android', 'Java'],
           color: '#ffd42a'
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/3a62762bec5b8388d1ab581ec7ba623f/tumblr_phvyyuvYC21xfbgtko6_1280.png',
+          header: 'Run from Robots',
+          smallheader: 'Android app, game',
+          text:
+            "Run from Robots is a game where you need to survive for as long as you can. Don't get caught by the robots. This game is a re-creating of my first desktop game.",
+          googleplay:
+            'https://play.google.com/store/apps/details?id=gautemo.game.runaway',
+          tech: ['Android', 'Java'],
+          color: '#4d5d7b'
         },
         {
           img:

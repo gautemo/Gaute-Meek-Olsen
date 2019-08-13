@@ -65,6 +65,14 @@ const security = [
   }
 ]
 
+const js = [
+  {
+    title: 'catch errors with async await',
+    url: 'js-catch-await',
+    comp: '2019-08-13JSAwaitCatch'
+  }
+]
+
 const til = [
   {
     type: 'Android',
@@ -80,6 +88,11 @@ const til = [
     type: 'HTML',
     links: html,
     icon: icons.html
+  },
+  {
+    type: 'JavaScript',
+    links: js,
+    icon: icons.js
   },
   {
     type: 'Security',
