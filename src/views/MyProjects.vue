@@ -25,8 +25,17 @@ export default {
             'Calc Fast is my biggest success so far! With daily players all over the world and many hundred thousands downloads. Calc Fast is a math game where you have 60 seconds to answer as many equations as possible. Giving you a score you can compete in the leaderboard with or just try to improve next time you play.',
           googleplay:
             'https://play.google.com/store/apps/details?id=gautemo.game.calcfast',
-          tech: ['Android', 'Java', 'Firebase'],
+          tech: ['Android', 'Kotlin', 'Java', 'Firebase'],
           color: '#43800c'
+        },
+        {
+          img: 'https://66.media.tumblr.com/7f80efed386392de79700981d43d1cf1/tumblr_pw6d4oNS5a1xfbgtko1_1280.png',
+          header: 'Camera Timer',
+          smallheader: 'Android app',
+          text: 'This is a camera app that takes multiple photos in an interval. Simply pick your wanted initial delay, interval and how many photos you want.',
+          googleplay: 'https://play.google.com/store/apps/details?id=app.gautemo.cameratimer',
+          tech: ['Android', 'Kotlin'],
+          color: '#006064'
         },
         {
           img:

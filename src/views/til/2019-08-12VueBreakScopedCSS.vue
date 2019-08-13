@@ -35,6 +35,7 @@
         <Instagram />
         <GooglePlay />
     </footer>
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/TIL?src=hash&amp;ref_src=twsrc%5Etfw">#TIL</a> Today I Learned you can break out of scoped CSS in Vue <a href="https://twitter.com/vuejs?ref_src=twsrc%5Etfw">@vuejs</a>. <a href="https://t.co/2vOonhpGJl">https://t.co/2vOonhpGJl</a> <a href="https://twitter.com/hashtag/VueJS?src=hash&amp;ref_src=twsrc%5Etfw">#VueJS</a> <a href="https://twitter.com/hashtag/Vue?src=hash&amp;ref_src=twsrc%5Etfw">#Vue</a> <a href="https://t.co/4do9UDIRyT">pic.twitter.com/4do9UDIRyT</a></p>&mdash; Gaute Meek Olsen (@GauteMeekOlsen) <a href="https://twitter.com/GauteMeekOlsen/status/1161044977381777409?ref_src=twsrc%5Etfw">August 12, 2019</a></blockquote> <script async  type="application/javascript" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>
 </template>
 
