@@ -73,6 +73,14 @@ const js = [
   }
 ]
 
+const git = [
+  {
+    title: 'Undo all local changes',
+    url: 'git-undo-locally',
+    comp: '2019-09-20GitUndoAllLocally'
+  }
+]
+
 const til = [
   {
     type: 'Android',
@@ -83,6 +91,11 @@ const til = [
     type: 'CSS',
     links: css,
     icon: icons.css
+  },
+  {
+    type: 'Git',
+    links: git,
+    icon: icons.git
   },
   {
     type: 'HTML',
