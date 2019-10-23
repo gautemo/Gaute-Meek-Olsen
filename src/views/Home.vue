@@ -18,7 +18,7 @@
         </div>
       </header>
       <section>
-        <p>I'm a full stack developer, with a wide set of skills!</p>
+        <p>Sometimes I do frontend, sometimes I do backend, sometimes I do mobile development. But I always do what is fun!</p>
         <div id="follow">
           <Twitter class="twitter" />
           <LinkedIn class="linkedin" />
