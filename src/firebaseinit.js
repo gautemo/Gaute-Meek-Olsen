@@ -1,4 +1,5 @@
 import * as firebase from 'firebase/app'
+import 'firebase/analytics'
 import 'firebase/performance'
 
 const init = () => {
@@ -12,7 +13,7 @@ const init = () => {
     appId: '1:1045254237387:web:e6741be087d0b378'
   }
   firebase.initializeApp(firebaseConfig)
-
+  firebase.analytics()
   firebase.performance()
 }
 
