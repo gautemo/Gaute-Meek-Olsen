@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style scoped>
-.github:hover .path {
+.github:hover .path, .github:focus .path {
   fill: black;
 }
 .path {

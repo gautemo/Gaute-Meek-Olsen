@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.tumblr:hover .path {
+.tumblr:hover .path, .tumblr:focus .path {
   fill: #303d4d;
 }
 .path {

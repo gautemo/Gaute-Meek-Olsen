@@ -42,7 +42,7 @@ export default {
 .snapchat {
   cursor: pointer;
 }
-.snapchat:hover .around {
+.snapchat:hover .around, .snapchat:focus .around {
   fill: #fffc00;
 }
 .around {

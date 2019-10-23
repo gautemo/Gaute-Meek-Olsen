@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style scoped>
-.twitter:hover .circle {
+.twitter:hover .circle, .twitter:focus .circle {
   fill: #2daae1;
 }
 .circle {

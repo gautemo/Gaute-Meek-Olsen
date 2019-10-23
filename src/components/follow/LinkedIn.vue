@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style scoped>
-.linkedin:hover .circle {
+.linkedin:hover .circle, .linkedin:focus .circle {
   fill: url(#a);
 }
 .circle {

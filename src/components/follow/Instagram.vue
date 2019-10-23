@@ -46,10 +46,10 @@ export default {
 </script>
 
 <style scoped>
-.insta:hover .path-one {
+.insta:hover .path-one, .insta:focus .path-one {
   fill: url(#0);
 }
-.insta:hover .path-two {
+.insta:hover .path-two, .insta:focus .path-two {
   fill: url(#1);
 }
 .path-one,

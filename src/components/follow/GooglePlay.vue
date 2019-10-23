@@ -77,16 +77,16 @@ export default {
 </script>
 
 <style scoped>
-.play:hover .st0 {
+.play:hover .st0, .play:focus .st0 {
   fill: url(#SVGID_1_);
 }
-.play:hover .st1 {
+.play:hover .st1, .play:focus .st1 {
   fill: url(#SVGID_2_);
 }
-.play:hover .st2 {
+.play:hover .st2, .play:focus .st2 {
   fill: url(#SVGID_3_);
 }
-.play:hover .st3 {
+.play:hover .st3, .play:focus .st3 {
   fill: url(#SVGID_4_);
 }
 .st0,

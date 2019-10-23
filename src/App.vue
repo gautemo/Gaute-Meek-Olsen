@@ -94,7 +94,7 @@ body {
 #nav a:first-child {
   margin-top: 50px;
 }
-#nav a:hover {
+#nav a:hover, #nav a:focus {
   background-color: var(--blue-dark);
   border-left: 4px solid var(--white);
   text-shadow: var(--black) -2px 2px 2px;
