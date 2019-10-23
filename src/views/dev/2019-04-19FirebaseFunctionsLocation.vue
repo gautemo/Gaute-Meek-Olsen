@@ -20,10 +20,14 @@
       <ul>
         <li>us-central1 (Iowa)</li>
         <li>us-east1 (South Carolina)</li>
+        <li>us-east4 (Northern Virginia)</li>
         <li>europe-west1 (Belgium)</li>
+        <li>europe-west2 (London)</li>
+        <li>asia-east2 (Hong Kong)</li>
         <li>asia-northeast1 (Tokyo)</li>
       </ul>
     </section>
+    <a href="https://firebase.google.com/docs/functions/locations" target="_blank" rel="noopener">Updated docs</a>
     <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
