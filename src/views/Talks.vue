@@ -66,6 +66,45 @@ export default {
         },
         {
           img:
+            'https://66.media.tumblr.com/dc5a882a7f6480055a0b9e559e743444/tumblr_prihfxYstC1xfbgtko1_400.png',
+          header: `What's new in ES10`,
+          headerShort: 'New in ES10',
+          type: {
+            text: 'Lightning talk & live coding',
+            symbol: '⚡'
+          },
+          text:
+            `June 2019 a new version of JavaScript was released. Let's look at flat & flatMap, fromEntries, Optional catch binding, trimStart & trimEnd in ES10/ES2019`,
+          github: 'https://github.com/gautemo/ES-Intro/tree/master/es10',
+          tech: ['JavaScript'],
+          color: '#efc034'          
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/1718a827b9e03d0beba0a14aecf7cc4e/3128718511b46d6d-9c/s500x750/b5f114961c9ec4a193f611b3776d5bf8a2d115c1.png',
+          header: `Getting started with Android Development`,
+          headerShort: 'Getting started with Android',
+          type: {
+            text: 'Live coding',
+            symbol: '👨‍🏫'
+          },
+          text:
+            `Let's go through:
+            -Android Studio
+            -Create a Android project
+            -Activity
+            -Fragment
+            -App lifecycle
+            -Layouts
+            -Communicate and manipulate layout
+            `,
+          github: 'https://github.com/gautemo/ES-Intro/tree/master/es10',
+          resources: [{name: 'Codelab; First App', link: 'https://codelabs.developers.google.com/codelabs/build-your-first-android-app/#0'}, {name: 'Codelab; Fundamentals', link: 'https://codelabs.developers.google.com/codelabs/android-training-welcome/#0'}],
+          tech: ['Android', 'Java'],
+          color: '#3ddc84'          
+        },
+        {
+          img:
             'https://66.media.tumblr.com/08adfe03c280ad4fb8388fecce8b47c0/tumblr_pm5t2evTEr1xfbgtko1_1280.png',
           header: 'Getting Started with Vue.js & using it in SPFx',
           headerShort: 'Vue.js & SPFx',

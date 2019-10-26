@@ -18,7 +18,7 @@
           <div class="text-block cover">
             <b>Type:</b>
             {{t.type.text}} {{t.type.symbol}}
-            <p>{{t.text}}</p>
+            <p class="desc">{{t.text}}</p>
             <a v-if="t.github" :href="t.github" target="_blank" rel="noopener">
               <img
                 style="width: 180px;"
@@ -41,6 +41,12 @@
               </svg>
               Go to slides
             </a>
+            <p v-if="t.resources" class="more">To learn more: </p>
+            <p class="more" v-for="(r, i) in t.resources" :key="r.link">
+              <a class="more" :href="r.link" target="_blank" rel="noopener">{{r.name}}</a>
+              <span v-if="i < t.resources.length - 2">, </span>
+              <span v-else-if="i === t.resources.length - 2"> and </span>
+            </p>
             <div class="tech-container">
               <b>Tech:</b>
               <span class="tech" v-for="tech in t.tech" v-bind:key="tech">{{tech}}</span>
@@ -162,7 +168,7 @@ export default {
 }
 
 .tech-container {
-  margin-bottom: 50px;
+  margin: 5px 0 50px 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -203,6 +209,17 @@ a {
   font-weight: bold;
   font-size: 1.2em;
   align-items: center;
+}
+
+.desc{
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+.more{
+  display: inline-block;
+  white-space: pre-wrap;
+  margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
