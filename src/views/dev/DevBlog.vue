@@ -6,10 +6,19 @@
 const blogs = [
   {
     img:
+      'https://66.media.tumblr.com/3bf9461a9f9de39fc26809b8858606bc/e46b6576cf3caf57-97/s1280x1920/69487601e88f65af49cbd5efdcf8c302d20e9866.png',
+    header: 'Vue, guard routes with Firebase Authentication',
+    text: `With Vue Router you might want to guard som paths and redirect users to a signup page if they are not authenticated.`,
+    tags: ['Vue', 'Firebase'],
+    url: 'vue-router-firebase-auth',
+    comp: '2019-11-17VueRouteFirebaseAuth'
+  },
+  {
+    img:
       'https://66.media.tumblr.com/32e6864d3184fcb13ba1a14e576caecc/tumblr_pinzimXE8w1xfbgtko1_1280.png',
     header: 'Intro to TypeScript',
     text: `Let's learn the strict syntactical superset of JavaScript called TypeScript. Also reffered to as JavaScript that scales.`,
-    tags: [],
+    tags: ['TypeScript'],
     url: 'intro-typescript',
     comp: '2019-06-28IntroTypeScript'
   },
@@ -18,7 +27,7 @@ const blogs = [
       'https://66.media.tumblr.com/299b3d8067275b52073d566375b5af2c/tumblr_pt3vtdTq6w1xfbgtko1_r1_1280.png',
     header: 'Hosting your website',
     text: 'Hosting your website is super easy through Firebase or Netlify.',
-    tags: [],
+    tags: ['Firebase', 'Netlify'],
     url: 'hosting-website',
     comp: '2019-06-14HostingWebsite'
   },

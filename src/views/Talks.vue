@@ -77,7 +77,7 @@ export default {
             `June 2019 a new version of JavaScript was released. Let's look at flat & flatMap, fromEntries, Optional catch binding, trimStart & trimEnd in ES10/ES2019`,
           github: 'https://github.com/gautemo/ES-Intro/tree/master/es10',
           tech: ['JavaScript'],
-          color: '#efc034'          
+          color: '#efc034'
         },
         {
           img:
@@ -99,9 +99,9 @@ export default {
             -Communicate and manipulate layout
             `,
           github: 'https://github.com/gautemo/ES-Intro/tree/master/es10',
-          resources: [{name: 'Codelab; First App', link: 'https://codelabs.developers.google.com/codelabs/build-your-first-android-app/#0'}, {name: 'Codelab; Fundamentals', link: 'https://codelabs.developers.google.com/codelabs/android-training-welcome/#0'}],
+          resources: [{ name: 'Codelab; First App', link: 'https://codelabs.developers.google.com/codelabs/build-your-first-android-app/#0' }, { name: 'Codelab; Fundamentals', link: 'https://codelabs.developers.google.com/codelabs/android-training-welcome/#0' }],
           tech: ['Android', 'Java'],
-          color: '#3ddc84'          
+          color: '#3ddc84'
         },
         {
           img:

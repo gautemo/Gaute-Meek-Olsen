@@ -33,6 +33,16 @@ const css = [
     title: 'Import files based on condition',
     url: 'css-import-condition',
     comp: '2019-07-10CSSImport'
+  },
+  {
+    title: 'Responsive with CSS Grid auto-fill',
+    url: 'css-grid-auto-fill',
+    comp: '2019-11-17CSSGridAuto'
+  },
+  {
+    title: 'Fix input width and padding issue',
+    url: 'css-input-margin-issue',
+    comp: '2019-11-17CSSInputWidthPaddingIssue'
   }
 ]
 
@@ -54,10 +64,25 @@ const vue = [
     title: 'Break Scoped CSS',
     url: 'vue-break-scoped-css',
     comp: '2019-08-12VueBreakScopedCSS'
+  },
+  {
+    title: 'Active router link CSS class',
+    url: 'vue-router-link-active',
+    comp: '2019-11-17VueActiveRoute'
+  },
+  {
+    title: 'Fix PWA routing start url',
+    url: 'vue-pwa-start-url',
+    comp: '2019-11-17VuePWAStartUrl'
   }
 ]
 
 const security = [
+  {
+    title: 'Disallow npm to run other scripts',
+    url: 'security-npm-install-scripts',
+    comp: '2019-11-17SecurityNPMScripts'
+  },
   {
     title: 'CSP (web)',
     url: 'security-csp',
@@ -70,6 +95,11 @@ const js = [
     title: 'catch errors with async await',
     url: 'js-catch-await',
     comp: '2019-08-13JSAwaitCatch'
+  },
+  {
+    title: 'Set to array',
+    url: 'js-set-to-array',
+    comp: '2019-11-17JSSetToArray'
   }
 ]
 
@@ -78,6 +108,24 @@ const git = [
     title: 'Undo all local changes',
     url: 'git-undo-locally',
     comp: '2019-09-20GitUndoAllLocally'
+  },
+  {
+    title: 'Connect folder to repository',
+    url: 'git-folder-to-repo',
+    comp: '2019-11-17GitFolderToRepo'
+  },
+  {
+    title: 'Check for changes with .ps',
+    url: 'git-changes-ps',
+    comp: '2019-11-17GitScriptCheckChanges'
+  }
+]
+
+const firebase = [
+  {
+    title: 'Fieldvalue for Firestore',
+    url: 'firebase-fieldvalue',
+    comp: '2019-11-17FirebaseFieldvalue'
   }
 ]
 
@@ -96,6 +144,11 @@ const til = [
     type: 'Git',
     links: git,
     icon: icons.git
+  },
+  {
+    type: 'Firebase',
+    links: firebase,
+    icon: icons.firebase
   },
   {
     type: 'HTML',
