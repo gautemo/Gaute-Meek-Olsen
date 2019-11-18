@@ -7,6 +7,15 @@ const blogs = [
   {
     img:
       'https://66.media.tumblr.com/3bf9461a9f9de39fc26809b8858606bc/e46b6576cf3caf57-97/s1280x1920/69487601e88f65af49cbd5efdcf8c302d20e9866.png',
+    header: 'Fieldvalue for Firestore',
+    text: `Leverage the Fieldvalue in Firestore when incrementing fields, altering arrays, using the server time or deleting fields.`,
+    tags: ['Firebase', 'Firestore'],
+    url: 'firestore-fieldvalue',
+    comp: '2019-11-17FirestoreFieldvalue'
+  },
+  {
+    img:
+      'https://66.media.tumblr.com/3bf9461a9f9de39fc26809b8858606bc/e46b6576cf3caf57-97/s1280x1920/69487601e88f65af49cbd5efdcf8c302d20e9866.png',
     header: 'Vue, guard routes with Firebase Authentication',
     text: `With Vue Router you might want to guard som paths and redirect users to a signup page if they are not authenticated.`,
     tags: ['Vue', 'Firebase'],
