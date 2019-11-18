@@ -12,12 +12,10 @@
     </p>
     <p>
       You wan't to add something like this to your head tag in the html file.
-      <span
-        class="code block"
-      >
+      <pre class="code block">
         &lt;meta http-equiv="Content-Security-Policy"
         content="default-src 'self' https://www.googletagmanager.com; img-src 'self' https://*; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"&gt;
-      </span>
+      </pre>
     </p>
     <p>If some attackers have managed to get, let's say a script tag into your browser, this would stop that script from running.</p>
     <p>

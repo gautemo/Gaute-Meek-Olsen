@@ -6,8 +6,8 @@
       This could potentially be mallicius code or viruses allowed to run directly on your computer.
     </p>
     <p>
-      This could be disallowed with <span class="code">npm install --ignore-scripts</span>
-      or disallowed all the time with <span class="code">npm config set ignore-scripts true</span>
+      This could be disallowed with <span class="cmd">npm install --ignore-scripts</span>
+      or disallowed all the time with <span class="cmd">npm config set ignore-scripts true</span>
     </p>
     <p>
       This could lead to problems you need to fix if the package relies on those scripts.

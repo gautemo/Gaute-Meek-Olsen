@@ -2,7 +2,8 @@
   <article>
     <h1>Dropdown with Searchable Text</h1>
     <p>It is really easy to create an input field with a searchable dropdown with just HTML</p>
-    <span class="code block">&lt;label for="myHouse"&gt;Choose your magical house:&lt;/label&gt;
+    <pre class="code block">
+      &lt;label for="myHouse"&gt;Choose your magical house:&lt;/label&gt;
       &lt;input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." /&gt;
       &lt;datalist id="magicHouses"&gt;
       &nbsp;&nbsp;&lt;option value="Gryfindor"&gt;
@@ -14,12 +15,13 @@
       &nbsp;&nbsp;&lt;option value="Pukwudgie"&gt;
       &nbsp;&nbsp;&lt;option value="Wampus"&gt;
       &lt;/datalist&gt;
-    </span>
+    </pre>
     <p>You can also add more options with JavaScript like this.</p>
-    <span class="code block">const option = document.createElement('option');
+    <pre class="code block">
+      const option = document.createElement('option');
       option.value = 'Fortress of Solitude';
       document.querySelector('#magicHouses').appendChild(option);
-    </span>
+    </pre>
     <p>The result</p>
     <label for="myHouse">Choose your magical house:</label>
     <input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." />

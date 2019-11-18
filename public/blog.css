@@ -103,6 +103,11 @@ article a:hover, article a:focus {
     padding: 5px 15px;
 }
 
+article pre{
+    display: inline-block;
+    margin: 0;
+}
+
 .code {
   background: rgb(194, 194, 194);
   border-radius: 2px;

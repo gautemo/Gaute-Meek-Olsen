@@ -11,21 +11,21 @@
     />
     <figcaption>The wanted outcome</figcaption>
     <p>
-      <span class="code block">&lt;Button
+      <pre class="code block">
+        &lt;Button
         android:text="Start"
         android:drawableTop="@drawable/start_wrap"
         android:drawableTint="@android:color/white"
         android:drawablePadding="10dp"
         android:background="@android:color/transparent"
         android:textColor="@android:color/white"/&gt;
-      </span>
+      </pre>
     </p>
     <p>You can also place the image under, to the left or right.</p>
     <p>
       The reason I have wrapped my drawable in another drawable is to control the size just for this button. Like this:
-      <span
-        class="code block"
-      >&lt;?xml version="1.0" encoding="utf-8"?&gt;
+      <pre class="code block">
+        &lt;?xml version="1.0" encoding="utf-8"?&gt;
         &lt;layer-list xmlns:android="http://schemas.android.com/apk/res/android" &gt;
         &nbsp;&nbsp;&lt;item
         &nbsp;&nbsp;android:drawable="@drawable/baseline_camera_enhance_24"
@@ -33,7 +33,7 @@
         &nbsp;&nbsp;android:height="40dp"
         &nbsp;&nbsp;/&gt;
         &lt;/layer-list &gt;
-      </span>
+      </pre>
     </p>
   </article>
 </template>

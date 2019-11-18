@@ -19,13 +19,13 @@
       Now we can use the <b>beforeEach</b> guard to check for this property.
       <Gist id="344c96c85a4046f22c3c3a711b95ec75" file="vue-router-guard-firebase2.js"/>
       Now if the currentUser is null or undefined, we should redirect users to the signin path.
-      But how do we get currentUser? We can’t use <span class="code">firebase.auth().currentUser</span> because on page
+      But how do we get currentUser? We can’t use <pre class="code">firebase.auth().currentUser</pre> because on page
       refresh that property has not been set yet before the guard is triggered.
-      We will have to use the <span class="code">onAuthStateChanged</span> callback somehow.
+      We will have to use the <pre class="code">onAuthStateChanged</pre> callback somehow.
       Let’s add a method to the firebase object after we initialize the firebase app.
       <Gist id="344c96c85a4046f22c3c3a711b95ec75" file="vue-router-guard-firebase3.js"/>
       This method will return a Promise which resolves currentUser as soon as it is set.
-      <span class="code">onAuthStateChangedwill</span> trigger the callback immediately with
+      <pre class="code">onAuthStateChangedwill</pre> trigger the callback immediately with
       either null or the user object if signed in.
       Then we unsubscribe to not listen for further changes.
     </section>
@@ -35,7 +35,7 @@
     </section>
     <section>
       That’s all. This also simplifies getting the currentUser for components under the guarded routes,
-      because we know <span class="code">firebase.auth().currentUser</span> is set.
+      because we know <pre class="code">firebase.auth().currentUser</pre> is set.
     </section>
     <section>
       For full example check out this
@@ -53,7 +53,7 @@ export default {
   name: 'VueRouteFirebaseAuth',
   data () {
     return {
-      title: 'Guard routes in Vue with Firebase Authentication'
+      title: 'Vue, guard routes with Firebase Authentication'
     }
   },
   components: {

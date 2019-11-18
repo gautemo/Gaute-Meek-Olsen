@@ -126,6 +126,11 @@ const firebase = [
     title: 'Fieldvalue for Firestore',
     url: 'firebase-fieldvalue',
     comp: '2019-11-17FirebaseFieldvalue'
+  },
+  {
+    title: 'Firestore rate limit',
+    url: 'firestore-rate-limit',
+    comp: '2019-11-17FirebaseFirestoreRateLimit'
   }
 ]
 

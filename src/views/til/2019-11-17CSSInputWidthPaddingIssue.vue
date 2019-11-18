@@ -6,22 +6,24 @@
       Have you tried giving your input element some padding and width, and the width get's messed up.
       Like this:
     </p>
-    <span class="code block">input{
+    <pre class="code block">
+      input{
       &nbsp;&nbsp;width: 100%;
       &nbsp;&nbsp;padding: 50px;
       }
-    </span>
+    </pre>
     <input type="text">
     <p>
       Why is my input getting larger then 100%? <span class="smiley">🤷‍😩</span>
     </p>
     <p>This is fixed with box-sizing: border-box</p>
-    <span class="code block">input{
+    <pre class="code block">
+      input{
       &nbsp;&nbsp;width: 100%;
       &nbsp;&nbsp;padding: 50px;
       &nbsp;&nbsp;box-sizing: border-box;
       }
-    </span>
+    </pre>
     <input type="text" class="fixed">
     <h6>
       Article red lines are to see full width.

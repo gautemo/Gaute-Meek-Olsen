@@ -5,14 +5,13 @@
       Today Cloud Functions for Firebase has four availible locations they can run from.
       It's not super important, but it could be smart to have them run close to the location of your Firestore or users for minimizing latency.
       By default the function will run in us-central1, which is Iowa. This is super easy to change by adding
-      <span
-        class="code"
-      >.region('europe-west1')</span> in your code, like this:
-      <span class="code block">
-        exports.hello = functions.region('europe-west1').https.onRequest((req, res) => {<br/>
-        &nbsp;&nbsp;res.send("Hello");<br/>
+      <pre class="code">.region('europe-west1')</pre>
+      in your code, like this:
+      <pre class="code block">
+        exports.hello = functions.region('europe-west1').https.onRequest((req, res) => {
+        &nbsp;&nbsp;res.send("Hello");
         });
-      </span>
+      </pre>
     </section>
     <section>
       If you deploy your function now, you will see it will run from europe-west1.

@@ -34,9 +34,7 @@
       You will find your page as a subdomain of firebaseapp.com and web.app. Like this https://projectid.firebaseapp.com and https://projectid.web.app.
       If you need your own domain, just go to Hosting in the firebase console and press the Connect domain button.
       Each time you need to update the content, just make the changes and hit
-      <span
-        class="code"
-      >firebase deploy</span> again.
+      <pre class="code">firebase deploy</pre> again.
     </section>
     <section>
       If you need to test the website on localhost first that is done with
@@ -54,9 +52,7 @@
       >Netlify</a>.
       Just sign in and click the "New site from Git" button. Select your git provider and give access to the wanted repository.
       If you have deployment commands you can easy add them in the build command input. Such as
-      <span
-        class="code"
-      >npm run build</span>.
+      <pre class="code">npm run build</pre>.
       Commands can be chained with &amp;&amp;.
       Finish with "Deploy site".
     </section>

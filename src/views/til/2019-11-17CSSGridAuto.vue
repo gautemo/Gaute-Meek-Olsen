@@ -7,11 +7,12 @@
       you can use the auto-fill or auto-fit making
       the elements fit as many as it can with a minimum size and fill the remaining space between them.
     </p>
-    <span class="code block">.grid{
+    <pre class="code block">
+      .grid{
       &nbsp;&nbsp;display: grid;
       &nbsp;&nbsp;grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       }
-    </span>
+    </pre>
     <p>
       Example, resize your browser window:
     </p>
