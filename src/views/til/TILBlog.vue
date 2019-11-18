@@ -110,6 +110,11 @@ const git = [
     comp: '2019-09-20GitUndoAllLocally'
   },
   {
+    title: 'Ignore already commited files',
+    url: 'git-ignore-commited',
+    comp: '2019-11-18GitFixCommitedIgnoreFiles'
+  },
+  {
     title: 'Connect folder to repository',
     url: 'git-folder-to-repo',
     comp: '2019-11-17GitFolderToRepo'
