@@ -6,7 +6,7 @@
 const blogs = [
   {
     img:
-      'https://66.media.tumblr.com/3bf9461a9f9de39fc26809b8858606bc/e46b6576cf3caf57-97/s1280x1920/69487601e88f65af49cbd5efdcf8c302d20e9866.png',
+      'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
     header: 'Fieldvalue for Firestore',
     text: `Leverage the Fieldvalue in Firestore when incrementing fields, altering arrays, using the server time or deleting fields.`,
     tags: ['Firebase', 'Firestore'],

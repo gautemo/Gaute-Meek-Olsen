@@ -8,6 +8,14 @@
             git clean -fd
         </pre>
         <p>checkout . restores all tracked files, while clean removes untracked files where f is for files and d for directories</p>
+        <p>If you have added files you can reset them to unstaged with:</p>
+        <pre class="code block">
+            git reset
+        </pre>
+        <p>Undo all commits with:</p>
+        <pre class="code block">
+            git reset --hard origin/master
+        </pre>
         <p>This was mostly to have a recipe I can go back to later.</p>
     </article>
 </template>
