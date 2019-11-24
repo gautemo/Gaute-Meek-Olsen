@@ -23,16 +23,18 @@ export default {
         {
           img:
             'https://66.media.tumblr.com/897b0d2a83c4d90ad73f0dcf6721e678/tumblr_pibxatlDCU1xfbgtko1_r2_1280.png',
-          header: 'Serverless with Firebase in 1 2 3',
-          headerShort: 'Serverless with Firebase',
+          header: `What is Firebase and it's relation to Google Cloud`,
+          headerShort: `What is Firebase`,
           type: {
-            text: 'Workshop',
-            symbol: '👨‍💻'
+            text: 'Presentation',
+            symbol: '👨‍🏫'
           },
           text:
-            'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
-          github: 'https://github.com/gautemo/firebase-chat',
-          tech: ['Firebase', 'Web', 'JavaScript', 'NoSQL'],
+`The definition of Firebase is "Firebase is Google’s mobile application development platform that helps you build, improve, and grow your app."
+But what does this mean? Firebase is multiple products and services hosted in the cloud and does that we don't have to write backend code.
+We will take a look at how Firebase offers database, authentication, analytics, file storage, push notifications, machine learning and a lot more directly on iOS, Android and web applications.`,
+          github: 'https://github.com/gautemo/fama',
+          tech: ['Firebase', 'Web', 'Android', 'iOS'],
           color: '#FFA000'
         },
         {
@@ -167,7 +169,22 @@ export default {
           slides: 'https://es-intro.netlify.com/',
           tech: ['JavaScript'],
           color: '#efc034'
-        }
+        },
+        {
+          img:
+            'https://66.media.tumblr.com/897b0d2a83c4d90ad73f0dcf6721e678/tumblr_pibxatlDCU1xfbgtko1_r2_1280.png',
+          header: 'Serverless with Firebase in 1 2 3',
+          headerShort: 'Serverless with Firebase',
+          type: {
+            text: 'Workshop',
+            symbol: '👨‍💻'
+          },
+          text:
+            'Firebase is a bunch of tools which helps you build, improve and grow your mobile or web application. Firebase makes it really easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.',
+          github: 'https://github.com/gautemo/firebase-chat',
+          tech: ['Firebase', 'Web', 'JavaScript', 'NoSQL'],
+          color: '#FFA000'
+        },
       ]
     }
   },
