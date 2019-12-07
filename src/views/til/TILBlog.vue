@@ -134,6 +134,27 @@ const firebase = [
   }
 ]
 
+const csharp = [
+  {
+    title: 'Email validation',
+    url: 'csharp-email-validation',
+    comp: '2019-12-07CsharpEmailValidation'
+  },
+  {
+    title: 'Split List & Arrays',
+    url: 'csharp-split-arrays',
+    comp: '2019-12-07CsharpChunks'
+  }
+]
+
+const kotlin = [
+  {
+    title: 'Improve readability for test fun with backticks',
+    url: 'kotlin-test-fun-backticks',
+    comp: '2019-12-07KotlinTestFunBackticks'
+  }
+]
+
 const til = [
   {
     type: 'Android',
@@ -141,19 +162,24 @@ const til = [
     icon: icons.android
   },
   {
+    type: 'C#',
+    links: csharp,
+    icon: icons.csharp
+  },
+  {
     type: 'CSS',
     links: css,
     icon: icons.css
   },
   {
-    type: 'Git',
-    links: git,
-    icon: icons.git
-  },
-  {
     type: 'Firebase',
     links: firebase,
     icon: icons.firebase
+  },
+  {
+    type: 'Git',
+    links: git,
+    icon: icons.git
   },
   {
     type: 'HTML',
@@ -165,6 +191,11 @@ const til = [
     links: js,
     icon: icons.js
   },
+  // {
+  //   type: 'Kotlin',
+  //   links: kotlin,
+  //   icon: icons.kotlin
+  // },
   {
     type: 'Security',
     links: security,
