@@ -13,6 +13,7 @@
         <div class="det-container">
           <h1>{{p.header}}</h1>
           <img :src="p.img" />
+          <a class="url" v-if="p.url" :href="p.url" target="_blank" rel="noopener">{{p.url}}</a>
           <p>{{p.text}}</p>
           <a v-if="p.googleplay" :href="p.googleplay" target="_blank" rel="noopener">
             <img
@@ -159,6 +160,11 @@ export default {
   padding: 5px 10px;
   margin: 3px;
   white-space: nowrap;
+}
+
+.url{
+  margin-top: 10px;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {

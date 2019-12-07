@@ -1,6 +1,8 @@
 <template>
-  <div class="project-grid cover">
-    <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
+  <div>
+    <div class="project-grid cover">
+      <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
+    </div>
   </div>
 </template>
 
@@ -52,7 +54,7 @@ export default {
         {
           img:
             'https://66.media.tumblr.com/e3a291759f5f5bb1b9b0fcc6f3358204/tumblr_phw9o40U3U1xfbgtko1_1280.png',
-          header: 'gaute.app',
+          header: 'gaute.dev',
           smallheader: 'This website',
           text:
             'This website is made in Vue and hosted with Firebase. This is a place to show what intrest me, what I do and have done.',
@@ -73,6 +75,15 @@ export default {
           color: '#ffd42a'
         },
         {
+          img: 'https://66.media.tumblr.com/97bfb48231021d65a7bc443920f2a380/bae96d53682c9671-c3/s640x960/14deb8922e604622dc72a15ca6a1c332b239055d.png',
+          header: 'Planning Poker',
+          smallheader: 'PWA website',
+          text: 'Play planning poker together, each team member visits the site on their phone and have a screen with the dashboard visible in the room to get a overview of every vote.',
+          url: 'https://planning-poker-w.web.app/',
+          tech: ['Vue', 'Firebase', 'PWA'],
+          color: '#006155'
+        },
+        {
           img:
             'https://66.media.tumblr.com/3a62762bec5b8388d1ab581ec7ba623f/tumblr_phvyyuvYC21xfbgtko6_1280.png',
           header: 'Run from Robots',
@@ -83,6 +94,15 @@ export default {
             'https://play.google.com/store/apps/details?id=gautemo.game.runaway',
           tech: ['Android', 'Java'],
           color: '#4d5d7b'
+        },
+        {
+          img: 'https://66.media.tumblr.com/4eb2263dddf7e66c0490162089ef9e80/4c3358135e66ad9b-a0/s640x960/e432b74aab30c3dab7e40298827bd446123d111b.png',
+          header: 'Receipt app',
+          smallheader: 'PWA website',
+          text: 'Store all your receipts in one place without cluttering your phones image albums. Sign in with a user and take pictures to store them in the cloud so you can reach them from both the phone and laptop.',
+          url: 'https://gmo-receipt-app.web.app/',
+          tech: ['Vue', 'Firebase', 'PWA'],
+          color: '#dd3818'
         },
         {
           img:
