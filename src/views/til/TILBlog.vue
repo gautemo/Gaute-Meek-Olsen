@@ -120,6 +120,11 @@ const git = [
     comp: '2019-11-17GitFolderToRepo'
   },
   {
+    title: 'Stash local changes before pull',
+    url: 'git-stash-before-pull',
+    comp: '2019-12-08GitStashBeforePull'
+  },
+  {
     title: 'Check for changes with .ps',
     url: 'git-changes-ps',
     comp: '2019-11-17GitScriptCheckChanges'
@@ -128,7 +133,7 @@ const git = [
 
 const firebase = [
   {
-    title: 'Firestore rate limit',
+    title: 'Firestore update rate limit',
     url: 'firestore-rate-limit',
     comp: '2019-11-18FirebaseFirestoreRateLimit'
   }

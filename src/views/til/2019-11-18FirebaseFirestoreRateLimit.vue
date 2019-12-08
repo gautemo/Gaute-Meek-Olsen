@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1>Firestore rate limit</h1>
+    <h1>Firestore update rate limit</h1>
     <p>
       Today I learned how to not allow frequent updates to a Firestore document with rules.
     </p>
