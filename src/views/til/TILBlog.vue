@@ -191,11 +191,11 @@ const til = [
     links: js,
     icon: icons.js
   },
-  // {
-  //   type: 'Kotlin',
-  //   links: kotlin,
-  //   icon: icons.kotlin
-  // },
+  {
+    type: 'Kotlin',
+    links: kotlin,
+    icon: icons.kotlin
+  },
   {
     type: 'Security',
     links: security,

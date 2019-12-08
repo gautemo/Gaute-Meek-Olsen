@@ -1,11 +1,12 @@
 <template>
     <article>
-        <h1>List &amp; Arrays to chunks</h1>
+        <h1>Improve readability for test fun with backticks</h1>
         <p>
-            When you work with large lists or arrays, you might want to handle the elements in chunks to work with less elements.
-            Let's do that with an extension method.
+            Kotlin allows you to name functions with backticks, allowing you to put spaces in the name to write a sentence.
+            This isn't very nice for ordinary functions. But for your unit tests, this is perfect, since you never call this functions yourself.
+            This improves readability a lot. No need for CamelCase or Snake_case.
         </p>
-        <Gist id="344c96c85a4046f22c3c3a711b95ec75" file="chunks-csharp.cs"/>
+        <Gist id="344c96c85a4046f22c3c3a711b95ec75" file="test-kotlin.kt"/>
     </article>
 </template>
 
