@@ -6,6 +6,15 @@
 const blogs = [
   {
     img:
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--soDtXerg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1aipjfyajo1fhuj3gyl5.PNG',
+    header: 'Getting started with GitHub Actions - CI/CD Firebase deploy',
+    text: `GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application and/or deploy your application. Let's build and deploy to Firebase`,
+    tags: ['GitHub', 'Firebase', 'CI/CD'],
+    url: 'github-actions-firebase-cicd',
+    comp: '2019-12-08GitHubActionsFirebaseCICD'
+  },
+  {
+    img:
       'https://66.media.tumblr.com/9a998ff243d9022782ac03594f88a5bf/tumblr_pidz17wiDQ1xfbgtko1_1280.png',
     header: 'Fieldvalue for Firestore',
     text: `Leverage the Fieldvalue in Firestore when incrementing fields, altering arrays, using the server time or deleting fields.`,
