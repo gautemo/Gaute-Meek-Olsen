@@ -149,6 +149,11 @@ const csharp = [
     title: 'Split List & Arrays',
     url: 'csharp-split-arrays',
     comp: '2019-12-07CsharpChunks'
+  },
+  {
+    title: 'Maximum Paralell Tasks',
+    url: 'csharp-max-paralell-tasks',
+    comp: '2019-12-30CsharpParalellMaxAtSameTime'
   }
 ]
 
