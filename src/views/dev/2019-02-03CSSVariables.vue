@@ -79,6 +79,7 @@ article {
   width: 100%;
   height: 100%;
   justify-content: center;
+  overflow: auto;
 }
 #bulb {
   font-size: 5em;
