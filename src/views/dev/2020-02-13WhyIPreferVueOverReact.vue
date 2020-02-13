@@ -130,7 +130,7 @@
           For me, Vue had a much quicker learning curve, as it took me some time to understand React, while Vue I got from the first second (maybe because of the similarity to AngularJS directives). It feels closer to ordinary HTML and JavaScript. I don't need to use JSX, where I often feel like the JavaScript clutters the HTML code. Vue also has single file components, where all component code (HTML, JavaScript, and CSS) are in the same file if wanted. Vue has scoped CSS for components, which also is super nice!
       </section>
       <section>
-          Example code can be found at [GitHub](https://github.com/gautemo/frontend-framework-compare)
+          Example code can be found at <a href="https://github.com/gautemo/frontend-framework-compare" target="_blank" rel="noopener">GitHub</a>.
       </section>
       <section>
           This is just my friendly opinions. If you like something else, that's okay :)
