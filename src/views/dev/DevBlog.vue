@@ -8,7 +8,7 @@ const blogs = [
     img:
       'https://66.media.tumblr.com/6b2bce8e582baa37e83ed4f2ab8719b6/20f1e5748949b716-89/s1280x1920/fc25b69fad24bc2eaa3455984eaa99c79bfdb5df.png',
     header: 'Why I prefer Vue over React',
-    text: `There exists a lot of great web development frameworks. This are my main reason for choosing Vue over the most popular one, React.`,
+    text: `There exists a lot of great web development frameworks. This are my main reasons for choosing Vue over the most popular one, React.`,
     tags: ['Vue', 'React'],
     url: 'why-i-prefer-vue-over-react',
     comp: '2020-02-13WhyIPreferVueOverReact'
