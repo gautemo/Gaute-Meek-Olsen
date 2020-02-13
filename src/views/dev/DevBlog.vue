@@ -6,6 +6,15 @@
 const blogs = [
   {
     img:
+      'https://66.media.tumblr.com/6b2bce8e582baa37e83ed4f2ab8719b6/20f1e5748949b716-89/s1280x1920/fc25b69fad24bc2eaa3455984eaa99c79bfdb5df.png',
+    header: 'Why I prefer Vue over React',
+    text: `There exists a lot of great web development frameworks. This are my main reason for choosing Vue over the most popular one, React.`,
+    tags: ['Vue', 'React'],
+    url: 'why-i-prefer-vue-over-react',
+    comp: '2020-02-13WhyIPreferVueOverReact'
+  },
+  {
+    img:
       'https://res.cloudinary.com/practicaldev/image/fetch/s--soDtXerg--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1aipjfyajo1fhuj3gyl5.PNG',
     header: 'Getting started with GitHub Actions - CI/CD Firebase deploy',
     text: `GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application and/or deploy your application. Let's build and deploy to Firebase`,

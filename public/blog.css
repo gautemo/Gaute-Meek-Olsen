@@ -59,6 +59,11 @@ article img.small{
     width: 450px;
 }
 
+article .center-line{
+    display: block;
+    margin: auto;
+}
+
 article a {
     border-bottom: 1px solid #453886;
     color: #453886;
