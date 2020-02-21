@@ -145,7 +145,7 @@ export default {
           header: 'touch-cli-windows',
           smallheader: 'NPM package',
           text:
-            "Mac and Linux has the simple touch command in the terminal. But on Windows it's hard to create files in the terminal. Install this package this is solved. 'npm i -g touch-cli-windows' to install",
+            "Mac and Linux has the simple touch command in the terminal. But on Windows it's hard to create files in the terminal. Install this package to solve the problem. 'npm i -g touch-cli-windows' to install and 'touch index.html app.js' to use.",
           github: 'https://github.com/gautemo/touch-cli-windows',
           tech: ['NPM', 'JavaScript'],
           color: '#e21414'
