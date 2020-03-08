@@ -4,7 +4,7 @@
         <p>
             You can't use <pre class="code">box-shadow</pre> on elements with <pre class="code">clip-path</pre> or images(png or svg) that are transparent. 
             We have to use <pre class="code">filter</pre> and <pre class="code">drop-shadow</pre>. For images you can use the filter directly. 
-            But for clip-path, it needs to be a child element.
+            But for clip-path, it needs to be a child element (use ::before to not create wrapper elements).
         </p>
         <pre class="code block">
             filter: drop-shadow(1px 5px 5px red);
