@@ -135,6 +135,11 @@ const git = [
     comp: '2019-12-08GitStashBeforePull'
   },
   {
+    title: 'Create a Branch from a Commit',
+    url: 'git-branch-from-commit',
+    comp: '2020-03-08GitBranchFromCommit'
+  },
+  {
     title: 'Check for changes with .ps',
     url: 'git-changes-ps',
     comp: '2019-11-17GitScriptCheckChanges'
