@@ -12,7 +12,7 @@
         <p>
             How to make the element seem to be above previous elements background color. 
             You don't want to use negative margins, as they can lead to errors later on.
-            Using <code>box-shadow</code> to extend the background color creates a nice effect.
+            Using <pre class="code">box-shadow</pre> to extend the background color creates a nice effect.
         </p>
         <pre class="code block">
             box-shadow: 0 70px 0 #1CE;

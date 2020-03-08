@@ -25,6 +25,11 @@ const android = [
 
 const css = [
   {
+    title: 'Shadow on Shapes',
+    url: 'css-shadow-on-shapes',
+    comp: '2020-03-08CSSBoxShadowOnShapes'
+  },
+  {
     title: 'Empty selector',
     url: 'css-empty',
     comp: '2019-08-08CSSEmpty'
