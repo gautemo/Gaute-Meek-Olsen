@@ -22,6 +22,20 @@ export default {
       talks: [
         {
           img:
+            'https://66.media.tumblr.com/6b2bce8e582baa37e83ed4f2ab8719b6/ca1ce001af8b1a74-4e/s1280x1920/01ffab71f8847c8f771a979ef2f96577d5011859.png',
+          header: `Why I choose Vue.js`,
+          headerShort: `Why I choose Vue.js`,
+          type: {
+            text: 'Lightning talk',
+            symbol: '⚡'
+          },
+          text: `There exists a lot of great web development frameworks. These are my main reasons for choosing Vue over the most popular one, React.`,
+          github: 'https://github.com/gautemo/frontend-framework-compare',
+          tech: ['Web', 'Vue.js', 'React'],
+          color: '#42b883'
+        },
+        {
+          img:
             'https://66.media.tumblr.com/897b0d2a83c4d90ad73f0dcf6721e678/tumblr_pibxatlDCU1xfbgtko1_r2_1280.png',
           header: `What is Firebase and it's relation to Google Cloud`,
           headerShort: `What is Firebase`,
