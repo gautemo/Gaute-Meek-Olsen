@@ -11,13 +11,25 @@
         </pre>
         <p>filter</p>
         <section id="filter">
-            <div class="star"></div>
-            <img class="img-star" src="https://66.media.tumblr.com/8168c42f90ee288fa32ea8609a846638/75047ef985944de3-18/s1280x1920/f907ff1da04a1ae22fa8939905bbc48db8512166.png" alt="a star">
+            <figure>
+                <div class="star"></div>
+                <figcaption>clip-path</figcaption>
+            </figure>
+            <figure>
+                <img class="img-star" src="https://66.media.tumblr.com/8168c42f90ee288fa32ea8609a846638/75047ef985944de3-18/s1280x1920/f907ff1da04a1ae22fa8939905bbc48db8512166.png" alt="a star">
+                <figcaption>png/svg</figcaption>
+            </figure>
         </section>
         <p>box-shadow</p>
         <section id="box">
-            <div class="star"></div>
-            <img class="img-star" src="https://66.media.tumblr.com/8168c42f90ee288fa32ea8609a846638/75047ef985944de3-18/s1280x1920/f907ff1da04a1ae22fa8939905bbc48db8512166.png" alt="a star">
+            <figure>
+                <div class="star"></div>
+                <figcaption>clip-path</figcaption>
+            </figure>
+            <figure>
+                <img class="img-star" src="https://66.media.tumblr.com/8168c42f90ee288fa32ea8609a846638/75047ef985944de3-18/s1280x1920/f907ff1da04a1ae22fa8939905bbc48db8512166.png" alt="a star">
+                <figcaption>png/svg</figcaption>
+            </figure>
         </section>
     </article>
 </template>
@@ -58,5 +70,9 @@ section{
     grid-auto-flow: column;
     gap: 25px;
     width: fit-content;
+}
+
+figure{
+    margin: 0;
 }
 </style>
