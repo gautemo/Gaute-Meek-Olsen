@@ -49,18 +49,12 @@
     width: 150px;
 }
 
-#filter .star{
-    filter: drop-shadow(1px 5px 5px red);
-}
-
+#filter .star,
 #filter .img-star{
     filter: drop-shadow(1px 5px 5px red);
 }
 
-#box .star{
-    box-shadow: 1px 5px 5px red;
-}
-
+#box .star,
 #box .img-star{
     box-shadow: 1px 5px 5px red;
 }
