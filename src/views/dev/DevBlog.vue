@@ -1,9 +1,25 @@
 <template>
-  <component :is="comp"></component>
+  <component :is="comp" :articleId="articleId"></component>
 </template>
 
 <script>
 const blogs = [
+  {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--SEuR79wQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--Uh0iaxoa--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/hriq6y9xxwxh5uoozis0.png',
+    header: 'Explain React Hooks like I’m (?)',
+    text: `I'm having some issues in understanding React Hooks, so I wrote this article to better understand and learn myself. I hope this brings some clarity to React Hooks for you as well!`,
+    tags: ['React'],
+    url: 'react-hooks',
+    devtoId: '280912',
+  },
+  {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--uwu45EDs--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--N9On6ChP--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/m5fdk8yv55tu8275dpy5.png',
+    header: 'Developer blog with dev.to as your backend/CMS',
+    text: 'Simple way to create your own developer Blog with articles hosted on dev.to, but shown on your own website.',
+    tags: ['Web'],
+    url: 'developer-blog-with-devto',
+    devtoId: '276324',
+  },
   {
     img:
       'https://66.media.tumblr.com/6b2bce8e582baa37e83ed4f2ab8719b6/20f1e5748949b716-89/s1280x1920/fc25b69fad24bc2eaa3455984eaa99c79bfdb5df.png',
@@ -164,11 +180,17 @@ export default {
   name: 'DevBlog',
   created () {
     const blog = blogs.find(b => b.url === this.$route.params.url)
-    if (blog) {
-      this.comp = () => import(`./${blog.comp}.vue`)
-    } else {
+    if(!blog){
       this.comp = () => import(`@/views/NotFound.vue`)
+    }else if(blog.devtoId){
+      this.comp = () => import(`@/views/DevTo.vue`)
+      this.articleId = blog.devtoId
+    }else{
+      this.comp = () => import(`./${blog.comp}.vue`)
     }
-  }
+  },
+  data: () => ({
+    articleId: ''
+  })
 }
 </script>
