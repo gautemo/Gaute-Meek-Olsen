@@ -29,7 +29,9 @@ export default {
             text: 'Lightning talk',
             symbol: '⚡'
           },
-          text: `There exists a lot of great web development frameworks. These are my main reasons for choosing Vue over the most popular one, React.`,
+          text: `There exists a lot of great web development frameworks. These are my main reasons for choosing Vue over the most popular one, React.
+          
+          Held at Tech Talks 2020.`,
           github: 'https://github.com/gautemo/frontend-framework-compare',
           tech: ['Web', 'Vue.js', 'React'],
           color: '#42b883'
