@@ -1,5 +1,5 @@
 <template>
-  <component class="til" :is="comp"></component>
+  <component class="til" :is="comp" :articleId="articleId"></component>
 </template>
 
 <script>
@@ -151,6 +151,11 @@ const firebase = [
     title: 'Firestore update rate limit',
     url: 'firestore-rate-limit',
     comp: '2019-11-18FirebaseFirestoreRateLimit'
+  },
+  {
+    title: 'Firestore, get collection with async/await',
+    url: 'firestore-get-all-in-collection',
+    devtoId: '283822',
   }
 ]
 
@@ -248,12 +253,18 @@ export default {
   name: 'TILBlog',
   created () {
     const blog = getComp(this.$route.params.url)
-    if (blog) {
-      this.comp = () => import(`./${blog.comp}.vue`)
-    } else {
+    if(!blog){
       this.comp = () => import(`@/views/NotFound.vue`)
+    }else if(blog.devtoId){
+      this.comp = () => import(`@/views/DevTo.vue`)
+      this.articleId = blog.devtoId
+    }else{
+      this.comp = () => import(`./${blog.comp}.vue`)
     }
-  }
+  },
+  data: () => ({
+    articleId: ''
+  })
 }
 </script>
 

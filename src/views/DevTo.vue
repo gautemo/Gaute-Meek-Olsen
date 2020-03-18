@@ -1,7 +1,7 @@
 <template>
     <article>
         <h1>{{title}}</h1>
-        <img :src="coverImg" alt="cover image">
+        <img :src="coverImg" alt="cover image" v-if="coverImg">
         <div v-html="bodyHtml" class="content"></div>
     </article>
 </template>
@@ -27,6 +27,12 @@ export default {
 <style scoped>
 .content{
     padding-bottom: 50px;
+}
+
+.content >>> :not(.highlight) code{
+    background: rgb(194, 194, 194);
+    border-radius: 2px;
+    padding: 2px;
 }
 
 .content >>> div.highlight{
