@@ -81,22 +81,16 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
       </pre>
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
-
 export default {
   name: 'GitHubActionsFirebaseCICD',
   data () {
     return {
       title: 'Getting started with GitHub Actions - CI/CD Firebase deploy'
     }
-  },
-  components: {
-    Share,
   }
 }
 </script>

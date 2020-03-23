@@ -135,13 +135,10 @@
       <section>
           This is just my friendly opinions. If you like something else, that's okay :)
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
-
 export default {
   name: 'WhyIPreferVueOverReact',
   data () {
@@ -150,7 +147,6 @@ export default {
     }
   },
   components: {
-    Share,
     Gist: () => import('@/components/Gist.vue')
   }
 }

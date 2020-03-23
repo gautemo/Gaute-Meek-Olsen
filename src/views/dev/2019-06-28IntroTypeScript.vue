@@ -59,12 +59,10 @@
     </section>
     <h2>Conclusion</h2>
     <section>That’s the basic you need to know and maybe all you need to know for your projects.</section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
 import Gist from '@/components/Gist.vue'
 
 export default {
@@ -75,7 +73,6 @@ export default {
     }
   },
   components: {
-    Share,
     Gist
   }
 }

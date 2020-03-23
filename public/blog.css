@@ -1,10 +1,14 @@
 article{
     width: calc(100% - 210px);
     max-width: 800px;
-    margin: 70px 0;
+    margin-top: 70px;
     font-size: 1.2em;
     letter-spacing: 0.003em;
     line-height: 1.58;
+}
+
+article > :last-child{
+    margin-bottom: 70px;
 }
 
 article > h1{

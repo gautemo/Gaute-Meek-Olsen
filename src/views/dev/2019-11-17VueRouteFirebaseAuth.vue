@@ -41,12 +41,10 @@
       For full example check out this
       <a href="https://github.com/gautemo/Vue-guard-routes-with-Firebase-Authentication" target="_blank" rel="noopener">GitHub repository</a>.
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
 import Gist from '@/components/Gist.vue'
 
 export default {
@@ -57,7 +55,6 @@ export default {
     }
   },
   components: {
-    Share,
     Gist
   }
 }

@@ -119,13 +119,11 @@
     <section>But what about security? If all this happens from the client, then our data cannot be safe. Security should always be done in the backend. This is where Firestore rules and Firebase authentication plays its part. Follow my next article to see how you can secure your database and customize who and which actions are allowed.</section>
     <h3>All code</h3>
     <Gist :id="'64ec43734e05d8839b18b1643de21ffc'" />
-    <Share :url="'https://gaute.app' + $route.path" :text="title" />
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'IntroFirestore',
@@ -136,7 +134,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 </script>

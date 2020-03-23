@@ -90,22 +90,16 @@
       but if you want deployment automation with Firebase you need to combine it with a continious integration tool
       such as Gitlab CI or Travis CI.
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title" />
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
-
 export default {
   name: 'Hosting',
   data () {
     return {
       title: 'Hosting your website'
     }
-  },
-  components: {
-    Share
   }
 }
 </script>

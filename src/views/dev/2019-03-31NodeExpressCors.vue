@@ -16,13 +16,11 @@
       <section>
           This has enabled CORS for all requests on your node express server. You can now refresh your client side page.
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'NodeExpressCors',
@@ -33,7 +31,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 </script>

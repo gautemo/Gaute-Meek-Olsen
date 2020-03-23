@@ -74,13 +74,11 @@
       <a href="https://github.com/gautemo/selector-library" target="_blank" rel="noopener">GitHub</a>.
       Of course, this is just a demo library, but this is how creating an NPM module is done that's also available to a script tag for people not using a build tool.
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title" />
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'ServiceWorkerVue',
@@ -91,7 +89,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 </script>

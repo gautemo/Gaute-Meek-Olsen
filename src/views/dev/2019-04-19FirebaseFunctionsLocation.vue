@@ -27,22 +27,16 @@
       </ul>
     </section>
     <a href="https://firebase.google.com/docs/functions/locations" target="_blank" rel="noopener">Updated docs</a>
-    <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
-
 export default {
   name: 'NodeExpressCors',
   data () {
     return {
       title: 'Location for Cloud Functions for Firebase'
     }
-  },
-  components: {
-    Share
   }
 }
 </script>

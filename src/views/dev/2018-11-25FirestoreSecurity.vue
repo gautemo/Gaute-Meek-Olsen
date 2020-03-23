@@ -95,13 +95,11 @@
       <section>
         Even though logic is performed client side, the Firestore database can be completely secured. This has only been an introduction to how Firestore security rules work with example rules for some use cases. In the end, your application will decide how your rules end up.
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'FirestoreSecurity',
@@ -112,7 +110,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 </script>

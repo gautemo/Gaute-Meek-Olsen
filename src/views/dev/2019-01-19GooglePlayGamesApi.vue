@@ -70,22 +70,16 @@
         If you want, you can clean up by deleting your web app from the Google Play Console and the APIs Console.
         If you regret your hiding, you can <a href="https://developers.google.com/games/services/management/api/players/unhide" target="_blank" rel="noopener">unhide them</a>.
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
-
 export default {
   name: 'GooglePlayGamesApi',
   data () {
     return {
       title: 'Removing Player from Your Google Play Games Services Leaderboard'
     }
-  },
-  components: {
-    Share
   }
 }
 </script>

@@ -32,13 +32,11 @@
       Then in the mounted lifecycle to the Vue component, you can add the script tag like this.
       <Gist :id="'344c96c85a4046f22c3c3a711b95ec75'" :file="'vue-script-postscribe.vue'" />Congratulations, you now have embeded a gist in your Vue component!
     </section>
-    <Share :url="'https://gaute.app' + $route.path" :text="title" />
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'ServiceWorkerVue',
@@ -49,7 +47,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 </script>

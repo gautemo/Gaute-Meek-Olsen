@@ -11,13 +11,11 @@
               <div class="stickman" v-for="s in stickmans" :data-nr="s.id" v-bind:key="s.id"></div>
           </div>
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
   </article>
 </template>
 
 <script>
 import Gist from '@/components/Gist.vue'
-import Share from '@/components/Share.vue'
 
 export default {
   name: 'ServiceWorkerVue',
@@ -96,7 +94,6 @@ export default {
   },
   components: {
     Gist,
-    Share
   }
 }
 

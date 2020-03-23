@@ -25,9 +25,6 @@ export default {
 </script>
 
 <style scoped>
-.content{
-    padding-bottom: 50px;
-}
 
 .content >>> :not(.highlight) code{
     background: rgb(194, 194, 194);

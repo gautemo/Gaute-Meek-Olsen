@@ -32,7 +32,6 @@
           <i>Remember to click the light bulb.</i>
         </p>
       </section>
-      <Share :url="'https://gaute.app' + $route.path" :text="title"/>
     </article>
   </div>
 </template>
@@ -88,7 +87,6 @@ article {
 </style>
 
 <script>
-import Share from '@/components/Share.vue'
 import Gist from '@/components/Gist.vue'
 
 export default {
@@ -119,7 +117,6 @@ export default {
     }
   },
   components: {
-    Share,
     Gist
   }
 }
