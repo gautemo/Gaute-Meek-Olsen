@@ -46,6 +46,7 @@ export default {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
   min-width: 70%;
+  margin-bottom: 50px;
 }
 
 ul {

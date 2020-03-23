@@ -64,21 +64,17 @@ article .center-line{
     margin: auto;
 }
 
-article a {
-    border-bottom: 1px solid #453886;
-    color: #453886;
-    padding-bottom: .15em;
+article a,
+.til a {
+    border-bottom: 1px solid #c8c8c8;
+    color: #0059b3;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
   
-article a:hover, article a:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .7s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 20%;
-    border-bottom: 0;
-    padding-bottom: .3em;
-    text-decoration: none;
+article a:hover, article a:focus,
+.til a:hover, .til a:focus {
+    border-bottom: 2px solid #0059b3;
 }
 
 .cmd{
