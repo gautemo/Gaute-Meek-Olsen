@@ -5,6 +5,14 @@
 <script>
 const blogs = [
   {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--JO8543Ck--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--hxkczeig--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/na7x6l58wzvf5o1c4d5a.png',
+    header: 'Environment Variables in Vue',
+    text: 'How to handle variables that should alter between your different environments.',
+    tags: ['Vue'],
+    url: 'environment-variables-vue',
+    devtoId: '285850',
+  },
+  {
     img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--SEuR79wQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--Uh0iaxoa--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/hriq6y9xxwxh5uoozis0.png',
     header: 'Explain React Hooks like I’m (?)',
     text: `I'm having some issues in understanding React Hooks, so I wrote this article to better understand and learn myself. I hope this brings some clarity to React Hooks for you as well!`,
