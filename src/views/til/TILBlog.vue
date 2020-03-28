@@ -140,6 +140,11 @@ const git = [
     comp: '2020-03-08GitBranchFromCommit'
   },
   {
+    title: 'git commit -a',
+    url: 'git-commit-a',
+    devtoId: '293947',
+  },
+  {
     title: 'Check for changes with .ps',
     url: 'git-changes-ps',
     comp: '2019-11-17GitScriptCheckChanges'
