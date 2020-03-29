@@ -1,0 +1,23 @@
+name: Lighthouse
+
+on:
+  push:
+    branches: [ lighthouse-test ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Lighthouse CI Action
+      uses: treosh/lighthouse-ci-action@v2
+      with:
+        urls: |
+          https://gaute.dev
+          https://gaute.dev/projects
+          https://gaute.dev/dev-blog
+          https://gaute.dev/dev-blog/environment-variables-vue
+          https://gaute.dev/travel-blog/tokyo-two
+        uploadArtifacts: true
