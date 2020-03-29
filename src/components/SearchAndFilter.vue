@@ -1,7 +1,7 @@
 <template>
     <div class="filter">
-        <label for="search" :class="{above: search}">Search for title or tags</label>
-        <input v-model="search" type="text" @input="$emit('update-search', search)" id="search"/>
+        <label for="search" :class="{above: search || focused}">Search for title or tags</label>
+        <input v-model="search" type="text" @input="$emit('update-search', search)" id="search" @focus="focused = true" @blur="focused = false"/>
         <span class="tags selected anim-in" v-for="tag in selectedTags" v-bind:key="tag" @click="removeTag(tag, $event)"><span style="flex:1">{{tag}}</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24" height="24"><defs><path id="a" d="M0 0h24v24H0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg></span>
         <span class="tags dropdown" tabindex="0" v-if="availibleTags.length > 0">Tags <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
             <div class="select-tag">
@@ -40,6 +40,7 @@ export default {
   data () {
     return {
       search: '',
+      focused: false,
       selectedTags: []
     }
   }
