@@ -1,6 +1,6 @@
 <template>
   <a :href="url" class="container">
-    <img :src="img">
+    <img :src="img" alt="blog cover image">
     <div class="text">
       <h2>{{header}}</h2>
       <p>{{text}}</p>

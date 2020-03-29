@@ -93,6 +93,7 @@ export default {
 <style scoped>
 .blogs {
   margin: 50px 250px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

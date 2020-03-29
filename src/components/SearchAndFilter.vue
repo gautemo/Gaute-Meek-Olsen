@@ -1,6 +1,7 @@
 <template>
     <div class="filter">
-        <input v-model="search" type="text" placeholder="Search for title or tags" @input="$emit('update-search', search)"/>
+        <label for="search" :class="{above: search}">Search for title or tags</label>
+        <input v-model="search" type="text" @input="$emit('update-search', search)" id="search"/>
         <span class="tags selected anim-in" v-for="tag in selectedTags" v-bind:key="tag" @click="removeTag(tag, $event)"><span style="flex:1">{{tag}}</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24" height="24"><defs><path id="a" d="M0 0h24v24H0z"/></defs><clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/></svg></span>
         <span class="tags dropdown" tabindex="0" v-if="availibleTags.length > 0">Tags <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
             <div class="select-tag">
@@ -49,11 +50,25 @@ export default {
 .filter {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+}
+
+label{
+  width: 100%;
+  transform: translate(10px, 30px);
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
+  cursor: text;
+}
+
+label.above{
+  transform: translate(0, 0);
+  opacity: 1;
+  cursor: default;
 }
 
 input {
   flex: 1;
-  margin-bottom: 15px;
   font-size: 1.2em;
   padding: 10px;
   box-sizing: border-box;
@@ -157,9 +172,6 @@ input {
     input{
         width: 100%;
         flex: auto;
-    }
-    .filter{
-        flex-wrap: wrap;
     }
 
     .tags{
