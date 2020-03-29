@@ -1,5 +1,5 @@
 <template>
-    <span tabindex="1" class="hover-me" v-bind:class="hoverMeClasses">{{hoverMe}}
+    <span tabindex="0" class="hover-me" v-bind:class="hoverMeClasses">{{hoverMe}}
         <div class="hover-text">
             <p>{{hoverText}}</p>
         </div>
