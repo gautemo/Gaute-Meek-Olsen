@@ -26,6 +26,8 @@
           <Instagram class="instagram" />
           <Snapchat class="snapchat" />
           <GooglePlay class="googleplay" />
+          <Medium class="medium"/>
+          <Devto class="devto"/>
         </div>
         <p>
           Use the menu to see my own projects, talks I've given, developer blog and travel blog.
@@ -106,7 +108,9 @@ export default {
     Github: () => import(`@/components/follow/Github`),
     GooglePlay: () => import(`@/components/follow/GooglePlay`),
     Snapchat: () => import(`@/components/follow/Snapchat`),
-    LinkedIn: () => import(`@/components/follow/LinkedIn`)
+    LinkedIn: () => import(`@/components/follow/LinkedIn`),
+    Medium: () => import(`@/components/follow/Medium`),
+    Devto: () => import(`@/components/follow/Devto`),
   }
 }
 
@@ -235,7 +239,7 @@ section p {
   width: 70%;
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
   justify-items: center;
   align-items: center;
@@ -298,6 +302,22 @@ section p {
   font-weight: bold;
   color: var(--white);
 }
+.medium::before {
+  content: "Medium";
+  position: absolute;
+  transform: translate(-5px, -30px);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+}
+.devto::before {
+  content: "Dev.to";
+  position: absolute;
+  transform: translate(0, -30px);
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+}
 
 @media only screen and (max-width: 768px) {
   #content {
@@ -351,6 +371,14 @@ section p {
   .tumblr::before {
     font-size: 1em;
     transform: translate(-2px, -20px);
+  }
+  .medium::before {
+    font-size: 1em;
+    transform: translate(-2px, -20px);
+  }
+  .devto::before {
+    font-size: 1em;
+    transform: translate(1px, -20px);
   }
 }
 </style>

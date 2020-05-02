@@ -25,6 +25,8 @@
       <Instagram />
       <Snapchat />
       <GooglePlay />
+      <Medium/>
+      <Devto/>
     </aside>
   </main>
 </template>
@@ -37,6 +39,8 @@ import Github from '@/components/follow/Github.vue'
 import GooglePlay from '@/components/follow/GooglePlay.vue'
 import Snapchat from '@/components/follow/Snapchat.vue'
 import LinkedIn from '@/components/follow/LinkedIn.vue'
+import Medium from '@/components/follow/Medium.vue'
+import Devto from '@/components/follow/Devto.vue'
 
 export default {
   components: {
@@ -45,7 +49,9 @@ export default {
     Github,
     GooglePlay,
     Snapchat,
-    LinkedIn
+    LinkedIn,
+    Medium,
+    Devto
   }
 }
 </script>
