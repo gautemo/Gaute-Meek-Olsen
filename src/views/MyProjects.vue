@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/urls" class="urls">Websites</router-link>
     <div class="project-grid cover">
       <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
     </div>
@@ -240,13 +241,35 @@ export default {
   grid-gap: 30px;
   justify-items: center;
   align-items: center;
-  padding: 50px 8vw;
+  padding: 10px 8vw;
 }
 .project-grid::before {
   background: url("https://66.media.tumblr.com/8851f8fdc343ce509c43df9b28b9d74a/tumblr_phubgwZw9l1xfbgtko1_1280.jpg");
   background-size: cover;
   opacity: 0.3;
   filter: blur(2px);
+}
+
+.urls{
+  margin: 15px 8vw;
+  animation: peek 7s infinite;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, var(--orange), var(--yellow), var(--green), var(--blue));
+  padding:  5px 15px;
+  display: inline-block;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+@keyframes peek{
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+  70% { opacity: 1; }
+  80% { opacity: 0; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 @media only screen and (max-width: 768px) {
