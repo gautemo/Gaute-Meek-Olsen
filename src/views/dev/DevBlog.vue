@@ -5,6 +5,38 @@
 <script>
 const blogs = [
   {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--Izfuw2KH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--5GB2puMW--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/5zr9yxqrv4mf4pol87nx.png',
+    header: 'How to test HttpClient with Moq in C#',
+    text: 'This is how to mock your http requests.',
+    tags: ['C#'],
+    url: 'mock-httpclient',
+    devtoId: '323224',
+  },
+  {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--Zf2xC3RR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--XNA9f4OE--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/i0tgmgk76qyfha15i4qv.png',
+    header: 'Vite⚡ - Vue no-bundler dev setup',
+    text: 'Evan You (creator of Vue.js) has created Vite which improves the development process of Vue.',
+    tags: ['Vue', 'News'],
+    url: 'vite',
+    devtoId: '317918',
+  },
+  {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--QQRXUXWA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/qx1pnm4hdkttn3dws7k0.png',
+    header: 'Vue 3 is now in Beta 🖖',
+    text: 'Vue.js 3 has now reached Beta 🥳',
+    tags: ['Vue', 'News'],
+    url: 'vue-3-beta',
+    devtoId: '311997',
+  },
+  {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--QQRXUXWA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/qx1pnm4hdkttn3dws7k0.png',
+    header: 'Vue 3 is Coming!',
+    text: 'Vue 3 is coming in the end of Q2. Let me show you all the benefits and changes.',
+    tags: ['Vue'],
+    url: 'vue-3-is-coming',
+    devtoId: '297539',
+  },
+  {
     img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--JO8543Ck--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--hxkczeig--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/na7x6l58wzvf5o1c4d5a.png',
     header: 'Environment Variables in Vue',
     text: 'How to handle variables that should alter between your different environments.',

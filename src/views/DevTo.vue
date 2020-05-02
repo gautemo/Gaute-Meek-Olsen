@@ -18,13 +18,17 @@ export default {
         const data = await response.json();
         this.title = data.title;
         this.coverImg = data.cover_image;
-        this.bodyHtml = data.body_html;
+        this.bodyHtml = data.body_html.replace(/"\/assets\//g, '"https://dev.to/assets/');
     },
     props: { articleId: String }
 }
 </script>
 
 <style scoped>
+
+.content >>> blockquote a{
+  border-bottom: none;
+}
 
 .content >>> :not(.highlight) code{
     background: rgb(194, 194, 194);
@@ -37,7 +41,7 @@ export default {
     overflow: auto;
 }
 
-.content >>> img{
+.content >>> .article-body-image-wrapper > img{
     margin: 15px auto;
     display: block;
     width: auto;
@@ -293,4 +297,190 @@ export default {
 .content >>> .highlight .il {
   color: #ae81ff;
 } /* Literal.Number.Integer.Long */
+
+
+/* Twitter blocks */
+.content >>> blockquote.ltag__twitter-tweet {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: white;
+    max-width: 500px;
+    font-size: 0.75em;
+    line-height: 1.35em;
+    border-radius: 3px;
+    margin: 1.6em auto !important;
+    min-height: 60px;
+    cursor: pointer;
+    padding: 0px !important;
+    border: 1px solid #dbdbdb !important;
+    box-shadow: 1px 2px 4px 0 rgba(0,0,0,0.18)
+}
+
+.content >>> blockquote.ltag__twitter-tweet:hover {
+    border: 1px solid lightgray !important
+}
+
+.content >>> blockquote.ltag__twitter-tweet a {
+    color: #55acee
+}
+
+@media screen and (min-width: 360px) {
+    .content >>> blockquote.ltag__twitter-tweet {
+        min-height:105px
+    }
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__media {
+    position: relative;
+    overflow: hidden
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__media img {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__media img.ltag__twitter-tweet__play-butt {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__video {
+    display: none
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__video video {
+    width: 100%
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header {
+    position: relative;
+    height: 45px
+}
+
+@media screen and (min-width: 360px) {
+    .content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header {
+        height:52px
+    }
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header .ltag__twitter-tweet__profile-image {
+    height: 36px;
+    min-height: 36px;
+    width: 36px;
+    border-radius: 50px;
+    position: absolute;
+    left: calc(0.3vw + 13px);
+    top: calc(0.3vw + 13px);
+    background-color: #ececec
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header .ltag__twitter-tweet__twitter-logo {
+    position: absolute;
+    right: calc(0.3vw + 8px);
+    top: 20px;
+    left: auto
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header .ltag__twitter-tweet__twitter-logo img {
+    height: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    display: inline-block;
+    width: 36px;
+    margin: auto
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header .ltag__twitter-tweet__full-name {
+    color: #1c2022;
+    position: absolute;
+    left: calc(0.3vw + 57px);
+    top: calc(0.3vw + 13px);
+    font-weight: bold;
+    font-size: 16px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__header .ltag__twitter-tweet__username {
+    position: absolute;
+    left: calc(0.3vw + 57px);
+    top: calc(0.3vw + 33px);
+    color: #697882;
+    font-size: 14px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__body {
+    color: #1c2022;
+    font-size: 16px;
+    line-height: 22px;
+    padding: calc(0.3vw + 13px) calc(0.3vw + 13px) 0px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__body br {
+    line-height: 0 !important
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__date {
+    font-size: 14px;
+    color: #697882;
+    margin-top: 3px;
+    padding: 0px calc(0.3vw + 13px)
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__quote {
+    color: #1c2022;
+    margin: calc(0.3vw + 13px) calc(0.3vw + 13px) 0px;
+    padding: calc(0.2vw + 8px) calc(0.2vw + 8px);
+    border: 1px solid #dce3e8;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.1em
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__quote:hover {
+    border: 1px solid #a09dad
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__quote .ltag__twitter-tweet__quote__header {
+    padding: 0 0 calc(0.05vw + 3px);
+    font-size: 0.9em
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__quote .ltag__twitter-tweet__quote__header .ltag__twitter-tweet__quote__header__name {
+    font-weight: bold;
+    font-size: 1.1em
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions {
+    margin: 6px auto 0px;
+    padding: 0px calc(0.3vw + 13px) 5px;
+    color: #aab8c2;
+    font-size: 14px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions .ltag__twitter-tweet__actions__button {
+    width: 18px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 2px;
+    vertical-align: -7px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions .ltag__twitter-tweet__actions__button:first-child {
+    margin-left: 8px
+}
+
+.content >>> blockquote.ltag__twitter-tweet .ltag__twitter-tweet__actions img {
+    height: 20px;
+    min-height: 20px
+} 
 </style>
