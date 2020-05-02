@@ -105,6 +105,15 @@ export default {
           color: '#dd3818'
         },
         {
+          img: 'https://66.media.tumblr.com/4b95b9c0ad818f6a792dfc8a03c3457c/bf903773d6c0ab04-fe/s1280x1920/6877d2102b2bda2e1c228663e67f1a83efe18f8f.png',
+          header: 'Kuizzi',
+          smallheader: 'PWA website',
+          text: 'A quiz game for your friends. You can create your own quiz and play it live with your friends who answers with their own device.',
+          url: 'https://kuizzi.web.app/',
+          tech: ['Vue', 'Firebase', 'PWA'],
+          color: '#daa334'
+        },
+        {
           img:
             'https://66.media.tumblr.com/9485b8458c55dc48bb88a17c20c6b798/tumblr_phvyyuvYC21xfbgtko2_1280.png',
           header: 'Fatty Bird',
@@ -199,6 +208,24 @@ export default {
             'https://play.google.com/store/apps/details?id=app.gautemo.heartkeyboard',
           tech: ['Android', 'Kotlin'],
           color: '#fd3099'
+        },
+        {
+          img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--dbr9Fy8P--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2d8c8pqrys5qbwc2erki.PNG',
+          header: 'COVID-19 Timeline',
+          smallheader: 'Website',
+          text: 'Timeline of how the virus Covid-19 has spread across the worlds. Visualized in Google Maps and focuses on currently infected.',
+          url: 'https://covid-19-timeline.netlify.app/',
+          tech: ['Vue', 'Google Maps'],
+          color: '#17263c'
+        },
+        {
+          img: 'https://66.media.tumblr.com/fa6fe1d9c0cbf1e73ba2b3915d57b488/048aeacd5b2d5923-7b/s1280x1920/db5d4fb142e28b2fc4650861458e499760094e02.jpg',
+          header: 'Codewars Leaderboad',
+          smallheader: 'Website',
+          text: 'Leaderboard for codewars to keep a score of the battle of languages in my workplace. Go to leaderboard 2S for example of a leaderboard. A website grouped by clans has also been made: https://codewars-leaderboard-2s.web.app/',
+          url: 'https://codewars-leaderboard-1.web.app/',
+          tech: ['Vue', 'Firebase'],
+          color: '#e24b15'
         }
       ]
     }
