@@ -110,6 +110,16 @@ const js = [
     title: 'Set to array',
     url: 'js-set-to-array',
     comp: '2019-11-17JSSetToArray'
+  },
+  {
+    title: 'Formated clock',
+    url: 'js-formated-clock',
+    devtoId: '298291',
+  },
+  {
+    title: 'Formatting large numbers',
+    url: 'js-formated-large-numbers',
+    devtoId: '306623',
   }
 ]
 
