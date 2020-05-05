@@ -120,6 +120,11 @@ const js = [
     title: 'Formatting large numbers',
     url: 'js-formated-large-numbers',
     devtoId: '306623',
+  },
+  {
+    title: 'How to get JSON.stringify formatted',
+    url: 'js-formated-json-stringify',
+    devtoId: '328264',
   }
 ]
 
