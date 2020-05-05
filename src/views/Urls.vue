@@ -31,6 +31,8 @@ export default {
       'https://vue-routes-authentication.web.app',
       'https://gautemo.github.io/blog-devto-backend',
       'https://gautemo.github.io/web-components-example',
+      'https://calcfast.app',
+      'https://calcfast.app/privacy-policy.html',
     ]
   }),
   computed: {
