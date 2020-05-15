@@ -5,6 +5,14 @@
 <script>
 const blogs = [
   {
+    img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--_vi1UBY9--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--cc-RlDDO--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/37erfh3ivr4jl8szobek.png',
+    header: 'Create your own snippets in VS Code',
+    text: `Often you find yourself typing repetitive code or code you don't always remember by heart. With Visual Studio Code you can easily create your own code snippets so you can use them at any time.`,
+    tags: ['VS Code'],
+    url: 'vs-code-user-snippets',
+    devtoId: '336144',
+  },
+  {
     img: 'https://res.cloudinary.com/practicaldev/image/fetch/s--Izfuw2KH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--5GB2puMW--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/5zr9yxqrv4mf4pol87nx.png',
     header: 'How to test HttpClient with Moq in C#',
     text: 'This is how to mock your http requests.',
