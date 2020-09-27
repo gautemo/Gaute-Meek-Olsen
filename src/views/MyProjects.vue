@@ -227,6 +227,26 @@ export default {
           url: 'https://codewars-leaderboard-1.web.app/',
           tech: ['Vue', 'Firebase'],
           color: '#e24b15'
+        },
+        {
+          img: 'https://64.media.tumblr.com/afc8494cf62ab6e7c6868112d0db8de3/2646f0eb82c058a4-36/s2048x3072/1e44a893b1a2ed123eab060ec5ebfc5650975881.png',
+          header: 'Emojis Picker',
+          smallheader: 'Electron app',
+          text: 'This app shows you all the emojis and smileys. You can click on the emoji to copy it to the clipboard. You can also search to quickly find the emoji you want.',
+          url: 'https://www.microsoft.com/en-us/p/emojis-picker/9nfq6j6h002j',
+          github: 'https://github.com/gautemo/emoji-picker',
+          tech: ['Vue', 'Electron'],
+          color: '#fbac18'
+        },
+        {
+          img: 'https://64.media.tumblr.com/7644077e4e1dd5e5260d5693256f43bd/42ac04a886235af8-a0/s1280x1920/26afa930a2389b7766e478320f6a743ed9471f47.png',
+          header: 'Web Safe Fonts',
+          smallheader: 'Website',
+          text: 'Overview of web safe fonts in a page similar to Google Fonts.',
+          url: 'https://web-safe-fonts.vercel.app/',
+          github: 'https://github.com/gautemo/web-safe-fonts',
+          tech: ['Vue'],
+          color: '#525252'
         }
       ]
     }
