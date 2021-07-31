@@ -1,0 +1,26 @@
+{
+  "name": "gaute-meek-olsen",
+  "version": "2.0.0",
+  "description": "My personal website: [gaute.dev](https://gaute.dev)",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gautemo/Gaute-Meek-Olsen.git"
+  },
+  "author": "Gaute Meek Olsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gautemo/Gaute-Meek-Olsen/issues"
+  },
+  "homepage": "https://github.com/gautemo/Gaute-Meek-Olsen#readme",
+  "devDependencies": {
+    "vitepress": "^0.15.6"
+  },
+  "dependencies": {
+    "touch-cli-windows": "^1.0.1"
+  }
+}
