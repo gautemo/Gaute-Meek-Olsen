@@ -17,10 +17,11 @@
     "url": "https://github.com/gautemo/Gaute-Meek-Olsen/issues"
   },
   "homepage": "https://github.com/gautemo/Gaute-Meek-Olsen#readme",
-  "devDependencies": {
-    "vitepress": "^0.15.6"
-  },
   "dependencies": {
-    "touch-cli-windows": "^1.0.1"
+    "vue": "^3.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "vitepress": "^0.15.6"
   }
 }

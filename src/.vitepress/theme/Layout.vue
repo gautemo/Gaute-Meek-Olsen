@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import ArticleInfo from '../../components/ArticleInfo.vue'

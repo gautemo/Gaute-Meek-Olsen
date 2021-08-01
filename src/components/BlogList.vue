@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
 const blogFiles = import.meta.glob('../blog/*.md')
 
-const blogs = ref([])
+const blogs = ref<{title: string, key: string, url: string, cover: string}[]>([])
 
 const loadList = async () => {
   const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())

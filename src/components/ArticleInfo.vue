@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useData } from 'vitepress'
 import { getKey, getCoverImg } from '../utils/blogUtils'
 
