@@ -1,42 +1,46 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
-const blogFiles = import.meta.glob('../blog/*.md')
-
-const blogs = ref<{title: string, key: string, url: string, cover: string}[]>([])
-
-const loadList = async () => {
-  const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())
-  const blogPages = await Promise.all(blogPromises)
-  blogs.value = blogPages.map(it => {
-    const pageData = JSON.parse(it.__pageData)
-    const key = getKey(pageData.relativePath)
-    return {
-      title: pageData.title,
-      key,
-      url: getUrl(pageData.relativePath),
-      cover: getCoverImg(key)
-    }
-  })
-}
-loadList()
+import Search from './Search.vue'
+import SelectedTags from './SelectedTags.vue'
+import Tags from './Tags.vue'
+import { blogs } from '../store/blogs'
 </script>
 
 <template>
+<main>
+  <section>
+    <Search/>
+    <SelectedTags/>
+    <Tags/>
+  </section>
   <ul>
     <li v-for="blog in blogs" :key="blog.key">
       <a :href="blog.url">
         <img :src="blog.cover" alt="cover image" />
-        <h2>{{ blog.title }}</h2>
+        <div class="content">
+          <h2>{{ blog.title }}</h2>
+          <ul class="tags">
+            <li v-for="tag in blog.tags" :key="tag">{{ tag }}</li>
+          </ul>
+        </div>
       </a>
     </li>
   </ul>
+</main>
 </template>
 
 <style scoped>
+main{
+  margin: 25px 15vw;
+}
+
+section{
+  display: flex;
+  gap: 10px;
+}
+
 ul {
   list-style: none;
-  margin: 25px var(--side-margin);
+  margin: 25px 15vw;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -52,7 +56,7 @@ ul > li > a {
   filter: drop-shadow(0px 4px 6px rgba(51, 51, 51, 0.2));
 }
 
-ul > li > a:hover{
+ul > li > a:hover {
   filter: drop-shadow(0px 4px 6px rgba(51, 51, 51, 0.4));
 }
 
@@ -63,14 +67,35 @@ ul > li > a > img {
   border-radius: 5px 5px 0 0;
 }
 
-ul > li > a > h2 {
+.content {
   background: rgb(241, 243, 245);
   margin: 0;
-  height: 150px;
+  padding-bottom: 1rem;
+  min-height: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 0 0 5px 5px;
+}
+
+.content > h2 {
+  border-bottom: none;
+}
+
+.tags {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  gap: 6px;
+}
+
+.tags > li {
+  background: rgba(177, 177, 177, 0.6);
+  border-radius: 3px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  display: inline-block;
 }
 </style>

@@ -12,16 +12,16 @@
     "url": "git+https://github.com/gautemo/Gaute-Meek-Olsen.git"
   },
   "author": "Gaute Meek Olsen",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gautemo/Gaute-Meek-Olsen/issues"
   },
   "homepage": "https://github.com/gautemo/Gaute-Meek-Olsen#readme",
   "dependencies": {
-    "vue": "^3.1.5"
+    "@vueuse/core": "^6.0.0",
+    "vue": "^3.2.2"
   },
   "devDependencies": {
     "typescript": "^4.3.5",
-    "vitepress": "^0.15.6"
+    "vitepress": "^0.16.1"
   }
 }

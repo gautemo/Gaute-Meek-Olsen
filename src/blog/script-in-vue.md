@@ -2,6 +2,7 @@
 title: How to Add a Script Tag in a Vue Component
 date: 2018-11-14
 hideCoverImg: true
+tags: [Vue]
 ---
 
 You might stumble upon an error if you would like to run a script tag only on a specific component in Vue. Let's try to embed a tweet into a component template:
