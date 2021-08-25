@@ -27,10 +27,10 @@ function getRandomInt (max) {
 }
 
 const walk = () => {
-  const width = document.querySelector('.stickmans').clientWidth
+  const { clientWidth, clientHeight } = document.querySelector('.stickmans')
   for(const id of [...Array(15).keys()].map(i => i+1)){
-    const x = getRandomInt(width)
-    const y = getRandomInt(500)
+    const x = getRandomInt(clientWidth - 40)
+    const y = getRandomInt(clientHeight - 40)
     document.querySelector(
       `[data-nr="${id}"]`
     ).style.transform = `translate(${x}px, ${y}px)`
