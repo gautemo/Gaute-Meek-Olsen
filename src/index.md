@@ -1,15 +1,4 @@
-# hei
-
-::: danger
-This is a dangerous warning
-:::
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+<Home/>
+<script setup>
+import Home from './components/Home.vue'
+</script>
