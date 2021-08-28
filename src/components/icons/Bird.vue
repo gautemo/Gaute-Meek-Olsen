@@ -314,7 +314,7 @@ svg:hover #XMLID_21_,
 svg:hover #XMLID_14_,
 svg:hover #XMLID_23_
 {
-  filter: brightness(1.4);
+  filter: brightness(1.6);
 }
 
 .st2 {

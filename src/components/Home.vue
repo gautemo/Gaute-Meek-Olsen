@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 import { darkMode } from '../store/settings'
-import gauteWorkLight from '../assets/gaute_work_light.jpg'
-import gauteWorkDark from '../assets/gaute_work_dark.jpg'
-import gauteFreetimeLight from '../assets/gaute_freetime_light.jpg'
-import gauteFreetimeDark from '../assets/gaute_freetime_dark.jpg'
+import { 
+  gauteFreetimeDark, 
+  gauteFreetimeLight, 
+  gauteWorkDark, 
+  gauteWorkLight, 
+  github, 
+  googleplay, 
+  linkedin, 
+  twitter,
+} from '../assets/assets'
 import { useMouseInElement } from '@vueuse/core'
 import Pen from './icons/Pen.vue'
 import Bird from './icons/Bird.vue'
@@ -62,8 +68,26 @@ const meSrc = computed(() => {
           </span>
         </a>
       </nav>
+      <h3>Find me on</h3>
+      <div class="social">
+        <a href="https://twitter.com/GauteMeekOlsen" target="_blank" rel="noopener">
+          <img :src="twitter" alt="Twitter">
+          <span>Twitter</span>
+        </a>
+        <a href="https://github.com/gautemo" target="_blank" rel="noopener">
+          <img :src="github" alt="GitHub">
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/gaute-meek-olsen-8256b493/" target="_blank" rel="noopener">
+          <img :src="linkedin" alt="LinkedIn">
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank" rel="noopener">
+          <img :src="googleplay" alt="Google Play">
+          <span>Google Play</span>
+        </a>
+      </div>
     </div>
-
   </section>
 </template>
 
@@ -102,6 +126,7 @@ const meSrc = computed(() => {
   height: calc(100vh - var(--menu-height));
   overflow: auto;
   position: relative;
+  z-index: 3;
 }
 
 .name{
@@ -160,5 +185,27 @@ a{
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+}
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.social img{
+  width: 50px;
+  height: 50px;
+}
+
+.social a:hover img{
+  animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 </style>
