@@ -6,9 +6,13 @@ import gauteWorkDark from '../assets/gaute_work_dark.jpg'
 import gauteFreetimeLight from '../assets/gaute_freetime_light.jpg'
 import gauteFreetimeDark from '../assets/gaute_freetime_dark.jpg'
 import { useMouseInElement } from '@vueuse/core'
+import Pen from './icons/Pen.vue'
+import Bird from './icons/Bird.vue'
+import Lantern from './icons/Lantern.vue'
+import Robot from './icons/Robot.vue'
 
 const meContainer = ref(null)
-const { isOutside } = useMouseInElement(meContainer)
+const { isOutside } = useMouseInElement(meContainer, {touch: false})
 const meSrc = computed(() => {
   if(darkMode.value && isOutside.value) return gauteWorkDark
   if(!darkMode.value && isOutside.value) return gauteWorkLight
@@ -30,11 +34,36 @@ const meSrc = computed(() => {
     </div>
   </section>
   <section class="about">
-    <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
-    <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
-    <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
-    <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
-    <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
+    <div>
+      <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
+      <nav>
+        <a href="/dev-blog">
+          <Pen/>
+          <span>
+            Dev blog
+          </span>
+        </a>
+        <a href="/til">
+          <Lantern/>
+          <span>
+            Today I Learned
+          </span>
+        </a>
+        <a href="/talks">
+          <Bird/>
+          <span>
+            Talks
+          </span>
+        </a>
+        <a href="/projects">
+          <Robot/>
+          <span>
+            Projects
+          </span>
+        </a>
+      </nav>
+    </div>
+
   </section>
 </template>
 
@@ -94,6 +123,11 @@ h1{
     blink-caret .75s step-end 12 forwards;
 }
 
+.about > div {
+  background: #FB1;
+  padding: 2rem;
+}
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -112,5 +146,19 @@ h1{
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 </style>
