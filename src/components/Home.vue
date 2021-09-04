@@ -16,6 +16,7 @@ import Pen from './icons/Pen.vue'
 import Bird from './icons/Bird.vue'
 import Lantern from './icons/Lantern.vue'
 import Robot from './icons/Robot.vue'
+import Sky from './Sky.vue'
 
 const meContainer = ref(null)
 const { isOutside } = useMouseInElement(meContainer, {touch: false})
@@ -32,6 +33,9 @@ const meSrc = computed(() => {
   <section class="parallax">
     <div class="name">
       <h1>Hi, I'm Gaute Meek Olsen</h1>
+    </div>
+    <div class="sky">
+      <Sky/>
     </div>
     <div class="me-container" ref="meContainer">
       <transition name="fade">
@@ -100,14 +104,15 @@ const meSrc = computed(() => {
   height: var(--parallax-height);
   width: 100%;
   position: absolute;
+  display: flex;
+}
+
+.sky{
+  flex: 1;
 }
 
 .me-container{
   filter: drop-shadow(-8px 0 #3333);
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 40%;
   min-width: 400px;
   max-width: 600px;
@@ -205,7 +210,7 @@ a{
 
 @keyframes pulse {
   0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+  50% { transform: scale(1.1) rotate(10deg); }
   100% { transform: scale(1); }
 }
 </style>
