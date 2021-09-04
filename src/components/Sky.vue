@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from '@vue/runtime-core';
-import { useMouseInElement, useThrottle } from '@vueuse/core';
+import { onMounted, onUpdated } from '@vue/runtime-core';
+import { throttledWatch, useMouseInElement } from '@vueuse/core';
 import { ref } from 'vue';
 import { darkMode } from '../store/settings'
 
@@ -25,22 +25,42 @@ const clouds = [
 
 const sky = ref(null)
 const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(sky, {touch: false})
-const mouseX = useThrottle(elementX, 30)
-const mouseY = useThrottle(elementY, 30)
-const move = computed(() => {
-  const moveValue = darkMode.value ? 200 : 500
-  const x = (elementWidth.value/2 - mouseX.value) / moveValue
-  const y = (elementHeight.value/2 - mouseY.value) / moveValue
-  return { x, y }
-})
+
+let skyElements: HTMLElement[] = []
+const loadSkyElements = () => {
+  skyElements = [
+    ...Array.from(document.querySelectorAll<HTMLElement>('.cloud')),
+    ...Array.from(document.querySelectorAll<HTMLElement>('.star'))
+  ]
+}
+onMounted(loadSkyElements)
+onUpdated(loadSkyElements)
+
+throttledWatch(
+  [elementX, elementY, elementWidth, elementHeight],
+  () => { 
+    const midX = elementWidth.value / 2
+    const midY = elementHeight.value / 2
+    const moveX = (midX - elementX.value) / 150
+    const moveY = (midY - elementY.value) / 150
+    for(const skyElement of skyElements){
+      const size = Number(skyElement.style.getPropertyValue('--size'))
+      const toX = moveX * (size / 30)
+      const toY = moveY * (size / 30)
+      skyElement.style.transform = `translate(${toX}px, ${toY}px)`
+    }
+  },
+  { throttle: 35 }
+)
 </script>
 
 <template>
-  <div class="container" ref="sky" v-once>
+  <div class="container" ref="sky" v-memo="[darkMode]">
     <span 
       v-for="(cloud, i) in clouds" 
       :key="i" 
       :style="{ '--size': cloud.size, left: cloud.left, top: cloud.top }"
+      :class="{dark: darkMode}"
       :data-cloudid="i"
       class="cloud"
     >
@@ -48,7 +68,7 @@ const move = computed(() => {
     </span>
     <span
       v-if="darkMode"
-      v-for="id in 200"
+      v-for="id in 70"
       :key="id"
       :style="{ '--size': random(30) + 5, left: `${random(98)}%`, top: `${random(98)}%` }"
       :data-starid="id"
@@ -70,12 +90,15 @@ const move = computed(() => {
   position: absolute;
   cursor: default;
   font-size: calc(var(--size) * 1px);
-  --move: calc(1px * (var(--size)/10));
-  transform: translate(calc(v-bind('move.x') * var(--move)), calc(v-bind('move.y') * var(--move)));
 }
 
 .cloud{
   color: #ffffffab;
+  transition: color .5s ease;
+}
+
+.cloud.dark{
+  color: #333333ab;
 }
 
 .star{
