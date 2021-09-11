@@ -30,7 +30,9 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
 }
 
 .dark{
-  --primary: #639bb4;
+  --primary: #44708d;
+  --secondary: #3C8C6A;
+  --tertiary: #EE5034;
 }
 </style>
 

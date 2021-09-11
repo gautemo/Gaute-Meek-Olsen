@@ -108,6 +108,10 @@ const meSrc = computed(() => {
   display: flex;
 }
 
+.dark .parallax{
+  background: linear-gradient(45deg, var(--primary) 50%, #584A8C 85%);
+}
+
 .sky{
   flex: 1;
 }

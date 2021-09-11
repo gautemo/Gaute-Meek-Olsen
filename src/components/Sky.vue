@@ -56,16 +56,6 @@ throttledWatch(
 
 <template>
   <div class="container" ref="sky" v-memo="[darkMode]">
-    <span 
-      v-for="(cloud, i) in clouds" 
-      :key="i" 
-      :style="{ '--size': cloud.size, left: cloud.left, top: cloud.top }"
-      :class="{dark: darkMode}"
-      :data-cloudid="i"
-      class="cloud"
-    >
-      ☁
-    </span>
     <span
       v-if="darkMode"
       v-for="id in 70"
@@ -75,6 +65,16 @@ throttledWatch(
       class="star"
     >
       ✦
+    </span>
+    <span 
+      v-for="(cloud, i) in clouds" 
+      :key="i" 
+      :style="{ '--size': cloud.size, left: cloud.left, top: cloud.top }"
+      :class="{dark: darkMode}"
+      :data-cloudid="i"
+      class="cloud"
+    >
+      ☁
     </span>
   </div>
 </template>
