@@ -23,14 +23,14 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
 :root{
   --black: #1e1e1e;
   --white: #fcfcfc;
-  --primary: #9ad2ec;
-  --primary-dark: #60aed3;
+  --primary: #A8D0E6;
+  --secondary: #F8E9A1;
+  --tertiary: #F76C6C;
   --menu-height: 4rem;
 }
 
 .dark{
   --primary: #639bb4;
-  --primary-dark: #35708b;
 }
 </style>
 

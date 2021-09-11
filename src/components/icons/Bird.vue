@@ -293,28 +293,35 @@ svg{
 }
 
 #XMLID_24_{
-  transition: all .5s ease;
+  transition: all .25s ease;
 }
 #XMLID_23_{
-  transition: all .5s ease .5s;
+  transition: all .25s ease .25s;
 }
 #XMLID_21_{
-  transition: all .5s ease 1s;
+  transition: all .25s ease .5s;
 }
 #XMLID_19_{
-  transition: all .5s ease 1.5s;
+  transition: all .25s ease .75s;
 }
 #XMLID_14_{
-  transition: all .5s ease 2s;
+  transition: all .25s ease 1s;
 }
 
-svg:hover #XMLID_24_,
-svg:hover #XMLID_19_,
-svg:hover #XMLID_21_,
-svg:hover #XMLID_14_,
-svg:hover #XMLID_23_
-{
-  filter: brightness(1.6);
+svg:hover #XMLID_24_{
+  fill: #56ffff;
+}
+svg:hover #XMLID_23_{
+  fill: #ae7ee2;
+}
+svg:hover #XMLID_21_{
+  fill: #ff98ca;
+}
+svg:hover #XMLID_19_{
+  fill: #ffdbcd;
+}
+svg:hover #XMLID_14_{
+  fill: #fffbbc;
 }
 
 .st2 {

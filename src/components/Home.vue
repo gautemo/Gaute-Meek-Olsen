@@ -99,8 +99,9 @@ const meSrc = computed(() => {
 :global(:root){
   --parallax-height: calc(100vh - var(--menu-height) - 50px);
 }
+
 .parallax{
-  background: var(--primary);
+  background: linear-gradient(45deg, var(--primary) 50%, #ffd2d2 85%);
   height: var(--parallax-height);
   width: 100%;
   position: absolute;
@@ -142,19 +143,21 @@ const meSrc = computed(() => {
 }
 
 h1{
+  color: var(--tertiary);
+  text-shadow: -1px 1px 2px rgba(51, 51, 51, 0.5);
   font-size: clamp(1.5rem, 3vw, 3rem); ;
   font-weight: bold;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   width: 0;
-  border-right: .15rem solid orange;
+  border-right: .15rem solid var(--tertiary);
   animation: 
     typing 5s linear 3s forwards,
     blink-caret .75s step-end 12 forwards;
 }
 
 .about > div {
-  background: #FB1;
+  background: var(--secondary);
   padding: 2rem;
 }
 
@@ -165,7 +168,7 @@ h1{
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: var(--tertiary); }
 }
 
 .fade-enter-active,

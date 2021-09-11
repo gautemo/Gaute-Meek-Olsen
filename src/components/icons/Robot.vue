@@ -503,6 +503,10 @@ svg:hover #XMLID_21_{
   }
 }
 
+#XMLID_1_{
+  fill: var(--tertiary);
+}
+
 .st4 {
   fill: #430b48;
 }
