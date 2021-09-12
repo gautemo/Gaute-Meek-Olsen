@@ -390,4 +390,11 @@ svg:hover #XMLID_17_{
 .st20 {
   fill: #fbaf41;
 }
+
+@media only screen and (max-width: 600px) {
+  svg{
+    height: 10rem;
+    width: 10rem;
+  }
+}
 </style>

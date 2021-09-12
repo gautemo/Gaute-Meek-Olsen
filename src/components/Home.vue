@@ -31,15 +31,14 @@ const meSrc = computed(() => {
 
 <template>
   <section class="parallax">
-    <div class="name">
-      <h1>Hi, I'm Gaute Meek Olsen</h1>
-    </div>
-    <div class="sky">
-      <Sky/>
-    </div>
-    <div class="me-container" ref="meContainer">
+    <Sky>
+      <div class="name">
+        <h1>Hi, I'm Gaute Meek Olsen</h1>
+      </div>
+    </Sky>
+    <div class="me" ref="meContainer">
       <transition name="fade">
-        <img class="me" :src="meSrc" :key="meSrc" alt="me">
+        <img :src="meSrc" :key="meSrc" alt="me">
       </transition>
     </div>
   </section>
@@ -47,7 +46,7 @@ const meSrc = computed(() => {
     <div>
       <h2>
         I'm a norwegian developer from Trondheim, currently living in Oslo.<br/>
-        This is my place where I share what interest me and what I'm doing, and also have some fun!
+        This is my place where I share what interest me, what I'm doing, and also have some fun!
       </h2>
       <nav>
         <a href="/dev-blog">
@@ -115,18 +114,14 @@ const meSrc = computed(() => {
   background: linear-gradient(45deg, var(--primary) 50%, #584A8C 85%);
 }
 
-.sky{
-  flex: 1;
-}
-
-.me-container{
+.me{
   filter: drop-shadow(-8px 0 #3333);
   width: 40%;
   min-width: 400px;
   max-width: 600px;
 }
 
-.me{
+.me img{
   position: absolute;
   right: 0;
   height: 100%;
@@ -144,20 +139,19 @@ const meSrc = computed(() => {
 
 .name{
   display: inline-block;
-  margin: 5rem;
-  position: absolute;
+  position: relative;
   z-index: 2;
 }
 
 h1{
   color: var(--tertiary);
   text-shadow: -1px 1px 2px rgba(51, 51, 51, 0.5);
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1.7rem, 4vw, 4rem);
   font-style: italic;
   font-weight: bold;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  width: 0;
+  width: 0%;
   border-right: .15rem solid var(--tertiary);
   animation: 
     typing 5s linear 3s forwards,
@@ -177,7 +171,7 @@ h2{
 }
 
 @keyframes typing {
-  from { width: 0 }
+  from { width: 0% }
   to { width: 100% }
 }
 
@@ -208,6 +202,7 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   font-size: 1.5rem;
   color: var(--c-text);
 }
@@ -232,5 +227,42 @@ a{
   0% { transform: scale(1); }
   50% { transform: scale(1.1) rotate(10deg); }
   100% { transform: scale(1); }
+}
+
+@media only screen and (max-width: 800px) {
+  .me{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    filter: none;
+    min-width: 300px;
+  }
+
+  .me img{
+    border-radius: 15px;
+    border: 4px solid var(--tertiary);
+    clip-path: none;
+    right: auto;
+  }
+
+  .name{
+    margin-top: 460px;
+  }
+
+  nav{
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 5px;
+  }
+
+  .social{
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 25px;
+  }
 }
 </style>

@@ -20,6 +20,7 @@ import { darkMode } from '../../store/settings'
 label{
   cursor: pointer;
   width: 55px;
+  min-width: 55px;
   height: 32px;
   padding: 3px;
   background: var(--secondary);

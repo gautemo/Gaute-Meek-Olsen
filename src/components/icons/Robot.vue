@@ -552,4 +552,11 @@ svg:hover #XMLID_21_{
   stroke-linejoin: round;
   stroke-miterlimit: 10;
 }
+
+@media only screen and (max-width: 600px) {
+  svg{
+    height: 10rem;
+    width: 10rem;
+  }
+}
 </style>

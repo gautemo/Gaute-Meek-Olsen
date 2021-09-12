@@ -383,4 +383,11 @@ svg:hover #XMLID_14_{
 .st20 {
   stroke-width: 2;
 }
+
+@media only screen and (max-width: 600px) {
+  svg{
+    height: 10rem;
+    width: 10rem;
+  }
+}
 </style>

@@ -24,7 +24,6 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
   --primary: #A8D0E6;
   --secondary: #F8E9A1;
   --tertiary: #F76C6C;
-  --menu-height: 4rem;
 }
 
 .dark{

@@ -23,6 +23,12 @@ const clouds = [
   { size: 190, top: '25%', left: '75%' },
 ]
 
+let nrStars = 70
+if(document.documentElement.clientWidth <= 800){
+  clouds.splice(10, 4)
+  nrStars = 40
+}
+
 const sky = ref(null)
 const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(sky, {touch: false})
 
@@ -56,9 +62,10 @@ throttledWatch(
 
 <template>
   <div class="container" ref="sky" v-memo="[darkMode]">
+    <slot></slot>
     <span
       v-if="darkMode"
-      v-for="id in 70"
+      v-for="id in nrStars"
       :key="id"
       :style="{ '--size': random(30) + 5, left: `${random(98)}%`, top: `${random(98)}%` }"
       :data-starid="id"
@@ -81,9 +88,10 @@ throttledWatch(
 
 <style scoped>
 .container{
-  position: absolute;
-  inset: 0;
-  width: 60%;
+  flex: 1;
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .cloud, .star{
@@ -102,5 +110,13 @@ throttledWatch(
 
 .star{
   color: #ffee00ab;
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    overflow: hidden;
+    place-items: normal;
+    justify-content: center;
+  }
 }
 </style>

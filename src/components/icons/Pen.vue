@@ -99,4 +99,11 @@ svg:hover .star-two{
 svg:hover .bg{
   opacity: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  svg{
+    height: 10rem;
+    width: 10rem;
+  }
+}
 </style>
