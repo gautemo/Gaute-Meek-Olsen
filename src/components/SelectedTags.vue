@@ -27,7 +27,7 @@ span {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  background: #e7ca52;
+  background: var(--secondary);
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.3s ease;

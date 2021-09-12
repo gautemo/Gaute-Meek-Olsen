@@ -38,7 +38,7 @@ const toggle = () => {
 }
 
 button{
-  background: #e7ca52;
+  background: var(--secondary);
   display: flex;
   align-items: center;
   height: 100%;
@@ -49,7 +49,7 @@ button{
 }
 
 .disabled{
-  background: grey;
+  background: #e7e7e7;
   cursor: default;
 }
 
@@ -59,7 +59,7 @@ button{
   top: 100%;
   right: 0;
   flex-direction: column;
-  background-color: #e7ca52;
+  background-color: var(--secondary);
   padding: 10px;
   border-radius: 2px;
   box-shadow: 0 0 5px #333;
@@ -73,15 +73,20 @@ button{
   min-width: 180px;
   cursor: pointer;
 }
+
+.select-tag > div:last-child{
+  border-bottom: none;
+}
+
 .select-tag > div > .check {
   visibility: hidden;
 }
 .select-tag > div > span {
   flex: 1;
-  padding: 15px 25px 1px 2px;
+  padding: 15px 25px 15px 2px;
 }
-.select-tag > div:hover {
-  border-bottom-color: #1e1e1e;
+.select-tag > div:hover > span {
+  font-weight: bold;
 }
 .select-tag > div:hover > .check {
   visibility: visible;

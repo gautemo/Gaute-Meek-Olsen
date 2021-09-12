@@ -4,7 +4,7 @@ import { search } from '../store/blogs'
 
 <template>
   <label>
-    <input v-model="search" @input="$emit('update-search', search)" type="text" placeholder=" " />
+    <input v-model="search" type="text" placeholder=" " />
     <span>Search for title or tags</span>
   </label>
 </template>
@@ -30,7 +30,10 @@ span{
   position: absolute;
   opacity: 0.6;
   top: 0;
-  left: 2px;
+  left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
   cursor: text;
   transition: all 0.5s ease-in-out;
 }
@@ -38,8 +41,8 @@ span{
 input:not(:placeholder-shown) + span,
 input:focus + span{
   opacity: 1;
-  transform: translate(-2px, -1.5rem);
-  font-size: 0.8rem;
+  transform: translate(-10px, calc(10px + -100%));
+  font-size: 0.9rem;
   cursor: default;
 }
 </style>

@@ -1,11 +1,19 @@
-import { computed, ComputedRef, reactive, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
 const blogFiles = import.meta.glob('../blog/*.md')
 
 type Blog = { title: string, key: string, url: string, cover: string, tags: string[], date: Date }
 
 const allBlogs = ref<Blog[]>([])
-const blogs = computed(() => allBlogs.value.filter(blog => selectedTags.value.every(tag => blog.tags.includes(tag))))
+const blogs = computed(() => {
+  return allBlogs.value.filter(blog => {
+    const searchLowercase = search.value.toLowerCase()
+    const tagMatch = selectedTags.value.every(tag => blog.tags.includes(tag))
+    const searchTitleMatch = blog.title.toLowerCase().includes(searchLowercase)
+    const searchTagMatch = blog.tags.some(tag => tag.toLowerCase() === searchLowercase)
+    return tagMatch && (searchTitleMatch || searchTagMatch)
+  })
+}) 
 const selectedTags = ref<string[]>([])
 const tags = computed(() =>
   Array.from(
