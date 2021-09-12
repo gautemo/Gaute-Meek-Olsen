@@ -94,7 +94,6 @@ throttledWatch(
 
 .cloud{
   color: #ffffffab;
-  transition: color .5s ease;
 }
 
 .cloud.dark{

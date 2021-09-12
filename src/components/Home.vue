@@ -45,7 +45,10 @@ const meSrc = computed(() => {
   </section>
   <section class="about">
     <div>
-      <h2>I'm a norwegian developer from Trondheim, currently living in Oslo.</h2>
+      <h2>
+        I'm a norwegian developer from Trondheim, currently living in Oslo.<br/>
+        This is my place where I share what interest me and what I'm doing, and also have some fun!
+      </h2>
       <nav>
         <a href="/dev-blog">
           <Pen/>
@@ -149,7 +152,8 @@ const meSrc = computed(() => {
 h1{
   color: var(--tertiary);
   text-shadow: -1px 1px 2px rgba(51, 51, 51, 0.5);
-  font-size: clamp(1.5rem, 3vw, 3rem); ;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-style: italic;
   font-weight: bold;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -158,6 +162,13 @@ h1{
   animation: 
     typing 5s linear 3s forwards,
     blink-caret .75s step-end 12 forwards;
+}
+
+h2{
+  border: none;
+  font-style: italic;
+  text-align: center;
+  margin: 4rem 2rem;
 }
 
 .about > div {
@@ -189,6 +200,7 @@ nav{
   position: relative;
   display: flex;
   justify-content: space-around;
+  margin: 4rem 1rem;
 }
 
 a{
@@ -197,13 +209,14 @@ a{
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  color: var(--c-text);
 }
 
 .social{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 1rem 0;
+  margin: 1rem 1rem 4rem 1rem;
 }
 
 .social img{

@@ -21,8 +21,6 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
 
 <style>
 :root{
-  --black: #1e1e1e;
-  --white: #fcfcfc;
   --primary: #A8D0E6;
   --secondary: #F8E9A1;
   --tertiary: #F76C6C;
@@ -33,6 +31,8 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
   --primary: #44708d;
   --secondary: #3C8C6A;
   --tertiary: #EE5034;
+
+  --c-text: #e2e2e2;
 }
 </style>
 

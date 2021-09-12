@@ -22,11 +22,11 @@ label{
   width: 55px;
   height: 32px;
   padding: 3px;
-  background: white;
+  background: var(--secondary);
   border-radius: 100px;
   display: flex;
   align-items: center;
-  transition: all .5s ease;
+  transition: background-color .5s ease;
   font-size: 1.25rem;
 }
 

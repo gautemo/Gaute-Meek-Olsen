@@ -81,7 +81,7 @@ button{
   padding: 15px 25px 1px 2px;
 }
 .select-tag > div:hover {
-  border-bottom-color: var(--black, black);
+  border-bottom-color: #1e1e1e;
 }
 .select-tag > div:hover > .check {
   visibility: visible;
