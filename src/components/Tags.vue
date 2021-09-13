@@ -20,7 +20,7 @@ const toggle = () => {
 <template>
   <div class="container" ref="dropdownRef">
     <button @click="toggle" :class="{disabled: tags.length === 0}">
-      Tags
+      <span>Tags</span>
       <svg class="caret" :class="{ turn: dropdownOpen }" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" > <path d="M7 10l5 5 5-5z" /> <path d="M0 0h24v24H0z" fill="none" /> </svg>
     </button>
     <div class="select-tag" v-if="dropdownOpen">
@@ -46,10 +46,11 @@ button{
   border-radius: 3px;
   padding: 0 10px;
   cursor: pointer;
+  color: inherit;
 }
 
 .disabled{
-  background: #e7e7e7;
+  background: #e7e7e785;
   cursor: default;
 }
 
@@ -60,7 +61,7 @@ button{
   right: 0;
   flex-direction: column;
   background-color: var(--secondary);
-  padding: 10px;
+  padding: 0 10px;
   border-radius: 2px;
   box-shadow: 0 0 5px #333;
   z-index: 1;
@@ -94,6 +95,10 @@ button{
 
 .caret {
   transition: transform 0.2s ease-in-out;
+}
+
+.caret > :first-child{
+  fill: var(--c-text);
 }
 
 .turn {

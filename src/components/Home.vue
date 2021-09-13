@@ -145,7 +145,7 @@ const meSrc = computed(() => {
 
 h1{
   color: var(--tertiary);
-  text-shadow: -1px 1px 2px rgba(51, 51, 51, 0.5);
+  text-shadow: -2px 2px 2px rgba(51, 51, 51);
   font-size: clamp(1.7rem, 4vw, 4rem);
   font-style: italic;
   font-weight: bold;

@@ -14,7 +14,7 @@ import { blogs } from '../store/blogs'
   </section>
   <ul>
     <li v-for="blog in blogs" :key="blog.key">
-      <a :href="blog.url">
+      <a :href="blog.url" class="card">
         <img :src="blog.cover" alt="cover image" />
         <div class="content">
           <h2>{{ blog.title }}</h2>
@@ -48,20 +48,24 @@ ul {
   height: fit-content;
 }
 
-ul > li > a {
+.card {
   height: 100%;
   color: inherit;
-  text-decoration: inherit;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.4);
+  text-decoration: none;
+  border: 1px solid var(--c-divider-dark);
 }
 
-ul > li > a:hover {
-  box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.8);
+.card:hover {
+  box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.1);
 }
 
-ul > li > a > img {
+.dark .card:hover {
+  box-shadow: 0 2px 5px rgba(180, 180, 180, 0.1);
+}
+
+.card > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
@@ -76,6 +80,7 @@ ul > li > a > img {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  background: var(--c-bg-accent);
 }
 
 .content > h2 {

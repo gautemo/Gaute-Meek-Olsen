@@ -19,6 +19,7 @@ input{
   width: 100%;
   font-size: inherit;
   font-family: inherit;
+  background: var(--c-bg-accent);
   line-height: 1.5rem;
   padding: 10px;
   box-sizing: border-box;
@@ -35,7 +36,7 @@ span{
   display: flex;
   align-items: center;
   cursor: text;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease, font-size 0.5s ease, opacity 0.5s ease;
 }
 
 input:not(:placeholder-shown) + span,

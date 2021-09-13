@@ -24,6 +24,7 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
   --primary: #A8D0E6;
   --secondary: #F8E9A1;
   --tertiary: #F76C6C;
+  --link: #0059b3;
 }
 
 .dark{
@@ -32,6 +33,9 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
   --tertiary: #EE5034;
 
   --c-text: #e2e2e2;
+  --c-bg: rgb(21, 32, 43);
+  --c-bg-accent: rgb(25, 39, 52);
+  --link: #85c2ff;
 }
 </style>
 
@@ -40,5 +44,16 @@ article {
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
   max-width: 48rem;
+}
+
+article :deep(a){
+  border-bottom: 1px solid #c8c8c8;
+  color: var(--link);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+article :deep(a:hover){
+  border-bottom: 2px solid var(--link);
 }
 </style>
