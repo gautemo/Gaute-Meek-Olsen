@@ -1,6 +1,6 @@
 import { computed, ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
-const blogFiles = import.meta.glob('../blog/*.md')
+const blogFiles = import.meta.glob('../dev-blog/*.md')
 
 type Blog = { title: string, key: string, url: string, cover: string, tags: string[], date: Date }
 
