@@ -35,4 +35,8 @@ h1::before {
     var(--tertiary)
   );
 }
+
+img{
+  margin-top: 1rem;
+}
 </style>

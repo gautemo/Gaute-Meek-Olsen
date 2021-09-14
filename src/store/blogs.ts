@@ -2,7 +2,7 @@ import { computed, ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
 const blogFiles = import.meta.glob('../dev-blog/*.md')
 
-type Blog = { title: string, key: string, url: string, cover: string, tags: string[], date: Date }
+type Blog = { title: string, key: string, url: string, cover: string, tags: string[], date: Date, serie?: string }
 
 const allBlogs = ref<Blog[]>([])
 const blogs = computed(() => {
@@ -25,7 +25,7 @@ const search = ref('')
 const loadList = async () => {
   const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())
   const blogPages = await Promise.all(blogPromises)
-  allBlogs.value = blogPages.map((it):Blog => {
+  allBlogs.value = blogPages.map(it => {
     const pageData = JSON.parse(it.__pageData)
     const key = getKey(pageData.relativePath)
     return {
@@ -34,10 +34,11 @@ const loadList = async () => {
       url: getUrl(pageData.relativePath),
       cover: getCoverImg(key),
       tags: pageData.frontmatter.tags,
-      date: new Date(pageData.frontmatter.date)
+      date: new Date(pageData.frontmatter.date),
+      serie: pageData.frontmatter.serie,
     }
   }).sort((a,b) => b.date.getTime() - a.date.getTime())
 }
 loadList()
 
-export { blogs, tags, selectedTags, search }
+export { allBlogs, blogs, tags, selectedTags, search }

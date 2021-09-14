@@ -2,21 +2,22 @@
 import { computed } from 'vue'
 import { useData } from 'vitepress'
 import ArticleInfo from '../../components/ArticleInfo.vue'
+import Series from '../../components/Series.vue'
 import Menu from './Menu.vue'
 
 const { page } = useData()
-const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.relativePath))
+const isArticle = computed(() => page.value && /(dev-blog|til)\//.test(page.value.relativePath))
 </script>
 
 <template>
   <Menu/>
   <article v-if="isArticle">
     <ArticleInfo/>
+    <Series/>
     <Content />
+    <Series/>
   </article>
-  <main v-else>
-    <Content />
-  </main>
+  <Content v-else/>
 </template>
 
 <style>
@@ -36,6 +37,11 @@ const isArticle = computed(() => page.value && /(blog|til)\//.test(page.value.re
   --c-bg: rgb(21, 32, 43);
   --c-bg-accent: rgb(25, 39, 52);
   --link: #85c2ff;
+}
+
+.dark article :not(pre) > code{
+  background: rgba(66, 73, 80, 0.5);
+  color: var(--c-text-lighter);
 }
 </style>
 
