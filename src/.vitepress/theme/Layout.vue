@@ -43,6 +43,17 @@ const isArticle = computed(() => page.value && /(dev-blog|til)\//.test(page.valu
   background: rgba(66, 73, 80, 0.5);
   color: var(--c-text-lighter);
 }
+
+.medium-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.medium-img > img{
+  width: 50%;
+  max-width: 400px;
+}
 </style>
 
 <style scoped>
