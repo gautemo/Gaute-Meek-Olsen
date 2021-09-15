@@ -1,7 +1,6 @@
 ---
 title: Intro to the easiest DB ever, Firestore
 date: 2018-11-17
-hideCoverImg: false
 tags: [Firebase]
 serie: Firestore
 ---

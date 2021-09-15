@@ -1,7 +1,6 @@
 ---
 title: Firestore and Security
 date: 2018-11-25
-hideCoverImg: false
 tags: [Firebase]
 serie: Firestore
 ---
