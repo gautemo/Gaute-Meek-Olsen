@@ -14,9 +14,11 @@ img{
   cursor: zoom-in;
 }
 .zoom{
+  --width: min(1500px, 95vw);
   cursor: zoom-out;
-  transform: scale(1.7);
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  position: relative;
+  width: var(--width);
+  left: calc(var(--width)/-2 + 50%);
+  max-width: none;
 }
 </style>

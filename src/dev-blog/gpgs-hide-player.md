@@ -17,9 +17,9 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 2. Go to **Game services** in the left menu.
 3. Open your game.
 4. Copy the **applicationId** for later.
-![Console](./assets/gpgs-hide-player/appid.png)
+<ImgWithZoom src="./assets/gpgs-hide-player/appid.png" alt="Console"/>
 5. Click **Leaderboard** in the left menu. Then copy the **leaderboardId** for later.
-![Console](./assets/gpgs-hide-player/leaderboardid.png)
+<ImgWithZoom src="./assets/gpgs-hide-player/leaderboardid.png" alt="Console"/>
 6. Go to **Linked apps** in the left menu.
 7. Click **Link another app** and choose **web**.
 8. Give it a rememberable name such as «App to remove player score».
@@ -64,3 +64,7 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 </figure>
 
 There you go, the player will be gone from your leaderboard! If you want, you can clean up by deleting your web app from the Google Play Console and the APIs Console. If you regret your hiding, you can [unhide them](https://developers.google.com/games/services/management/api/players/unhide).
+
+<script setup>
+import ImgWithZoom from '../components/ImgWithZoom.vue'
+</script>

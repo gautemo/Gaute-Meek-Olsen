@@ -28,6 +28,10 @@ const isArticle = computed(() => page.value && /(dev-blog|til)\//.test(page.valu
   --link: #0059b3;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .dark{
   --primary: #44708d;
   --secondary: #3C8C6A;
@@ -61,6 +65,7 @@ article {
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
   max-width: 48rem;
+  word-break: break-word;
 }
 
 article :deep(a){
