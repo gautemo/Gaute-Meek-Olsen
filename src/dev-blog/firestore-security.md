@@ -31,26 +31,26 @@ They can be written and published in the rules tab in the Cloud Firestore sectio
 
 Make sure you have installed the Firebase CLI and are logged in.
 
-```sh
+```bash
 npm install -g firebase-tools
 firebase login
 ```
 
 Inside your project folder.
 
-```sh
+```bash
 firebase init firestore
 ```
 
 Which creates a .rules file you can edit your rules in. Then deploy them with this command.
 
-```sh
+```bash
 firebase deploy
 ```
 
 or only deploy rules, if your using more firebase functionallity
 
-```sh
+```bash
 firebase deploy --only firestore:rules
 ```
 

@@ -64,7 +64,3 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 </figure>
 
 There you go, the player will be gone from your leaderboard! If you want, you can clean up by deleting your web app from the Google Play Console and the APIs Console. If you regret your hiding, you can [unhide them](https://developers.google.com/games/services/management/api/players/unhide).
-
-<script setup>
-import ImgWithZoom from '../components/ImgWithZoom.vue'
-</script>

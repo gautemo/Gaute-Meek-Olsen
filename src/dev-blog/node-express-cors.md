@@ -12,7 +12,7 @@ This happens because of security reasons, browsers restrict cross-origin HTTP re
 
 There is an easy fix for this. Open your project in the terminal.
 
-```sh
+```bash
 npm i cors –save
 ```
 
@@ -24,7 +24,3 @@ app.use(cors());
 ```
 
 This has enabled CORS for all requests on your node express server. You can now refresh your client side page.
-
-<script setup>
-import ImgWithZoom from '../components/ImgWithZoom.vue'
-</script>

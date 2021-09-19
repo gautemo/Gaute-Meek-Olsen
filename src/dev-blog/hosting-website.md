@@ -13,7 +13,7 @@ First sign in and create a project in the [Firebase console](https://console.fir
 
 Command 1 and 2 are only for your first time, if you haven't installed the firebase-tools and signed in.
 
-```sh
+```bash
 npm install -g firebase-tools
 firebase login
 firebase init
@@ -21,7 +21,7 @@ firebase init
 
 Select "Hosting" with space then enter. Then select the project created in the Firebase console. Then enter the path to the folder your index.html file is located (i.e. public). If you have a single-page app and want all urls to point to index.html select yes.
 
-```sh
+```bash
 firebase deploy
 ```
 
@@ -29,7 +29,7 @@ Congratulations, you have now hosted your website. You will find your page as a 
 
 If you need to test the website on localhost first that is done with
 
-```sh
+```bash
 firebase serve
 ```
 
@@ -41,32 +41,32 @@ Your site are now deployed. Now you can change your subdomain in "Site settings"
 
 If you would like to test your page first, you can use their CLI (Command Line Interface).
 
-```sh
+```bash
 npm install netlify-cli -g
 ```
 
 Testing on localhost, open a terminal at the location of your index.html
 
-```sh
+```bash
 netlify dev
 ```
 
 You can also share your what you do locally with anyone around the world.
 
-```sh
+```bash
 netlify init
 ```
 
 And connect to your git repository.
 
-```sh
+```bash
 netlify dev --live
 ```
 
 Now you get a url you can distribute. Every time you save a file, they can refresh their browser to see the changes.
 If you need manually deploy with netlify, you can use
 
-```sh
+```bash
 netlify deploy --prod
 ```
 

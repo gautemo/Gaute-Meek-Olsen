@@ -14,7 +14,7 @@ const $$ = document.querySelectorAll.bind(document);
 Now it's time to publish our library so it can be installed with NPM or imported by script from a CDN, so it can be used in other projects.
 
 First let's create our package.json file.
-```sh
+```bash
 npm init
 ```
 The fields **name** and **version** are required. But I encourage you to fill out the other fields as well. This is our package.json file.
@@ -49,11 +49,11 @@ export const $$ = document.querySelectorAll.bind(document);
 If you don't have an NPM user you need to sign up [here](https://www.npmjs.com/signup).
 
 Then login in your terminal.
-```sh
+```bash
 npm login
 ```
 Now we are ready to publish our module.
-```sh
+```bash
 npm publish
 ```
 That's it, we have published our NPM module. See NPMs [own guide](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) for a more detailed guide.
@@ -61,7 +61,7 @@ That's it, we have published our NPM module. See NPMs [own guide](https://docs.n
 Others can now use our module. Then we should have a readme with the installation and usage steps. (If you are coding along, create a new project)
 
 Installation:
-```sh
+```bash
 npm i selector-library --save
 ```
 Usage:

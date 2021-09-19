@@ -27,13 +27,13 @@ Download and open an IDE. I recommend Visual Studio Code, but TypeScript is supp
 
 Install typescript on your computer through npm. Download Node, if you don’t have npm installed. In a terminal run this command.
 
-```sh
+```bash
 npm install -g typescript
 ```
 
 You can now compile .ts files manually with
 
-```sh
+```bash
 tsc filename.ts
 ```
 
@@ -41,7 +41,7 @@ and you have created the .js file you want to use.
 
 But the best way is to create a project folder and run the init command, like this
 
-```sh
+```bash
 tsc --init
 ```
 
@@ -51,7 +51,7 @@ Now create your files with the file ending .ts
 
 To automatically compile these files on save:
 
-```sh
+```bash
 tsc -w
 ```
 

@@ -32,7 +32,7 @@ const loadList = async () => {
       title: pageData.title,
       key,
       url: getUrl(pageData.relativePath),
-      cover: getCoverImg(key),
+      cover: getCoverImg(key, pageData.frontmatter.coverImgExtension),
       tags: pageData.frontmatter.tags,
       date: new Date(pageData.frontmatter.date),
       serie: pageData.frontmatter.serie,
