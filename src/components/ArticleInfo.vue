@@ -4,10 +4,10 @@ import { useData } from 'vitepress'
 import { getKey, getCoverImg } from '../utils/blogUtils'
 
 const { page } = useData()
-const { hideCoverImg } = page.value.frontmatter
+const { hideCoverImg, coverImgExtension } = page.value.frontmatter
 
 const date = computed(() => new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(page.value.frontmatter.date)))
-const imgUrl = computed(() => getCoverImg(getKey(page.value.relativePath)))
+const imgUrl = computed(() => getCoverImg(getKey(page.value.relativePath), coverImgExtension))
 </script>
 
 <template>

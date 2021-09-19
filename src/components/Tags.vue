@@ -46,7 +46,6 @@ button{
   border-radius: 3px;
   padding: 0 10px;
   cursor: pointer;
-  color: inherit;
 }
 
 .disabled{

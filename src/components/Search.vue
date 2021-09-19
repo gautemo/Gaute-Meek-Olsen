@@ -19,7 +19,6 @@ input{
   width: 100%;
   font-size: inherit;
   font-family: inherit;
-  background: var(--c-bg-accent);
   line-height: 1.5rem;
   padding: 10px;
   box-sizing: border-box;

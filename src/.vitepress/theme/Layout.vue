@@ -48,6 +48,10 @@ body{
   color: var(--c-text-lighter);
 }
 
+.dark tr:nth-child(2n){
+  background-color: #f6f8fa14;
+}
+
 .medium-img{
   display: flex;
   flex-direction: column;
@@ -57,6 +61,11 @@ body{
 .medium-img > img{
   width: 50%;
   max-width: 400px;
+}
+
+input, button{
+  color: inherit;
+  background: var(--c-bg-accent);
 }
 </style>
 
@@ -77,5 +86,10 @@ article :deep(a){
 
 article :deep(a:hover){
   border-bottom: 2px solid var(--link);
+}
+
+article :deep(p img){
+  display: block;
+  margin: 0 auto;
 }
 </style>
