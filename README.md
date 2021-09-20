@@ -9,6 +9,7 @@ Create `.md` file in [blog](src/blog). Start file with
 title: How to Change the Cursor to an Image
 date: 2018-11-15
 hideCoverImg: true
+coverImgExtension: png
 tags: [CSS]
 ---
 ```
