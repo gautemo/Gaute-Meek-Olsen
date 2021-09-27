@@ -20,3 +20,16 @@ Usually settings
 - width 600px
 - MozJPEG
 - Quality 70%
+
+### Embed Tweet
+
+Create card on [publish.twitter.com/](https://publish.twitter.com/) and copy everything inside `<blockquote>` tags and place inside `<Tweet>` component.
+
+```md
+<script setup>
+import Tweet from '../components/Tweet.vue'
+</script>
+<Tweet>
+
+</Tweet>
+```
