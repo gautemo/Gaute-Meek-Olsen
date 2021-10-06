@@ -2,6 +2,7 @@
 title: Schedule our Lambda function
 date: 2020-06-09
 coverImgExtension: png
+tags: [AWS]
 serie: Twitter bot with Kotlin in AWS
 ---
 

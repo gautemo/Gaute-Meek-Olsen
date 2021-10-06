@@ -2,6 +2,7 @@
 title: Creating an AWS Lambda Kotlin function
 date: 2020-06-05T14:19
 coverImgExtension: png
+tags: [AWS, Kotlin]
 serie: Twitter bot with Kotlin in AWS
 ---
 
@@ -70,3 +71,5 @@ aws lambda update-function-code --function-name twitter-bot-vue-3 --zip-file fil
 ```bash
 aws lambda invoke --function-name twitter-bot-vue-3 output.txt
 ```
+
+Now go ahead to check the output.txt file to see if our function ran correctly.
