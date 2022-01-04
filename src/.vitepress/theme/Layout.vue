@@ -67,6 +67,27 @@ input, button{
   color: inherit;
   background: var(--c-bg-accent);
 }
+
+::-webkit-scrollbar
+{
+	width: 10px;
+  height: 10px;
+  background-color: #ececec;
+}
+
+.dark ::-webkit-scrollbar
+{
+	width: 10px;
+	height: 10px;
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--tertiary);
+}
 </style>
 
 <style scoped>

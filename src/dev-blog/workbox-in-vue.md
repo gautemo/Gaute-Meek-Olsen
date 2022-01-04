@@ -2,7 +2,7 @@
 title: Setting up a Custom Service Worker with the Vue CLI
 date: 2018-11-10
 hideCoverImg: true
-tags: [Workbox, Vue, PWA]
+tags: [Vue, PWA]
 ---
 
 Creating a Progressive Web App (PWA) is painlessly simple with the Vue CLI. You can use the default set up, by either selecting the feature 'Progressive Web App (PWA) Support' during project creation.
