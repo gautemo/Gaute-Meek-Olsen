@@ -7,7 +7,7 @@ import DarkModeToggle from './DarkModeToggle.vue'
     <nav>
       <a href="/">HOME</a>
       <a href="/dev-blog">BLOG</a>
-      <a href="/til">TIL</a>
+      <a href="/today-i-learned">TIL</a>
       <a href="/talks">TALKS</a>
       <a href="/projects">PROJECTS</a>
     </nav>

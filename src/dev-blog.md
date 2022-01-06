@@ -4,5 +4,5 @@ title: Developer Blog
 
 <BlogList/>
 <script setup>
-import BlogList from './components/BlogList.vue'
+import BlogList from './dev-blog/components/BlogList.vue'
 </script>

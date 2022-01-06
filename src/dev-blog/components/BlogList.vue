@@ -2,7 +2,7 @@
 import Search from './Search.vue'
 import SelectedTags from './SelectedTags.vue'
 import Tags from './Tags.vue'
-import { blogs } from '../store/blogs'
+import { blogs } from '../blogsStore'
 </script>
 
 <template>

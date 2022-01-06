@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import { darkMode } from '../store/settings'
+import { darkMode } from '../../store/settings'
 import { 
   gauteFreetimeDark, 
   gauteFreetimeLight, 
@@ -10,7 +10,7 @@ import {
   googleplay, 
   linkedin, 
   twitter,
-} from '../assets/assets'
+} from '../../assets/assets'
 import { useMouseInElement } from '@vueuse/core'
 import Pen from './icons/Pen.vue'
 import Bird from './icons/Bird.vue'

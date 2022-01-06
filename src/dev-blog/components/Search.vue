@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { search } from '../store/blogs'
+import { search } from '../blogsStore'
 </script>
 
 <template>

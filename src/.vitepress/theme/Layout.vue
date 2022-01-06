@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import ArticleInfo from '../../components/ArticleInfo.vue'
-import Series from '../../components/Series.vue'
+import ArticleInfo from '../../dev-blog/components/ArticleInfo.vue'
+import Series from '../../dev-blog/components/Series.vue'
 import Menu from './Menu.vue'
 
 const { page } = useData()

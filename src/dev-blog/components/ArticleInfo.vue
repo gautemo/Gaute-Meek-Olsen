@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import { getKey, getCoverImg } from '../utils/blogUtils'
+import { getKey, getCoverImg } from '../../utils/blogUtils'
 
 const { page } = useData()
 const { hideCoverImg, coverImgExtension } = page.value.frontmatter

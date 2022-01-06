@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {  useMouseInElement, useThrottle } from '@vueuse/core';
 import { computed, ref } from 'vue';
-import { darkMode } from '../store/settings'
+import { darkMode } from '../../store/settings'
 import SkyStar from './SkyStar.vue';
 import SkyCloud from './SkyCloud.vue';
 

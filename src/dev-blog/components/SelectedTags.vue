@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { selectedTags } from '../store/blogs'
+import { selectedTags } from '../blogsStore'
 </script>
 
 <template>
