@@ -23,28 +23,23 @@ With both Vue and React you don't necessarily need a building step to create you
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
-</head>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  </head>
 
-<body>
-  <div id="app"></div>
-  <script>
-    function Button() {
-      const [counter, setCounter] = React.useState(0);
+  <body>
+    <div id="app"></div>
+    <script>
+      function Button() {
+        const [counter, setCounter] = React.useState(0)
 
-      return React.createElement(
-        'button',
-        { onClick: () => setCounter(counter + 1) },
-        counter
-      );
-    }
-    const domContainer = document.querySelector('#app');
-    ReactDOM.render(React.createElement(Button), domContainer);
-  </script>
-</body>
-
+        return React.createElement('button', { onClick: () => setCounter(counter + 1) }, counter)
+      }
+      const domContainer = document.querySelector('#app')
+      ReactDOM.render(React.createElement(Button), domContainer)
+    </script>
+  </body>
 </html>
 ```
 
@@ -53,22 +48,22 @@ With both Vue and React you don't necessarily need a building step to create you
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-</head>
-<body>
-  <div id="app">
-    <button @click="counter++">{{counter}}</button>
-  </div>
-  <script>
-    const app = new Vue({
-      el: '#app',
-      data: {
-        counter: 0
-      }
-    });
-  </script>
-</body>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <button @click="counter++">{{counter}}</button>
+    </div>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: {
+          counter: 0,
+        },
+      })
+    </script>
+  </body>
 </html>
 ```
 
@@ -130,20 +125,20 @@ In Vue you write your HTML in a template tag, allowing you to write normal HTML 
 ### React
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function InputBind() {
-  const [text, setText] = React.useState('');
+  const [text, setText] = React.useState('')
 
   return (
     <>
-      <input type="text" onChange={e => setText(e.target.value)} />
+      <input type="text" onChange={(e) => setText(e.target.value)} />
       <p>{text}</p>
     </>
-  );
+  )
 }
 
-export default InputBind;
+export default InputBind
 ```
 
 ### Vue
@@ -151,19 +146,19 @@ export default InputBind;
 ```html
 <template>
   <div>
-    <input type="text" v-model="text">
+    <input type="text" v-model="text" />
     <p>{{text}}</p>
   </div>
 </template>
 
 <script>
-export default {
-  data(){
-    return{
-      text: ''
-    }
+  export default {
+    data() {
+      return {
+        text: '',
+      }
+    },
   }
-}
 </script>
 ```
 
@@ -180,54 +175,49 @@ export default {
 Option 1: Ternary operation. Which isn't always as readable.
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function CondinionallyRender() {
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(true)
 
   return (
     <>
-      <input type="checkbox" onChange={e => setShow(e.target.checked)} checked={show} />
-      {show
-        ?
-        <p>👋👋👋👋👋</p>
-        :
-        <p>💨</p>
-      }
+      <input type="checkbox" onChange={(e) => setShow(e.target.checked)} checked={show} />
+      {show ? <p>👋👋👋👋👋</p> : <p>💨</p>}
     </>
-  );
+  )
 }
 
-export default CondinionallyRender;
+export default CondinionallyRender
 ```
 
 Option 2: Logical Short Circuit Evaluation. Feels a little like magic and you need to know how logical expressions are being evaluated.
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function CondinionallyRender() {
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(true)
 
   return (
     <>
-      <input type="checkbox" onChange={e => setShow(e.target.checked)} checked={show} />
+      <input type="checkbox" onChange={(e) => setShow(e.target.checked)} checked={show} />
       {show && <p>👋👋👋👋👋</p>}
       {show || <p>💨</p>}
     </>
-  );
+  )
 }
 
-export default CondinionallyRender;
+export default CondinionallyRender
 ```
 
 Option 3: if-else function. Best for understandability, but HTML code needs to be moved away from the rest of the HTML.
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function CondinionallyRender() {
-  const [show, setShow] = React.useState(true);
+  const [show, setShow] = React.useState(true)
 
   const renderIt = () => {
     if (show) {
@@ -239,13 +229,13 @@ function CondinionallyRender() {
 
   return (
     <>
-      <input type="checkbox" onChange={e => setShow(e.target.checked)} checked={show} />
+      <input type="checkbox" onChange={(e) => setShow(e.target.checked)} checked={show} />
       {renderIt()}
     </>
-  );
+  )
 }
 
-export default CondinionallyRender;
+export default CondinionallyRender
 ```
 
 ### Vue
@@ -253,20 +243,20 @@ export default CondinionallyRender;
 ```html
 <template>
   <div>
-    <input type="checkbox" v-model="show">
+    <input type="checkbox" v-model="show" />
     <p v-if="show">👋👋👋👋👋</p>
     <p v-else>💨</p>
   </div>
 </template>
 
 <script>
-export default {
-  data(){
-    return{
-      show: true
-    }
+  export default {
+    data() {
+      return {
+        show: true,
+      }
+    },
   }
-}
 </script>
 ```
 
@@ -284,24 +274,21 @@ export default {
 ### React
 
 ```jsx
-import React from 'react';
+import React from 'react'
 
 function List() {
-  const todos = ['Eat', 'Move', 'Code', '😴😴😴'];
+  const todos = ['Eat', 'Move', 'Code', '😴😴😴']
 
   return (
     <ul>
-      {
-        todos.map(todo =>
-          <li key={todo}>{todo}</li>
-        )
-      }
+      {todos.map((todo) => (
+        <li key={todo}>{todo}</li>
+      ))}
     </ul>
-  );
+  )
 }
 
-export default List;
-
+export default List
 ```
 
 ### Vue
@@ -314,13 +301,13 @@ export default List;
 </template>
 
 <script>
-export default {
-  data(){
-    return{
-      todos: ['Eat', 'Move', 'Code', '😴😴😴']
-    }
+  export default {
+    data() {
+      return {
+        todos: ['Eat', 'Move', 'Code', '😴😴😴'],
+      }
+    },
   }
-}
 </script>
 ```
 
@@ -337,6 +324,7 @@ export default {
 ```html
 <div class="center-box"></div>
 ```
+
 I don't like to be pushed away from normal HTML.
 
 ## Alter state directly
@@ -345,11 +333,11 @@ I don't like to be pushed away from normal HTML.
 
 ```js
 //declare state
-const [human, setHuman] = React.useState({ name: 'Gaute', age: 28, favouriteDinner: 'Pizza'});
-const [counter, setCounter] = React.useState(0);
+const [human, setHuman] = React.useState({ name: 'Gaute', age: 28, favouriteDinner: 'Pizza' })
+const [counter, setCounter] = React.useState(0)
 
 //update state
-setHuman({ ...human, favouriteDinner: 'Candy' });
+setHuman({ ...human, favouriteDinner: 'Candy' })
 setCounter(counter + 1)
 ```
 

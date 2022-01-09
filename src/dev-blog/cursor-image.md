@@ -8,7 +8,7 @@ tags: [CSS]
 It only takes on line to have the cursor be an image:
 
 ```css
-.custom{
+.custom {
   cursor: url(https://66.media.tumblr.com/ed4cdc68eecbf32a982dfe5a1e98eca6/tumblr_pi925kZQsZ1xfbgtko1_75sq.png), auto;
 }
 ```

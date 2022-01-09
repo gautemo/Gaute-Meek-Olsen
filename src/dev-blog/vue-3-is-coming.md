@@ -19,7 +19,7 @@ The biggest change in Vue 3 is that it is completely re-written under the hood. 
 
 ![Fast](./assets/vue-3-is-coming.gif)
 
-They have also written Vue 3 in TypeScript, which makes the project more maintainable for the Vue team. But it also has some benefits for us developers, even if you are using JavaScript or TypeScript, you will get better IntelliSense and typeahead. 
+They have also written Vue 3 in TypeScript, which makes the project more maintainable for the Vue team. But it also has some benefits for us developers, even if you are using JavaScript or TypeScript, you will get better IntelliSense and typeahead.
 
 They use [RFCs](https://github.com/vuejs/rfcs) (Request For Comments) for every change to involve the community in the decisions that are being made.
 
@@ -33,13 +33,15 @@ Let's see the skeleton of the component object.
 
 ```js
 // Import the API's you are using for the component
-import { ref, reactive, computed } from 'vue';
+import { ref, reactive, computed } from 'vue'
 
 export default {
   // the setup method where logic happens
-  setup(){
-    return { /* return what logic is exposed to the template */ }
-  }
+  setup() {
+    return {
+      /* return what logic is exposed to the template */
+    }
+  },
 }
 ```
 
@@ -61,7 +63,7 @@ setup(){
 }
 ```
 
-As you can see the ref and reactive can do pretty much the same. `ref` are mainly for primitive types and arrays. While `reactive` holds an object. Which you use will be up to you, but I think with time best practices for what to use where will emerge. 
+As you can see the ref and reactive can do pretty much the same. `ref` are mainly for primitive types and arrays. While `reactive` holds an object. Which you use will be up to you, but I think with time best practices for what to use where will emerge.
 
 We are already used to computed properties, methods, watch. The principle is the same. It's just written a little differently.
 
@@ -70,7 +72,7 @@ We also have `watchEffect` which is very similar to watch, but you don't have to
 ```js
 setup(){
   const counter = ref(0);
-  
+
   const double = computed(() => counter.value * 2);
 
   const addToCounter = toAdd => counter.value += toAdd;
@@ -83,19 +85,19 @@ setup(){
 
 I'm using arrow functions here, but it could be normal functions. And the code doesn't need to be inside the setup method, it could be outside the Vue object, it could be in another file, the thing that matters is that the setup returns the methods and reactive values.
 
-This got me thinking, could this be used to create a really simple global reactive state? The answer is yes. 
+This got me thinking, could this be used to create a really simple global reactive state? The answer is yes.
 
 _globalShoppingCart.js_:
 
 ```js
-import { reactive, computed } from 'vue';
+import { reactive, computed } from 'vue'
 
 const shoppingCart = reactive({
   items: [],
-  totalPrice: computed(() => shoppingCart.items.reduce((acc, item) => acc + item.price, 0))
-});
+  totalPrice: computed(() => shoppingCart.items.reduce((acc, item) => acc + item.price, 0)),
+})
 
-const addItem = item => shoppingCart.items.push(item);
+const addItem = (item) => shoppingCart.items.push(item)
 
 export { addItem, shoppingCart }
 ```
@@ -104,17 +106,17 @@ _item.vue_:
 
 ```vue
 <template>
-    <h1>Ball</h1>
-    <button @click="addItem({name: 'ball', price: 99})">Add to Cart</button>
+  <h1>Ball</h1>
+  <button @click="addItem({ name: 'ball', price: 99 })">Add to Cart</button>
 </template>
 
 <script>
 import { addItem } from '@/globalShoppingCart'
 
 export default {
-    setup(){
-        return { addItem }
-    }
+  setup() {
+    return { addItem }
+  },
 }
 </script>
 ```
@@ -123,18 +125,18 @@ _cart.vue_:
 
 ```vue
 <template>
-    <h1>Cart</h1>
-    <span>Items: {{ shoppingCart.items.length }}</span>
-    <span>Price: {{ shoppingCart.totalPrice }}</span>
+  <h1>Cart</h1>
+  <span>Items: {{ shoppingCart.items.length }}</span>
+  <span>Price: {{ shoppingCart.totalPrice }}</span>
 </template>
 
 <script>
 import { shoppingCart } from '@/globalShoppingCart'
 
 export default {
-    setup(){
-        return { shoppingCart }
-    }
+  setup() {
+    return { shoppingCart }
+  },
 }
 </script>
 ```
@@ -146,12 +148,12 @@ It also works great for re-using code. Let's have our like and super like functi
 _likes.js:_
 
 ```js
-import { ref } from "vue"
+import { ref } from 'vue'
 
 const getLikes = () => {
-    const likes = ref(0)
-    const superLike = () => likes.value += 1000;
-    return { likes, superLike }
+  const likes = ref(0)
+  const superLike = () => (likes.value += 1000)
+  return { likes, superLike }
 }
 
 export { getLikes }
@@ -161,19 +163,19 @@ _hearts.vue_:
 
 ```vue
 <template>
-    <div>
-        {{likes}}🧡
-        <button @click="likes++">Love</button>
-        <button @click="superLike">💕💕💕</button>
-    </div>
+  <div>
+    {{ likes }}🧡
+    <button @click="likes++">Love</button>
+    <button @click="superLike">💕💕💕</button>
+  </div>
 </template>
 
 <script>
-import { getLikes } from '@/likesOwn';
+import { getLikes } from '@/likesOwn'
 export default {
-    setup(){
-        return { ...getLikes() }
-    }
+  setup() {
+    return { ...getLikes() }
+  },
 }
 </script>
 ```
@@ -224,9 +226,7 @@ Now, this might take some time. When will your component be ready? Just have you
 ```vue
 <template>
   <Suspense>
-    <template #default>
-      <MyChildComponenta/> //the component with async setup
-    </template>
+    <template #default> <MyChildComponenta /> //the component with async setup </template>
     <template #fallback>
       <div>Loading...</div>
     </template>
@@ -264,7 +264,7 @@ Now you can have another component target that element.
 Now you can have multiple v-models on your custom component when you want to bind different values.
 
 ```vue
-<HumanStats v-model:age="human.age" v-model:height="human.height"/>
+<HumanStats v-model:age="human.age" v-model:height="human.height" />
 ```
 
 ### Transition
@@ -280,6 +280,7 @@ Just a small naming change for transitions. I found v-enter-active, v-enter, v-e
 <!-- after -->
 {{ format(date) }}
 ```
+
 In Vue 2 we had filter methods to run our values through when displaying the values. This is now removed to enforce that inside the brackets is just valid JavaScript. Computed properties or methods should be used instead, which is fine and just another way of writing the code.
 
 ### App configuration

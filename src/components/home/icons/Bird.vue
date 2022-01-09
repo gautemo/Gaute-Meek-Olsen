@@ -118,11 +118,7 @@
         class="st2"
         d="M743.5 604.9c-9.5 1.2-30.8 2.2-55.2-6.6-33.1-11.9-50-9.9-57.3-7.7-2.5.7-5 1.6-7.5 2.7-21.6 10.1-30.9 35.9-20.7 57.4 6.4 13.7 19.1 22.4 33 24.4s.4.1 1.2.1c.2 0 .4 0 .6.1 5.2.6 20.8 1.9 31.4-1.4 11-5.2-5-10.7-5-10.7s12.5 3.5 21.9-1.3c13.8-7.1-1.6-12.1-1.6-12.1s13.6 4.1 23.6-5.1c6.3-5.8.8-7.8-4.2-8.5 7 .1 18.6-.9 22.5-8.2 2.8-5.2-6.1-6.5-10.7-6.7 5.9-.2 18.9-1.3 24.9-5.9 2.8-2.2 4.7-4.1 6-5.7 1.6-2-.2-5.1-2.9-4.8z"
       />
-      <path
-        id="XMLID_98_"
-        class="st13"
-        d="M678.9 682.6s20.8 4.8 50.6 23.1c29.9 18.2 42.3 13.9 42.3 13.9"
-      />
+      <path id="XMLID_98_" class="st13" d="M678.9 682.6s20.8 4.8 50.6 23.1c29.9 18.2 42.3 13.9 42.3 13.9" />
       <path id="XMLID_107_" class="st13" d="M736.6 727.9s-13.7-.5-27.3-18.2-19-26.2-24.7-26.6" />
       <path
         id="XMLID_65_"
@@ -288,40 +284,40 @@
 </template>
 
 <style scoped>
-svg{
+svg {
   height: 15rem;
   width: 15rem;
 }
 
-#XMLID_24_{
-  transition: all .25s ease;
+#XMLID_24_ {
+  transition: all 0.25s ease;
 }
-#XMLID_23_{
-  transition: all .25s ease .25s;
+#XMLID_23_ {
+  transition: all 0.25s ease 0.25s;
 }
-#XMLID_21_{
-  transition: all .25s ease .5s;
+#XMLID_21_ {
+  transition: all 0.25s ease 0.5s;
 }
-#XMLID_19_{
-  transition: all .25s ease .75s;
+#XMLID_19_ {
+  transition: all 0.25s ease 0.75s;
 }
-#XMLID_14_{
-  transition: all .25s ease 1s;
+#XMLID_14_ {
+  transition: all 0.25s ease 1s;
 }
 
-svg:hover #XMLID_24_{
+svg:hover #XMLID_24_ {
   fill: #56ffff;
 }
-svg:hover #XMLID_23_{
+svg:hover #XMLID_23_ {
   fill: #ae7ee2;
 }
-svg:hover #XMLID_21_{
+svg:hover #XMLID_21_ {
   fill: #ff98ca;
 }
-svg:hover #XMLID_19_{
+svg:hover #XMLID_19_ {
   fill: #ffdbcd;
 }
-svg:hover #XMLID_14_{
+svg:hover #XMLID_14_ {
   fill: #fffbbc;
 }
 
@@ -385,7 +381,7 @@ svg:hover #XMLID_14_{
 }
 
 @media only screen and (max-width: 600px) {
-  svg{
+  svg {
     height: 10rem;
     width: 10rem;
   }

@@ -16,7 +16,7 @@ Then click <i>Set up a workflow yourself</i> in the top right corner.
 
 ## Yaml
 
-This has created a .yml file for you which will contain all your triggers and steps. 
+This has created a .yml file for you which will contain all your triggers and steps.
 
 First let's change it to trigger on a push, but only on the master branch.
 
@@ -66,17 +66,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Build
-      run: |
-        npm install
-        npm run build
-    - name: Firebase Deploy
-      run: |
-        sudo npm install -g firebase-tools
-        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+      - uses: actions/checkout@v1
+      - name: Build
+        run: |
+          npm install
+          npm run build
+      - name: Firebase Deploy
+        run: |
+          sudo npm install -g firebase-tools
+          firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
 ```

@@ -3,21 +3,21 @@ import { darkMode } from '../../store/settings'
 </script>
 
 <template>
-<label>
-  <input type="checkbox" v-model="darkMode">
-  <div class="circle">
-    <transition name="fade">
-      <span v-if="!darkMode" class="sun">🌞</span>
-    </transition>
-    <transition name="fade">
-      <span v-if="darkMode" class="moon">🌑</span>
-    </transition>
-  </div>
-</label>
+  <label>
+    <input type="checkbox" v-model="darkMode" />
+    <div class="circle">
+      <transition name="fade">
+        <span v-if="!darkMode" class="sun">🌞</span>
+      </transition>
+      <transition name="fade">
+        <span v-if="darkMode" class="moon">🌑</span>
+      </transition>
+    </div>
+  </label>
 </template>
 
 <style scoped>
-label{
+label {
   cursor: pointer;
   width: 55px;
   min-width: 55px;
@@ -27,34 +27,34 @@ label{
   border-radius: 100px;
   display: flex;
   align-items: center;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
   font-size: 1.25rem;
 }
 
-input{
+input {
   display: contents;
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-.circle{
+.circle {
   position: relative;
   left: 0;
-  transition: left .5s ease;
+  transition: left 0.5s ease;
 }
 
-span{
+span {
   user-select: none;
 }
 
-input:checked + .circle{
+input:checked + .circle {
   left: 22px;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   position: absolute;
   top: 0;
   bottom: 0;

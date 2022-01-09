@@ -6,34 +6,34 @@ import { blogs } from '../blogsStore'
 </script>
 
 <template>
-<main>
-  <section>
-    <Search/>
-    <SelectedTags/>
-    <Tags/>
-  </section>
-  <ul>
-    <li v-for="blog in blogs" :key="blog.key">
-      <a :href="blog.url" class="card">
-        <img :src="blog.cover" alt="cover image" />
-        <div class="content">
-          <h2>{{ blog.title }}</h2>
-          <ul class="tags">
-            <li v-for="tag in blog.tags" :key="tag">{{ tag }}</li>
-          </ul>
-        </div>
-      </a>
-    </li>
-  </ul>
-</main>
+  <main>
+    <section>
+      <Search />
+      <SelectedTags />
+      <Tags />
+    </section>
+    <ul>
+      <li v-for="blog in blogs" :key="blog.key">
+        <a :href="blog.url" class="card">
+          <img :src="blog.cover" alt="cover image" />
+          <div class="content">
+            <h2>{{ blog.title }}</h2>
+            <ul class="tags">
+              <li v-for="tag in blog.tags" :key="tag">{{ tag }}</li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </main>
 </template>
 
 <style scoped>
-main{
+main {
   margin: 25px 15vw;
 }
 
-section{
+section {
   padding-top: 1rem;
   display: flex;
   gap: 10px;
@@ -105,7 +105,7 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
-  main{
+  main {
     margin: 25px 5vw;
   }
 }

@@ -8,18 +8,18 @@ Today Cloud Functions for Firebase has four availible locations they can run fro
 
 ```js
 exports.hello = functions.region('europe-west1').https.onRequest((req, res) => {
-  res.send("Hello");
-});
+  res.send('Hello')
+})
 ```
 
 If you deploy your function now, you will see it will run from europe-west1. As of today possible locations are:
 
-* us-central1 (Iowa)
-* us-east1 (South Carolina)
-* us-east4 (Northern Virginia)
-* europe-west1 (Belgium)
-* europe-west2 (London)
-* asia-east2 (Hong Kong)
-* asia-northeast1 (Tokyo)
+- us-central1 (Iowa)
+- us-east1 (South Carolina)
+- us-east4 (Northern Virginia)
+- europe-west1 (Belgium)
+- europe-west2 (London)
+- asia-east2 (Hong Kong)
+- asia-northeast1 (Tokyo)
 
 [Updated docs](https://firebase.google.com/docs/functions/locations)

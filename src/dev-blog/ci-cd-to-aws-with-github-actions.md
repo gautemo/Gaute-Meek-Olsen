@@ -27,24 +27,24 @@ name: CI/CD
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   CI-CD:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Gradle setup
-      run: gradle wrapper
-    - name: Build & Deploy
-      run: |
-        aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws configure set default.region eu-west-1
-        ./gradlew build
-        aws lambda update-function-code --function-name twitter-bot-vue-3 --zip-file fileb://build/libs/twitter-bot-vue-3.jar
+      - name: Gradle setup
+        run: gradle wrapper
+      - name: Build & Deploy
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set default.region eu-west-1
+          ./gradlew build
+          aws lambda update-function-code --function-name twitter-bot-vue-3 --zip-file fileb://build/libs/twitter-bot-vue-3.jar
 ```
 
 ## Wrap Up

@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { useMouseInElement, useThrottle } from '@vueuse/core';
-import { computed, ref } from 'vue';
+import { useMouseInElement, useThrottle } from '@vueuse/core'
+import { computed, ref } from 'vue'
 
 const eye = ref(null)
 
-const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(eye, {touch: false})
+const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(eye, { touch: false })
 const throttleX = useThrottle(elementX, 25)
 const throttleY = useThrottle(elementY, 25)
 const x = computed(() => {
-  const mouseX = throttleX.value - elementWidth.value/2
-  return Math.max(Math.min(mouseX/20, 15), -15)
+  const mouseX = throttleX.value - elementWidth.value / 2
+  return Math.max(Math.min(mouseX / 20, 15), -15)
 })
 const y = computed(() => {
-  const mouseY = throttleY.value - elementHeight.value/2
-  return Math.max(Math.min(mouseY/20, 15), -15) - 9
+  const mouseY = throttleY.value - elementHeight.value / 2
+  return Math.max(Math.min(mouseY / 20, 15), -15) - 9
 })
 </script>
 
@@ -27,15 +27,7 @@ const y = computed(() => {
     viewBox="0 0 1000 1000"
     xml:space="preserve"
   >
-    <circle
-      id="XMLID_1_"
-      cx="507.8"
-      cy="503.8"
-      r="383"
-      fill="#fe3e4b"
-      fill-opacity="1"
-      opacity=".959"
-    />
+    <circle id="XMLID_1_" cx="507.8" cy="503.8" r="383" fill="#fe3e4b" fill-opacity="1" opacity=".959" />
     <circle id="XMLID_3_" cx="500" cy="500" r="235.6" opacity=".17" fill="#ff9f2c" />
     <g id="g2631">
       <ellipse id="XMLID_22_" class="st4" cx="504.2" cy="776.8" rx="92.5" ry="17.2" />
@@ -261,49 +253,17 @@ const y = computed(() => {
         class="st7"
         d="M278.5 371.7v19.5c0 5.3 4.3 9.6 9.6 9.6s9.6-4.3 9.6-9.6v-12.8H317v16.4c0 16-12.9 28.9-28.9 28.9-16 0-28.9-12.9-28.9-28.9v-23.1h19.3z"
       />
-      <path
-        id="XMLID_52_"
-        class="st8"
-        d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z"
-      />
-      <path
-        id="XMLID_20_"
-        class="st11"
-        d="M608.7 244.1h-16v11h16c4.4 0 8 3.6 8 8v-11c0-4.4-3.6-8-8-8z"
-      />
-      <path
-        id="XMLID_15_"
-        class="st7"
-        d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z"
-      />
+      <path id="XMLID_52_" class="st8" d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z" />
+      <path id="XMLID_20_" class="st11" d="M608.7 244.1h-16v11h16c4.4 0 8 3.6 8 8v-11c0-4.4-3.6-8-8-8z" />
+      <path id="XMLID_15_" class="st7" d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z" />
       <path id="XMLID_93_" class="st7" d="M392.9 285.1h-36" />
       <circle id="XMLID_69_" class="st8" cx="340.9" cy="285.1" r="16" />
       <circle id="XMLID_92_" class="st7" cx="340.9" cy="285.1" r="16" />
-      <path
-        id="XMLID_67_"
-        class="st8"
-        d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z"
-      />
-      <path
-        id="XMLID_23_"
-        class="st12"
-        d="M396.7 244.1c-4.4 0-8 3.6-8 8v11c0-4.4 3.6-8 8-8h16v-11h-16z"
-      />
-      <path
-        id="XMLID_94_"
-        class="st7"
-        d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z"
-      />
-      <path
-        id="XMLID_5_"
-        class="st7"
-        d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z"
-      />
-      <path
-        id="XMLID_4_"
-        class="st7"
-        d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z"
-      />
+      <path id="XMLID_67_" class="st8" d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z" />
+      <path id="XMLID_23_" class="st12" d="M396.7 244.1c-4.4 0-8 3.6-8 8v11c0-4.4 3.6-8 8-8h16v-11h-16z" />
+      <path id="XMLID_94_" class="st7" d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z" />
+      <path id="XMLID_5_" class="st7" d="M608.7 326.1h-16v-82h16c4.4 0 8 3.6 8 8v66c0 4.5-3.6 8-8 8z" />
+      <path id="XMLID_4_" class="st7" d="M396.7 326.1h16v-82h-16c-4.4 0-8 3.6-8 8v66c0 4.5 3.6 8 8 8z" />
       <path
         id="XMLID_88_"
         class="st5"
@@ -448,7 +408,15 @@ const y = computed(() => {
         d="M547 553h-88.7c-6.4 0-11.7-5.2-11.7-11.7v-40.7c0-6.4 5.2-11.7 11.7-11.7H547c6.4 0 11.7 5.2 11.7 11.7v40.7c0 6.5-5.2 11.7-11.7 11.7z"
       />
       <ellipse id="XMLID_51_" class="st11" cx="502.7" cy="185.5" rx="13.5" ry="5.6" />
-      <ellipse :transform="`translate(${x},${y})`" id="XMLID_70_" class="st12" cx="501.4" cy="279.1" rx="6.3" ry="4.9" />
+      <ellipse
+        :transform="`translate(${x},${y})`"
+        id="XMLID_70_"
+        class="st12"
+        cx="501.4"
+        cy="279.1"
+        rx="6.3"
+        ry="4.9"
+      />
       <ellipse id="XMLID_116_" class="st11" cx="666.1" cy="280.1" rx="5.2" ry="4" />
       <ellipse id="XMLID_134_" class="st11" cx="339.3" cy="280.1" rx="5.2" ry="4" />
       <circle id="XMLID_25_" class="st6" cx="503.3" cy="575.7" r="11.7" />
@@ -485,25 +453,25 @@ const y = computed(() => {
 </template>
 
 <style scoped>
-svg{
+svg {
   height: 15rem;
   width: 15rem;
 }
 
-svg:hover #XMLID_21_{
+svg:hover #XMLID_21_ {
   animation: monitor 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate-reverse infinite;
 }
 
 @keyframes monitor {
   0% {
-    d: path('M446.7 535l14.1-24.2 11.4 33.8 16.1-36.7 12.5 26.4 9-34 16.4 44.3 14.7-36.2 17.8 25.9')
+    d: path('M446.7 535l14.1-24.2 11.4 33.8 16.1-36.7 12.5 26.4 9-34 16.4 44.3 14.7-36.2 17.8 25.9');
   }
   100% {
-    d: path('M446.7 512l14.1,25 11.4 -40 16.1,36 12.5 -26 9,34 16.4 -44 14.7,36 17.8 -25')
+    d: path('M446.7 512l14.1,25 11.4 -40 16.1,36 12.5 -26 9,34 16.4 -44 14.7,36 17.8 -25');
   }
 }
 
-#XMLID_1_{
+#XMLID_1_ {
   fill: var(--tertiary);
 }
 
@@ -554,7 +522,7 @@ svg:hover #XMLID_21_{
 }
 
 @media only screen and (max-width: 600px) {
-  svg{
+  svg {
     height: 10rem;
     width: 10rem;
   }

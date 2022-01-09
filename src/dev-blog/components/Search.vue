@@ -10,12 +10,12 @@ import { search } from '../blogsStore'
 </template>
 
 <style scoped>
-label{
+label {
   position: relative;
   flex: 1;
 }
 
-input{
+input {
   width: 100%;
   font-size: inherit;
   font-family: inherit;
@@ -26,7 +26,7 @@ input{
   border-radius: 3px;
 }
 
-span{
+span {
   position: absolute;
   opacity: 0.6;
   top: 0;
@@ -39,7 +39,7 @@ span{
 }
 
 input:not(:placeholder-shown) + span,
-input:focus + span{
+input:focus + span {
   opacity: 1;
   transform: translate(-10px, calc(10px + -100%));
   font-size: 0.9rem;

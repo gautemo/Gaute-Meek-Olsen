@@ -12,10 +12,10 @@ If you have developed a lot of JavaScript you probably have experienced how it c
 
 Therefore TypeScript was created, with the slogan “JavaScript that scales”. TypeScript code will be compiled to JavaScript and then used just like you are used to. TypeScript has the benefits of:
 
-* **Instant type error detection**
-* **More self-documenting code**
-* **Better IDE experience**
-* **Improves readability and easiness of understanding the code**
+- **Instant type error detection**
+- **More self-documenting code**
+- **Better IDE experience**
+- **Improves readability and easiness of understanding the code**
 
 TypeScript is actually just JavaScript with types. So if you change the file-ending from .js to .ts, it should still be valid code (the type any will be used a lot). So don’t be scared of TypeScript, just start coding ordinary JavaScript and declare types where you feel it’s natural.
 
@@ -62,7 +62,7 @@ If you use code bundlers such as webpack, the setup can be a little different.
 Type annotations in TypeScript are ways to record the intended contract of the function or variable. This is done by : followed by the type.
 
 ```ts
-let text: string = 'hello';
+let text: string = 'hello'
 ```
 
 If you would assign a number to the variable text, that would give an error, because only strings are valid types for text.
@@ -79,7 +79,7 @@ let num: number = 123;
 //string
 let text: text = 'hello';
 
-//Array 
+//Array
 //(two options)
 let arr1: string[] = [];
 let arr2: Array<string> = [];
@@ -105,7 +105,7 @@ let nothing1: null = null;
 //undefined
 let nothing2: undefined = undefined;
 
-//never 
+//never
 //(types that never occurs. removing the while would give error)
 const neverMethod = (): never => {
   while(true);
@@ -115,7 +115,7 @@ const neverMethod = (): never => {
 //object
 let obj: object = {attr1: true, attr2: false};
 
-//function 
+//function
 //(functions can be passed and returned)
 function func(method: Function): Function{
   method();
@@ -136,32 +136,32 @@ const opt: Options = {
 Note that in TypeScript types are inferred when assigning variables. This is because specifying the type every time is tedious. Therefore the variable thing is of type string.
 
 ```ts
-let thing = 'hello';
-thing = 1; //error
+let thing = 'hello'
+thing = 1 //error
 ```
 
 But what if we want a variable that can be both number and string? We could give it the type any, but a better approach is to specify multiple types.
 
 ```ts
-let thing: string|number = 'hello';
-thing = 1;
+let thing: string | number = 'hello'
+thing = 1
 ```
 
 Since variables are inferred and we don’t usually specify types when declaring variables. So when do we specify types? It is very useful for parameters and return types.
 
 ```ts
-//this function must return a string, 
+//this function must return a string,
 // because of : string after the param parenthesis
 function greet(name: string, age: number): string {
-  return `Hi ${name} who is ${age} years.`;
+  return `Hi ${name} who is ${age} years.`
 }
-const msg = greet('Gaute', 27);
+const msg = greet('Gaute', 27)
 
 //this funciton can't return any values
 function greet(name: string, age: number): void {
-  console.log(`Hi ${name} who is ${age} years.`);
+  console.log(`Hi ${name} who is ${age} years.`)
 }
-greet('Gaute', 27);
+greet('Gaute', 27)
 ```
 
 This way your future self and co-workers always know which types the function requires and what it will return.
@@ -170,22 +170,22 @@ Now TypeScript is making our greet method require two parameters every time. In 
 
 ```ts
 function greet(name: string, age?: number): string {
-  let info = '';
+  let info = ''
   if (age) {
-    info = `who is ${age} years.`;
+    info = `who is ${age} years.`
   }
-  return `Hi ${name} ${info}`;
+  return `Hi ${name} ${info}`
 }
 //It's okay to don't pass age
-const msg = greet('Gaute');
+const msg = greet('Gaute')
 
-interface Dialog{
-  size: number,
+interface Dialog {
+  size: number
   title?: string
 }
 //It's okay to don't add title
 const window: Dialog = {
-  size: 1
+  size: 1,
 }
 ```
 

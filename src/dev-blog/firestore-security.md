@@ -62,7 +62,7 @@ If you only need your user to read data, you can put your entire database in rea
 service cloud.firestore {
   match /databases/{database}/documents {
     //=** to match any document, also in sub-collections
-    match /{document=**} { 
+    match /{document=**} {
       allow read;
     }
   }
@@ -175,7 +175,7 @@ service cloud.firestore {
 Custom claims are set by the admin sdk, for example in a Cloud Functions for Firebase like this.
 
 ```js
-admin.auth().setCustomUserClaims(uid, {role: 'admin'})
+admin.auth().setCustomUserClaims(uid, { role: 'admin' })
 ```
 
 ## Validate authenticated profile data
@@ -183,13 +183,13 @@ admin.auth().setCustomUserClaims(uid, {role: 'admin'})
 Let’s deal with another scenario. We have a message collection and a user collection. Since Firestore is a NoSQL database, we can’t join different collections. And we would like to avoid doubling our queries to get the user who posted the message. Therefore we have a `name` and `profileimg` field in the message documents.
 
 ```js
-const user = firebase.auth().currentUser;
-db.collection("messages").add({
+const user = firebase.auth().currentUser
+db.collection('messages').add({
   msg: getmsg(),
   name: user.displayName,
   profileimg: user.photoURL,
-  uid: user.uid
-});
+  uid: user.uid,
+})
 ```
 
 Security issue, users can alter the method and change the `name` and `profileimg` field and pretend to be someone else. This rule will prevent this.
@@ -197,22 +197,22 @@ Security issue, users can alter the method and change the `name` and `profileimg
 ```
 service cloud.firestore {
   match /databases/{database}/documents {
-    
+
     match /messages/{msg}{
       allow read: if request.auth.uid != null;
-      allow write: if validUserData(getUserData()); 
+      allow write: if validUserData(getUserData());
     }
-    
+
     function validUserData(userData){
       return request.resource.data.uid == request.auth.uid
         && request.resource.data.name == userData.name
         && request.resource.data.profilepic == userData.profilepic
     }
-    
+
     function getUserData(){
      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
     }
-    
+
   }
 }
 ```
@@ -226,7 +226,7 @@ service cloud.firestore {
   match /databases/{database}/documents {
     match /messages/{msg}{
       allow read: if request.auth.uid != null;
-      allow write: if false; 
+      allow write: if false;
     }
   }
 }
@@ -235,32 +235,34 @@ service cloud.firestore {
 Then use Cloud Functions for Firebase and retrieve the profile data there. Then use the admin sdk to add the message to the collection, which will bypass the security rules. Cloud Functions for Firebase is a great way to validate and secure data when the security rules become to complex.
 
 ```js
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-admin.initializeApp();
-const db = admin.firestore();
+const functions = require('firebase-functions')
+const admin = require('firebase-admin')
+admin.initializeApp()
+const db = admin.firestore()
 exports.addMessage = functions.https.onCall((data, context) => {
   if (!context.auth) {
-    throw new functions.https.HttpsError('failed-precondition', 'The function must be called while authenticated.');
+    throw new functions.https.HttpsError('failed-precondition', 'The function must be called while authenticated.')
   }
-  const name = context.auth.token.name || null;
-  const picture = context.auth.token.picture || null;
+  const name = context.auth.token.name || null
+  const picture = context.auth.token.picture || null
   const message = {
     profileimg: picture,
     name: name,
-    message: data.msg
+    message: data.msg,
   }
-  return db.collection('messages').add(message)
+  return db
+    .collection('messages')
+    .add(message)
     .then(() => {
-      return 'message added';
+      return 'message added'
     })
-});
+})
 ```
 
 Then trigger the function client side (web example).
 
 ```js
-const addMessage = firebase.functions().httpsCallable('addMessage');
+const addMessage = firebase.functions().httpsCallable('addMessage')
 addMessage({ msg: this.newMessage })
 ```
 

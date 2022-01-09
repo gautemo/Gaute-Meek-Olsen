@@ -53,9 +53,9 @@ VUE_APP_API_KEY=[PRIVATE_KEY]
 Then you can get the variables from the JavaScript code like this:
 
 ```js
-const url = process.env.VUE_APP_API_URL;
+const url = process.env.VUE_APP_API_URL
 ```
 
-That's it :) 
+That's it :)
 
 Remember to avoid exposing private secrets in the bundle. Even though if you have it in .env.local, it will be "somewhere" in the bundle after npm run build, though it is hard to find.

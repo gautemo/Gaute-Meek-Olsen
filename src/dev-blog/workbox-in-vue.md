@@ -32,10 +32,10 @@ module.exports = {
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
       // swSrc is required in InjectManifest mode.
-      swSrc: 'src/sw.js'
+      swSrc: 'src/sw.js',
       // ...other Workbox options...
-    }
-  }
+    },
+  },
 }
 ```
 
@@ -50,16 +50,13 @@ Your file could look something like this, see comments for description
 workbox.googleAnalytics.initialize()
 
 //This is how you can use the network first strategy for files ending with .js
-workbox.routing.registerRoute(
-  /.*\.js/,
-  workbox.strategies.networkFirst()
-)
+workbox.routing.registerRoute(/.*\.js/, workbox.strategies.networkFirst())
 
 // Use cache but update cache files in the background ASAP
 workbox.routing.registerRoute(
   /.*\.css/,
   workbox.strategies.staleWhileRevalidate({
-    cacheName: 'css-cache'
+    cacheName: 'css-cache',
   })
 )
 
@@ -71,9 +68,9 @@ workbox.routing.registerRoute(
     plugins: [
       new workbox.expiration.Plugin({
         maxEntries: 20,
-        maxAgeSeconds: 7 * 24 * 60 * 60
-      })
-    ]
+        maxAgeSeconds: 7 * 24 * 60 * 60,
+      }),
+    ],
   })
 )
 
@@ -83,9 +80,9 @@ workbox.routing.registerRoute(
     cacheName: 'googleapis',
     plugins: [
       new workbox.expiration.Plugin({
-        maxEntries: 30
-      })
-    ]
+        maxEntries: 30,
+      }),
+    ],
   })
 )
 ```
@@ -96,28 +93,27 @@ The file should be in the src folder. Add the events you need.
 
 ```js
 /* eslint-disable no-console */
- import { register } from 'register-service-worker'
- 
- if (process.env.NODE_ENV === 'production') {
+import { register } from 'register-service-worker'
+
+if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}sw.js`, {
-    ready () {
+    ready() {
       console.log(
-        'App is being served from cache by a service worker.\n' +
-        'For more details, visit https://goo.gl/AFskqB'
+        'App is being served from cache by a service worker.\n' + 'For more details, visit https://goo.gl/AFskqB'
       )
     },
-    cached () {
+    cached() {
       console.log('Content has been cached for offline use.')
     },
-    updated () {
+    updated() {
       console.log('New content is available; please refresh.')
     },
-    offline () {
+    offline() {
       console.log('No internet connection found. App is running in offline mode.')
     },
-    error (error) {
+    error(error) {
       console.error('Error during service worker registration:', error)
-    }
+    },
   })
 }
 ```

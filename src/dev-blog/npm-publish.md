@@ -6,18 +6,22 @@ tags: [NPM, JavaScript]
 ---
 
 Let's say we have made our new JavaScript library to easily select elements from the DOM. A lot of people still use jQuery, but that should be abandoned a long time ago. Let's make something to ease them into living without it.
+
 ```js
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 ```
 
 Now it's time to publish our library so it can be installed with NPM or imported by script from a CDN, so it can be used in other projects.
 
 First let's create our package.json file.
+
 ```bash
 npm init
 ```
+
 The fields **name** and **version** are required. But I encourage you to fill out the other fields as well. This is our package.json file.
+
 ```json
 {
   "name": "selector-library",
@@ -42,34 +46,41 @@ The **main** field contains the starting js file (often minified and in a dist f
 Lets update our selector.js file and export our variables.
 
 ```js
-export const $ = document.querySelector.bind(document);
-export const $$ = document.querySelectorAll.bind(document);
+export const $ = document.querySelector.bind(document)
+export const $$ = document.querySelectorAll.bind(document)
 ```
 
 If you don't have an NPM user you need to sign up [here](https://www.npmjs.com/signup).
 
 Then login in your terminal.
+
 ```bash
 npm login
 ```
+
 Now we are ready to publish our module.
+
 ```bash
 npm publish
 ```
+
 That's it, we have published our NPM module. See NPMs [own guide](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) for a more detailed guide.
 
 Others can now use our module. Then we should have a readme with the installation and usage steps. (If you are coding along, create a new project)
 
 Installation:
+
 ```bash
 npm i selector-library --save
 ```
-Usage:
-```js
-import {$, $$} from 'selector-library';
 
-$('#id-name').classList.add('added-class');
-$$('.class-name').forEach(el => el.style.backgroundColor = 'red');
+Usage:
+
+```js
+import { $, $$ } from 'selector-library'
+
+$('#id-name').classList.add('added-class')
+$$('.class-name').forEach((el) => (el.style.backgroundColor = 'red'))
 ```
 
 See [WesBos guide](https://wesbos.com/javascript-modules/) for how to export and import your modules to fit your need.
@@ -83,6 +94,7 @@ We can skip file and version if we don't have to be specific about what the brow
 ```html
 <script src="https://unpkg.com/selector-library@1.0.6/selector.js"></script>
 ```
+
 ```html
 <script src="https://unpkg.com/selector-library"></script>
 ```
@@ -90,12 +102,12 @@ We can skip file and version if we don't have to be specific about what the brow
 Just one short thing, including a script tag, does not allow the export statement. Let's change our selector script if we want to allow installation through NPM and CDN.
 
 ```js
-if(typeof exports != "undefined"){
-    exports.$ = document.querySelector.bind(document);
-    exports.$$ = document.querySelectorAll.bind(document);
-}else{
-    var $ = document.querySelector.bind(document);
-    var $$ = document.querySelectorAll.bind(document);
+if (typeof exports != 'undefined') {
+  exports.$ = document.querySelector.bind(document)
+  exports.$$ = document.querySelectorAll.bind(document)
+} else {
+  var $ = document.querySelector.bind(document)
+  var $$ = document.querySelectorAll.bind(document)
 }
 ```
 

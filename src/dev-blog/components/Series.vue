@@ -1,51 +1,54 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useData } from 'vitepress';
+import { computed } from 'vue'
+import { useData } from 'vitepress'
 import { allBlogs } from '../blogsStore'
 
 const { page } = useData()
 const { serie } = page.value.frontmatter
 const series = computed(() => {
-  if(serie){
-    return allBlogs.value.filter(blog => blog.serie === serie).slice().reverse()
+  if (serie) {
+    return allBlogs.value
+      .filter((blog) => blog.serie === serie)
+      .slice()
+      .reverse()
   }
 })
 </script>
 
 <template>
-<div v-if="serie">
-  <h4>{{serie}} ({{series?.length}} part series)</h4>
-  <ol>
-    <li v-for="blog in series" :key="blog.key">
-      <p v-if="page.title === blog.title">
-        {{blog.title}}
-      </p>
-      <a v-else :href="`/${blog.url}`" class="card">
-        {{blog.title}}
-      </a>
-    </li>
-  </ol>
-</div>
+  <div v-if="serie">
+    <h4>{{ serie }} ({{ series?.length }} part series)</h4>
+    <ol>
+      <li v-for="blog in series" :key="blog.key">
+        <p v-if="page.title === blog.title">
+          {{ blog.title }}
+        </p>
+        <a v-else :href="`/${blog.url}`" class="card">
+          {{ blog.title }}
+        </a>
+      </li>
+    </ol>
+  </div>
 </template>
 
 <style scoped>
-div{
+div {
   border: 1px solid var(--c-divider-dark);
   border-radius: 2px;
   background-color: var(--c-bg-accent);
 }
 
-h4{
+h4 {
   font-weight: bold;
-  margin: .5rem 1.25em 0 1.25em;
+  margin: 0.5rem 1.25em 0 1.25em;
 }
 
-li{
+li {
   font-size: 1.1rem;
   margin-left: 1.25em;
 }
 
-p{
+p {
   font-weight: 600;
   margin: 0;
 }

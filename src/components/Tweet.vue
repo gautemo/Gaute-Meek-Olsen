@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue'
 import { darkMode } from '../store/settings'
 
 const div = ref<HTMLElement>()
@@ -19,7 +19,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-div{
+div {
   display: flex;
   justify-content: center;
 }

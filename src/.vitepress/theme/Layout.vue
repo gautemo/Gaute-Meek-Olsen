@@ -10,32 +10,32 @@ const isArticle = computed(() => page.value && /(dev-blog|til)\//.test(page.valu
 </script>
 
 <template>
-  <Menu/>
+  <Menu />
   <article v-if="isArticle">
-    <ArticleInfo/>
-    <Series/>
+    <ArticleInfo />
+    <Series />
     <Content />
-    <Series/>
+    <Series />
   </article>
-  <Content v-else/>
+  <Content v-else />
 </template>
 
 <style>
-:root{
-  --primary: #A8D0E6;
-  --secondary: #F8E9A1;
-  --tertiary: #F76C6C;
+:root {
+  --primary: #a8d0e6;
+  --secondary: #f8e9a1;
+  --tertiary: #f76c6c;
   --link: #0059b3;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.dark{
+.dark {
   --primary: #44708d;
-  --secondary: #3C8C6A;
-  --tertiary: #EE5034;
+  --secondary: #3c8c6a;
+  --tertiary: #ee5034;
 
   --c-text: #e2e2e2;
   --c-bg: rgb(21, 32, 43);
@@ -43,50 +43,48 @@ body{
   --link: #85c2ff;
 }
 
-.dark article :not(pre) > code{
+.dark article :not(pre) > code {
   background: rgba(66, 73, 80, 0.5);
   color: var(--c-text-lighter);
 }
 
-.dark tr:nth-child(2n){
+.dark tr:nth-child(2n) {
   background-color: #f6f8fa14;
 }
 
-.medium-img{
+.medium-img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.medium-img > img{
+.medium-img > img {
   width: 50%;
   max-width: 400px;
 }
 
-input, button{
+input,
+button {
   color: inherit;
   background: var(--c-bg-accent);
 }
 
-::-webkit-scrollbar
-{
-	width: 10px;
+::-webkit-scrollbar {
+  width: 10px;
   height: 10px;
   background-color: #ececec;
 }
 
-.dark ::-webkit-scrollbar
-{
-	width: 10px;
-	height: 10px;
+.dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
   background-color: #333;
 }
 
-::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--tertiary);
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--tertiary);
 }
 </style>
 
@@ -98,18 +96,18 @@ article {
   word-break: break-word;
 }
 
-article :deep(a){
+article :deep(a) {
   border-bottom: 1px solid #c8c8c8;
   color: var(--link);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-article :deep(a:hover){
+article :deep(a:hover) {
   border-bottom: 2px solid var(--link);
 }
 
-article :deep(p img){
+article :deep(p img) {
   display: block;
   margin: 0 auto;
 }

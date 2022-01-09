@@ -95,9 +95,9 @@ namespace HttpCodeTests
         .ReturnsAsync(response);
       var httpClient = new HttpClient(handlerMock.Object);
       var posts = new Posts(httpClient);
-      
+
       var retrievedPosts = await posts.GetPosts();
-      
+
       Assert.NotNull(retrievedPosts);
       handlerMock.Protected().Verify(
         "SendAsync",
@@ -137,6 +137,6 @@ namespace HttpCodeTests
 }
 ```
 
-## That's All 
+## That's All
 
 Hope this can help you as well. Happy coding!👨‍💻👩‍💻

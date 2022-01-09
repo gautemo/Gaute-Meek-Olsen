@@ -17,9 +17,9 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 2. Go to **Game services** in the left menu.
 3. Open your game.
 4. Copy the **applicationId** for later.
-<ImgWithZoom src="./assets/gpgs-hide-player/appid.png" alt="Console"/>
+   <ImgWithZoom src="./assets/gpgs-hide-player/appid.png" alt="Console"/>
 5. Click **Leaderboard** in the left menu. Then copy the **leaderboardId** for later.
-<ImgWithZoom src="./assets/gpgs-hide-player/leaderboardid.png" alt="Console"/>
+   <ImgWithZoom src="./assets/gpgs-hide-player/leaderboardid.png" alt="Console"/>
 6. Go to **Linked apps** in the left menu.
 7. Click **Link another app** and choose **web**.
 8. Give it a rememberable name such as «App to remove player score».
@@ -34,7 +34,7 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 1. Go to the tab you opened in the previous step or use this link.
 2. Click on the web application name you created in Google Play Console step 8.
 3. Copy the **Client ID** and **Client Secret** for later. If you don’t see it you can find it in the **DOWNLOAD JSON** file.
-4. Remove the link in the Authorized redirect URIs and add `https://developers.google.com/oauthplayground`. *N.B. dont end the url with a slash*. Then save.
+4. Remove the link in the Authorized redirect URIs and add `https://developers.google.com/oauthplayground`. _N.B. dont end the url with a slash_. Then save.
 
 ![APIs console](./assets/gpgs-hide-player/apiconsole.png)
 
@@ -44,7 +44,7 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 2. Click the settings wheel.
 3. Check **Use your own OAuth credentials** checkbox.
 4. Enter the **Client ID** and **Client Secret** from APIs Console step 3.
-![OAuth 2.0 Playground](./assets/gpgs-hide-player/oauthplayground.png)
+   ![OAuth 2.0 Playground](./assets/gpgs-hide-player/oauthplayground.png)
 5. On the left side, expand Google Play Game Services Management API v1management and click **https:/<span/>/www.googleapis.com/auth/games**
 6. Click **Authorize APIs**.
 7. Sign in with your account.

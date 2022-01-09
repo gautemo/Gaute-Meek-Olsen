@@ -7,13 +7,4 @@ import googleplay from './googleplay.svg'
 import linkedin from './linkedin.svg'
 import twitter from './twitter.svg'
 
-export { 
-  gauteFreetimeDark, 
-  gauteFreetimeLight, 
-  gauteWorkDark, 
-  gauteWorkLight, 
-  github, 
-  googleplay, 
-  linkedin, 
-  twitter,
-}
+export { gauteFreetimeDark, gauteFreetimeLight, gauteWorkDark, gauteWorkLight, github, googleplay, linkedin, twitter }

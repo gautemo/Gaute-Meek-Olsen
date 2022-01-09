@@ -12,15 +12,15 @@ You could manage your AWS Lambda functions in the browser AWS console. But I'm g
 
 ## AWS setup
 
-* You need to create an account and sign in to the [AWS Management Console](http://console.aws.amazon.com/)
-* [Create an Administrator IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html). Remember to copy the AWS Access Key ID and AWS Secret Access Key for later use.
-* [Create a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) and select AWS service and Lambda. Give permission to the resources the Lambda function is going to need. I have given permission to CloudWatch Logs, DynamoDB, and Secrets Manager.
+- You need to create an account and sign in to the [AWS Management Console](http://console.aws.amazon.com/)
+- [Create an Administrator IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html). Remember to copy the AWS Access Key ID and AWS Secret Access Key for later use.
+- [Create a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) and select AWS service and Lambda. Give permission to the resources the Lambda function is going to need. I have given permission to CloudWatch Logs, DynamoDB, and Secrets Manager.
 
 ## Setting up the AWS CLI
 
-Install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to your computer and verify it is installed by running `aws --version` in your terminal. 
+Install the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) to your computer and verify it is installed by running `aws --version` in your terminal.
 
-Now you need to configure the CLI by using the IAM user created previously. 
+Now you need to configure the CLI by using the IAM user created previously.
 Run `aws configure` in your terminal and enter the AWS Access Key ID and AWS Secret Access Key, region name (available codes can be found [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#concepts-available-regions)) and output (json, yaml, text or table) where I use json.
 
 ## Kotlin Project
@@ -38,6 +38,7 @@ class Main {
 ```
 
 We need to make sure that our .jar file which we are going to upload will be a fat jar, containing all our dependencies, by altering the `build.gradle.kts` file and adding this to tasks. We can also change the filename if we want.
+
 ```kts
 jar {
     archiveFileName.set("twitter-bot-vue-3.jar")
@@ -48,6 +49,7 @@ jar {
 ```
 
 ## Deploy to AWS
+
 Build .jar:
 
 ```bash

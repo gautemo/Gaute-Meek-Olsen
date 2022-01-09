@@ -5,8 +5,9 @@ import { getKey, getCoverImg } from '../../utils/blogUtils'
 
 const { page } = useData()
 const { hideCoverImg, coverImgExtension } = page.value.frontmatter
-
-const date = computed(() => new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(page.value.frontmatter.date)))
+const date = computed(() =>
+  new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(page.value.frontmatter.date))
+)
 const imgUrl = computed(() => getCoverImg(getKey(page.value.relativePath), coverImgExtension))
 </script>
 
@@ -17,26 +18,21 @@ const imgUrl = computed(() => getCoverImg(getKey(page.value.relativePath), cover
 </template>
 
 <style scoped>
-h1{
+h1 {
   position: relative;
 }
 
 h1::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 75px;
   height: 3px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(
-    -90deg,
-    whitesmoke -60%,
-    var(--tertiary),
-    var(--tertiary)
-  );
+  background: linear-gradient(-90deg, whitesmoke -60%, var(--tertiary), var(--tertiary));
 }
 
-img{
+img {
   margin-top: 1rem;
 }
 </style>

@@ -19,8 +19,8 @@ npm i cors –save
 Then add this to your node JavaScript file.
 
 ```js
-const cors = require('cors');
-app.use(cors());
+const cors = require('cors')
+app.use(cors())
 ```
 
 This has enabled CORS for all requests on your node express server. You can now refresh your client side page.

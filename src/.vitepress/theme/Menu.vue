@@ -11,12 +11,12 @@ import DarkModeToggle from './DarkModeToggle.vue'
       <a href="/talks">TALKS</a>
       <a href="/projects">PROJECTS</a>
     </nav>
-    <DarkModeToggle/>
+    <DarkModeToggle />
   </section>
 </template>
 
 <style scoped>
-section{
+section {
   height: var(--menu-height);
   background: var(--primary);
   padding: 1rem 2rem;
@@ -27,12 +27,12 @@ section{
   overflow-x: auto;
 }
 
-nav{
+nav {
   display: flex;
   gap: 30px;
 }
 
-a{
+a {
   color: var(--tertiary);
   text-shadow: -1px 1px 2px rgba(51, 51, 51);
   font-size: 1.4rem;
@@ -40,48 +40,48 @@ a{
 }
 
 @media only screen and (max-width: 800px) {
-  section{
+  section {
     gap: 10px;
   }
-  
-  nav{
+
+  nav {
     display: grid;
     grid-template: repeat(2, auto) / repeat(, auto);
     column-gap: 20px;
     row-gap: 10px;
   }
 
-  a{
+  a {
     grid-column: span 3;
   }
 
-  a:nth-child(2){
+  a:nth-child(2) {
     grid-row: 2;
     grid-column: 3 / span 3;
   }
-  
-  a:nth-child(3){
+
+  a:nth-child(3) {
     grid-column: 5 / span 3;
   }
 
-  a:nth-child(4){
+  a:nth-child(4) {
     grid-row: 2;
     grid-column: 7 / span 3;
   }
 
-  a:nth-child(5){
+  a:nth-child(5) {
     grid-column: 8;
   }
 }
 </style>
 
 <style>
-:root{
+:root {
   --menu-height: 4rem;
 }
 
 @media only screen and (max-width: 800px) {
-  :root{
+  :root {
     --menu-height: 8rem;
   }
 }

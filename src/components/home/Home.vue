@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref } from 'vue'
 import { darkMode } from '../../store/settings'
-import { 
-  gauteFreetimeDark, 
-  gauteFreetimeLight, 
-  gauteWorkDark, 
-  gauteWorkLight, 
-  github, 
-  googleplay, 
-  linkedin, 
+import {
+  gauteFreetimeDark,
+  gauteFreetimeLight,
+  gauteWorkDark,
+  gauteWorkLight,
+  github,
+  googleplay,
+  linkedin,
   twitter,
 } from '../../assets/assets'
 import { useMouseInElement } from '@vueuse/core'
@@ -19,14 +19,13 @@ import Robot from './icons/Robot.vue'
 import Sky from './Sky.vue'
 
 const meContainer = ref(null)
-const { isOutside } = useMouseInElement(meContainer, {touch: false})
+const { isOutside } = useMouseInElement(meContainer, { touch: false })
 const meSrc = computed(() => {
-  if(darkMode.value && isOutside.value) return gauteWorkDark
-  if(!darkMode.value && isOutside.value) return gauteWorkLight
-  if(darkMode.value && !isOutside.value) return gauteFreetimeDark
-  if(!darkMode.value && !isOutside.value) return gauteFreetimeLight
+  if (darkMode.value && isOutside.value) return gauteWorkDark
+  if (!darkMode.value && isOutside.value) return gauteWorkLight
+  if (darkMode.value && !isOutside.value) return gauteFreetimeDark
+  if (!darkMode.value && !isOutside.value) return gauteFreetimeLight
 })
-
 </script>
 
 <template>
@@ -38,58 +37,50 @@ const meSrc = computed(() => {
     </Sky>
     <div class="me" ref="meContainer">
       <transition name="fade">
-        <img :src="meSrc" :key="meSrc" alt="me">
+        <img :src="meSrc" :key="meSrc" alt="me" />
       </transition>
     </div>
   </section>
   <section class="about">
     <div>
       <h2>
-        I'm a norwegian developer from Trondheim, currently living in Oslo.<br/>
+        I'm a norwegian developer from Trondheim, currently living in Oslo.<br />
         This is my place where I share what interest me, what I'm doing, and also have some fun!
       </h2>
       <nav>
         <a href="/dev-blog">
-          <Pen/>
-          <span>
-            Dev blog
-          </span>
+          <Pen />
+          <span> Dev blog </span>
         </a>
         <a href="/til">
-          <Lantern/>
-          <span>
-            Today I Learned
-          </span>
+          <Lantern />
+          <span> Today I Learned </span>
         </a>
         <a href="/talks">
-          <Bird/>
-          <span>
-            Talks
-          </span>
+          <Bird />
+          <span> Talks </span>
         </a>
         <a href="/projects">
-          <Robot/>
-          <span>
-            Projects
-          </span>
+          <Robot />
+          <span> Projects </span>
         </a>
       </nav>
       <h3>Find me on</h3>
       <div class="social">
         <a href="https://twitter.com/GauteMeekOlsen" target="_blank" rel="noopener">
-          <img :src="twitter" alt="Twitter">
+          <img :src="twitter" alt="Twitter" />
           <span>Twitter</span>
         </a>
         <a href="https://github.com/gautemo" target="_blank" rel="noopener">
-          <img :src="github" alt="GitHub">
+          <img :src="github" alt="GitHub" />
           <span>GitHub</span>
         </a>
         <a href="https://www.linkedin.com/in/gaute-meek-olsen-8256b493/" target="_blank" rel="noopener">
-          <img :src="linkedin" alt="LinkedIn">
+          <img :src="linkedin" alt="LinkedIn" />
           <span>LinkedIn</span>
         </a>
         <a href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank" rel="noopener">
-          <img :src="googleplay" alt="Google Play">
+          <img :src="googleplay" alt="Google Play" />
           <span>Google Play</span>
         </a>
       </div>
@@ -98,11 +89,11 @@ const meSrc = computed(() => {
 </template>
 
 <style scoped>
-:global(:root){
+:global(:root) {
   --parallax-height: calc(100vh - var(--menu-height) - 50px);
 }
 
-.parallax{
+.parallax {
   background: linear-gradient(45deg, var(--primary) 50%, #ffd2d2 85%);
   height: var(--parallax-height);
   width: 100%;
@@ -110,18 +101,18 @@ const meSrc = computed(() => {
   display: flex;
 }
 
-.dark .parallax{
-  background: linear-gradient(45deg, var(--primary) 50%, #584A8C 85%);
+.dark .parallax {
+  background: linear-gradient(45deg, var(--primary) 50%, #584a8c 85%);
 }
 
-.me{
+.me {
   filter: drop-shadow(-8px 0 #3333);
   width: 40%;
   min-width: 400px;
   max-width: 600px;
 }
 
-.me img{
+.me img {
   position: absolute;
   right: 0;
   height: 100%;
@@ -129,7 +120,7 @@ const meSrc = computed(() => {
   clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.about{
+.about {
   padding-top: var(--parallax-height);
   height: calc(100vh - var(--menu-height));
   overflow: auto;
@@ -137,13 +128,13 @@ const meSrc = computed(() => {
   z-index: 3;
 }
 
-.name{
+.name {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-h1{
+h1 {
   color: var(--tertiary);
   text-shadow: -2px 2px 2px rgba(51, 51, 51);
   font-size: clamp(1.7rem, 4vw, 4rem);
@@ -152,13 +143,11 @@ h1{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   width: 0%;
-  border-right: .15rem solid var(--tertiary);
-  animation: 
-    typing 5s linear 3s forwards,
-    blink-caret .75s step-end 12 forwards;
+  border-right: 0.15rem solid var(--tertiary);
+  animation: typing 5s linear 3s forwards, blink-caret 0.75s step-end 12 forwards;
 }
 
-h2{
+h2 {
   border: none;
   font-style: italic;
   text-align: center;
@@ -171,18 +160,27 @@ h2{
 }
 
 @keyframes typing {
-  from { width: 0% }
-  to { width: 100% }
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--tertiary); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--tertiary);
+  }
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 
 .fade-enter-from,
@@ -190,14 +188,14 @@ h2{
   opacity: 0;
 }
 
-nav{
+nav {
   position: relative;
   display: flex;
   justify-content: space-around;
   margin: 4rem 1rem;
 }
 
-a{
+a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,30 +205,36 @@ a{
   color: var(--c-text);
 }
 
-.social{
+.social {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 1rem 1rem 4rem 1rem;
 }
 
-.social img{
+.social img {
   width: 50px;
   height: 50px;
 }
 
-.social a:hover img{
+.social a:hover img {
   animation: pulse 1s ease;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1) rotate(10deg); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  .me{
+  .me {
     position: absolute;
     top: 50px;
     left: 0;
@@ -242,24 +246,24 @@ a{
     min-width: 300px;
   }
 
-  .me img{
+  .me img {
     border-radius: 15px;
     border: 4px solid var(--tertiary);
     clip-path: none;
     right: auto;
   }
 
-  .name{
+  .name {
     margin-top: 460px;
   }
 
-  nav{
+  nav {
     display: grid;
     grid-template: auto auto / auto auto;
     gap: 5px;
   }
 
-  .social{
+  .social {
     display: grid;
     grid-template: auto auto / auto auto;
     gap: 25px;

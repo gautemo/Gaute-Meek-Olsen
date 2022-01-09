@@ -16,11 +16,7 @@ In the .json file, you can add as many snippets as you like in the object. This 
 {
   "Mobile CSS": {
     "prefix": "media",
-    "body": [
-      "@media only screen and (max-width: 600px) {", 
-      "  ",
-      "}"
-    ],
+    "body": ["@media only screen and (max-width: 600px) {", "  ", "}"],
     "description": "media query for mobile screen"
   }
 }

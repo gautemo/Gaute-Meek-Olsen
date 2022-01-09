@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import {  useMouseInElement, useThrottle } from '@vueuse/core';
-import { computed, ref } from 'vue';
+import { useMouseInElement, useThrottle } from '@vueuse/core'
+import { computed, ref } from 'vue'
 import { darkMode } from '../../store/settings'
-import SkyStar from './SkyStar.vue';
-import SkyCloud from './SkyCloud.vue';
+import SkyStar from './SkyStar.vue'
+import SkyCloud from './SkyCloud.vue'
 
 const clouds = [
   { size: 200, yPercent: 0, xPercent: 5 },
@@ -23,42 +23,60 @@ const clouds = [
 ]
 
 let nrStars = 60
-if(document.documentElement.clientWidth <= 800){
+if (document.documentElement.clientWidth <= 800) {
   clouds.splice(10, 4)
   nrStars = 40
 }
 
 const sky = ref(null)
-const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(sky, {touch: false})
+const { elementX, elementY, elementWidth, elementHeight } = useMouseInElement(sky, { touch: false })
 
-const move = useThrottle(computed(() => {
-  const midX = elementWidth.value / 2
-  const midY = elementHeight.value / 2
-  const x = (midX - elementX.value) / 150
-  const y = (midY - elementY.value) / 150
-  return { x, y }
-}), 40)
+const move = useThrottle(
+  computed(() => {
+    const midX = elementWidth.value / 2
+    const midY = elementHeight.value / 2
+    const x = (midX - elementX.value) / 150
+    const y = (midY - elementY.value) / 150
+    return { x, y }
+  }),
+  40
+)
 </script>
 
 <template>
   <div class="container" ref="sky">
     <slot></slot>
     <svg :viewBox="`0 0 ${elementWidth} ${elementHeight}`" xmlns="http://www.w3.org/2000/svg">
-      <SkyStar v-if="darkMode" v-for="i in nrStars" :key="i" :size-range="[8,35]" :container-width="elementWidth" :container-height="elementHeight" :move="move"/>
-      <SkyCloud v-for="(cloud, i) in clouds"  :key="i" :cloud="cloud" :move="move" :container-width="elementWidth" :container-height="elementHeight"/>
+      <SkyStar
+        v-if="darkMode"
+        v-for="i in nrStars"
+        :key="i"
+        :size-range="[8, 35]"
+        :container-width="elementWidth"
+        :container-height="elementHeight"
+        :move="move"
+      />
+      <SkyCloud
+        v-for="(cloud, i) in clouds"
+        :key="i"
+        :cloud="cloud"
+        :move="move"
+        :container-width="elementWidth"
+        :container-height="elementHeight"
+      />
     </svg>
   </div>
 </template>
 
 <style scoped>
-.container{
+.container {
   flex: 1;
   position: relative;
   display: grid;
   place-items: center;
 }
 
-svg{
+svg {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -66,7 +84,7 @@ svg{
 }
 
 @media only screen and (max-width: 800px) {
-  .container{
+  .container {
     overflow: hidden;
     place-items: normal;
     justify-content: center;
