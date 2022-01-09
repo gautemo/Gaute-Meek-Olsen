@@ -2,6 +2,16 @@
 
 My personal website: [gaute.dev](https://gaute.dev)
 
+## pre-commit lint-staged
+
+Add file `.git/hooks/pre-commit` with content:
+
+```sh
+#!/bin/sh
+
+exec npx lint-staged
+```
+
 ## Blogs
 
 Create `.md` file in [blog](src/blog). Start file with
