@@ -1,4 +1,6 @@
-module.exports = {
+import { defineConfigWithTheme } from 'vitepress'
+
+export default defineConfigWithTheme({
   title: 'Gaute Meek Olsen',
   description: 'Portofolio for Gaute Meek Olsen. This is the place you can find my blogs, projects, and more.',
   lang: 'en-US',
@@ -17,4 +19,4 @@ module.exports = {
       permalink: false,
     },
   },
-}
+})
