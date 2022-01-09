@@ -19,6 +19,7 @@ const tags = computed(() =>
   Array.from(new Set(blogs.value.flatMap((b) => b.tags ?? []))).filter((tag) => !selectedTags.value.includes(tag))
 )
 const search = ref('')
+console.log('test')
 
 const loadList = async () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
