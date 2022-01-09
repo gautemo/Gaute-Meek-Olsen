@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const props =
-  defineProps<{
-    sizeRange: number[]
-    containerWidth: number
-    containerHeight: number
-    move: { x: number; y: number }
-  }>()
+const props = defineProps<{
+  sizeRange: number[]
+  containerWidth: number
+  containerHeight: number
+  move: { x: number; y: number }
+}>()
 const random = (max: number) => Math.floor(Math.random() * Math.floor(max))
 const size = random(props.sizeRange[1] - props.sizeRange[0]) + props.sizeRange[0]
 const x = computed(() => random(props.containerWidth))
