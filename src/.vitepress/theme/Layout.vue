@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import ArticleInfo from '../../dev-blog/components/ArticleInfo.vue'
+import ArticleInfo from '../../components/ArticleInfo.vue'
 import Series from '../../dev-blog/components/Series.vue'
 import Menu from './Menu.vue'
 
 const { page } = useData()
-const isArticle = computed(() => page.value && /(dev-blog|til)\//.test(page.value.relativePath))
+const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.test(page.value.relativePath))
 </script>
 
 <template>
