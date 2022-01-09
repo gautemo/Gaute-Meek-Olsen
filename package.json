@@ -32,6 +32,6 @@
     "vitepress": "^0.20.10"
   },
   "lint-staged": {
-    "*": "prettier .  --write"
+    "*": "prettier --write"
   }
 }
