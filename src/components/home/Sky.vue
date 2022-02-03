@@ -54,13 +54,11 @@ const move = useThrottle(
         :size-range="[8, 35]"
         :container-width="elementWidth"
         :container-height="elementHeight"
-        :move="move"
       />
       <SkyCloud
         v-for="(cloud, i) in clouds"
         :key="i"
         :cloud="cloud"
-        :move="move"
         :container-width="elementWidth"
         :container-height="elementHeight"
       />
@@ -74,6 +72,8 @@ const move = useThrottle(
   position: relative;
   display: grid;
   place-items: center;
+  --move-x: v-bind(move.x);
+  --move-y: v-bind(move.y);
 }
 
 svg {
