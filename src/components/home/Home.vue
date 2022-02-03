@@ -257,16 +257,18 @@ a {
     margin-top: 460px;
   }
 
-  nav {
-    display: grid;
-    grid-template: auto auto / auto auto;
-    gap: 5px;
-  }
-
   .social {
     display: grid;
     grid-template: auto auto / auto auto;
     gap: 25px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  nav {
+    display: grid;
+    grid-template: auto auto / auto auto;
+    gap: 5px;
   }
 }
 </style>
