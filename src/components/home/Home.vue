@@ -154,6 +154,10 @@ h2 {
   margin: 4rem 2rem;
 }
 
+h3 {
+  text-align: center;
+}
+
 .about > div {
   background: var(--secondary);
   padding: 2rem;

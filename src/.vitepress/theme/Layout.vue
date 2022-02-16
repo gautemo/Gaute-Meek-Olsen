@@ -111,4 +111,8 @@ article :deep(p img) {
   display: block;
   margin: 0 auto;
 }
+
+article :deep(h2) {
+  border-bottom: none;
+}
 </style>

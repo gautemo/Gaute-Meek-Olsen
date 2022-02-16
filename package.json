@@ -32,6 +32,6 @@
     "vitepress": "^0.21.6"
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "*.(vue|md|js|ts|css|json|svg)": "prettier --write"
   }
 }
