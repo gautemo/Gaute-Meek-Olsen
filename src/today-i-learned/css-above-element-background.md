@@ -50,7 +50,6 @@ See the result above the title.
         position: absolute;
         right: 120px;
     }
-
 </style>
 
 <script setup>
