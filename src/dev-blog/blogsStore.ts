@@ -9,8 +9,7 @@ const allBlogs = asyncComputed<Blog[]>(
   async () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())
-    const blogPages = await Promise.all(blogPromises)
-    return blogPages
+    return (await Promise.all(blogPromises))
       .map((it) => {
         const pageData = JSON.parse(it.__pageData)
         const key = getKey(pageData.relativePath)
