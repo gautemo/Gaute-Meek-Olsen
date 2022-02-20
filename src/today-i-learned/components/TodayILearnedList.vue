@@ -4,12 +4,14 @@ import { computed } from 'vue'
 import IconCss from '../assets/IconCss.vue'
 import IconGit from '../assets/IconGit.vue'
 import IconCsharp from '../assets/IconCsharp.vue';
+import IconKotlin from '../assets/IconKotlin.vue';
 const tilFiles = import.meta.globEager('../*.md')
 
 const icons = {
   CSS: IconCss,
   git: IconGit,
   'C#': IconCsharp,
+  Kotlin: IconKotlin,
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 
