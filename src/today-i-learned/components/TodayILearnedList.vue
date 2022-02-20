@@ -3,11 +3,13 @@ import { getUrl } from '../../utils/blogUtils'
 import { computed } from 'vue'
 import IconCss from '../assets/IconCss.vue'
 import IconGit from '../assets/IconGit.vue'
+import IconCsharp from '../assets/IconCsharp.vue';
 const tilFiles = import.meta.globEager('../*.md')
 
 const icons = {
   CSS: IconCss,
   git: IconGit,
+  'C#': IconCsharp,
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 
