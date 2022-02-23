@@ -3,15 +3,27 @@ import { getUrl } from '../../utils/blogUtils'
 import { computed } from 'vue'
 import IconCss from '../assets/IconCss.vue'
 import IconGit from '../assets/IconGit.vue'
-import IconCsharp from '../assets/IconCsharp.vue';
-import IconKotlin from '../assets/IconKotlin.vue';
+import IconCsharp from '../assets/IconCsharp.vue'
+import IconKotlin from '../assets/IconKotlin.vue'
+import IconAndroid from '../assets/IconAndroid.vue'
+import IconJs from '../assets/IconJs.vue'
+import IconFirebase from '../assets/IconFirebase.vue'
+import IconSecurity from '../assets/IconSecurity.vue'
+import IconHtml from '../assets/IconHtml.vue'
+import IconVue from '../assets/IconVue.vue'
 const tilFiles = import.meta.globEager('../*.md')
 
 const icons = {
-  CSS: IconCss,
-  git: IconGit,
+  Android: IconAndroid,
   'C#': IconCsharp,
+  CSS: IconCss,
+  Firebase: IconFirebase,
+  git: IconGit,
+  HTML: IconHtml,
+  JavaScript: IconJs,
   Kotlin: IconKotlin,
+  Security: IconSecurity,
+  Vue: IconVue,
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 
