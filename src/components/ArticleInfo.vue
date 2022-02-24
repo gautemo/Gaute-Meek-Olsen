@@ -8,6 +8,11 @@ const { hideCoverImg, coverImgExtension } = page.value.frontmatter
 const date = computed(() =>
   new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(page.value.frontmatter.date))
 )
+const updated = computed(
+  () =>
+    page.value.frontmatter.updated &&
+    new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(new Date(page.value.frontmatter.updated))
+)
 const imgUrl = computed(() => {
   if (!hideCoverImg && page.value.relativePath.includes('dev-blog')) {
     return getCoverImg(getKey(page.value.relativePath), coverImgExtension)
@@ -18,7 +23,10 @@ const imgUrl = computed(() => {
 <template>
   <h1>{{ page.title }}</h1>
   <img v-if="imgUrl" :src="imgUrl" alt="cover image" />
-  <p>Published: {{ date }}</p>
+  <div class="dates">
+    <span>Published: {{ date }}</span>
+    <span v-if="updated">Updated: {{ updated }}</span>
+  </div>
 </template>
 
 <style scoped>
@@ -38,5 +46,11 @@ h1::before {
 
 img {
   margin-top: 1rem;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 </style>
