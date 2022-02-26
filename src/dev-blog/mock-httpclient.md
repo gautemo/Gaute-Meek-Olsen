@@ -13,7 +13,7 @@ Note that in HttpClient all `GetAsync`, `PostAsync`, `PatchAsync`, `PutAsync`, `
 
 ## Implementation to test
 
-Here is an example of a Posts class which can fetch posts and create a post.
+Here is an example of a Posts class that can fetch posts and create a post.
 
 ```cs
 

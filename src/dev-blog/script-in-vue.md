@@ -30,7 +30,7 @@ Building this, Vue throws the error:
 Templates should only be responsible for mapping the state to the UI. Avoid placing tags with side-effects in your templates, such as script, as they will not be parsed.
 :::
 
-This is an easy fix, despite googling internet might send you down a harder path. Just add type=”application/javascript” to your script tag. Fixed.
+This is an easy fix, despite that googling the internet might send you down a harder path. Just add `type="application/javascript"` to your script tag. Fixed.
 
 ```vue
 <template>
@@ -50,7 +50,7 @@ This is an easy fix, despite googling internet might send you down a harder path
 </template>
 ```
 
-You could stop reading here. But what if your script contains document.write. Your script won't work and throw this error in the console:
+You could stop reading here. But what if your script contains `document.write`. Your script won't work and throw this error in the console:
 
 ::: danger Error
 Failed to execute 'write' on 'Document': It isn't possible to write into a document from an asynchronously-loaded external script unless it is explicitly opened.
@@ -83,4 +83,4 @@ export default {
 </script>
 ```
 
-Congratulations, you now have embeded a gist in your Vue component!
+Congratulations, you now have embedded a gist in your Vue component!

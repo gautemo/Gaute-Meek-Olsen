@@ -14,7 +14,7 @@ const $$ = document.querySelectorAll.bind(document)
 
 Now it's time to publish our library so it can be installed with NPM or imported by script from a CDN, so it can be used in other projects.
 
-First let's create our package.json file.
+First, let's create our package.json file.
 
 ```bash
 npm init
@@ -43,7 +43,7 @@ The fields **name** and **version** are required. But I encourage you to fill ou
 
 The **main** field contains the starting js file (often minified and in a dist folder) where we export our module. Use the **bin** field if it's a command-line file.
 
-Lets update our selector.js file and export our variables.
+Let's update our selector.js file and export our variables.
 
 ```js
 export const $ = document.querySelector.bind(document)
@@ -52,7 +52,7 @@ export const $$ = document.querySelectorAll.bind(document)
 
 If you don't have an NPM user you need to sign up [here](https://www.npmjs.com/signup).
 
-Then login in your terminal.
+Then log in to your terminal.
 
 ```bash
 npm login
@@ -85,11 +85,11 @@ $$('.class-name').forEach((el) => (el.style.backgroundColor = 'red'))
 
 See [WesBos guide](https://wesbos.com/javascript-modules/) for how to export and import your modules to fit your need.
 
-We also want to access the module from a script tag, we'll use the simple solution [UNPKG](https://unpkg.com/) which gets the file from npmjs for us. This is what we put in the src attribute.
+We also want to access the module from a script tag, we'll use the simple solution [UNPKG](https://unpkg.com/) which gets the file from npm for us. This is what we put in the src attribute.
 
 `unpkg.com/:package@:version/:file`
 
-We can skip file and version if we don't have to be specific about what the browser should download. Pick the option you like.
+We can skip `file` and `version` if we don't have to be specific about what the browser should download. Pick the option you like.
 
 ```html
 <script src="https://unpkg.com/selector-library@1.0.6/selector.js"></script>

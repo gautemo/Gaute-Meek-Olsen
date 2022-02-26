@@ -3,12 +3,12 @@ title: DynamoDB for our Kotlin Lambda function
 date: 2020-06-10
 coverImgExtension: png
 tags: [AWS, Kotlin]
-serie: Twitter bot with Kotlin in AWS
+series: Twitter bot with Kotlin in AWS
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to create a DynamoDB table and interact with it from Kotlin code.
 
-If you haven't set up a Lambda function in Kotlin before, you can look [here](/dev-blog/creating-an-aws-lambda-kotlin-function.html). Also remember to give your role running the code permission to access DynamoDB.
+If you haven't set up a Lambda function in Kotlin before, you can look [here](/dev-blog/creating-an-aws-lambda-kotlin-function.html). Also, remember to give your role running the code permission to access DynamoDB.
 
 Now it's time to set up our DynamoDB table, add some items, and write code to read and update them.
 
@@ -21,7 +21,7 @@ aws dynamodb create-table --table-name twitter-bot-vue-3 --attribute-definitions
 -key-schema AttributeName=Project,KeyType=HASH --billing-mode PAY_PER_REQUEST
 ```
 
-For my use case, I want an item for each changelog file I'm looking up. They will be defined beforehand, so you can add them through the AWS console, AWS CLI or code if you want. This is how to add an item with the CLI. (for Linux based systems, you can change to single quotes ' on the start and end and skip the escaping of quotes).
+For my use case, I want an item for each changelog file I'm looking up. They will be defined beforehand, so you can add them through the AWS console, AWS CLI, or code if you want. This is how to add an item with the CLI. (for Linux-based systems, you can change to single quotes ' on the start and end and skip the escaping of quotes).
 
 ```bash
 aws dynamodb put-item --table-name twitter-bot-vue-3 --item "{\"Project\": {\"S\": \"Vue 3\"}, \"Changelog\": {\"S\": \"

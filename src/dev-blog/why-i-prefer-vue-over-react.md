@@ -12,7 +12,7 @@ Myself, I usually choose [Vue](https://vuejs.org/). Here are my top reasons to c
 
 ## Without using a building tool
 
-With both Vue and React you don't necessarily need a building step to create your website. It can be done with just vanilla JavaScript, HTML and CSS. Let's create a button that count's the number of times it has been clicked.
+With both Vue and React you don't necessarily need a building step to create your website. It can be done with just vanilla JavaScript, HTML, and CSS. Let's create a button that count's the number of times it has been clicked.
 
 <div class="example">
   <button v-on:click="count++">{{count}}</button>
@@ -103,7 +103,7 @@ I prefer Vue in this scenario because it is pretty easy to add reactivity to a w
 
 ## CLI
 
-React has the [Create React App](https://create-react-app.dev/) to set up your project. But when you want to add features, such as router, Sass, linter and more, you have to do it manually afterward.
+React has the [Create React App](https://create-react-app.dev/) to set up your project. But when you want to add features, such as a router, Sass, linter, and more, you have to do it manually afterward.
 
 Vue provides you with a [CLI](https://cli.vuejs.org/) where you can pick what features you like when you are creating a project. Which makes the process of creating a project smooth and easy.
 
@@ -384,11 +384,11 @@ This is a clear win for Vue, as I don't like the idea that I need to rewrite my 
 
 # Conclusion
 
-For me, Vue had a much quicker learning curve, as it took me some time to understand React, while Vue I got from the first second (maybe because of the similarity to AngularJS directives). It feels closer to ordinary HTML and JavaScript. I don't need to use JSX, where I often feel like the JavaScript clutters the HTML code. Vue also has single file components, where all component code (HTML, JavaScript, and CSS) are in the same file if wanted. Vue has scoped CSS for components, which also is super nice!
+For me, Vue had a much quicker learning curve, as it took me some time to understand React, while Vue I got from the first second (maybe because of the similarity to AngularJS directives). It feels closer to ordinary HTML and JavaScript. I don't need to use JSX, where I often feel like JavaScript clutters the HTML code. Vue also has single file components, where all component code (HTML, JavaScript, and CSS) are in the same file if wanted. Vue has scoped CSS for components, which also is super nice!
 
 Example code can be found at [GitHub](https://github.com/gautemo/frontend-framework-compare).
 
-This is just my friendly opinions. If you like something else, that's okay :blush:
+This is just my friendly opinion. If you like something else, that's okay :blush:
 
 <script setup>
 import { ref } from 'vue'

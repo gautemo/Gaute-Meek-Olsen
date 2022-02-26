@@ -7,7 +7,7 @@ tags: [Vue]
 
 Sometimes you want your app to behave differently in local development and production. Maybe they should point to a different backend or use different API keys. Vue has very good documentation about it, [Modes and Environment Variables](https://cli.vuejs.org/guide/mode-and-env.html#environment-variables). But I will try to keep it shorter, for the use I often need.
 
-You can create differently `.env` files at the root of your project.
+You can create different `.env` files at the root of your project.
 
 ![project structure](./assets/environment-variables-vue.png)
 

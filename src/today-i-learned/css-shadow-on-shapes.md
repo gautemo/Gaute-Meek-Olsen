@@ -4,7 +4,7 @@ date: 2020-03-08
 category: CSS
 ---
 
-You can't use `box-shadow` on elements with `clip-path` or images(png or svg) that are transparent. We have to use `filter` and `drop-shadow`. For images you can use the filter directly. But for clip-path, it needs to be a child element (use `::before` to not create wrapper elements).
+You can't use `box-shadow` on elements with `clip-path` or images(png or svg) that are transparent. We have to use `filter` and `drop-shadow`. For images, you can use the filter directly. But for clip-path, it needs to be a child element (`::before` can be used to avoid wrapper elements).
 
 ```css
 filter: drop-shadow(1px 5px 5px red);

@@ -5,7 +5,7 @@ hideCoverImg: true
 tags: [Vue, PWA]
 ---
 
-Creating a Progressive Web App (PWA) is painlessly simple with the Vue CLI. You can use the default set up, by either selecting the feature 'Progressive Web App (PWA) Support' during project creation.
+Creating a Progressive Web App (PWA) is painlessly simple with the Vue CLI. You can use the default setup, by either selecting the feature 'Progressive Web App (PWA) Support' during project creation.
 
 ```bash
 vue create [project name]
@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-2\. Create a sw.js file in your src folder.
+2\. Create an sw.js file in your src folder.
 
 Your file could look something like this, see comments for description
 
@@ -87,7 +87,7 @@ workbox.routing.registerRoute(
 )
 ```
 
-3\. Now you can register your sw.js file and listen for events in the registerServiceWorker.js file created by the vue cli when you initiated a PWA project.
+3\. Now you can register your sw.js file and listen for events in the registerServiceWorker.js file created by the Vue CLI when you initiated a PWA project.
 
 The file should be in the src folder. Add the events you need.
 

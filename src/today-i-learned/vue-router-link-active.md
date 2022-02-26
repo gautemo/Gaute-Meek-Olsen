@@ -11,7 +11,7 @@ import ToggleView from '../components/ToggleView.vue'
 
 <ToggleView :options="['Vue 3', 'Vue 2']"><template #0>
 
-The Vue Router automaticly applies `router-link-active` to active router links. No need to compare the url yourself.
+The Vue Router automatically applies `router-link-active` to active router links. No need to compare the URL yourself.
 
 ```vue
 <router-link to="/link">Link</router-link>
@@ -23,7 +23,7 @@ The Vue Router automaticly applies `router-link-active` to active router links. 
 }
 ```
 
-If you have nested routes, you can also use `router-link-exact-active` to differentiate between active routes and exact active child route.
+If you have nested routes, you can also use `router-link-exact-active` to differentiate between active routes and the exact active child route.
 
 ```js
 const routes = [
@@ -45,7 +45,7 @@ Now visiting `/parent/child` a link with `/parent` would be `router-link-active`
 </template>
 <template #1>
 
-The Vue Router automaticly applies classes to active router links. No need to compare the url yourself.
+The Vue Router automatically applies classes to active router links. No need to compare the URL yourself.
 
 ```vue
 <router-link to="/link">Link</router-link>
@@ -63,7 +63,7 @@ can now be targeted with
 }
 ```
 
-The difference between `router-link-exact-active` and `router-link-active` is that the exact only applies if the entire url matches, while the `router-link-active` is applied if it is part of the url, the user is on a sub-path or exact path.
+The difference between `router-link-exact-active` and `router-link-active` is that the exact only applies if the entire URL matches, while the `router-link-active` is applied if it is part of the URL, the user is on a sub-path or exact path.
 
 </template>
 </ToggleView>

@@ -125,6 +125,6 @@ onUnmounted(() => {
 
 ## Summary
 
-You may disagree with the syntax they decided for, but you can't argue it's a nice feature. CSS variables can make you write cleaner and less CSS. Makes it easier to make changes afterwards. But also creates room for functionality as you can change their value through JavaScript.
+You may disagree with the syntax they decided on, but you can't argue it's a nice feature. CSS variables can make you write cleaner and less CSS. Makes it easier to make changes afterward. But also creates room for functionality as you can change their value through JavaScript.
 
 _Remember to click the light bulb._

@@ -2,7 +2,7 @@
 title: Intro to the easiest DB ever, Firestore
 date: 2018-11-17
 tags: [Firebase]
-serie: Firestore
+series: Firestore
 ---
 
 Let me introduce you to the easiest database in the world. It’s called Firestore and it lives in the cloud. It’s really easy to get started as all coding is done on the front end, but it also scales really well as it is a product by Firebase from Google.
@@ -41,7 +41,7 @@ We are now ready to create a reference to our database.
 const db = firebase.firestore()
 ```
 
-Firestore saves our data in collections which contains documents. Collections can also have sub-collections. Let’s say we have the collections families and cities. Let's create references for our collections.
+Firestore saves our data in collections which contain documents. Collections can also have sub-collections. Let’s say we have the collections families and cities. Let's create references for our collections.
 
 ```js
 const families = db.collection('families')
@@ -50,7 +50,7 @@ const cities = db.collection('cities')
 
 ## Adding data
 
-We are going to use the add method to add families and set method to add cities.
+We are going to use the `add` method to add families and `set` method to add population to the city.
 
 ```js
 const addFamily = (surname) => {
@@ -66,7 +66,7 @@ const addCity = (city, population) => {
 }
 ```
 
-The differences are that `set` uses the city as the ID, while `add` autogenerates an ID. Also if you use the set method and a document with the same ID already exists, it will be overwritten unless you add the { merge: true } option. Notice that `then` and `catch` are not required.
+The differences are that `set` uses the city as the ID, while `add` autogenerates an ID. Also if you use the set method and a document with the same ID already exists, it will be overwritten unless you add the { merge: true } option. Notice that `then` and `catch` is not required.
 
 Now we need some HTML.
 
@@ -190,7 +190,7 @@ cities.onSnapshot((snapshot) => {
 })
 ```
 
-We use the `docChanges` method to know what change happened. If a document was added, modified or removed. Now let’s show the cities.
+We use the `docChanges` method to know what change happened. If a document was added, modified, or removed. Now let’s show the cities.
 
 ```html
 <label>All cities</label>
@@ -242,7 +242,7 @@ This should be added inside the `cityAdded` function we created earlier.
 
 ### Transactions
 
-What if the city administrators had opened the application and clicked the increase button the exact same time? In that case, we need to use a transaction to avoid a race condition.
+What if the city administrators had opened the application and clicked the increase button at the exact same time? In that case, we need to use a transaction to avoid a race condition.
 
 ```js
 const populationTransaction = (city, inc) => {
@@ -256,7 +256,7 @@ const populationTransaction = (city, inc) => {
 }
 ```
 
-Then update our cityAdded function.
+Then update our `cityAdded` function.
 
 ```js
 //b.onclick = () => updatePopulation(city.name, city.pop + 100);
@@ -277,7 +277,7 @@ const deleteCity = (city) => {
 }
 ```
 
-Adding a button inside our cityAdded function to call `deleteCity`.
+Adding a button inside our `cityAdded` function to call `deleteCity`.
 
 ```js
 const d = document.createElement('button')
@@ -288,9 +288,9 @@ p.appendChild(d)
 
 ## Sub-collections
 
-If you need nested data, you could just have a list of objects inside your document. But then you need to retrieve the whole list every time you query your document. A better way which provides more flexibility is to use sub-collections.
+If you need nested data, you could just have a list of objects inside your document. But then you need to retrieve the whole list every time you query your document. A better way that provides more flexibility is to use sub-collections.
 
-Let's add a demo functions, so you get the idea.
+Let's add a demo function, so you get the idea.
 
 ```js
 const addDemoFamily = async () => {
@@ -343,9 +343,9 @@ Visit your Firebase console to see how your data is added and structured.
 
 ## Conclusion
 
-I have now covered most of the Firestore functionality. I hope you see how easy it is. No need to set up a server which needs to connect to a database and provide an API. And we get a lot of functionality such as offline support, real-time updates, and an administration user interface.
+I have now covered most of the Firestore functionality. I hope you see how easy it is. No need to set up a server that needs to connect to a database and provide an API. And we get a lot of functionality such as offline support, real-time updates, and an administration user interface.
 
-But what about security? If all this happens from the client, then our data cannot be safe. Security should always be done in the backend. This is where Firestore rules and Firebase authentication plays its part. Follow my next article to see how you can secure your database and customize who and which actions are allowed.
+But what about security? If all this happens from the client, then our data cannot be safe. Security should always be done in the backend. This is where Firestore rules and Firebase authentication plays their part. Follow my next article to see how you can secure your database and customize who and which actions are allowed.
 
 ### All code
 

@@ -18,7 +18,7 @@ So you want your own developer blog. The reasons are many;
 
 ## Where do you start?
 
-There are so many options and they all require different time, skills to learn or money put into it.
+There are so many options and they all require different time, skills to learn, or money put into it.
 
 You could write every article in HTML. This is the way I started. This works fine and you can write extra code to add functionality if an article requires it. Like [this one](https://gaute.dev/dev-blog/css-variables) where you can switch to dark mode. But I can tell you, it is cumbersome to edit and manage your blog articles after a while.
 
@@ -88,7 +88,7 @@ On to the article page. To get a specific article we will use the endpoint:
 curl https://dev.to/api/articles/259798
 ```
 
-The [article.html](https://github.com/gautemo/blog-devto-backend/blob/master/article.html) file will have the elements for the cover image, title and article body.
+The [article.html](https://github.com/gautemo/blog-devto-backend/blob/master/article.html) file will have the elements for the cover image, title, and article body.
 
 ```html
 <article>
@@ -121,7 +121,7 @@ console.log('hi friend');
 &#96;&#96;&#96;
 </pre>
 
-To get the same highlighting on our site, we will take the css dev.to is using from their github [github.com/thepracticaldev/dev.to](https://github.com/thepracticaldev/dev.to/blob/master/app/assets/stylesheets/syntax.scss). You could use an online [Sass compiler](https://www.sassmeister.com/) to get the css, since we have not set up our project with Sass.
+To get the same highlighting on our site, we will take the CSS dev.to is using from their github [github.com/thepracticaldev/dev.to](https://github.com/thepracticaldev/dev.to/blob/master/app/assets/stylesheets/syntax.scss). You could use an online [Sass compiler](https://www.sassmeister.com/) to get the CSS since we have not set up our project with Sass.
 
 With some more styling, our article page is now done. Complete code is here [article.html](https://github.com/gautemo/blog-devto-backend/blob/master/article.html), [article.js](https://github.com/gautemo/blog-devto-backend/blob/master/script/article.js), [style.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/style.css), [article.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/article.css), and [devto.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/devto.css).
 

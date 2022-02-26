@@ -1,5 +1,5 @@
 ---
-title: Maximum Paralell Tasks
+title: Maximum Parallel Tasks
 date: 2019-12-30
 category: C#
 ---

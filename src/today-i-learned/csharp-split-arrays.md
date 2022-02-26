@@ -4,7 +4,7 @@ date: 2019-12-07
 category: C#
 ---
 
-When you work with large lists or arrays, you might want to handle the elements in chunks to work with less elements. Let's do that with an extension method.
+When you work with large lists or arrays, you might want to handle the elements in chunks to work with fewer elements. Let's do that with an extension method.
 
 ```csharp
 public static class ArrayExtensions

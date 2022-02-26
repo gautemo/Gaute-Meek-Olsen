@@ -1,5 +1,5 @@
 ---
-title: Fix PWA start url with Vue Router
+title: Fix PWA start URL with Vue Router
 date: 2019-11-17
 category: Vue
 ---

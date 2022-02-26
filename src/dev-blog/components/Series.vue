@@ -4,11 +4,11 @@ import { useData } from 'vitepress'
 import { allBlogs } from '../blogsStore'
 
 const { page } = useData()
-const { serie } = page.value.frontmatter
+const serieName = page.value.frontmatter.series
 const series = computed(() => {
-  if (serie) {
+  if (serieName) {
     return allBlogs.value
-      .filter((blog) => blog.serie === serie)
+      .filter((blog) => blog.series === serieName)
       .slice()
       .reverse()
   }
@@ -16,8 +16,8 @@ const series = computed(() => {
 </script>
 
 <template>
-  <div v-if="serie">
-    <h4>{{ serie }} ({{ series?.length }} part series)</h4>
+  <div v-if="series">
+    <h4>{{ serieName }} ({{ series?.length }} part series)</h4>
     <ol>
       <li v-for="blog in series" :key="blog.key">
         <p v-if="page.title === blog.title">

@@ -2,10 +2,10 @@
 title: Firestore and Security
 date: 2018-11-25
 tags: [Firebase]
-serie: Firestore
+series: Firestore
 ---
 
-Firestore is a game changer in databases! It’s never been this easy to save and query data without any hassle of setting up a server and database yourself. Everything is done client-side. But…
+Firestore is a game-changer in databases! It’s never been this easy to save and query data without any hassle of setting up a server and database yourself. Everything is done client-side. But…
 
 There is a security rule; never trust your client. Security should be handled by the server. But how is this done with Firestore?
 
@@ -48,7 +48,7 @@ Which creates a .rules file you can edit your rules in. Then deploy them with th
 firebase deploy
 ```
 
-or only deploy rules, if your using more firebase functionallity
+or only deploy rules, if you're using more firebase functionality
 
 ```bash
 firebase deploy --only firestore:rules
@@ -56,7 +56,7 @@ firebase deploy --only firestore:rules
 
 ## Read-only
 
-If you only need your user to read data, you can put your entire database in read-only mode. Notice that these rules don’t apply to the admin sdk, so you could for example still write to the database using Cloud Functions for Firebase.
+If you only need your user to read data, you can put your entire database in read-only mode. Notice that these rules don’t apply to the admin SDK, so you could for example still write to the database using Cloud Functions for Firebase.
 
 ```
 service cloud.firestore {
@@ -88,13 +88,13 @@ service cloud.firestore {
 
 `request.resource.data` is used to require incoming data. While resource.data is the requested document fields.
 
-One thing to keep in mind is that security rules are either accepted or denied. You can’t filter messages by adding the security rule for public messages. If a message could be private the entire read is denied. This logic only works with a where filter client side.
+One thing to keep in mind is that security rules are either accepted or denied. You can’t filter messages by adding the security rule for public messages. If a message could be private the entire read is denied. This logic only works with a where filter client-side.
 
 ```js
 db.collection('messages').where('visibility', '==', 'public').get()
 ```
 
-If you only had this logic client side, someone could alter your query from the developer tools and get the private messages.
+If you only had this logic client-side, someone could alter your query from the developer tools and get the private messages.
 
 ## Authenticated users
 
@@ -155,7 +155,7 @@ All queries done inside the rules will count towards our quota. Also, rules don�
 
 ### Custom user claims
 
-There is another way of handling roles, which doesn’t query our user collection. We can use custom user claims. Which simplify our rules and doesn’t eat of our quota.
+There is another way of handling roles, which doesn’t query our user collection. We can use custom user claims. Which simplifies our rules and doesn’t eat of our quota.
 
 ```
 service cloud.firestore {
@@ -172,7 +172,7 @@ service cloud.firestore {
 }
 ```
 
-Custom claims are set by the admin sdk, for example in a Cloud Functions for Firebase like this.
+Custom claims are set by the admin SDK, for example in a Cloud Functions for Firebase like this.
 
 ```js
 admin.auth().setCustomUserClaims(uid, { role: 'admin' })
@@ -192,7 +192,7 @@ db.collection('messages').add({
 })
 ```
 
-Security issue, users can alter the method and change the `name` and `profileimg` field and pretend to be someone else. This rule will prevent this.
+The security issue, users can alter the method and change the `name` and `profileimg` fields and pretend to be someone else. This rule will prevent this.
 
 ```
 service cloud.firestore {
@@ -232,7 +232,7 @@ service cloud.firestore {
 }
 ```
 
-Then use Cloud Functions for Firebase and retrieve the profile data there. Then use the admin sdk to add the message to the collection, which will bypass the security rules. Cloud Functions for Firebase is a great way to validate and secure data when the security rules become to complex.
+Then use Cloud Functions for Firebase and retrieve the profile data there. Then use the admin SDK to add the message to the collection, which will bypass the security rules. Cloud Functions for Firebase is a great way to validate and secure data when the security rules become too complex.
 
 ```js
 const functions = require('firebase-functions')
@@ -259,15 +259,15 @@ exports.addMessage = functions.https.onCall((data, context) => {
 })
 ```
 
-Then trigger the function client side (web example).
+Then trigger the function client-side (web example).
 
 ```js
 const addMessage = firebase.functions().httpsCallable('addMessage')
 addMessage({ msg: this.newMessage })
 ```
 
-Doing this, you might not feel the messages are as snappy with the first message. This is because Firebase lowers the functions resources if they are not frequently triggered, and you experience a cold start. This will likely improve in production when they are frequently triggered.
+Doing this, you might not feel the messages are as snappy as the first message. This is because Firebase lowers the function's resources if they are not frequently triggered, and you experience a cold start. This will likely improve in production when they are frequently triggered.
 
 ## Conclusion
 
-Even though logic is performed client side, the Firestore database can be completely secured. This has only been an introduction to how Firestore security rules work with example rules for some use cases. In the end, your application will decide how your rules end up.
+Even though logic is performed client-side, the Firestore database can be completely secured. This has only been an introduction to how Firestore security rules work with example rules for some use cases. In the end, your application will decide how your rules end up.

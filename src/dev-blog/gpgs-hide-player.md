@@ -4,7 +4,7 @@ date: 2019-01-19
 hideCoverImg: true
 ---
 
-I recomend using the Google Play Games Services leaderboard in your Android game. It's fast to get up, it gives you the UI and stores the scores for you. You should set a limit score to avoid cheaters, but you can't set it to low. Because you don't know how good your players will be before you launch. After a while you see some players have an unnatural score you want to delete. Let me show you how.
+I recommend using the Google Play Games Services leaderboard in your Android game. It's fast to get up, it gives you the UI and stores the scores for you. You should set a limit score to avoid cheaters, but you can't set it too low. Because you don't know how good your players will be before you launch. After a while, you see some players have an unnatural score you want to delete. Let me show you how.
 
 <figure class="medium-img">
     <img src="./assets/gpgs-hide-player/leaderboard.png" alt="Leaderboard">
@@ -23,7 +23,7 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 6. Go to **Linked apps** in the left menu.
 7. Click **Link another app** and choose **web**.
 8. Give it a rememberable name such as «App to remove player score».
-9. Launch url doesn’t matter, you can enter: `https://developers.google.com/oauthplayground/`
+9. Launch URL doesn’t matter, you can enter: `https://developers.google.com/oauthplayground/`
 10. Save and continue.
 11. Authorize your app.
 12. Confirm.
@@ -34,7 +34,7 @@ I recomend using the Google Play Games Services leaderboard in your Android game
 1. Go to the tab you opened in the previous step or use this link.
 2. Click on the web application name you created in Google Play Console step 8.
 3. Copy the **Client ID** and **Client Secret** for later. If you don’t see it you can find it in the **DOWNLOAD JSON** file.
-4. Remove the link in the Authorized redirect URIs and add `https://developers.google.com/oauthplayground`. _N.B. dont end the url with a slash_. Then save.
+4. Remove the link in the Authorized redirect URIs and add `https://developers.google.com/oauthplayground`. _N.B. don't end the URL with a slash_. Then save.
 
 ![APIs console](./assets/gpgs-hide-player/apiconsole.png)
 

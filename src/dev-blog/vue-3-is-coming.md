@@ -11,11 +11,11 @@ Note that this article is time-sensitive. As code changes could happen, better b
 
 ## Get Started Today
 
-You can create a Vue 3 project today if you like. Just remember that there isn't any official documentation yet and code changes might occur until the release. I have created a [GitHub repository](https://github.com/gautemo/vue-3-playground) with a project you can play around with and see some example code. The readme contains information on how to set up a Vue 3 project, as well as resources to keep you updated and articles, videos and podcasts about Vue 3.
+You can create a Vue 3 project today if you like. Just remember that there isn't any official documentation yet and code changes might occur until the release. I have created a [GitHub repository](https://github.com/gautemo/vue-3-playground) with a project you can play around with and see some example code. The readme contains information on how to set up a Vue 3 project, as well as resources to keep you updated and articles, videos, and podcasts about Vue 3.
 
 ## Improvements
 
-The biggest change in Vue 3 is that it is completely re-written under the hood. This means for us developers that things will be pretty much the same. The result otherwise is a much better product. Vue was already fast, but now it has a huge performance and memory improvement, it is better at static tree hoisting and tree shaking(dead code elimination).
+The biggest change in Vue 3 is that it is completely rewritten under the hood. This means for us developers that things will be pretty much the same. The result otherwise is a much better product. Vue was already fast, but now it has a huge performance and memory improvement, it is better at static tree hoisting and tree shaking(dead code elimination).
 
 ![Fast](./assets/vue-3-is-coming.gif)
 
@@ -32,7 +32,7 @@ There is a new optional way to write the JavaScript part of your component. They
 Let's see the skeleton of the component object.
 
 ```js
-// Import the API's you are using for the component
+// Import the APIs you are using for the component
 import { ref, reactive, computed } from 'vue'
 
 export default {
@@ -83,7 +83,7 @@ setup(){
 }
 ```
 
-I'm using arrow functions here, but it could be normal functions. And the code doesn't need to be inside the setup method, it could be outside the Vue object, it could be in another file, the thing that matters is that the setup returns the methods and reactive values.
+I'm using arrow functions here, but they could be normal functions. And the code doesn't need to be inside the setup method, it could be outside the Vue object, it could be in another file, the thing that matters is that the setup returns the methods and reactive values.
 
 This got me thinking, could this be used to create a really simple global reactive state? The answer is yes.
 
@@ -189,13 +189,13 @@ setup(){
 }
 ```
 
-One thing, there doesn't exist a thing such as onCreated! This code should be inside the setup method. Since the setup method will run once at the very start of the component. So fetching data and such is a good place to have inside the setup method.
+One thing, there doesn't exist a thing such as `onCreated`! This code should be inside the setup method. Since the setup method will run once at the very start of the component. So fetching data and such is a good place to have inside the setup method.
 
-The composition API is optional, it can be used together with the options API in the same component. The composition API will help with keeping associated logic close to each other, moving setup code to its own files and re-using code. The concepts of Vue is pretty much the same, your data will be `ref` or `reactive` and we are used to `watch`, `computed`, and lifecycle hooks.
+The composition API is optional, it can be used together with the options API in the same component. The composition API will help with keeping associated logic close to each other, moving setup code to its own files, and re-using code. The concepts of Vue are pretty much the same, your data will be `ref` or `reactive` and we are used to `watch`, `computed`, and lifecycle hooks.
 
 ### Fragment
 
-Have you ever notices that every template needs to have only one child? This is annoying because it pollutes the DOM and gives you more code and indentations.
+Have you ever noticed that every template needs to have only one child? This is annoying because it pollutes the DOM and gives you more code and indentations.
 
 Not anymore
 
@@ -269,7 +269,7 @@ Now you can have multiple v-models on your custom component when you want to bin
 
 ### Transition
 
-Just a small naming change for transitions. I found v-enter-active, v-enter, v-enter-to a little confusing. In Vue 3 v-enter is renamed to `v-enter-from` and v-leave to `v-leave-from`. Now the transitions make more sense, a class for when it is active, a class for what it transitions from and a class for what it transitions to.
+Just a small naming change for transitions. I found `v-enter-active`, `v-enter`, `v-enter-to` a little confusing. In Vue 3 `v-enter` is renamed to `v-enter-from` and `v-leave` to `v-leave-from`. Now the transitions make more sense, a class for when it is active, a class for what it transitions from, and a class for what it transitions to.
 
 ### Filter removed
 

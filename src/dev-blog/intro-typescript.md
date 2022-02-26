@@ -17,13 +17,13 @@ Therefore TypeScript was created, with the slogan “JavaScript that scales”. 
 - **Better IDE experience**
 - **Improves readability and easiness of understanding the code**
 
-TypeScript is actually just JavaScript with types. So if you change the file-ending from .js to .ts, it should still be valid code (the type any will be used a lot). So don’t be scared of TypeScript, just start coding ordinary JavaScript and declare types where you feel it’s natural.
+TypeScript is actually just JavaScript with types. So if you change the file-ending from .js to .ts, it should still be valid code (the type `any` will be used a lot). So don’t be scared of TypeScript, just start coding ordinary JavaScript and declare types where you feel it’s natural.
 
-Another benefit which I like best. In JavaScript, there is a feature gap, new features in ES6 to ES9 are still not available in every browser or in a Node server. But in TypeScript, you can write the code with the newest features, such as classes and arrow functions and you can target for example ES3 and the code will be compiled into JavaScript with prototype and ordinary functions. (This is not completely true; if you use features such as Set and includes(), you will need to target a newer JavaScript version)
+Another benefit which I like best. In JavaScript, there is a feature gap, new features in ES6 to ES9 are still not available in every browser or in a Node server. But in TypeScript, you can write the code with the newest features, such as classes and arrow functions and you can target for example ES3, and the code will be compiled into JavaScript with prototype and ordinary functions. (This is not completely true; if you use features such as Set and includes(), you will need to target a newer JavaScript version)
 
 ## Set Up
 
-Download and open an IDE. I recommend Visual Studio Code, but TypeScript is supported in other as well, such as Sublime and Atom.
+Download and open an IDE. I recommend Visual Studio Code, but TypeScript is supported in others as well, such as Sublime and Atom.
 
 Install typescript on your computer through npm. Download Node, if you don’t have npm installed. In a terminal run this command.
 
@@ -59,7 +59,7 @@ If you use code bundlers such as webpack, the setup can be a little different.
 
 ## Code
 
-Type annotations in TypeScript are ways to record the intended contract of the function or variable. This is done by : followed by the type.
+Type annotations in TypeScript are ways to record the intended contract of the function or variable. This is done by `:` followed by the type.
 
 ```ts
 let text: string = 'hello'
@@ -166,7 +166,7 @@ greet('Gaute', 27)
 
 This way your future self and co-workers always know which types the function requires and what it will return.
 
-Now TypeScript is making our greet method require two parameters every time. In JavaScript we could have passed zero or an infinite number of parameters. So TypeScript has the optional parameters, which can be used in methods, classes, and interfaces. If the parameter is left out, the variable will be undefined.
+Now TypeScript is making our greet method require two parameters every time. In JavaScript, we could have passed zero or an infinite number of parameters. So TypeScript has the optional parameters, which can be used in methods, classes, and interfaces. If the parameter is left out, the variable will be undefined.
 
 ```ts
 function greet(name: string, age?: number): string {
@@ -191,4 +191,4 @@ const window: Dialog = {
 
 ## Conclusion
 
-That’s the basic you need to know and maybe all you need to know for your projects.
+That’s the basics you need to know and maybe all you need to know for your projects.

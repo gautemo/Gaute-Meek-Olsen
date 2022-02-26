@@ -15,7 +15,7 @@ category: CSS
 </header>
 </Teleport>
 
-How to make the element seem to be above previous elements background color. You don't want to use negative margins, as they can lead to errors later on. Using `box-shadow` to extend the background color creates a nice effect.
+How to make the element seem to be above the previous element's background color. You don't want to use negative margins, as they can lead to errors later on. Using `box-shadow` to extend the background color creates a nice effect.
 
 ```css
 box-shadow: 0 70px 0 #1ce;

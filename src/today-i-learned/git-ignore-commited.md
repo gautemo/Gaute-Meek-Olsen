@@ -1,14 +1,14 @@
 ---
-title: Ignore already commited files
+title: Ignore already committed files
 date: 2019-11-18
 category: git
 ---
 
-If you have some files that should be ignored, but you discovered it after commiting or pushing the files, this will fix that.
+If you have some files that should be ignored, but you discovered them after committing or pushing the files, this will fix that.
 
 ## Step 1
 
-Make sure all your changes are commited!
+Make sure all your changes are committed!
 
 ## Step 2
 

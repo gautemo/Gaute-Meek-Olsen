@@ -89,12 +89,12 @@ Issues I stumbled upon.
 
 - Error: Cannot find module 'tslib'
   - Fix: `npm i -D tslib`
-- Error: ENOENT: no such file or director
+- Error: ENOENT: no such file or directory
   - Fix: create an empty dist folder manually
 
 ## Thoughts
 
-It was really easy to get started and the development process is really fast as I can see my changes instantly. It's like a compile on the fly setup. So this looks really promising, maybe in some time, this will be the way we develop all Vue projects.
+It was really easy to get started and the development process is really fast as I can see my changes instantly. It's like a compile on the fly setup. So this looks promising, maybe in some time, this will be the way we develop all Vue projects.
 
 Evan You, keep doing your magic 🧙
 

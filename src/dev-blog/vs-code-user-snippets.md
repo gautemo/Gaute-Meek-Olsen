@@ -22,7 +22,7 @@ In the .json file, you can add as many snippets as you like in the object. This 
 }
 ```
 
-The first property is just what you name your snippet. The prefix is what you type in the editor to get the snippet suggested, body contains an array of lines of code, and a description of the snippet.
+The first property is just what you name your snippet. The prefix is what you type in the editor to get the snippet suggested, body contains an array of lines of code and a description of the snippet.
 
 That's it. Go write code rapidly and easily.
 

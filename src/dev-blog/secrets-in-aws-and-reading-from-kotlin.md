@@ -3,7 +3,7 @@ title: Secrets in AWS and reading from Kotlin
 date: 2020-06-21
 tags: [AWS, Kotlin]
 coverImgExtension: png
-serie: Twitter bot with Kotlin in AWS
+series: Twitter bot with Kotlin in AWS
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to manage your secret values and tokens in AWS and read them from Kotlin code.
@@ -12,7 +12,7 @@ We are using the AWS Secrets Manager to keep our keys and tokens safe. Make sure
 
 ## Adding secrets with AWS CLI
 
-Run the create-secret command to create secret containing a JSON object with key/value's for all the secrets.
+Run the create-secret command to create a secret containing a JSON object with key-value pairs for all the secrets.
 
 ```bash
 aws secretsmanager create-secret --name twitter-bot-vue-3/auth --description "Twitter app keys and tokens" --secret-string "{\"consumer-key\":\"API key\",\"consumer-secret\":\"API secret key\",\"access-token\":\"Access token\",\"access-token-secret\":\"Access token secret\"}"

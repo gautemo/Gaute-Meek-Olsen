@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
 const blogFiles = import.meta.glob('../dev-blog/*.md')
 
-type Blog = { title: string; key: string; url: string; cover: string; tags?: string[]; date: Date; serie?: string }
+type Blog = { title: string; key: string; url: string; cover: string; tags?: string[]; date: Date; series?: string }
 
 const allBlogs = asyncComputed<Blog[]>(
   async () => {
@@ -20,7 +20,7 @@ const allBlogs = asyncComputed<Blog[]>(
           cover: getCoverImg(key, pageData.frontmatter.coverImgExtension),
           tags: pageData.frontmatter.tags,
           date: new Date(pageData.frontmatter.date),
-          serie: pageData.frontmatter.serie,
+          series: pageData.frontmatter.series,
         }
       })
       .sort((a, b) => b.date.getTime() - a.date.getTime())

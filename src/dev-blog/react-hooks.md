@@ -84,9 +84,9 @@ export default State
 
 ## useEffect
 
-Since the component function will re-run multiple times, how do you prevent your code to not create an infinite loop? `useEffect` is used for mutations, subscriptions, timers, logging, and other side effects. You need to define which values you want your hook to trigger on.
+Since the component function will re-run multiple times, how do you prevent your code from creating an infinite loop? `useEffect` is used for mutations, subscriptions, timers, logging, and other side effects. You need to define which values you want your hook to trigger on.
 
-The useEffect method has two parameters, the first is the function to run and the second is an array containing the values it listens for changes and re-runs if changed. By returning a method, that will be called when the component leaves the screen.
+The `useEffect` method has two parameters, the first is the function to run and the second is an array containing the values it listens for changes and re-runs if changed. By returning a method, that will be called when the component leaves the screen.
 
 An empty array is used to run only once.
 
@@ -193,7 +193,7 @@ With multiple consumers under the same provider, you would see that they update 
 
 ## useReducer
 
-`useReducer` is an alternative to `useState` when you need a little more complex setter. `useReducer` takes in a function that changes the state and an initial value as parameters and returns a stateful value, and a function to update it (calling the function provided as first parameter).
+`useReducer` is an alternative to `useState` when you need a little more complex setter. `useReducer` takes in a function that changes the state and an initial value as parameters and returns a stateful value, and a function to update it (calling the function provided as the first parameter).
 
 ```js
 const [statefulValue, updateValue] = useReducer(
@@ -299,7 +299,7 @@ Almost like `useCallback` but for values and not methods. Also somewhat similar 
 const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b])
 ```
 
-Say we have an array which we want to show sorted to the user. If we have other values, such as a timer, making our component function run a lot of times we don't want to perform a sort every time. Then we use `useMemo` with dependency only to our array.
+Say we have an array that we want to show sorted to the user. If we have other values, such as a timer, making our component function run a lot of times we don't want to perform a sort every time. Then we use `useMemo` with dependency only to our array.
 
 ```jsx
 import React, { useState, useEffect, useMemo } from 'react'
@@ -478,9 +478,9 @@ export default Parent
 
 ## useLayoutEffect
 
-`useLayoutEffect` works the exact same way as `useEffect`, the only difference is when it runs. `useEffect` will run asynchronously after the DOM is updated to not block the UI. While `useLayoutEffect` will run synchronously before the browser updates the DOM. So you might want to change to `useLayoutEffect` if you see a flicker in the UI with `useEffect`, otherwise `useEffect` should be used.
+`useLayoutEffect` works the same way as `useEffect`, the only difference is when it runs. `useEffect` will run asynchronously after the DOM is updated to not block the UI. While `useLayoutEffect` will run synchronously before the browser updates the DOM. So you might want to change to `useLayoutEffect` if you see a flicker in the UI with `useEffect`, otherwise `useEffect` should be used.
 
-Here is an example of changing the text and background color. If you use `useEffect` and got eagle eyes, you will see a quick flicker because the browser will first update the text, then the background color. With `useLayoutEffect` they will update at the same time.
+Here is an example of changing the text and background color. If you use `useEffect` and have eagle eyes, you will see a quick flicker because the browser will first update the text, then the background color. With `useLayoutEffect` they will update at the same time.
 
 ```jsx
 import React, { useState, useLayoutEffect, useRef } from 'react'
@@ -515,7 +515,7 @@ The last hook. This one is only for custom hooks. So let's look at that first.
 
 ## Custom hook
 
-You can create your own custom hooks, to move logic out of components, re-use code and/or combine other hooks into one hook. Do this by creating a function starting with `use`.
+You can create your own custom hooks, to move logic out of components, re-use code, and/or combine other hooks into one hook. Do this by creating a function starting with `use`.
 
 Here is an example with `useState` and `useMemo` to hold the value of a family and return them sorted. So the component using the hook will just need to know about the family value and the add method.
 

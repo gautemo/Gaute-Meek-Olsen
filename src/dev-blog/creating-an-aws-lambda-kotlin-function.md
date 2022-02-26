@@ -3,7 +3,7 @@ title: Creating an AWS Lambda Kotlin function
 date: 2020-06-05T14:19
 coverImgExtension: png
 tags: [AWS, Kotlin]
-serie: Twitter bot with Kotlin in AWS
+series: Twitter bot with Kotlin in AWS
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to create a Lambda function in Kotlin.
@@ -29,7 +29,7 @@ I'm using [IntelliJ](https://www.jetbrains.com/idea/) as my editor. Now go ahead
 
 ![Alt Text](./assets/creating-an-aws-lambda-kotlin-function.png)
 
-Create file `Main.kt` that will hold our function we want to deploy to an AWS Lambda function.
+Create file `Main.kt` that will hold the function we want to deploy to an AWS Lambda function.
 
 ```kotlin
 class Main {

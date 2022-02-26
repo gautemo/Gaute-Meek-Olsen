@@ -6,7 +6,7 @@ coverImgExtension: png
 tags: [GitHub, Firebase]
 ---
 
-GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application and/or deploy your application.
+GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application, and/or deploy your application.
 
 ## Set Up a Workflow
 
@@ -16,7 +16,7 @@ Then click <i>Set up a workflow yourself</i> in the top right corner.
 
 ## Yaml
 
-This has created a .yml file for you which will contain all your triggers and steps.
+This has created a .yml file for you that will contain all your triggers and steps.
 
 First let's change it to trigger on a push, but only on the master branch.
 
@@ -38,7 +38,7 @@ Now let's create a step to build our code.
 
 ## Firebase deploy
 
-Now we will set up continuous deployment to Firebase. To deploy to Firebase on our behalf, we need to get our Firebase token through the cli in your terminal. Run `firebase login:ci`. Now copy your token. Open a new tab for your GitHub repository and go to <i>Settings</i>, then <i>Secrets</i>. Add your secret and name it FIREBASE_TOKEN.
+Now we will set up continuous deployment to Firebase. To deploy to Firebase on our behalf, we need to get our Firebase token through the CLI in your terminal. Run `firebase login:ci`. Now copy your token. Open a new tab for your GitHub repository and go to <i>Settings</i>, then <i>Secrets</i>. Add your secret and name it FIREBASE_TOKEN.
 
 Now back to your .yml file, add a deploy step. First install the firebase-tools (if your job run's on linux, remember to add sudo). Then deploy with the token.
 
