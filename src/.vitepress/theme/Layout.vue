@@ -66,7 +66,7 @@ body {
 input,
 button {
   color: inherit;
-  background: var(--c-bg-accent);
+  background-color: var(--c-bg-accent);
 }
 
 ::-webkit-scrollbar {
