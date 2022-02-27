@@ -69,6 +69,17 @@ button {
   background-color: var(--c-bg-accent);
 }
 
+input {
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: 1.5rem;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;

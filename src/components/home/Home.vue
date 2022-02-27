@@ -52,7 +52,7 @@ const meSrc = computed(() => {
           <Pen />
           <span> Dev blog </span>
         </a>
-        <a href="/til">
+        <a href="/today-i-learned">
           <Lantern />
           <span> Today I Learned </span>
         </a>

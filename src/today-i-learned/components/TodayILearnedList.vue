@@ -49,7 +49,7 @@ const categories = computed<{ [key: string]: { title: string; url: string }[] }>
         <span>{{ category }}</span>
       </h2>
       <ul>
-        <li v-for="til in list" :key="til.url">
+        <li v-for="til in list.sort((a, b) => a.title.localeCompare(b.title))" :key="til.url">
           <a :href="til.url">{{ til.title }}</a>
         </li>
       </ul>
@@ -63,7 +63,6 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
   min-width: 70%;
-  margin-bottom: 50px;
 }
 
 h2 {
@@ -72,10 +71,28 @@ h2 {
   grid-gap: 10px;
   align-items: center;
   height: 3rem;
+  border-bottom: 1px solid var(--c-black);
 }
 
 .icon {
   width: 100%;
   height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  border-bottom: 1px solid #c8c8c8;
+  color: var(--link);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 2px solid var(--link);
 }
 </style>

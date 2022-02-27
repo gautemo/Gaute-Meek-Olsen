@@ -15,17 +15,6 @@ label {
   flex: 1;
 }
 
-input {
-  width: 100%;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: 1.5rem;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid grey;
-  border-radius: 3px;
-}
-
 span {
   position: absolute;
   opacity: 0.6;

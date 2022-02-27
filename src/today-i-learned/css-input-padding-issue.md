@@ -11,7 +11,7 @@ Have you tried giving your input element some padding and width, and the width g
 ```css
 input {
   width: 100%;
-  padding: 50px;
+  padding: 10px 50px;
 }
 ```
 
@@ -38,7 +38,7 @@ input {
 <style scoped>
 input{
   width: 100%;
-  padding: 50px;
+  padding: 10px 50px;
   border-width: 1px;
   box-sizing: initial;
 }
