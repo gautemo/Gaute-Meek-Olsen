@@ -34,7 +34,6 @@ The result
 <label for="myHouse">Choose your magical house:</label>
 <input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." />
 <datalist id="magicHouses">
-
   <option value="Gryfindor"></option>
   <option value="Hufflepuff"></option>
   <option value="Slytherin"></option>
