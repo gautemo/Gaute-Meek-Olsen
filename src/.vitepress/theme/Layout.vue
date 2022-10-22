@@ -11,7 +11,7 @@ const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.te
 
 <template>
   <Menu />
-  <article v-if="isArticle">
+  <article v-if="isArticle" class="vp-doc">
     <ArticleInfo />
     <Series />
     <Content />
@@ -97,6 +97,10 @@ input {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: var(--tertiary);
 }
+
+.header-anchor {
+  visibility: hidden;
+}
 </style>
 
 <style scoped>
@@ -116,6 +120,7 @@ article :deep(a) {
 
 article :deep(a:hover) {
   border-bottom: 2px solid var(--link);
+  color: var(--link);
 }
 
 article :deep(p img) {

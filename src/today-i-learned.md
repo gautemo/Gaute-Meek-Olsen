@@ -2,7 +2,7 @@
 title: Today I learned
 ---
 
-<main>
+<main class="vp-doc">
 
 # Today I learned
 

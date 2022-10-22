@@ -34,7 +34,7 @@ main {
 }
 
 section {
-  padding-top: 1rem;
+  padding: 1rem 0;
   display: flex;
   gap: 10px;
 }
@@ -54,7 +54,7 @@ ul {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  border: 1px solid var(--c-divider-dark);
+  border: 1px solid var(--vp-c-divider);
 }
 
 .card:hover {
@@ -80,7 +80,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: var(--c-bg-accent);
+  background: var(--vp-c-bg-soft);
 }
 
 .content > h2 {
@@ -91,7 +91,7 @@ ul {
 
 .tags {
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
   display: flex;
   gap: 6px;
 }

@@ -17,7 +17,7 @@ import DarkModeToggle from './DarkModeToggle.vue'
 
 <style scoped>
 section {
-  height: var(--menu-height);
+  min-height: var(--menu-height);
   background: var(--primary);
   padding: 1rem 2rem;
   display: flex;
@@ -29,6 +29,7 @@ section {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -42,35 +43,6 @@ a {
 @media only screen and (max-width: 800px) {
   section {
     gap: 10px;
-  }
-
-  nav {
-    display: grid;
-    grid-template: repeat(2, auto) / repeat(, auto);
-    column-gap: 20px;
-    row-gap: 10px;
-  }
-
-  a {
-    grid-column: span 3;
-  }
-
-  a:nth-child(2) {
-    grid-row: 2;
-    grid-column: 3 / span 3;
-  }
-
-  a:nth-child(3) {
-    grid-column: 5 / span 3;
-  }
-
-  a:nth-child(4) {
-    grid-row: 2;
-    grid-column: 7 / span 3;
-  }
-
-  a:nth-child(5) {
-    grid-column: 8;
   }
 }
 </style>

@@ -22,7 +22,7 @@ Luckily the GitHub Actions run on machines with a lot of [software pre-installed
 
 Now head to "Actions" in the tab menu. Click "Set up this workflow" from any template. Add this yml code, that will set up Gradle, configure the AWS CLI, build the project, and update the function.
 
-```yml
+```yaml
 name: CI/CD
 
 on:

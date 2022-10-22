@@ -15,7 +15,7 @@ Note that in HttpClient all `GetAsync`, `PostAsync`, `PatchAsync`, `PutAsync`, `
 
 Here is an example of a Posts class that can fetch posts and create a post.
 
-```cs
+```csharp
 
 using System.Collections.Generic;
 using System.Net.Http;
@@ -62,7 +62,7 @@ namespace HttpCode
 
 Now let's mock the SendAsync method to test our two methods. The SendAsync method is protected, so we need to use `.Protected()` and access the method with a string to be able to mock it.
 
-```cs
+```csharp
 using HttpCode;
 using Moq;
 using Moq.Protected;

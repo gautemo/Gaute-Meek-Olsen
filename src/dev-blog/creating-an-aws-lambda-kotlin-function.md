@@ -39,7 +39,7 @@ class Main {
 
 We need to make sure that our .jar file which we are going to upload will be a fat jar, containing all our dependencies, by altering the `build.gradle.kts` file and adding this to tasks. We can also change the filename if we want.
 
-```kts
+```kotlin
 jar {
     archiveFileName.set("twitter-bot-vue-3.jar")
     from(configurations

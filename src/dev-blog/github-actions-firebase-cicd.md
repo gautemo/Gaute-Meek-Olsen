@@ -20,7 +20,7 @@ This has created a .yml file for you that will contain all your triggers and ste
 
 First let's change it to trigger on a push, but only on the master branch.
 
-```yml
+```yaml
 on:
   push:
     branches:
@@ -29,7 +29,7 @@ on:
 
 Now let's create a step to build our code.
 
-```yml
+```yaml
 - name: Build
       run: |
         npm install
@@ -42,7 +42,7 @@ Now we will set up continuous deployment to Firebase. To deploy to Firebase on o
 
 Now back to your .yml file, add a deploy step. First install the firebase-tools (if your job run's on linux, remember to add sudo). Then deploy with the token.
 
-```yml
+```yaml
 - name: Firebase Deploy
       run: |
         sudo npm install -g firebase-tools
@@ -56,7 +56,7 @@ Go to the <i>Actions</i> tab and see your pipeline running.
 
 The complete .yml file:
 
-```yml
+```yaml
 name: CI/CD
 
 on:

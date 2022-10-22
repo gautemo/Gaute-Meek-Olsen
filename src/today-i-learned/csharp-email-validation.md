@@ -6,7 +6,7 @@ category: C#
 
 When I google a regex to validate an email adress I get this:
 
-```regex
+```
 /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/
 ```
 

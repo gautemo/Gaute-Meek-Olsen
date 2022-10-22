@@ -32,7 +32,7 @@ https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md\"}, \"LastRecordedCha
 
 Now go to the `build.gradle.kts` file and add these two dependencies (add them to the existing dependencies in your file). You can find the latest version [here](https://sdk.amazonaws.com/java/api/latest/).
 
-```kts
+```kotlin
 dependencies {
     implementation(platform("software.amazon.awssdk:bom:2.13.18"))
     implementation("software.amazon.awssdk:dynamodb")

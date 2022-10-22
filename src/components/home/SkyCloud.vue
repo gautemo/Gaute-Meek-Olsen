@@ -1,24 +1,19 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-interface Cloud {
+type Cloud = {
   size: number
   xPercent: number
   yPercent: number
 }
 
-const props =
-  defineProps<{ cloud: Cloud; containerWidth: number; containerHeight: number; }>()
+const props = defineProps<{ cloud: Cloud; containerWidth: number; containerHeight: number }>()
 const x = computed(() => (props.cloud.xPercent / 100) * props.containerWidth)
 const y = computed(() => (props.cloud.yPercent / 100) * props.containerHeight + props.cloud.size)
 </script>
 
 <template>
-  <text
-    :x="x"
-    :y="y"
-    >☁</text
-  >
+  <text :x="x" :y="y">☁</text>
 </template>
 
 <style scoped>
@@ -26,7 +21,8 @@ text {
   --size: v-bind(cloud.size);
   font-size: calc(var(--size) * 1px);
   fill: #ffffffab;
-  transform: translate(calc(var(--move-x) * var(--size) * 0.03px), calc(var(--move-y) * var(--size) * 0.03px));
+  transform: translate(calc(var(--move-x) * var(--size) * 0.035px), calc(var(--move-y) * var(--size) * 0.035px));
+  font-family: Verdana;
 }
 
 .dark text {

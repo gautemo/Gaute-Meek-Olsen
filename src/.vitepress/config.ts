@@ -1,6 +1,6 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
-export default defineConfigWithTheme({
+export default defineConfig({
   title: 'Gaute Meek Olsen',
   description: 'Portofolio for Gaute Meek Olsen. This is the place you can find my blogs, projects, and more.',
   lang: 'en-US',
@@ -14,9 +14,5 @@ export default defineConfigWithTheme({
       },
     ],
   ],
-  markdown: {
-    anchor: {
-      permalink: false,
-    },
-  },
+  cleanUrls: 'without-subfolders',
 })

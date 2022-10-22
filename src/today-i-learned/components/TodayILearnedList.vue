@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { getUrl } from '../../utils/blogUtils'
-import { computed } from 'vue'
 import IconCss from '../assets/IconCss.vue'
 import IconGit from '../assets/IconGit.vue'
 import IconCsharp from '../assets/IconCsharp.vue'
@@ -11,7 +10,9 @@ import IconFirebase from '../assets/IconFirebase.vue'
 import IconSecurity from '../assets/IconSecurity.vue'
 import IconHtml from '../assets/IconHtml.vue'
 import IconVue from '../assets/IconVue.vue'
-const tilFiles = import.meta.globEager('../*.md')
+import { PageData } from 'vitepress'
+import { asyncComputed } from '@vueuse/core'
+const tilFiles = import.meta.glob<{ __pageData: PageData }>('../*.md')
 
 const icons = {
   Android: IconAndroid,
@@ -27,23 +28,30 @@ const icons = {
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 
-const categories = computed<{ [key: string]: { title: string; url: string }[] }>(() => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const list = Object.entries(tilFiles).map(([_, mod]) => JSON.parse(mod.__pageData))
-  return list.reduce((acc, pageData) => {
-    acc[pageData.frontmatter.category] ??= []
-    acc[pageData.frontmatter.category].push({
-      title: pageData.title,
-      url: getUrl(pageData.relativePath),
-    })
-    return acc
-  }, {})
-})
+const categories = asyncComputed<Map<string, { title: string; url: string }[]>>(
+  async () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const list = Object.entries(tilFiles).map(([_, mod]) => mod())
+    return (await Promise.all(list)).reduce((acc, it) => {
+      const category: string = it.__pageData.frontmatter.category
+      acc.set(category, [
+        ...(acc.get(category) ?? []),
+        {
+          title: it.__pageData.title,
+          url: getUrl(it.__pageData.relativePath),
+        },
+      ])
+      return acc
+    }, new Map<string, { title: string; url: string }[]>())
+  },
+  new Map(),
+  { lazy: true }
+)
 </script>
 
 <template>
   <section>
-    <div v-for="[category, list] in Object.entries(categories)" :key="category">
+    <div v-for="[category, list] in categories.entries()" :key="category">
       <h2>
         <component :is="getIcon(category)" class="icon"></component>
         <span>{{ category }}</span>

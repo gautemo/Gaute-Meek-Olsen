@@ -21,7 +21,7 @@ You can send a tweet from an HTTP request, but the difficulties lie in the autho
 
 In your `build.gradle.kts` file, add this line to your dependencies.
 
-```kts
+```kotlin
 implementation("org.twitter4j", "twitter4j-core", "4.0.7")
 ```
 

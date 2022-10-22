@@ -18,18 +18,18 @@
   },
   "homepage": "https://github.com/gautemo/Gaute-Meek-Olsen#readme",
   "dependencies": {
-    "@vueuse/core": "^7.6.2",
-    "vue": "^3.2.31"
+    "@vueuse/core": "^9.3.1",
+    "vue": "^3.2.41"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.12.1",
-    "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.4.0",
-    "eslint-plugin-vue": "^8.5.0",
-    "prettier": "^2.5.1",
-    "typescript": "^4.5.5",
-    "vitepress": "^0.22.3"
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.6.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vitepress": "1.0.0-alpha.21"
   },
   "lint-staged": {
     "*.(vue|md|js|ts|css|json|svg)": "prettier --write"

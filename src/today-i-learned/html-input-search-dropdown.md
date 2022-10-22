@@ -31,19 +31,21 @@ document.querySelector('#magicHouses').appendChild(option)
 
 The result
 
-<label for="myHouse">Choose your magical house:</label>
-<input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." />
-<datalist id="magicHouses">
-  <option value="Gryfindor"></option>
-  <option value="Hufflepuff"></option>
-  <option value="Slytherin"></option>
-  <option value="Ravenclaw"></option>
-  <option value="Horned Serpent"></option>
-  <option value="Thunderbird"></option>
-  <option value="Pukwudgie"></option>
-  <option value="Wampus"></option>
-  <option value="Fortress of Solitude"></option>
-</datalist>
+<div>
+  <label for="myHouse">Choose your magical house:</label>
+  <input list="magicHouses" id="myHouse" name="myHouse" placeholder="type here..." />
+  <datalist id="magicHouses">
+    <option value="Gryfindor"></option>
+    <option value="Hufflepuff"></option>
+    <option value="Slytherin"></option>
+    <option value="Ravenclaw"></option>
+    <option value="Horned Serpent"></option>
+    <option value="Thunderbird"></option>
+    <option value="Pukwudgie"></option>
+    <option value="Wampus"></option>
+    <option value="Fortress of Solitude"></option>
+  </datalist>
+</div>
 
 Pretty neat and simple! All I would do now is to style the input field with just a little CSS, then it would be done. No need to bring in an extra library or spend hours programming the wheel.
 

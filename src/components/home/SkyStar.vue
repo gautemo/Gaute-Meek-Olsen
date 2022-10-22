@@ -20,6 +20,6 @@ const y = computed(() => random(props.containerHeight) + size)
 text {
   font-size: calc(var(--size) * 1px);
   fill: #ffee00ab;
-  transform: translate(calc(var(--move-x) * var(--size) * 0.03px), calc(var(--move-y) * var(--size) * 0.03px));
+  transform: translate(calc(var(--move-x) * var(--size) * 0.035px), calc(var(--move-y) * var(--size) * 0.035px));
 }
 </style>

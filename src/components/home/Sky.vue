@@ -9,23 +9,20 @@ const clouds = [
   { size: 200, yPercent: 0, xPercent: 5 },
   { size: 230, yPercent: 5, xPercent: 85 },
   { size: 240, yPercent: 10, xPercent: 30 },
-  { size: 150, yPercent: 20, xPercent: 50 },
   { size: 100, yPercent: 30, xPercent: 45 },
   { size: 170, yPercent: 35, xPercent: 10 },
   { size: 80, yPercent: 55, xPercent: 5 },
-  { size: 220, yPercent: 50, xPercent: 55 },
   { size: 230, yPercent: 45, xPercent: 25 },
-  { size: 150, yPercent: 60, xPercent: 80 },
-  { size: 160, yPercent: 65, xPercent: 30 },
+  { size: 150, yPercent: 55, xPercent: 60 },
   { size: 130, yPercent: 40, xPercent: 40 },
   { size: 160, yPercent: 10, xPercent: 60 },
   { size: 190, yPercent: 25, xPercent: 75 },
 ]
 
-let nrStars = 60
+let nrStars = 50
 if (document.documentElement.clientWidth <= 800) {
   clouds.splice(10, 4)
-  nrStars = 40
+  nrStars = 35
 }
 
 const sky = ref(null)
@@ -39,7 +36,7 @@ const move = useThrottle(
     const y = (midY - elementY.value) / 150
     return { x, y }
   }),
-  40
+  45
 )
 </script>
 

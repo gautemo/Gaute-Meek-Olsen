@@ -23,13 +23,13 @@ aws secretsmanager create-secret --name twitter-bot-vue-3/auth --description "Tw
 First, we need to add a JSON serializer and AWS Secrets Manager to `build.gradle.kts`.  
 _plugins_:
 
-```kts
+```kotlin
 kotlin("plugin.serialization") version "1.3.70"
 ```
 
 _dependencies_:
 
-```kts
+```kotlin
 implementation("software.amazon.awssdk:secretsmanager")
 implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
 ```

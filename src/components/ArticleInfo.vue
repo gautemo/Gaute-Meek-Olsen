@@ -32,6 +32,7 @@ const imgUrl = computed(() => {
 <style scoped>
 h1 {
   position: relative;
+  margin-top: 1rem;
 }
 
 h1::before {

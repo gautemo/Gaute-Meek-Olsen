@@ -403,7 +403,7 @@ const show = ref(true)
   border: 2px solid var(--secondary);
   position: relative;
   min-height: 100px;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   display: grid;
   place-items: center;
   font-size: 2rem;
