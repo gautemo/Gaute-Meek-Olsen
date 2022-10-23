@@ -94,12 +94,24 @@ input {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: var(--tertiary);
 }
 
 .header-anchor {
   visibility: hidden;
+}
+
+#app :is(article, dialog) a {
+  border-bottom: 1px solid #c8c8c8;
+  color: var(--link);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#app :is(article, dialog) a:hover {
+  border-bottom: 2px solid var(--link);
+  color: var(--link);
 }
 </style>
 
@@ -109,18 +121,6 @@ article {
   padding: 0 1.5rem 4rem;
   max-width: 48rem;
   word-break: break-word;
-}
-
-article :deep(a) {
-  border-bottom: 1px solid #c8c8c8;
-  color: var(--link);
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-article :deep(a:hover) {
-  border-bottom: 2px solid var(--link);
-  color: var(--link);
 }
 
 article :deep(p img) {

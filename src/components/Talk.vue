@@ -1,20 +1,153 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 defineProps<{
-  title: string
   image: string
+  title: string
+  presented: string[]
   type: '⚡' | '👨‍🏫' | '👨‍💻'
   tech: string[]
+  github?: string
+  slides?: string
+  recording?: string
+  color: string
 }>()
+
+const dialog = ref<HTMLDialogElement>()
+function click(event: MouseEvent) {
+  if (dialog.value) {
+    const rect = dialog.value.getBoundingClientRect()
+    const isInDialog =
+      rect.top <= event.clientY &&
+      event.clientY <= rect.top + rect.height &&
+      rect.left <= event.clientX &&
+      event.clientX <= rect.left + rect.width
+    if (!isInDialog) {
+      dialog.value.close()
+    }
+  }
+}
+
+const types = {
+  '⚡': 'Lightning talk',
+  '👨‍🏫': 'Presentation',
+  '👨‍💻': 'Workshop',
+}
 </script>
 
 <template>
-  <h2>{{ title }}</h2>
-  <img :src="image" alt="talk cover" />
-  <slot></slot>
-  <div class="tech-container">
-    <b>Tech:</b>
-    <span class="tech" v-for="tag in tech" :key="tag">{{ tag }}</span>
+  <div @click="dialog?.showModal()">
+    <img :src="image" alt="talk cover" />
+    <h2>
+      <span>{{ title }}</span
+      ><span>{{ type }}</span>
+    </h2>
   </div>
+  <dialog ref="dialog" @click="click">
+    <h3>{{ title }}</h3>
+    <dl>
+      <dt>Type:</dt>
+      <dd>{{ type }} {{ types[type] }}</dd>
+
+      <dt>Description:</dt>
+      <dd><slot name="description"></slot></dd>
+
+      <dt>Presented:</dt>
+      <dd>
+        <ul>
+          <li v-for="p of presented" :key="p">{{ p }}</li>
+        </ul>
+      </dd>
+
+      <template v-if="recording">
+        <dt>Recording:</dt>
+        <dd>
+          <a :href="recording" target="_blank" rel="noopener">{{ recording }}</a>
+        </dd>
+      </template>
+
+      <template v-if="slides">
+        <dt>Slides:</dt>
+        <dd>
+          <a :href="slides" target="_blank" rel="noopener">{{ slides.length > 60 ? 'slides' : slides }}</a>
+        </dd>
+      </template>
+
+      <template v-if="github">
+        <dt>GitHub:</dt>
+        <dd>
+          <a :href="github" target="_blank" rel="noopener">{{ github }}</a>
+        </dd>
+      </template>
+
+      <dt>Tech:</dt>
+      <dd>
+        <ul class="tags">
+          <li v-for="t of tech" :key="t">{{ t }}</li>
+        </ul>
+      </dd>
+    </dl>
+  </dialog>
 </template>
 
-<style scoped></style>
+<style scoped>
+div {
+  max-width: 500px;
+  position: relative;
+  cursor: pointer;
+}
+
+h2 {
+  background-color: v-bind(color);
+  display: flex;
+  justify-content: space-between;
+  color: var(--vp-c-white-soft);
+  text-shadow: 2px 2px 1px var(--vp-c-black);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+dialog {
+  border: none;
+  border-top: 5px solid v-bind(color);
+  border-radius: 5px;
+  min-width: 45vw;
+  max-width: 90vw;
+  width: 450px;
+}
+
+dialog::backdrop {
+  background: rgba(126, 126, 126, 0.25);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 0.5rem 0;
+}
+
+.tags {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+}
+
+.tags > li {
+  background: var(--secondary);
+  border-radius: 3px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: v-bind(color);
+}
+</style>

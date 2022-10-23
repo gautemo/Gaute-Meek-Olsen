@@ -8,12 +8,14 @@ import 'vitepress/dist/client/theme-default/styles/components/vp-doc.css'
 import 'vitepress/dist/client/theme-default/styles/components/vp-sponsor.css'
 import Layout from './Layout.vue'
 import ImgWithZoom from '../../components/ImgWithZoom.vue'
-import { App } from 'vue'
+import { Theme } from 'vitepress'
 
-export default {
+const theme: Theme = {
   Layout,
   NotFound: () => 'custom 404',
-  enhanceApp({ app }: { app: App }) {
+  enhanceApp({ app }) {
     app.component('ImgWithZoom', ImgWithZoom)
   },
 }
+
+export default theme
