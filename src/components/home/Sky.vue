@@ -183,9 +183,7 @@ svg {
 .star-small {
   transform: translate(calc(var(--move-x) * var(--size) * 0.15px), calc(var(--move-y) * var(--size) * 0.15px));
 }
-</style>
 
-<style>
 html:not(.dark) :is(.star-big, .star-medium, .star-small) {
   display: none;
 }

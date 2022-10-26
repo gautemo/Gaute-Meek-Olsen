@@ -1,9 +1,10 @@
-# Talks
+<main class="vp-doc">
+  
+  # Talks
 
 Presentations, workshops, and lightning talks I have given and are ready to give again.
 
-<ul>
-  <li>
+  <ul>
     <Talk
       title="Why I choose Vue.js"
       image="/talks/why-i-choose-vue.png"
@@ -21,6 +22,7 @@ Presentations, workshops, and lightning talks I have given and are ready to give
     </Talk>
     <Talk
       title="What is Firebase and it's relation to Google Cloud"
+      shortTitle="What is Firebase"
       image="/talks/firebase.png"
       type="👨‍🏫"
       :presented="['2 November 2019 - conference Rubiks, Sopra Steria']"
@@ -55,8 +57,22 @@ Presentations, workshops, and lightning talks I have given and are ready to give
           </p>
         </template>
     </Talk>
-  </li>
-</ul>
+    <Talk
+      title="Updating Your CSS Skills"
+      image="/talks/css-up.png"
+      type="👨‍🏫"
+      :presented="['2019 - tech lunch, Sopra Steria']"
+      color="#ef1684"
+      :tech="['CSS']"
+    >
+      <template #description>
+          <p>
+            CSS are adding new modules from time to time. This talk will give you insight and show you how to use three of the new ones. I will demonstrate CSS variables, Flex and Grid.
+          </p>
+        </template>
+    </Talk>
+  </ul>
+</main>
 
 <script setup>
 import Talk from './components/Talk.vue'
@@ -65,5 +81,17 @@ import Talk from './components/Talk.vue'
 <style scoped>
   p:not(:first-child) {
     margin-top: 0.5rem;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  main{
+    margin: 1rem;
   }
 </style>

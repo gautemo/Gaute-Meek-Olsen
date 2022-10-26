@@ -4,6 +4,7 @@ import { ref } from 'vue'
 defineProps<{
   image: string
   title: string
+  shortTitle?: string
   presented: string[]
   type: '⚡' | '👨‍🏫' | '👨‍💻'
   tech: string[]
@@ -36,13 +37,13 @@ const types = {
 </script>
 
 <template>
-  <div @click="dialog?.showModal()">
+  <li @click="dialog?.showModal()">
     <img :src="image" alt="talk cover" />
     <h2>
-      <span>{{ title }}</span
+      <span>{{ shortTitle ?? title }}</span
       ><span>{{ type }}</span>
     </h2>
-  </div>
+  </li>
   <dialog ref="dialog" @click="click">
     <h3>{{ title }}</h3>
     <dl>
@@ -91,10 +92,23 @@ const types = {
 </template>
 
 <style scoped>
-div {
-  max-width: 500px;
-  position: relative;
+li {
   cursor: pointer;
+  border: 1px solid var(--vp-c-divider);
+}
+
+li:hover {
+  box-shadow: 0 2px 2px 1px rgba(51, 51, 51, 0.1);
+}
+
+.dark li:hover {
+  box-shadow: 0 2px 5px rgba(180, 180, 180, 0.1);
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 h2 {
@@ -103,9 +117,9 @@ h2 {
   justify-content: space-between;
   color: var(--vp-c-white-soft);
   text-shadow: 2px 2px 1px var(--vp-c-black);
-  font-size: 1.5rem;
   line-height: 2.5rem;
   padding: 0 0.5rem;
+  margin: 0;
 }
 
 dialog {

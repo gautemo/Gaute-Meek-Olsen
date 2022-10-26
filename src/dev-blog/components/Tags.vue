@@ -112,7 +112,7 @@ button {
 }
 
 .caret > :first-child {
-  fill: var(--c-text);
+  fill: var(--vp-c-text-1);
 }
 
 .turn {

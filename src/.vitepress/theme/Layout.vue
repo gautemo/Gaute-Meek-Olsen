@@ -37,19 +37,9 @@ body {
   --secondary: #3c8c6a;
   --tertiary: #ee5034;
 
-  --c-text: #e2e2e2;
   --c-bg: rgb(21, 32, 43);
   --c-bg-accent: rgb(25, 39, 52);
   --link: #85c2ff;
-}
-
-.dark article :not(pre) > code {
-  background: rgba(66, 73, 80, 0.5);
-  color: var(--c-text-lighter);
-}
-
-.dark tr:nth-child(2n) {
-  background-color: #f6f8fa14;
 }
 
 .medium-img {
@@ -129,6 +119,6 @@ article :deep(p img) {
 }
 
 article :deep(h2) {
-  border-bottom: none;
+  border-top: none;
 }
 </style>

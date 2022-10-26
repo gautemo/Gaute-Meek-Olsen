@@ -21,6 +21,7 @@ export default defineConfig({
       },
     ],
   ],
+  appearance: false,
   cleanUrls: 'without-subfolders',
   outDir: '../dist',
 })
