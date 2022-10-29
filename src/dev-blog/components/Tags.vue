@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { tags, selectedTags } from '../blogsStore'
+import { tags, selectedTags } from './blogsStore'
 import { ref, watchEffect } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useData } from 'vitepress'
-import { allBlogs } from '../blogsStore'
+import { allBlogs } from './blogsStore'
 
 const { page } = useData()
 const serieName = page.value.frontmatter.series

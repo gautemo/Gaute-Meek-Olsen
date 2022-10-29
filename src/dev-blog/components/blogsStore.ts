@@ -1,13 +1,13 @@
 import { asyncComputed } from '@vueuse/core'
 import { PageData } from 'vitepress'
 import { computed, ref } from 'vue'
-import { getKey, getUrl, getCoverImg } from '../utils/blogUtils'
-const blogFiles = import.meta.glob<{ __pageData: PageData }>('../dev-blog/*.md')
+import { getKey, getUrl, getCoverImg } from '../../utils/blogUtils'
 
 type Blog = { title: string; key: string; url: string; cover: string; tags?: string[]; date: Date; series?: string }
 
 const allBlogs = asyncComputed<Blog[]>(
   async () => {
+    const blogFiles = import.meta.glob<{ __pageData: PageData }>('../dev-blog/*.md')
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())
     return (await Promise.all(blogPromises))

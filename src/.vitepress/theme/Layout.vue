@@ -92,14 +92,14 @@ input {
   visibility: hidden;
 }
 
-#app :is(article, dialog) a {
+#app :is(article, #talks) a {
   border-bottom: 1px solid #c8c8c8;
   color: var(--link);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-#app :is(article, dialog) a:hover {
+#app :is(article, #talks) a:hover {
   border-bottom: 2px solid var(--link);
   color: var(--link);
 }
