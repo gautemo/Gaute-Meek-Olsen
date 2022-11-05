@@ -1,13 +1,23 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import CardType from './CardType.vue';
+
+const types = {
+  '⚡': 'Lightning talk',
+  '👨‍🏫': 'Presentation',
+  '👨‍💻': 'Workshop',
+  '🤖': 'Android App',
+  '🕸️': 'Web',
+} as const
 
 defineProps<{
   image: string
   title: string
   shortTitle?: string
-  presented: string[]
-  type: '⚡' | '👨‍🏫' | '👨‍💻'
+  presented?: string[]
+  type?: keyof typeof types
   tech: string[]
+  url?: string
   github?: string
   slides?: string
   recording?: string
@@ -29,41 +39,50 @@ function click(event: MouseEvent) {
   }
 }
 
-const types = {
-  '⚡': 'Lightning talk',
-  '👨‍🏫': 'Presentation',
-  '👨‍💻': 'Workshop',
-}
 </script>
 
 <template>
   <li @click="dialog?.showModal()" class="card">
-    <img :src="image" alt="talk cover" />
+    <img :src="image" :alt="`${title} cover`" />
     <h2>
-      <span>{{ shortTitle ?? title }}</span
-      ><span>{{ type }}</span>
+      <span>{{ shortTitle ?? title }}</span>
+      <CardType v-if="type" :type="type"/>
     </h2>
   </li>
   <dialog ref="dialog" @click="click">
     <h3>{{ title }}</h3>
     <dl>
-      <dt>Type:</dt>
-      <dd>{{ type }} {{ types[type] }}</dd>
+      <Template v-if="type">
+        <dt>Type:</dt>
+        <dd class="type">
+          <CardType :type="type"/>
+          <span>{{ types[type] }}</span>
+        </dd>
+      </Template>
 
       <dt>Description:</dt>
       <dd><slot name="description"></slot></dd>
 
-      <dt>Presented:</dt>
-      <dd>
-        <ul>
-          <li v-for="p of presented" :key="p">{{ p }}</li>
-        </ul>
-      </dd>
+      <template v-if="presented">
+        <dt>Presented:</dt>
+        <dd>
+          <ul>
+            <li v-for="p of presented" :key="p">{{ p }}</li>
+          </ul>
+        </dd>
+      </template>
 
       <template v-if="recording">
         <dt>Recording:</dt>
         <dd>
           <a :href="recording" target="_blank" rel="noopener">{{ recording }}</a>
+        </dd>
+      </template>
+
+      <template v-if="url">
+        <dt>Link:</dt>
+        <dd>
+          <a :href="url" target="_blank" rel="noopener">{{ url }}</a>
         </dd>
       </template>
 
@@ -118,6 +137,7 @@ h2 {
   background-color: v-bind(color);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--vp-c-white-soft);
   text-shadow: 2px 2px 1px var(--vp-c-black);
   font-size: 1.5rem;
@@ -127,6 +147,8 @@ h2 {
 }
 
 dialog {
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
   border: none;
   border-top: 5px solid v-bind(color);
   border-radius: 5px;
@@ -149,6 +171,12 @@ dt {
 
 dd {
   margin: 0 0 0.5rem 0;
+}
+
+dd.type {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .tags {

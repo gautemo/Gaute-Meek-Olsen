@@ -42,6 +42,16 @@ body {
   --link: #85c2ff;
 }
 
+main{
+  margin: 25px 15vw 50px 15vw;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    margin: 25px 5vw 50px 5vw;
+  }
+}
+
 .medium-img {
   display: flex;
   flex-direction: column;
@@ -92,14 +102,14 @@ input {
   visibility: hidden;
 }
 
-#app :is(article, #talks) a {
+#app :is(article, #show, #urls) a {
   border-bottom: 1px solid #c8c8c8;
   color: var(--link);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-#app :is(article, #talks) a:hover {
+#app :is(article, #show, #urls) a:hover {
   border-bottom: 2px solid var(--link);
   color: var(--link);
 }

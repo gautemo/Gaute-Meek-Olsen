@@ -29,10 +29,6 @@ import { blogs } from './blogsStore'
 </template>
 
 <style scoped>
-main {
-  margin: 25px 15vw;
-}
-
 section {
   padding: 1rem 0;
   display: flex;
@@ -102,11 +98,5 @@ ul {
   padding: 5px 8px;
   white-space: nowrap;
   display: inline-block;
-}
-
-@media only screen and (max-width: 800px) {
-  main {
-    margin: 25px 5vw;
-  }
 }
 </style>

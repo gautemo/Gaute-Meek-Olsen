@@ -1,4 +1,4 @@
-<main id="talks">
+<main id="show">
 
   <div class="vp-doc">
 
@@ -9,7 +9,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   </div>
 
   <ul>
-    <Talk
+    <Card
       title="What's new in JavaScript - ES2022"
       shortTitle="ES2022"
       image="/talks/js.png"
@@ -23,8 +23,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
       <template #description>
           <p>Every year new features are added to the language JavaScript. Let me walk you through this year's changes.</p>
         </template>
-    </Talk>  
-    <Talk
+    </Card>  
+    <Card
       title="Frontend testing"
       image="/talks/vitest_and_cypress.png"
       type="👨‍💻"
@@ -38,8 +38,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Why and how to test your frontend code using Vitest and Cypress.
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="Which frontend framework do you like?"
       shortTitle="Frontend frameworks"
       image="/talks/frameworks.png"
@@ -54,8 +54,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             When developing a website, it is usually wise to use a good framework. But which one should you choose? We will look at which are the most popular, and then go in-depth on the 4 most popular. We will then together find out what you like best when it comes to developing experience, performance, and ecosystem. I'm excited about who wins after we voted and hand out points!
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Intro to Kotlin"
       image="/talks/kotlin.png"
       type="👨‍💻"
@@ -69,8 +69,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Introduction to Kotlin and the benefits of the language. Then jumping into tasks at your own pace and a final competition.
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="What's new in JavaScript - ES2021"
       shortTitle="ES2021"
       image="/talks/js.png"
@@ -84,8 +84,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
       <template #description>
           <p>Every year new features are added to the language JavaScript. Let me walk you through this year's changes.</p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Intro to Vite"
       image="/talks/vite.png"
       type="👨‍🏫"
@@ -99,8 +99,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Do you feel that web dev has become slower and slower with time? With Vite we are finally getting rid of the slow feedback waiting for code to build and bundle during development, which got slower the bigger the project was. Now you will see your changes faster than you can move your eyes!
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="Intro to React Hooks"
       image="/talks/react_hooks.png"
       type="👨‍🏫"
@@ -114,8 +114,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             React version 16.8 introduced hooks, a new way to write components with functions. Let's look at the hooks and which one you most likely will use.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="PWA workshop"
       image="/talks/pwa.png"
       type="👨‍💻"
@@ -128,8 +128,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             What PWA is. Why PWA is the answer to everything. Why PWA is NOT the answer to everything. How to transform a website into a PWA. Hands-on by creating the App Shake PWA.
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="Firebase for a web developer"
       shortTitle="Firebase web"
       image="/talks/firebase.png"
@@ -148,8 +148,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Gaute is a Firebase enthusiast and has participated in 3 Firebase summits (Praha, Madrid, and Internet).
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Why and How to Create Your Own Blog"
       shortTitle="Blogging"
       image="/talks/write.png"
@@ -164,8 +164,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             I've been writing many developer blogs myself. There are some good reasons why you should write and I'll show you how to create your blog.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Beyond ES6 - New things in JavaScript"
       shortTitle="Beyond ES6"
       image="/talks/js.png"
@@ -182,8 +182,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
           </p>
           <p>I will show some code and explain how the new features from the last 5 releases can help us.</p>
         </template>
-    </Talk>        
-    <Talk
+    </Card>        
+    <Card
       title="React Hooks vs Vue Composition API"
       shortTitle="Hooks vs Composition API"
       image="/talks/vue_react.png"
@@ -198,8 +198,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             React has made the change from class components to functional components with hooks. Vue has made the change from options API to composition API. What do they have in common, how both have made their framework better, and which is best?
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="Vue 3"
       image="/talks/vue.png"
       type="👨‍🏫"
@@ -215,8 +215,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             The new composition API, Fragments, Teleport, performance improvements, and better TypeScript support are some good changes to the JavaScript framework.
           </p>
         </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="Why I choose Vue.js"
       image="/talks/vue_react.png"
       type="⚡"
@@ -230,8 +230,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
           There exist a lot of great web development frameworks. These are my main reasons for choosing Vue over the most popular one, React.
         </p>
       </template>
-    </Talk>
-    <Talk
+    </Card>
+    <Card
       title="What is Firebase and its relation to Google Cloud"
       shortTitle="What is Firebase"
       image="/talks/firebase.png"
@@ -251,8 +251,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Every Firebase project is also a Google Cloud Platform project. I'll explain the relationship and how they overlap.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="New Things in JavaScript"
       image="/talks/js.png"
       type="👨‍🏫"
@@ -269,8 +269,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             that doesn't have the latest syntax and functionality at their fingertips yet.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="CSS now has variables!"
       image="/talks/css-variables.png"
       type="⚡"
@@ -284,8 +284,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Variables make you write better and less CSS. Bonus is that they can be altered through JavaScript, making cool functionality very easy.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="An Intro & Comparisons of Serverless Functions"
       shortTitle="Serverless Functions"
       image="/talks/serverless.png"
@@ -300,8 +300,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Serverless functions are functions you write and deploy to a cloud provider. In this presentation, I give an overview of what a serverless function is, and what they can do, and give a comparison of the three big cloud providers Amazon with AWS Lambda, Microsoft with Azure Functions and Google with Firebase Functions. Afterward, I give a demo of how you can implement firebase functions to save your project.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Getting started with Android Development"
       shortTitle="Starting with Android"
       image="/talks/android.png"
@@ -332,8 +332,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             </a>
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Updating Your CSS Skills"
       image="/talks/css-up.png"
       type="👨‍🏫"
@@ -346,8 +346,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             CSS is adding new modules from time to time. This talk will give you insight and show you how to use three of the new ones. I will demonstrate CSS variables, Flex and Grid.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Intro to TypeScript"
       image="/talks/typescript.png"
       type="👨‍🏫"
@@ -362,8 +362,8 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             JavaScript can be time-consuming when the project gets large, because of readability and error detection. This is where TypeScript can help. TypeScript is JavaScript that scales, which provides you with types and new features. At the end your TypeScript file will be compiled into a JavaScript file you can use as normal.
           </p>
         </template>
-    </Talk>    
-    <Talk
+    </Card>    
+    <Card
       title="Serverless with Firebase in 1 2 3"
       shortTitle="Serverless with Firebase"
       image="/talks/firebase.png"
@@ -378,12 +378,12 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
             Firebase is a bunch of tools that help you build, improve and grow your mobile or web application. Firebase makes it easy to get started, but it also scales well since it runs in the Google Cloud. In this workshop, we are using hosting, authentication, and Firestore to get our web application working. Since Firebase is our backend, both server and API, we get a lot of functionality in a short time.
           </p>
         </template>
-    </Talk>    
+    </Card>    
   </ul>
 </main>
 
 <script setup>
-import Talk from './components/Talk.vue'
+import Card from './components/Card.vue'
 </script>
 
 <style scoped>
@@ -397,9 +397,5 @@ import Talk from './components/Talk.vue'
     gap: 1rem;
     list-style: none;
     padding: 0;
-  }
-
-  main{
-    margin: 1rem;
   }
 </style>
