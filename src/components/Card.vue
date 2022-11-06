@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import CardType from './CardType.vue';
+import CardType from './CardType.vue'
 
 const types = {
   '⚡': 'Lightning talk',
@@ -38,7 +38,6 @@ function click(event: MouseEvent) {
     }
   }
 }
-
 </script>
 
 <template>
@@ -46,19 +45,19 @@ function click(event: MouseEvent) {
     <img :src="image" :alt="`${title} cover`" />
     <h2>
       <span>{{ shortTitle ?? title }}</span>
-      <CardType v-if="type" :type="type"/>
+      <CardType v-if="type" :type="type" />
     </h2>
   </li>
   <dialog ref="dialog" @click="click">
     <h3>{{ title }}</h3>
     <dl>
-      <Template v-if="type">
+      <template v-if="type">
         <dt>Type:</dt>
         <dd class="type">
-          <CardType :type="type"/>
+          <CardType :type="type" />
           <span>{{ types[type] }}</span>
         </dd>
-      </Template>
+      </template>
 
       <dt>Description:</dt>
       <dd><slot name="description"></slot></dd>

@@ -1,12 +1,24 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { computed, watchEffect } from 'vue'
+import { inBrowser, useData } from 'vitepress'
 import ArticleInfo from '../../components/ArticleInfo.vue'
 import Series from '../../dev-blog/components/Series.vue'
 import Menu from './Menu.vue'
 
 const { page } = useData()
 const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.test(page.value.relativePath))
+watchEffect(() => {
+  if (inBrowser) {
+    const url = `https://gaute.dev/${page.value.relativePath.replace(/(index)?\.md$/gm, '')}`
+    let canonicalEl = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
+    if (!canonicalEl) {
+      canonicalEl = document.createElement('link')
+      canonicalEl.rel = 'canonical'
+      document.head.appendChild(canonicalEl)
+    }
+    canonicalEl.href = url
+  }
+})
 </script>
 
 <template>
@@ -42,7 +54,7 @@ body {
   --link: #85c2ff;
 }
 
-main{
+main {
   margin: 25px 15vw 50px 15vw;
 }
 

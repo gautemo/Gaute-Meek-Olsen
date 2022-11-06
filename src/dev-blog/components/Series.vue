@@ -36,6 +36,7 @@ div {
   border: 1px solid var(--c-divider-dark);
   border-radius: 2px;
   background-color: var(--c-bg-accent);
+  padding: 0.5rem 0;
 }
 
 h4 {
