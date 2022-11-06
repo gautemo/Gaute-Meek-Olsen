@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outer">
     <div class="talk-header">
       <h1>Talks</h1>
       <h3>Presentations, workshops and lightning talks I have given and are ready to give again</h3>
@@ -240,5 +240,9 @@ Every Firebase project is also a Google Cloud Platform project. I'll explain the
   .talk-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+}
+
+.outer {
+  width: 100%;
 }
 </style>

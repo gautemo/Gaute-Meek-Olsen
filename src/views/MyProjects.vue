@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outer">
     <router-link to="/urls" class="urls">Websites</router-link>
     <div class="project-grid cover">
       <Project v-for="prj in projects" v-bind:key="prj.header" :p="prj"/>
@@ -296,5 +296,9 @@ export default {
   .project-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
+}
+
+.outer {
+  width: 100%;
 }
 </style>

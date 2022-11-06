@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -59,5 +59,16 @@ export default new Router({
       name: '404',
       component: () => import('./views/NotFound.vue')
     }
-  ]
+  ],
 })
+
+router.beforeEach((to, from, next) => {
+  if(!to.path.includes('travel-blog')){
+    document.querySelector('link[rel=canonical]').href = `https://gaute.dev${to.path}`
+  } else {
+    document.querySelector('link[rel=canonical]').href = location.href
+  }
+  next()
+})
+
+export default router
