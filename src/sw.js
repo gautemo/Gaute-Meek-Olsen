@@ -1,25 +1,30 @@
+import { precacheAndRoute } from 'workbox-precaching'
+import {registerRoute} from 'workbox-routing';
+import {StaleWhileRevalidate, NetworkFirst, CacheFirst} from 'workbox-strategies';
+import { ExpirationPlugin } from 'workbox-expiration';
+
 /* eslint-disable no-undef */
 
-workbox.googleAnalytics.initialize()
+precacheAndRoute(self.__WB_MANIFEST);
 
-workbox.routing.registerRoute(
+registerRoute(
   /.*\.js/,
-  workbox.strategies.networkFirst()
+  new NetworkFirst()
 )
 
-workbox.routing.registerRoute(
+registerRoute(
   /.*\.css/,
-  workbox.strategies.staleWhileRevalidate({
+  new StaleWhileRevalidate({
     cacheName: 'css-cache'
   })
 )
 
-workbox.routing.registerRoute(
+registerRoute(
   /.*\.(?:png|jpg|jpeg|svg|gif)/,
-  workbox.strategies.cacheFirst({
+  new CacheFirst({
     cacheName: 'image-cache',
     plugins: [
-      new workbox.expiration.Plugin({
+      new ExpirationPlugin({
         maxEntries: 20,
         maxAgeSeconds: 7 * 24 * 60 * 60
       })
@@ -27,12 +32,12 @@ workbox.routing.registerRoute(
   })
 )
 
-workbox.routing.registerRoute(
+registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-  workbox.strategies.cacheFirst({
+  new CacheFirst({
     cacheName: 'googleapis',
     plugins: [
-      new workbox.expiration.Plugin({
+      new ExpirationPlugin({
         maxEntries: 30
       })
     ]
