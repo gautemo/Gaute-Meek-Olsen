@@ -9,7 +9,7 @@ const { page } = useData()
 const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.test(page.value.relativePath))
 watchEffect(() => {
   if (inBrowser) {
-    const url = `https://gaute.dev/${page.value.relativePath.replace(/(index)?\.md$/gm, '')}`
+    const url = `https://gaute.dev/${page.value.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
     let canonicalEl = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
     if (!canonicalEl) {
       canonicalEl = document.createElement('link')
