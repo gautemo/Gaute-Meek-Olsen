@@ -11,7 +11,7 @@ GitHub Actions are used to automatically run a pipeline on a repository. Uses ca
 ## Set Up a Workflow
 
 In your repository, click the Actions tab in the middle.
-<ImgWithZoom src="./assets/cover-github-actions-firebase-cicd.png" alt="GitHub Actions tab"/>
+<ImgWithZoom src="/images/dev-blog/cover-github-actions-firebase-cicd.png" alt="GitHub Actions tab"/>
 Then click <i>Set up a workflow yourself</i> in the top right corner.
 
 ## Yaml

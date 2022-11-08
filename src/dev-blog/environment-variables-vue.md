@@ -9,7 +9,7 @@ Sometimes you want your app to behave differently in local development and produ
 
 You can create different `.env` files at the root of your project.
 
-![project structure](./assets/environment-variables-vue.png)
+![project structure](/images/dev-blog/environment-variables-vue.png)
 
 Alternatives:
 

@@ -6,7 +6,7 @@ tags: [Node]
 ---
 
 If you are serving your own Node Express server and calling your API from JavaScript, you might get this error.
-<ImgWithZoom src="./assets/node-express-cors.png" alt="Cors error"/>
+<ImgWithZoom src="/images/dev-blog/node-express-cors.png" alt="Cors error"/>
 
 This happens because of security reasons, browsers restrict cross-origin HTTP requests initiated from within scripts.
 

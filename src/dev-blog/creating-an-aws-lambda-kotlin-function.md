@@ -27,7 +27,7 @@ Run `aws configure` in your terminal and enter the AWS Access Key ID and AWS Sec
 
 I'm using [IntelliJ](https://www.jetbrains.com/idea/) as my editor. Now go ahead and create a new project and select gradle, Kotlin DSL build script (not required), and Kotlin/JVM.
 
-![Alt Text](./assets/creating-an-aws-lambda-kotlin-function.png)
+![New project in IntelliJ](/images/dev-blog/creating-an-aws-lambda-kotlin-function.png)
 
 Create file `Main.kt` that will hold the function we want to deploy to an AWS Lambda function.
 

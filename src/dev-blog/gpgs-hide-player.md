@@ -7,7 +7,7 @@ hideCoverImg: true
 I recommend using the Google Play Games Services leaderboard in your Android game. It's fast to get up, it gives you the UI and stores the scores for you. You should set a limit score to avoid cheaters, but you can't set it too low. Because you don't know how good your players will be before you launch. After a while, you see some players have an unnatural score you want to delete. Let me show you how.
 
 <figure class="medium-img">
-    <img src="./assets/gpgs-hide-player/leaderboard.png" alt="Leaderboard">
+    <img src="/images/dev-blog/gpgs-hide-player/leaderboard.png" alt="Leaderboard">
     <figcaption>Players we want to remove</figcaption>
 </figure>
 
@@ -17,9 +17,9 @@ I recommend using the Google Play Games Services leaderboard in your Android gam
 2. Go to **Game services** in the left menu.
 3. Open your game.
 4. Copy the **applicationId** for later.
-   <ImgWithZoom src="./assets/gpgs-hide-player/appid.png" alt="Console"/>
+   <ImgWithZoom src="/images/dev-blog/gpgs-hide-player/appid.png" alt="Console"/>
 5. Click **Leaderboard** in the left menu. Then copy the **leaderboardId** for later.
-   <ImgWithZoom src="./assets/gpgs-hide-player/leaderboardid.png" alt="Console"/>
+   <ImgWithZoom src="/images/dev-blog/gpgs-hide-player/leaderboardid.png" alt="Console"/>
 6. Go to **Linked apps** in the left menu.
 7. Click **Link another app** and choose **web**.
 8. Give it a rememberable name such as «App to remove player score».
@@ -36,7 +36,7 @@ I recommend using the Google Play Games Services leaderboard in your Android gam
 3. Copy the **Client ID** and **Client Secret** for later. If you don’t see it you can find it in the **DOWNLOAD JSON** file.
 4. Remove the link in the Authorized redirect URIs and add `https://developers.google.com/oauthplayground`. _N.B. don't end the URL with a slash_. Then save.
 
-![APIs console](./assets/gpgs-hide-player/apiconsole.png)
+![APIs console](/images/dev-blog/gpgs-hide-player/apiconsole.png)
 
 ## OAuth 2.0 Playground
 
@@ -44,7 +44,7 @@ I recommend using the Google Play Games Services leaderboard in your Android gam
 2. Click the settings wheel.
 3. Check **Use your own OAuth credentials** checkbox.
 4. Enter the **Client ID** and **Client Secret** from APIs Console step 3.
-   ![OAuth 2.0 Playground](./assets/gpgs-hide-player/oauthplayground.png)
+   ![OAuth 2.0 Playground](/images/dev-blog/gpgs-hide-player/oauthplayground.png)
 5. On the left side, expand Google Play Game Services Management API v1management and click **https:/<span/>/www.googleapis.com/auth/games**
 6. Click **Authorize APIs**.
 7. Sign in with your account.
@@ -59,7 +59,7 @@ I recommend using the Google Play Games Services leaderboard in your Android gam
 ## Summary
 
 <figure class="medium-img">
-    <img src="./assets/gpgs-hide-player/leaderboarddone.png" alt="Leaderboard">
+    <img src="/images/dev-blog/gpgs-hide-player/leaderboarddone.png" alt="Leaderboard">
     <figcaption>Leaderboard as it should be. The unnatural scores are gone.</figcaption>
 </figure>
 

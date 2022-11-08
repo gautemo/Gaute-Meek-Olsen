@@ -11,7 +11,7 @@ This article is part of the **Twitter bot with Kotlin in AWS series** showing ho
 
 First, we need to head over to the [Twitter developer console](https://developer.twitter.com/apps). If you haven't applied for access you need to do that before creating an app. Now create an app and provide a name, description, and website URL(could be the GitHub repository URL). Leave the rest blank.
 
-<ImgWithZoom src="./assets/posting-a-tweet-from-kotlin.png" alt="Twitter developer console"/>
+<ImgWithZoom src="/images/dev-blog/posting-a-tweet-from-kotlin.png" alt="Twitter developer console"/>
 
 Go to the Keys and tokens tab and generate an Access token and access token secret. You will need the API key, API secret key, Access token, and Access token secret for later. These will be used to perform a tweet from the Twitter account that owns the Twitter developer app. If you want to tweet from another account's behalf, you can get tokens from the [3-legged OAuth flow](https://developer.twitter.com/en/docs/basics/authentication/oauth-1-0a/obtaining-user-access-tokens), but I won't cover that here.
 

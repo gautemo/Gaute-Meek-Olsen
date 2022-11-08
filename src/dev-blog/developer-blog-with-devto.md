@@ -80,7 +80,7 @@ const addArticle = (article) => {
 
 With some styling our landing page is now done! Complete code is at [index.html](https://github.com/gautemo/blog-devto-backend/blob/master/index.html), [app.js](https://github.com/gautemo/blog-devto-backend/blob/master/script/app.js), [style.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/style.css), and [home.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/home.css).
 
-![Home page](./assets/developer-blog-with-devto/home.png)
+![Home page](/images/dev-blog/developer-blog-with-devto/home.png)
 
 On to the article page. To get a specific article we will use the endpoint:
 
@@ -125,7 +125,7 @@ To get the same highlighting on our site, we will take the CSS dev.to is using f
 
 With some more styling, our article page is now done. Complete code is here [article.html](https://github.com/gautemo/blog-devto-backend/blob/master/article.html), [article.js](https://github.com/gautemo/blog-devto-backend/blob/master/script/article.js), [style.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/style.css), [article.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/article.css), and [devto.css](https://github.com/gautemo/blog-devto-backend/blob/master/style/devto.css).
 
-![Article](./assets/developer-blog-with-devto/article.png)
+![Article](/images/dev-blog/developer-blog-with-devto/article.png)
 
 ## Conclusion
 

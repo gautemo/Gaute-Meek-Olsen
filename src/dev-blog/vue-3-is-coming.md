@@ -17,7 +17,7 @@ You can create a Vue 3 project today if you like. Just remember that there isn't
 
 The biggest change in Vue 3 is that it is completely rewritten under the hood. This means for us developers that things will be pretty much the same. The result otherwise is a much better product. Vue was already fast, but now it has a huge performance and memory improvement, it is better at static tree hoisting and tree shaking(dead code elimination).
 
-![Fast](./assets/vue-3-is-coming.gif)
+![Fast](/images/dev-blog/vue-3-is-coming.gif)
 
 They have also written Vue 3 in TypeScript, which makes the project more maintainable for the Vue team. But it also has some benefits for us developers, even if you are using JavaScript or TypeScript, you will get better IntelliSense and typeahead.
 

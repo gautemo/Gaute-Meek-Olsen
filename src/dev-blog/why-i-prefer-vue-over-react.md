@@ -92,7 +92,7 @@ With both Vue and React you don't necessarily need a building step to create you
     <td>389</td>
     <td>
       <ul>
-        <li>Sub components need to use template strings for the HTML</li>
+        <li>Subcomponents need to use template strings for the HTML</li>
         <li>Code will start to get messy with many components</li>
       </ul>
     </td>
@@ -107,7 +107,7 @@ React has the [Create React App](https://create-react-app.dev/) to set up your p
 
 Vue provides you with a [CLI](https://cli.vuejs.org/) where you can pick what features you like when you are creating a project. Which makes the process of creating a project smooth and easy.
 
-![Vue CLI](./assets/why-i-prefer-vue-over-react/cli.png)
+![Vue CLI](/images/dev-blog/why-i-prefer-vue-over-react/cli.png)
 
 ## Template
 

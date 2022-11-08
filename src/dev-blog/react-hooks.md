@@ -593,7 +593,7 @@ export default useFamily
 
 So we can see the information in the Devtools:
 
-![Debug value in React Devtools](./assets/react-hooks.png)
+![Debug value in React Devtools](/images/dev-blog/react-hooks.png)
 
 ## Conclusion
 

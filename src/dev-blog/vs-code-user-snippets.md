@@ -6,7 +6,7 @@ coverImgExtension: png
 
 Often you find yourself typing repetitive code or code you don't always remember by heart. With Visual Studio Code you can easily create your own code snippets so you can use them at any time. Like this:
 
-![media query snippet](./assets/vs-code-user-snippets/1.gif)
+![media query snippet](/images/dev-blog/vs-code-user-snippets/1.gif)
 
 Start by opening the Command Palette `Ctrl + Shift + P` and enter `Preferences: Configure User Snippets`. It will then ask you which files it should be used for, which can be CSS for example.
 
@@ -26,4 +26,4 @@ The first property is just what you name your snippet. The prefix is what you ty
 
 That's it. Go write code rapidly and easily.
 
-![Fast typer GIF](./assets/vs-code-user-snippets/2.gif)
+![Fast typer GIF](/images/dev-blog/vs-code-user-snippets/2.gif)

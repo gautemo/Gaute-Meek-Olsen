@@ -12,7 +12,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="What's new in JavaScript - ES2022"
       shortTitle="ES2022"
-      image="./assets/talks/js.png"
+      image="/images/talks/js.png"
       type="⚡"
       :presented="['08 September 2022 - JavaZone', '05 October 2022 - frontendForum, Gjensidige']"
       recording="https://vimeo.com/748031775"
@@ -26,7 +26,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>  
     <Card
       title="Frontend testing"
-      image="./assets/talks/vitest_and_cypress.png"
+      image="/images/talks/vitest_and_cypress.png"
       type="👨‍💻"
       :presented="['29 July 2022 - Capra']"
       slides="https://gaute-talks.netlify.app/frontend-testing-workshop/"
@@ -42,7 +42,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Which frontend framework do you like?"
       shortTitle="Frontend frameworks"
-      image="./assets/talks/frameworks.png"
+      image="/images/talks/frameworks.png"
       type="👨‍🏫"
       :presented="['22 April 2022 - conference CapraCon', '12 May 2022 - frontendForum, Gjensidige']"
       slides="https://gaute-talks.netlify.app/which-framework-do-you-like/index.html"
@@ -57,7 +57,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="Intro to Kotlin"
-      image="./assets/talks/kotlin.png"
+      image="/images/talks/kotlin.png"
       type="👨‍💻"
       :presented="['25 March 2022 - Capra KS2']"
       slides="https://gaute-talks.netlify.app/intro-to-kotlin/index.html"
@@ -73,7 +73,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="What's new in JavaScript - ES2021"
       shortTitle="ES2021"
-      image="./assets/talks/js.png"
+      image="/images/talks/js.png"
       type="⚡"
       :presented="['09 December 2021 - JavaZone', '20 January 2022 - DevFest Norway']"
       recording="https://youtu.be/EwerUS318LQ?t=1060"
@@ -87,7 +87,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="Intro to Vite"
-      image="./assets/talks/vite.png"
+      image="/images/talks/vite.png"
       type="👨‍🏫"
       :presented="['28 October 2021 - Developer day, Gjensidige', '16 November 2021 - frontendForum, Gjensidige', '02 December 2021 - fag og øl, Capra']"
       slides="https://gaute-talks.netlify.app/intro-to-vite/"
@@ -102,7 +102,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>
     <Card
       title="Intro to React Hooks"
-      image="./assets/talks/react_hooks.png"
+      image="/images/talks/react_hooks.png"
       type="👨‍🏫"
       :presented="['1 September 2021 - Capra']"
       slides="https://docs.google.com/presentation/d/1WH8K-EbINJ01FaVO7nZp_KJhhCgdoJaFNvVRiKLuO3M/edit?usp=sharing"
@@ -117,7 +117,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="PWA workshop"
-      image="./assets/talks/pwa.png"
+      image="/images/talks/pwa.png"
       type="👨‍💻"
       :presented="['19 Juni 2021 - Capra KS2']"
       color="#ea80fc"
@@ -132,7 +132,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Firebase for a web developer"
       shortTitle="Firebase web"
-      image="./assets/talks/firebase.png"
+      image="/images/talks/firebase.png"
       type="👨‍🏫"
       :presented="['16 April 2021 - conference CapraCon']"
       recording="https://www.youtube.com/watch?v=KfhNnRVk3KA&ab_channel=CapraConsulting"
@@ -152,7 +152,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Why and How to Create Your Own Blog"
       shortTitle="Blogging"
-      image="./assets/talks/write.png"
+      image="/images/talks/write.png"
       type="👨‍🏫"
       :presented="['9 March 2021 - meetup, Capra']"
       slides="https://docs.google.com/presentation/d/1yMCeY4Cyarlz6v9gF0rPkrN7TdqCCE1DdLApnD-YVb0/edit?usp=sharing"
@@ -168,7 +168,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Beyond ES6 - New things in JavaScript"
       shortTitle="Beyond ES6"
-      image="./assets/talks/js.png"
+      image="/images/talks/js.png"
       type="👨‍🏫"
       :presented="['15 October 2020 - conference DevFest Google']"
       recording="https://youtu.be/amSSIK-mQSI?t=10605"
@@ -186,7 +186,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="React Hooks vs Vue Composition API"
       shortTitle="Hooks vs Composition API"
-      image="./assets/talks/vue_react.png"
+      image="/images/talks/vue_react.png"
       type="👨‍🏫"
       :presented="['30 September 2020 - meetup, Capra']"
       slides="https://docs.google.com/presentation/d/1wcFtRV1rImSPutvYUUvdSBIRn8zHco9mJEsXEGYkpeg/edit?usp=sharing"
@@ -201,7 +201,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>
     <Card
       title="Vue 3"
-      image="./assets/talks/vue.png"
+      image="/images/talks/vue.png"
       type="👨‍🏫"
       :presented="['April 2020 - tech lunch, Sopra Steria', '15 October 2020 - conference DevFest Google']"
       recording="https://youtu.be/amSSIK-mQSI?t=12115"
@@ -218,7 +218,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>
     <Card
       title="Why I choose Vue.js"
-      image="./assets/talks/vue_react.png"
+      image="/images/talks/vue_react.png"
       type="⚡"
       :presented="['20 February 2020 - Tech Talks, Online NTNU']"
       slides="https://drive.google.com/file/d/1IB5YSZkTzr9dCn984xoAIohJoyOel4Ba/view?usp=sharing"
@@ -234,7 +234,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="What is Firebase and its relation to Google Cloud"
       shortTitle="What is Firebase"
-      image="./assets/talks/firebase.png"
+      image="/images/talks/firebase.png"
       type="👨‍🏫"
       :presented="['2 November 2019 - conference Rubiks, Sopra Steria']"
       slides="https://drive.google.com/file/d/18aKeAta5iO61tLYJfV3PU3ZVQfaQCtlf/view?usp=sharing"
@@ -254,7 +254,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="New Things in JavaScript"
-      image="./assets/talks/js.png"
+      image="/images/talks/js.png"
       type="👨‍🏫"
       :presented="['May 2019 - conference Apps Deep Dive, Sopra Steria']"
       slides="https://es-intro.netlify.app/"
@@ -272,7 +272,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="CSS now has variables!"
-      image="./assets/talks/css-variables.png"
+      image="/images/talks/css-variables.png"
       type="⚡"
       :presented="['May 2019 - conference Apps Deep Dive, Sopra Steria']"
       color="#50aec0"
@@ -288,7 +288,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="An Intro & Comparisons of Serverless Functions"
       shortTitle="Serverless Functions"
-      image="./assets/talks/serverless.png"
+      image="/images/talks/serverless.png"
       type="👨‍🏫"
       :presented="['March 2019 - for the Polish division, Sopra Steria']"
       slides="https://docs.google.com/presentation/d/1B449-oh75w_xJSorUbQesCwmFNYX5vCvdFNHaMN_038/edit?usp=sharing"
@@ -304,7 +304,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Getting started with Android Development"
       shortTitle="Starting with Android"
-      image="./assets/talks/android.png"
+      image="/images/talks/android.png"
       type="👨‍🏫"
       :presented="['2019 - tech lunch, Sopra Steria']"
       color="#20b161"
@@ -335,7 +335,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="Updating Your CSS Skills"
-      image="./assets/talks/css-up.png"
+      image="/images/talks/css-up.png"
       type="👨‍🏫"
       :presented="['2019 - tech lunch, Sopra Steria']"
       color="#f8536d"
@@ -349,7 +349,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     </Card>    
     <Card
       title="Intro to TypeScript"
-      image="./assets/talks/typescript.png"
+      image="/images/talks/typescript.png"
       type="👨‍🏫"
       :presented="['November 2018 - meetup Sopra Steria']"
       slides="https://docs.google.com/presentation/d/1EiGefgjqQEt0YNrIsLEe9F2g6LC5iTNQ4j5UOgXvFsk/edit?usp=sharing"
@@ -366,7 +366,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     <Card
       title="Serverless with Firebase in 1 2 3"
       shortTitle="Serverless with Firebase"
-      image="./assets/talks/firebase.png"
+      image="/images/talks/firebase.png"
       type="👨‍💻"
       :presented="['October 2018 - meetup Sopra Steria']"
       slides="https://docs.google.com/presentation/d/1YdDizJtnCH8p6TguUl1jjIIrBd3qqM2Bxs_xUVpnpj4/edit?usp=sharing"

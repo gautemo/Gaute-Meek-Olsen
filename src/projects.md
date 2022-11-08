@@ -13,7 +13,7 @@ title: Projects
   <ul>
     <Card
       title="Calc Fast"
-      image="./assets/projects/calcfast.png"
+      image="/images/projects/calcfast.png"
       url="https://play.google.com/store/apps/details?id=gautemo.game.calcfast"
       type="🤖"
       color="#43800c"
@@ -21,7 +21,7 @@ title: Projects
     >
       <template #description>
           <p>
-            Calc Fast is my biggest success so far! With daily players all over the world and many hundred thousands downloads. Calc Fast is a math game where you have 60 seconds to answer as many equations as possible. Giving you a score you can compete in the leaderboard with or just try to improve next time you play.
+            Calc Fast is my biggest success so far! With daily players all over the world and many hundred thousand downloads. Calc Fast is a math game where you have 60 seconds to answer as many equations as possible. Giving you a score you can compete in the leaderboard with or just try to improve the next time you play.
           </p>
           <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank" rel="noopener">
             <img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="width: 200px"/>
@@ -30,7 +30,7 @@ title: Projects
     </Card>     
     <Card
       title="Camera Timer"
-      image="./assets/projects/camera_timer.png"
+      image="/images/projects/camera_timer.png"
       url="https://play.google.com/store/apps/details?id=app.gautemo.cameratimer"
       type="🤖"
       color="#006064"
@@ -47,7 +47,7 @@ title: Projects
     </Card>    
     <Card
       title="Kuizzi"
-      image="./assets/projects/kuizzi.png"
+      image="/images/projects/kuizzi.png"
       url="https://kuizzi.app"
       github="https://github.com/gautemo/kuizzi"
       type="🕸️"
@@ -62,7 +62,7 @@ title: Projects
     </Card>    
     <Card
       title="Ordle"
-      image="./assets/projects/ordle.jpg"
+      image="/images/projects/ordle.jpg"
       url="https://ordle.no"
       github="https://github.com/gautemo/ordle"
       type="🕸️"
@@ -71,13 +71,13 @@ title: Projects
     >
       <template #description>
           <p>
-            Ordle is the norwegian version of wordle, a fun word game where you guess the word of the day.
+            Ordle is the Norwegian version of wordle, a fun word game where you guess the word of the day.
           </p>
         </template>
     </Card>      
     <Card
       title="Chances"
-      image="./assets/projects/chances.png"
+      image="/images/projects/chances.png"
       type="🤖"
       url="https://play.google.com/store/apps/details?id=gautemo.game.randomdicecoinnumber"
       color="#ff5200"
@@ -94,7 +94,7 @@ title: Projects
     </Card>      
     <Card
       title="Planning Poker"
-      image="./assets/projects/planning_poker.png"
+      image="/images/projects/planning_poker.png"
       url="https://planning-poker-w.web.app/"
       github="https://github.com/gautemo/planning-poker"
       type="🕸️"
@@ -103,13 +103,13 @@ title: Projects
     >
       <template #description>
           <p>
-            Play planning poker together, each team member visits the site on their phone and have a screen with the dashboard visible in the room to get a overview of every vote.
+            Play planning poker together, each team member visits the site on their phone and has a screen with the dashboard visible in the room to get an overview of every vote.
           </p>
         </template>
     </Card>       
     <Card
       title="Run from Robots"
-      image="./assets/projects/run_robots.png"
+      image="/images/projects/run_robots.png"
       type="🤖"
       url="https://play.google.com/store/apps/details?id=gautemo.game.runaway"
       color="#4d5d7b"
@@ -126,7 +126,7 @@ title: Projects
     </Card>       
     <Card
       title="Fatty Bird"
-      image="./assets/projects/fatty_bird.png"
+      image="/images/projects/fatty_bird.png"
       type="🤖"
       url="https://play.google.com/store/apps/details?id=gautemo.game.fattybird"
       color="#09c7c7"
@@ -134,7 +134,7 @@ title: Projects
     >
       <template #description>
           <p>
-            Fatty Bird is a fun twist based on the famous Flappy Bird game. Made with the cross platform game-development application framework libGDX.
+            Fatty Bird is a fun twist based on the famous Flappy Bird game. Made with the cross-platform game-development application framework libGDX.
           </p>
           <a href="https://play.google.com/store/apps/details?id=gautemo.game.fattybird" target="_blank" rel="noopener">
             <img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="width: 200px"/>
@@ -143,7 +143,7 @@ title: Projects
     </Card>       
     <Card
       title="Feed the Monster King"
-      image="./assets/projects/feed_monster.jpg"
+      image="/images/projects/feed_monster.jpg"
       type="🤖"
       url="https://play.google.com/store/apps/details?id=game.gautemo.feedthemonsterking"
       color="#842a57"
@@ -160,7 +160,7 @@ title: Projects
     </Card>       
     <Card
       title="Exermon"
-      image="./assets/projects/exermon.png"
+      image="/images/projects/exermon.png"
       type="🤖"
       url="https://play.google.com/store/apps/details?id=gautor.games.exermon"
       color="#8fc5e4"
@@ -168,7 +168,7 @@ title: Projects
     >
       <template #description>
           <p>
-            Exermon is co-created with Torbjørn Høivik. Exermon is inspired by tamagotchi, you need to do strength workout to keep you monster from dying and gaining strength.
+            Exermon is co-created with Torbjørn Høivik. Exermon is inspired by Tamagotchi, you need to do a strength workout to keep your monster from dying and gaining strength.
           </p>
           <a href="https://play.google.com/store/apps/details?id=gautor.games.exermon" target="_blank" rel="noopener">
             <img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="width: 200px"/>
@@ -177,7 +177,7 @@ title: Projects
     </Card>       
     <Card
       title="COVID-19 Timeline"
-      image="./assets/projects/covid.webp"
+      image="/images/projects/covid.webp"
       url="https://covid-19-timeline.netlify.app/"
       github="https://github.com/gautemo/covid19-timeline"
       type="🕸️"
@@ -186,26 +186,26 @@ title: Projects
     >
       <template #description>
           <p>
-            Timeline of how the virus Covid-19 has spread across the worlds. Visualized in Google Maps and focuses on currently infected.
+            Timeline of how the virus Covid-19 has spread across the world. Visualized in Google Maps and focuses on currently infected.
           </p>
         </template>
     </Card>      
     <Card
       title="touch-cli-windows"
-      image="./assets/projects/touch.png"
+      image="/images/projects/touch.png"
       github="https://github.com/gautemo/touch-cli-windows"
       color="#e21414"
       :tech="['JavaScript']"
     >
       <template #description>
           <p>
-            Mac and Linux has the simple touch command in the terminal. But on Windows it's hard to create files in the terminal. Install this package to solve the problem. 'npm i -g touch-cli-windows' to install and 'touch index.html app.js' to use.
+            Mac and Linux have the simple touch command in the terminal. But on Windows, it's hard to create files in the terminal. Install this package to solve the problem. 'npm i -g touch-cli-windows' to install and 'touch index.html app.js' to use.
           </p>
         </template>
     </Card>       
     <Card
       title="Emojis Picker"
-      image="./assets/projects/emoji.png"
+      image="/images/projects/emoji.png"
       github="https://github.com/gautemo/emoji-picker"
       color="#efaf42"
       :tech="['Vue', 'Electron']"
@@ -223,7 +223,7 @@ title: Projects
     </Card>     
     <Card
       title="Web Safe Fonts"
-      image="./assets/projects/safe_fonts.png"
+      image="/images/projects/safe_fonts.png"
       url="https://web-safe-fonts.vercel.app/"
       github="https://github.com/gautemo/web-safe-fonts"
       type="🕸️"
@@ -238,7 +238,7 @@ title: Projects
     </Card>       
     <Card
       title="Christmas Game"
-      image="./assets/projects/christmas_game.png"
+      image="/images/projects/christmas_game.png"
       url="https://christmas-game.netlify.app/"
       github="https://github.com/gautemo/christmas-game"
       type="🕸️"
@@ -247,13 +247,13 @@ title: Projects
     >
       <template #description>
           <p>
-            Collect as many presents as you can and climb the high score list. P.S. try out darkmode.
+            Collect as many presents as you can and climb the high-score list. P.S. try out darkmode.
           </p>
         </template>
     </Card>       
     <Card
       title="Fargespillet"
-      image="./assets/projects/color_game.png"
+      image="/images/projects/color_game.png"
       url="http://fargespillet.surge.sh/"
       github="https://github.com/gautemo/game-hue-colors"
       type="🕸️"
