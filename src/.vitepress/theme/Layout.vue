@@ -49,8 +49,6 @@ body {
   --secondary: #3c8c6a;
   --tertiary: #ee5034;
 
-  --c-bg: rgb(21, 32, 43);
-  --c-bg-accent: rgb(25, 39, 52);
   --link: #85c2ff;
 }
 
@@ -78,7 +76,7 @@ main {
 input,
 button {
   color: inherit;
-  background-color: var(--c-bg-accent);
+  background-color: var(--vp-c-bg-alt);
 }
 
 input {
@@ -114,14 +112,14 @@ input {
   visibility: hidden;
 }
 
-#app :is(article, #show, #urls) a {
+#app :is(article, #show, #urls, #tils) a {
   border-bottom: 1px solid #c8c8c8;
   color: var(--link);
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-#app :is(article, #show, #urls) a:hover {
+#app :is(article, #show, #urls, #tils) a:hover {
   border-bottom: 2px solid var(--link);
   color: var(--link);
 }

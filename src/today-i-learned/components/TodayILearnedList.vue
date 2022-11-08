@@ -11,8 +11,7 @@ import IconSecurity from '../assets/IconSecurity.vue'
 import IconHtml from '../assets/IconHtml.vue'
 import IconVue from '../assets/IconVue.vue'
 import { PageData } from 'vitepress'
-import { asyncComputed } from '@vueuse/core'
-const tilFiles = import.meta.glob<{ __pageData: PageData }>('../*.md')
+const tilFiles = import.meta.glob<PageData>('../*.md', { import: '__pageData', eager: true })
 
 const icons = {
   Android: IconAndroid,
@@ -28,29 +27,21 @@ const icons = {
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 
-const categories = asyncComputed<Map<string, { title: string; url: string }[]>>(
-  async () => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const list = Object.entries(tilFiles).map(([_, mod]) => mod())
-    return (await Promise.all(list)).reduce((acc, it) => {
-      const category: string = it.__pageData.frontmatter.category
-      acc.set(category, [
-        ...(acc.get(category) ?? []),
-        {
-          title: it.__pageData.title,
-          url: getUrl(it.__pageData.relativePath),
-        },
-      ])
-      return acc
-    }, new Map<string, { title: string; url: string }[]>())
-  },
-  new Map(),
-  { lazy: true }
-)
+const categories = Object.values(tilFiles).reduce((acc, it) => {
+  const category: string = it.frontmatter.category
+  acc.set(category, [
+    ...(acc.get(category) ?? []),
+    {
+      title: it.title,
+      url: getUrl(it.relativePath),
+    },
+  ])
+  return acc
+}, new Map<string, { title: string; url: string }[]>())
 </script>
 
 <template>
-  <section>
+  <section id="tils">
     <div v-for="[category, list] in categories.entries()" :key="category">
       <h2>
         <component :is="getIcon(category)" class="icon"></component>
@@ -91,16 +82,5 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-a {
-  border-bottom: 1px solid #c8c8c8;
-  color: var(--link);
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-a:hover {
-  border-bottom: 2px solid var(--link);
 }
 </style>

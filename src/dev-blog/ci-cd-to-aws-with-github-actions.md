@@ -20,7 +20,7 @@ We need to add two secrets to the GitHub repository. Go to your repository, clic
 
 Luckily the GitHub Actions run on machines with a lot of [software pre-installed](https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md), which includes the AWS CLI and Gradle.
 
-Now head to "Actions" in the tab menu. Click "Set up this workflow" from any template. Add this yml code, that will set up Gradle, configure the AWS CLI, build the project, and update the function.
+Now head to "Actions" in the tab menu. Click "Set up this workflow" from any template. Add this yml code, which will set up Gradle, configure the AWS CLI, build the project, and update the function.
 
 ```yaml
 name: CI/CD

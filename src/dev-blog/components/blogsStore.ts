@@ -1,36 +1,27 @@
-import { asyncComputed } from '@vueuse/core'
 import { PageData } from 'vitepress'
 import { computed, ref } from 'vue'
 import { getKey, getUrl, getCoverImg } from '../../utils/blogUtils'
+const blogFiles = import.meta.glob<PageData>('../*.md', { import: '__pageData', eager: true })
 
 type Blog = { title: string; key: string; url: string; cover: string; tags?: string[]; date: Date; series?: string }
 
-const allBlogs = asyncComputed<Blog[]>(
-  async () => {
-    const blogFiles = import.meta.glob<{ __pageData: PageData }>('../*.md')
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const blogPromises = Object.entries(blogFiles).map(([_, mod]) => mod())
-    return (await Promise.all(blogPromises))
-      .map((it) => {
-        const key = getKey(it.__pageData.relativePath)
-        return {
-          title: it.__pageData.title,
-          key,
-          url: getUrl(it.__pageData.relativePath),
-          cover: getCoverImg(key, it.__pageData.frontmatter.coverImgExtension),
-          tags: it.__pageData.frontmatter.tags,
-          date: new Date(it.__pageData.frontmatter.date),
-          series: it.__pageData.frontmatter.series,
-        }
-      })
-      .sort((a, b) => b.date.getTime() - a.date.getTime())
-  },
-  [],
-  { lazy: true }
-)
+const allBlogs = Object.values(blogFiles)
+  .map((it) => {
+    const key = getKey(it.relativePath)
+    return {
+      title: it.title,
+      key,
+      url: getUrl(it.relativePath),
+      cover: getCoverImg(key, it.frontmatter.coverImgExtension),
+      tags: it.frontmatter.tags,
+      date: new Date(it.frontmatter.date),
+      series: it.frontmatter.series,
+    } as Blog
+  })
+  .sort((a, b) => b.date.getTime() - a.date.getTime())
 
 const blogs = computed(() => {
-  return allBlogs.value.filter((blog) => {
+  return allBlogs.filter((blog) => {
     const searchLowercase = search.value.toLowerCase()
     const tagMatch = selectedTags.value.every((tag) => blog.tags?.includes(tag))
     const searchTitleMatch = blog.title.toLowerCase().includes(searchLowercase)

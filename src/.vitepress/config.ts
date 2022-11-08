@@ -23,7 +23,8 @@ export default defineConfig({
     [
       'script',
       {
-        src: 'https://cdn.counter.dev/script.js" data-id="7927cc40-3229-4986-b981-0e1e6c4a93c6',
+        src: 'https://cdn.counter.dev/script.js',
+        'data-id': '7927cc40-3229-4986-b981-0e1e6c4a93c6',
         'data-utcoffset': '1',
         async: '',
       },

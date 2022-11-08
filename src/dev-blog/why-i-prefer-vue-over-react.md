@@ -419,6 +419,7 @@ const show = ref(true)
 
 .example button{
   min-width: 50px;
+  padding: 5px;
 }
 
 .example :is(input, button){

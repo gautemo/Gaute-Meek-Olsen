@@ -2,7 +2,6 @@ const getKey = (relativePath: string) => relativePath.replace('dev-blog/', '').r
 
 const getUrl = (relativePath: string) => relativePath.replace('.md', '')
 
-const getCoverImg = (key: string, extension: 'jpg' | 'png' = 'jpg') =>
-  new URL(`../dev-blog/assets/cover-${key}.${extension}`, import.meta.url).href
+const getCoverImg = (key: string, extension: 'jpg' | 'png' = 'jpg') => `/images/dev-blog/cover-${key}.${extension}`
 
 export { getKey, getUrl, getCoverImg }

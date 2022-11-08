@@ -7,7 +7,7 @@ const { page } = useData()
 const serieName = page.value.frontmatter.series
 const series = computed(() => {
   if (serieName) {
-    return allBlogs.value
+    return allBlogs
       .filter((blog) => blog.series === serieName)
       .slice()
       .reverse()
@@ -35,7 +35,7 @@ const series = computed(() => {
 div {
   border: 1px solid var(--c-divider-dark);
   border-radius: 2px;
-  background-color: var(--c-bg-accent);
+  background-color: var(--vp-c-bg-mute);
   padding: 0.5rem 0;
 }
 

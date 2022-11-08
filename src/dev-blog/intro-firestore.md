@@ -35,13 +35,13 @@ Create an HTML file to get started.
 
 Then we need to add Firebase to our web application. The simplest way is to go to the project overview in the Firebase console, click the web symbol above the text “_Add an app to get started_”, then just copy the code and paste it into your HTML file.
 
-We are now ready to create a reference to our database.
+We are now ready to create a reference for our database.
 
 ```js
 const db = firebase.firestore()
 ```
 
-Firestore saves our data in collections which contain documents. Collections can also have sub-collections. Let’s say we have the collections families and cities. Let's create references for our collections.
+Firestore saves our data in collections that contain documents. Collections can also have sub-collections. Let’s say we have the collection families and cities. Let's create references for our collections.
 
 ```js
 const families = db.collection('families')
@@ -263,7 +263,7 @@ Then update our `cityAdded` function.
 b.onclick = () => populationTransaction(city.name, 100)
 ```
 
-If you spam click the button before it disappears you will see that the transaction is working.
+If you spam-click the button before it disappears you will see that the transaction is working.
 
 Remember that in a transaction you need to do the read (`data()`) before the write (`update`). Also if your transaction contains multiple writes and one fails, all writes will be rolled back.
 
