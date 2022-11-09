@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/gautemo/Gaute-Meek-Olsen#readme",
   "dependencies": {
-    "@vueuse/core": "^9.4.0",
-    "vue": "^3.2.41"
+    "@vueuse/core": "^9.5.0",
+    "vue": "^3.2.43"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.1",
