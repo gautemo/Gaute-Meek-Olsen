@@ -23,7 +23,7 @@ const picked = ref(props.options[0])
 <style scoped>
 .toggle {
   --corners: 5px;
-  border: 1px solid var(--c-divider-dark);
+  border: 1px solid var(--vp-c-divider-light);
   border-radius: var(--corners);
   width: fit-content;
   display: flex;

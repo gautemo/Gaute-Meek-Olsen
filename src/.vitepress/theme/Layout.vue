@@ -123,6 +123,10 @@ input {
   border-bottom: 2px solid var(--link);
   color: var(--link);
 }
+
+.vp-doc h2 {
+  margin: 0.5rem 0;
+}
 </style>
 
 <style scoped>

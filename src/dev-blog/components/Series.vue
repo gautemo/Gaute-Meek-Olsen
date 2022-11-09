@@ -33,7 +33,7 @@ const series = computed(() => {
 
 <style scoped>
 div {
-  border: 1px solid var(--c-divider-dark);
+  border: 1px solid var(--vp-c-divider-inverse);
   border-radius: 2px;
   background-color: var(--vp-c-bg-mute);
   padding: 0.5rem 0;
