@@ -70,7 +70,10 @@ h2 {
   grid-gap: 10px;
   align-items: center;
   height: 3rem;
-  border-bottom: 1px solid var(--c-black);
+  border-top: none;
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  margin: 0.5rem 0;
+  padding: 5px 0;
 }
 
 .icon {
