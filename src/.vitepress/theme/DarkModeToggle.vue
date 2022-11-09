@@ -1,17 +1,16 @@
 <script setup lang="ts">
 import { darkMode } from '../../store/settings'
+function toggle() {
+  darkMode.value = !darkMode.value
+}
 </script>
 
 <template>
   <label>
-    <input type="checkbox" v-model="darkMode" />
+    <input type="checkbox" @change="toggle" />
     <div class="circle">
-      <transition name="fade">
-        <span v-if="!darkMode" class="sun">🌞</span>
-      </transition>
-      <transition name="fade">
-        <span v-if="darkMode" class="moon">🌑</span>
-      </transition>
+      <span class="sun">🌞</span>
+      <span class="moon">🌑</span>
     </div>
   </label>
 </template>
@@ -40,6 +39,7 @@ input {
 
 .circle {
   position: relative;
+  height: 100%;
   left: 0;
   transition: left 0.5s ease;
 }
@@ -52,18 +52,19 @@ input:checked + .circle {
   left: 22px;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
+.sun,
+.moon {
   position: absolute;
   top: 0;
   bottom: 0;
-  display: flex;
-  align-items: center;
+  transition: opacity 0.5s ease;
 }
 
-.fade-enter-from,
-.fade-leave-to {
+.dark .sun {
+  opacity: 0;
+}
+
+html:not(.dark) .moon {
   opacity: 0;
 }
 </style>

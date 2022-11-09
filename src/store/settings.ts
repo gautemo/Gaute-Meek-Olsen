@@ -12,7 +12,7 @@ if (inBrowser) {
     initialDarkMode = true
   } else {
     const hour = new Date().getHours()
-    const night = hour < 5 || hour > 19
+    const night = hour < 5 || hour > 18
     initialDarkMode = night
   }
 }
