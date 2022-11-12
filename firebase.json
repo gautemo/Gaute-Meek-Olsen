@@ -2,12 +2,13 @@
   "hosting": [
     {
       "target": "gaute-meek-olsen",
-      "public": "dist"
+      "public": "dist",
+      "cleanUrls": true
     }
   ],
   "headers": [
     {
-      "source": "assets/**",
+      "source": "/assets/**",
       "headers": [
         {
           "key": "Cache-Control",
