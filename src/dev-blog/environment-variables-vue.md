@@ -58,4 +58,4 @@ const url = process.env.VUE_APP_API_URL
 
 That's it :)
 
-Remember to avoid exposing private secrets in the bundle. Even though if you have it in .env.local, it will be "somewhere" in the bundle after npm run build, though it is hard to find.
+Remember to avoid exposing private secrets in the bundle. Even if you have it in .env.local, it will be "somewhere" in the bundle after npm run build, though it is hard to find.

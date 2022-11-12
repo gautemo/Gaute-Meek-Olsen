@@ -4,7 +4,7 @@ date: 2019-12-07
 category: C#
 ---
 
-When I google a regex to validate an email adress I get this:
+When I google a regex to validate an email address I get this:
 
 ```
 /^(([^<>()[]\.,;:s@"]+(.[^<>()[]\.,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/

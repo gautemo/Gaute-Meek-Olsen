@@ -597,4 +597,4 @@ So we can see the information in the Devtools:
 
 ## Conclusion
 
-There you have the 10 hooks + custom hooks. Some are easier to understand, some are more complex, some you will use a lot and some you won't use. But It's important to know them, so you can make good decisions about what to use where.
+There you have the 10 hooks + custom hooks. Some are easier to understand, some are more complex, some you will use a lot and some you won't use. But it's important to know them, so you can make good decisions about what to use where.

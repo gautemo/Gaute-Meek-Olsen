@@ -28,7 +28,7 @@ const routes = [
 ]
 ```
 
-In this example, the path `/signin` is allowed for everyone, but /profile should only be for signed-in users.
+In this example, the path `/signin` is allowed for everyone, but `/profile` should only be for signed-in users.
 
 Now we can use the `beforeEach` guard to check for this property.
 

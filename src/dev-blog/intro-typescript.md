@@ -19,9 +19,9 @@ Therefore TypeScript was created, with the slogan “JavaScript that scales”. 
 
 TypeScript is actually just JavaScript with types. So if you change the file-ending from .js to .ts, it should still be valid code (the type `any` will be used a lot). So don’t be scared of TypeScript, just start coding ordinary JavaScript and declare types where you feel it’s natural.
 
-Another benefit which I like best. In JavaScript, there is a feature gap, new features in ES6 to ES9 are still not available in every browser or in a Node server. But in TypeScript, you can write the code with the newest features, such as classes and arrow functions and you can target for example ES3, and the code will be compiled into JavaScript with prototype and ordinary functions. (This is not completely true; if you use features such as Set and includes(), you will need to target a newer JavaScript version)
+Another benefit which I like best. In JavaScript, there is a feature gap, new features in ES6 to ES9 are still not available in every browser or a Node server. But in TypeScript, you can write the code with the newest features, such as classes and arrow functions and you can target for example ES3, and the code will be compiled into JavaScript with prototype and ordinary functions. (This is not completely true; if you use features such as Set and includes(), you will need to target a newer JavaScript version).
 
-## Set Up
+## Set-Up
 
 Download and open an IDE. I recommend Visual Studio Code, but TypeScript is supported in others as well, such as Sublime and Atom.
 

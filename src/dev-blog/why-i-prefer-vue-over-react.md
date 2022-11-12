@@ -5,7 +5,7 @@ coverImgExtension: png
 tags: [Vue, React]
 ---
 
-There exists a lot of great web development frameworks out there. I believe that every framework can be used to create the website you want. What you should choose only comes down to individual preference. Remember, there also is a possibility to use no framework as well.
+There exist a lot of great web development frameworks out there. I believe that every framework can be used to create the website you want. What you should choose only comes down to individual preference. Remember, there also is a possibility to use no framework as well.
 
 Myself, I usually choose [Vue](https://vuejs.org/). Here are my top reasons to choose Vue over the most used ~~framework~~ library [React](https://reactjs.org/).
 (Just to have it said, I have reasons to choose React over Vue as well, but I don't value them as much as the points below)

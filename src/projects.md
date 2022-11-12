@@ -6,7 +6,7 @@ title: Projects
 
   <div class="vp-doc">
 
-# Highligted Projects
+# Highlighted Projects
 
   </div>
 
@@ -85,7 +85,7 @@ title: Projects
     >
       <template #description>
           <p>
-            Are you in need of some dices, cards, need to flip a coin or get a random number, but you don't have the items on you? Fear not, this app will save you. Now you always can do this from your phone.
+            Are you in need of some dice, cards, need to flip a coin, or get a random number, but you don't have the items on you? Fear not, this app will save you. Now you always can do this from your phone.
           </p>
           <a href="https://play.google.com/store/apps/details?id=gautemo.game.randomdicecoinnumber" target="_blank" rel="noopener">
             <img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="width: 200px"/>

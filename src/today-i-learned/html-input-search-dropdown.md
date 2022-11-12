@@ -47,7 +47,7 @@ The result
   </datalist>
 </div>
 
-Pretty neat and simple! All I would do now is to style the input field with just a little CSS, then it would be done. No need to bring in an extra library or spend hours programming the wheel.
+Pretty neat and simple! All I would do now is style the input field with just a little CSS, then it would be done. No need to bring in an extra library or spend hours programming the wheel.
 
 Street cred goes to [Ananya Neogi](https://twitter.com/_ananyaneogi) for her article on [dev.to](https://dev.to/ananyaneogi/html-can-do-that-c0n)
 

@@ -13,7 +13,7 @@ git checkout .
 git clean -fd
 ```
 
-`checkout .` restores all tracked files, while `clean` removes untracked files where `f` is for files and `d` for directories.
+`checkout .` restores all tracked files, while `clean` remove untracked files where `f` is for files and `d` for directories.
 
 If you have added files you can reset them to unstaged with:
 

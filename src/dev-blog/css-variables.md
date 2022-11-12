@@ -89,7 +89,7 @@ This is how you declare and use variables.
 }
 </style>
 
-If I had a lot of classes using the main color, it would be easy for me to specify a new color only at one place in my CSS.
+If I had a lot of classes using the main color, it would be easy for me to specify a new color only in one place in my CSS.
 
 ## JavaScript Control
 
@@ -125,6 +125,6 @@ onUnmounted(() => {
 
 ## Summary
 
-You may disagree with the syntax they decided on, but you can't argue it's a nice feature. CSS variables can make you write cleaner and less CSS. Makes it easier to make changes afterward. But also creates room for functionality as you can change their value through JavaScript.
+You may disagree with the syntax they decided on, but you can't argue it's a nice feature. CSS variables can make you write cleaner and less CSS. Making it easier to make changes afterward. But also creates room for functionality as you can change their value through JavaScript.
 
 _Remember to click the light bulb._

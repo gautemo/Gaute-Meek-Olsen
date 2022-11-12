@@ -42,7 +42,7 @@ Inside your project folder.
 firebase init firestore
 ```
 
-Which creates a .rules file you can edit your rules in. Then deploy them with this command.
+Which creates a .rules file you can edit your rules. Then deploy them with this command.
 
 ```bash
 firebase deploy
@@ -86,7 +86,7 @@ service cloud.firestore {
 }
 ```
 
-`request.resource.data` is used to require incoming data. While resource.data is the requested document fields.
+`request.resource.data` is used to require incoming data. While `resource.data` is the requested document fields.
 
 One thing to keep in mind is that security rules are either accepted or denied. You can’t filter messages by adding the security rule for public messages. If a message could be private the entire read is denied. This logic only works with a where filter client-side.
 
@@ -151,11 +151,11 @@ service cloud.firestore {
 
 Notice how we can break down `read` into `get`(single document) and `list`(queries and collection). `write` can be broken into `create`, `update`, `delete`.
 
-All queries done inside the rules will count towards our quota. Also, rules don’t have variables, so we can’t keep the result of `getUserData`. This is why we pass it down into our other functions.
+All queries done inside the rules will count towards our quota. Also, rules don’t have variables, so we can’t keep the result of `getUserData`. This is why we pass it down to our other functions.
 
 ### Custom user claims
 
-There is another way of handling roles, which doesn’t query our user collection. We can use custom user claims. Which simplifies our rules and doesn’t eat of our quota.
+There is another way of handling roles, which doesn’t query our user collection. We can use custom user claims. Which simplifies our rules and doesn’t eat off our quota.
 
 ```
 service cloud.firestore {

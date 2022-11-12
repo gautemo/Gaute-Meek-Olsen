@@ -8,7 +8,7 @@ This is used to prevent your website from downloading files from untrusted domai
 
 I heard about it from Troy Hunt [here](https://youtu.be/kIo7DNAd_oo?t=1096).
 
-You wan't to add something like this to your head tag in the html file.
+You want to add something like this to your head tag in the HTML file.
 
 ```html
 <meta

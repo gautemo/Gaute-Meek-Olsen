@@ -13,4 +13,4 @@ const number = 3000000
 const numberToDisplay = new Intl.NumberFormat().format(number)
 ```
 
-Bonus, it will be formatted according to the users' local settings. For me in Norway, `numberToDisplay` is 3 000 000. While 'en-US' it will be 3,000,000 and 'de-DE' it is 3.000.000.
+Bonus, it will be formatted according to the users' local settings. For me in Norway, `numberToDisplay` is 3 000 000. While 'en-US' will be 3,000,000 and 'de-DE' it is 3.000.000.

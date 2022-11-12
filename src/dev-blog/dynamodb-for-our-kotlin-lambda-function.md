@@ -21,7 +21,7 @@ aws dynamodb create-table --table-name twitter-bot-vue-3 --attribute-definitions
 -key-schema AttributeName=Project,KeyType=HASH --billing-mode PAY_PER_REQUEST
 ```
 
-For my use case, I want an item for each changelog file I'm looking up. They will be defined beforehand, so you can add them through the AWS console, AWS CLI, or code if you want. This is how to add an item with the CLI. (for Linux-based systems, you can change to single quotes ' on the start and end and skip the escaping of quotes).
+For my use case, I want an item for each changelog file I'm looking up. They will be defined beforehand, so you can add them through the AWS console, AWS CLI, or code if you want. This is how to add an item with the CLI. (for Linux-based systems, you can change to single quotes ' at the start and end and skip the escaping of quotes).
 
 ```bash
 aws dynamodb put-item --table-name twitter-bot-vue-3 --item "{\"Project\": {\"S\": \"Vue 3\"}, \"Changelog\": {\"S\": \"

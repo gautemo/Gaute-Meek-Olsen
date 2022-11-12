@@ -60,7 +60,7 @@ Then run:
 npx vite
 ```
 
-Go to `http://localhost:3000`, edit the `.vue` file to see changes hot-reloaded.
+Go to `http://localhost:3000`, and edit the `.vue` file to see changes hot-reloaded.
 
 ## Bundle for Production
 
@@ -94,7 +94,7 @@ Issues I stumbled upon.
 
 ## Thoughts
 
-It was really easy to get started and the development process is really fast as I can see my changes instantly. It's like a compile on the fly setup. So this looks promising, maybe in some time, this will be the way we develop all Vue projects.
+It was really easy to get started and the development process is really fast as I can see my changes instantly. It's like a compile on-the-fly setup. So this looks promising, maybe in some time, this will be the way we develop all Vue projects.
 
 Evan You, keep doing your magic 🧙
 

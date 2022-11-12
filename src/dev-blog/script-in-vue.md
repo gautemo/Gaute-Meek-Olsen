@@ -27,7 +27,7 @@ You might stumble upon an error if you would like to run a script tag only on a 
 
 Building this, Vue throws the error:
 ::: danger Error
-Templates should only be responsible for mapping the state to the UI. Avoid placing tags with side-effects in your templates, such as script, as they will not be parsed.
+Templates should only be responsible for mapping the state to the UI. Avoid placing tags with side effects in your templates, such as script, as they will not be parsed.
 :::
 
 This is an easy fix, despite that googling the internet might send you down a harder path. Just add `type="application/javascript"` to your script tag. Fixed.

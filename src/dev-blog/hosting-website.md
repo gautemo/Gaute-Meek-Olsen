@@ -19,7 +19,7 @@ firebase login
 firebase init
 ```
 
-Select "Hosting" with space then enter. Then select the project created in the Firebase console. Then enter the path to the folder your index.html file is located (i.e. public). If you have a single-page app and want all URLs to point to index.html select yes.
+Select "Hosting" with space then enter. Then select the project created in the Firebase console. Then enter the path to the folder in your index.html file is located (i.e. public). If you have a single-page app and want all URLs to point to index.html select yes.
 
 ```bash
 firebase deploy
@@ -64,7 +64,7 @@ netlify dev --live
 ```
 
 Now you get a URL you can distribute. Every time you save a file, they can refresh their browser to see the changes.
-If you need manually deploy with netlify, you can use
+If you need manually deploy with Netlify, you can use
 
 ```bash
 netlify deploy --prod
