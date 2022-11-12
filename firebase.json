@@ -1,21 +1,18 @@
 {
-  "hosting": [
-    {
-      "target": "gaute-meek-olsen",
-      "public": "dist",
-      "cleanUrls": true
-    }
-  ],
-  "headers": [
-    {
-      "source": "/assets/**",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ],
-  "cleanUrls": true
+  "hosting": {
+    "target": "gaute-meek-olsen",
+    "public": "dist",
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "/assets/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      }
+    ]
+  }
 }
