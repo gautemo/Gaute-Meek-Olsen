@@ -10,13 +10,10 @@ const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.te
 watchEffect(() => {
   if (inBrowser) {
     const url = `https://gaute.dev/${page.value.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
-    let canonicalEl = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
-    if (!canonicalEl) {
-      canonicalEl = document.createElement('link')
-      canonicalEl.rel = 'canonical'
-      document.head.appendChild(canonicalEl)
+    const canonicalEl = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
+    if (canonicalEl && canonicalEl.href !== url) {
+      canonicalEl.href = url
     }
-    canonicalEl.href = url
   }
 })
 </script>

@@ -72,7 +72,6 @@ h2 {
   height: 3rem;
   border-top: none;
   border-bottom: 1px solid var(--vp-c-divider-light);
-  margin: 0.5rem 0;
   padding: 5px 0;
 }
 

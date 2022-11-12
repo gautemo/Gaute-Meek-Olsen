@@ -33,4 +33,15 @@ export default defineConfig({
   appearance: false,
   cleanUrls: 'without-subfolders',
   outDir: '../dist',
+  transformHead(ctx) {
+    return [
+      [
+        'link',
+        {
+          rel: 'canonical',
+          href: `https://gaute.dev/${ctx.pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`,
+        },
+      ],
+    ]
+  },
 })
