@@ -21,7 +21,7 @@ label {
   width: 55px;
   min-width: 55px;
   height: 32px;
-  padding: 3px;
+  padding: 4px 3px 1px 3px;
   background: var(--secondary);
   border-radius: 100px;
   display: flex;

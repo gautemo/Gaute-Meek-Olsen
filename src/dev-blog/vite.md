@@ -1,5 +1,5 @@
 ---
-title: Vite⚡ - Vue no-bundler dev setup
+title: Vite⚡ Vue no-bundler dev setup
 date: 2020-04-25
 coverImgExtension: png
 tags: [Vite]
