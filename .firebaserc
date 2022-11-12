@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "gaute-meek-olsen"
-  }
+  },
+  "targets": {
+    "gaute-meek-olsen": {
+      "hosting": {
+        "gaute-meek-olsen": [
+          "gaute-meek-olsen"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

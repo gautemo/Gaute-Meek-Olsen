@@ -2,27 +2,48 @@
 
 My personal website: [gaute.dev](https://gaute.dev)
 
-## Project setup
-```
-npm install
+## pre-commit lint-staged
+
+Add file `.git/hooks/pre-commit` with content:
+
+```sh
+#!/bin/sh
+
+exec npx lint-staged
 ```
 
-### Compiles and hot-reloads for development
+## Blogs
+
+Create `.md` file in [blog](src/blog). Start file with
+
 ```
-npm run serve
+---
+title: How to Change the Cursor to an Image
+date: 2018-11-15
+hideCoverImg: true
+coverImgExtension: png
+tags: [CSS]
+---
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Cover image
 
-### Lints and fixes files
-```
-npm run lint
-```
+Go to [squoosh.app/](https://squoosh.app/).
+Usually settings
 
-### Lint, build and deploy to Firebase
-```
-npm run done
+- width 600px
+- MozJPEG
+- Quality 70%
+
+### Embed Tweet
+
+Create card on [publish.twitter.com/](https://publish.twitter.com/) and copy everything inside `<blockquote>` tags and place inside `<Tweet>` component.
+
+```md
+<script setup>
+import Tweet from '../components/Tweet.vue'
+</script>
+<Tweet>
+
+</Tweet>
 ```
