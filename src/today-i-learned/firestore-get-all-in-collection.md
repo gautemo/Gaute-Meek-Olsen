@@ -31,4 +31,4 @@ const logCities = async () => {
 }
 ```
 
-I think this is more readable, has fewer lines, and `.docs` allows us to use [`for of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of).
+I think this is more readable, has fewer lines, and `.docs` allows us to use `for of`.

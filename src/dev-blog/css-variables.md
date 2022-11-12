@@ -86,6 +86,8 @@ This is how you declare and use variables.
 #bulb{
   font-size: 5rem;
   cursor: pointer;
+  line-height: normal;
+  display: inline-block;
 }
 </style>
 
@@ -121,7 +123,7 @@ onUnmounted(() => {
 })
 </script>
 
-<span id="bulb" title="Click on me!">💡</span>
+<p id="bulb" title="Click on me!">💡</p>
 
 ## Summary
 
