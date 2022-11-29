@@ -1,6 +1,7 @@
 ---
 title: Connect a folder to an existing repository
 date: 2019-11-17
+updated: 2022-11-29
 category: git
 ---
 
@@ -9,9 +10,9 @@ Often when I create a new repository through the GitHub website I initiate it wi
 ```bash
 git init
 git remote add origin https://github.com/url.git
-git pull origin master --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories
 
 //fix merge conflicts if they exist and commit
 
-git push --set-upstream origin master
+git push --set-upstream origin main
 ```

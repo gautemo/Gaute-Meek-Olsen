@@ -4,7 +4,7 @@ date: 2022-11-27
 category: Vue
 ---
 
-`<Transition>` is usually used together with `v-if` on elements or components to add animations. With the transition, you will automatically get the wanted CSS transition classes once the element enters and leaves.
+`<Transition>` in Vue is usually used together with `v-if` on elements or components to add animations. With the transition, you will automatically get the wanted CSS transition classes once the element enters and leaves.
 
 But you can also use it when a node first is rendered by applying `appear`.
 
