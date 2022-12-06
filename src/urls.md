@@ -28,9 +28,11 @@ title: URLs
 - [https://gaute.dev](https://gaute.dev)
 - [https://gaute-talks.netlify.app/](https://gaute-talks.netlify.app/)
 - [https://gautemo.github.io/blog-devto-backend](https://gautemo.github.io/blog-devto-backend)
+- [https://gautemo.github.io/escape-room-game-chrono-decoder/](https://gautemo.github.io/escape-room-game-chrono-decoder/)
 - [https://gautemo.github.io/web-components-example](https://gautemo.github.io/web-components-example)
 - [https://gmo-receipt-app.web.app](https://gmo-receipt-app.web.app)
 - [https://kuizzi.app](https://kuizzi.app)
+- [https://memory-meek.netlify.app/](https://memory-meek.netlify.app/)
 - [https://ordentlig-radio-app.netlify.app](https://ordentlig-radio-app.netlify.app)
 - [https://ordle.no](https://ordle.no)
 - [https://planning-poker-w.web.app](https://planning-poker-w.web.app)
@@ -39,6 +41,21 @@ title: URLs
 - [https://weather-oslo.netlify.app](https://weather-oslo.netlify.app)
 - [https://web-safe-fonts.vercel.app/](https://web-safe-fonts.vercel.app/)
 
+## Websites with content from me
+
+- [https://dev.to/gautemeekolsen](https://dev.to/gautemeekolsen)
+- [https://gaute.hashnode.dev/](https://gaute.hashnode.dev/)
+- [https://medium.com/@gaute.meek](https://medium.com/@gaute.meek)
+- [https://medium.com/sopra-steria-norge/getting-started-with-vue-f4140677e66e](https://medium.com/sopra-steria-norge/getting-started-with-vue-f4140677e66e)
+- [https://www.capraconsulting.no/blogg/kvalitetssikre-nettsiden-med-lighthouse/](https://www.capraconsulting.no/blogg/kvalitetssikre-nettsiden-med-lighthouse/)
+- [https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2020/](https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2020/)
+- [https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2021/](https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2021/)
+- [https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2022/](https://www.capraconsulting.no/blogg/nyheter-i-javascript-es2022/)
+- [https://www.capraconsulting.no/blogg/vite-frontend-tooling/](https://www.capraconsulting.no/blogg/vite-frontend-tooling/)
+- [https://www.capraconsulting.no/blogg/vue-3-kommer-snart/](https://www.capraconsulting.no/blogg/vue-3-kommer-snart/)
+- [https://www.kode24.no/artikkel/disse-javascript-nyhetene-ma-du-vite-om-klasser-har-blitt-oppgradert/76479992](https://www.kode24.no/artikkel/disse-javascript-nyhetene-ma-du-vite-om-klasser-har-blitt-oppgradert/76479992)
+- [https://www.kode24.no/artikkel/gaute-om-vite---lover-deg-at-du-ikke-gar-tilbake/74608540](https://www.kode24.no/artikkel/gaute-om-vite---lover-deg-at-du-ikke-gar-tilbake/74608540)
+- [https://www.kode24.no/guider/guide-slik-kommer-du-i-gang-med-vue/71113384](https://www.kode24.no/guider/guide-slik-kommer-du-i-gang-med-vue/71113384)
 </main>
 
 <style scoped>
