@@ -70,4 +70,9 @@ h1 {
     border-radius: 4px;
     margin-bottom: 1rem;
 }
+
+h2 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+}
 </style>

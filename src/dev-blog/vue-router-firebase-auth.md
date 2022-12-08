@@ -1,6 +1,7 @@
 ---
 title: Vue, guard routes with Firebase Authentication
 date: 2019-11-17
+updated: 2022-12-08
 tags: [Vue, Firebase]
 ---
 
@@ -14,13 +15,11 @@ First, we must mark each route that we want to guard with a meta property called
 const routes = [
   {
     path: '/signin',
-    name: 'signin',
-    component: () => import('../views/SignIn.vue'),
+    component: SignIn,
   },
   {
     path: '/profile',
-    name: 'profile',
-    component: () => import('../views/Profile.vue'),
+    component: Profile,
     meta: {
       requiresAuth: true,
     },
@@ -33,46 +32,47 @@ In this example, the path `/signin` is allowed for everyone, but `/profile` shou
 Now we can use the `beforeEach` guard to check for this property.
 
 ```js
-router.beforeEach(async (to, from, next) => {
+router.beforeEach((to) => {
   const requiresAuth = to.matched.some((record) => record.meta.requiresAuth)
   if (requiresAuth && !currentUser) {
-    next('signin')
-  } else {
-    next()
+    return '/signin'
   }
 })
 ```
 
-Now if the `currentUser` is `null` or `undefined`, we should redirect users to the sign-in path. But how do we get `currentUser`? We can’t use `firebase.auth().currentUser` because on page refresh that property has not been set yet before the guard is triggered. We will have to use the `onAuthStateChanged` callback somehow. Let’s add a method to the firebase object after we initialize the firebase app.
+Now if the `currentUser` is `null` or `undefined`, we should redirect users to the sign-in path. But how do we get `currentUser`? We can’t use `getAuth().currentUser` because on page refresh that property has not been set yet before the guard is triggered. We will have to use the `onAuthStateChanged` callback somehow. Let’s create a function that waits for the auth state to be set.
 
 ```js
-firebase.initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig)
+const auth = getAuth(app)
 
-firebase.getCurrentUser = () => {
+function getCurrentUser() {
   return new Promise((resolve, reject) => {
-    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
-      unsubscribe()
-      resolve(user)
-    }, reject)
+    const unsubscribe = onAuthStateChanged(
+      auth,
+      (user) => {
+        unsubscribe()
+        resolve(user)
+      },
+      reject
+    )
   })
 }
 ```
 
-This method will return a Promise which resolves `currentUser` as soon as it is set. `onAuthStateChangedwill` trigger the callback immediately with either null or the user object if signed in. Then we unsubscribe to not listen for further changes.
+This method will return a Promise which resolves `currentUser` as soon as it is set. `onAuthStateChanged` will trigger the callback immediately with either null or the user object if signed in. Then we unsubscribe to not listen for further changes.
 
-Now we will update our <b>beforeEach</b> guard so that only paths that require authentication await this method.
+Now we will update our `beforeEach` guard so that only paths that require authentication await this method.
 
 ```js
-router.beforeEach(async (to, from, next) => {
+router.beforeEach(async (to) => {
   const requiresAuth = to.matched.some((record) => record.meta.requiresAuth)
-  if (requiresAuth && !(await firebase.getCurrentUser())) {
-    next('signin')
-  } else {
-    next()
+  if (requiresAuth && !(await getCurrentUser())) {
+    return '/signin'
   }
 })
 ```
 
-That’s all. This also simplifies getting the currentUser for components under the guarded routes, because we know `firebase.auth().currentUser` is set.
+That’s all. This also simplifies getting the currentUser for components under the guarded routes, because we know `getAuth().currentUser` is set.
 
 For full example check out this [GitHub repository](https://github.com/gautemo/Vue-guard-routes-with-Firebase-Authentication) and demo at [vue-routes-authentication.web.app](https://vue-routes-authentication.web.app/)
