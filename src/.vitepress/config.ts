@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, HeadConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Gaute Meek Olsen',
@@ -29,12 +29,19 @@ export default defineConfig({
         async: '',
       },
     ],
+    [
+      'meta',
+      {
+        property: 'og:site_name',
+        content: 'Gaute Meek Olsen',
+      },
+    ],
   ],
   appearance: false,
   cleanUrls: 'without-subfolders',
   outDir: '../dist',
   transformHead(ctx) {
-    return [
+    const addHeads: HeadConfig[] = [
       [
         'link',
         {
@@ -42,6 +49,38 @@ export default defineConfig({
           href: `https://gaute.dev/${ctx.pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`,
         },
       ],
+      [
+        'meta',
+        {
+          property: 'og:url',
+          content: `https://gaute.dev/${ctx.pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`,
+        },
+      ],
+      [
+        'meta',
+        {
+          property: 'og:title',
+          content: ctx.pageData.title,
+        },
+      ],
     ]
+    if (/(dev-blog|today-i-learned)\//.test(ctx.pageData.relativePath)) {
+      addHeads.push([
+        'meta',
+        {
+          property: 'og:type',
+          content: 'article',
+        },
+      ])
+    } else {
+      addHeads.push([
+        'meta',
+        {
+          property: 'og:type',
+          content: 'website',
+        },
+      ])
+    }
+    return addHeads
   },
 })

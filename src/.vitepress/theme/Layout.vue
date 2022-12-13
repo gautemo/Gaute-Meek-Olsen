@@ -7,12 +7,24 @@ import Menu from './Menu.vue'
 
 const { page } = useData()
 const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.test(page.value.relativePath))
+
+function updateHeadTag(selector: string, property: string, value: string) {
+  const el = document.querySelector<any>(selector)
+  if (el && el[property] !== value) {
+    el[property] = value
+  }
+}
+
 watchEffect(() => {
   if (inBrowser) {
     const url = `https://gaute.dev/${page.value.relativePath.replace(/((^|\/)index)?\.md$/, '$2')}`
-    const canonicalEl = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
-    if (canonicalEl && canonicalEl.href !== url) {
-      canonicalEl.href = url
+    updateHeadTag('link[rel=canonical]', 'href', url)
+    updateHeadTag(`meta[property='og:url']`, 'content', url)
+    updateHeadTag(`meta[property='og:title']`, 'content', page.value.title)
+    if (isArticle) {
+      updateHeadTag(`meta[property='og:type']`, 'content', 'article')
+    } else {
+      updateHeadTag(`meta[property='og:type']`, 'content', 'website')
     }
   }
 })
