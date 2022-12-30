@@ -1,25 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { darkMode } from '../../store/settings'
-import { useMouseInElement } from '@vueuse/core'
 import Pen from './icons/Pen.vue'
 import Bird from './icons/Bird.vue'
 import Lantern from './icons/Lantern.vue'
 import Robot from './icons/Robot.vue'
 import Sky from './Sky.vue'
-import gauteWorkLight from '../../assets/gaute_work_light.jpg'
-import gauteWorkDark from '../../assets/gaute_work_dark.jpg'
-import gauteFreetimeLight from '../../assets/gaute_freetime_light.jpg'
-import gauteFreetimeDark from '../../assets/gaute_freetime_dark.jpg'
-
-const meContainer = ref(null)
-const { isOutside } = useMouseInElement(meContainer, { touch: false })
-const meSrc = computed(() => {
-  if (darkMode.value && isOutside.value) return gauteWorkDark
-  if (!darkMode.value && isOutside.value) return gauteWorkLight
-  if (darkMode.value && !isOutside.value) return gauteFreetimeDark
-  if (!darkMode.value && !isOutside.value) return gauteFreetimeLight
-})
+import MePicture from './MePicture.vue'
 </script>
 
 <template>
@@ -29,11 +14,7 @@ const meSrc = computed(() => {
         <h1>Hi, I'm Gaute Meek Olsen</h1>
       </div>
     </Sky>
-    <div class="me" ref="meContainer">
-      <transition name="fade">
-        <img :src="meSrc" :key="meSrc" alt="me" />
-      </transition>
-    </div>
+    <MePicture />
   </section>
   <section class="about">
     <div>
@@ -99,21 +80,6 @@ const meSrc = computed(() => {
   background: linear-gradient(45deg, var(--primary) 50%, #584a8c 85%);
 }
 
-.me {
-  filter: drop-shadow(-8px 0 #3333);
-  width: 40%;
-  min-width: 400px;
-  max-width: 600px;
-}
-
-.me img {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  object-fit: cover;
-  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-
 .about {
   padding-top: var(--parallax-height);
   height: calc(100vh - var(--menu-height));
@@ -177,16 +143,6 @@ h3 {
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
 nav {
   position: relative;
   display: flex;
@@ -232,25 +188,6 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-  .me {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 300px;
-    height: 400px;
-    filter: none;
-    min-width: 300px;
-  }
-
-  .me img {
-    border-radius: 15px;
-    border: 4px solid var(--tertiary);
-    clip-path: none;
-    right: auto;
-  }
-
   .name {
     margin-top: 460px;
   }
