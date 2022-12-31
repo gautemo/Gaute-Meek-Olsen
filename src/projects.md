@@ -95,7 +95,7 @@ title: Projects
     <Card
       title="Planning Poker"
       image="/images/projects/planning_poker.png"
-      url="https://planning-poker-w.web.app/"
+      url="https://planpoker.app/"
       github="https://github.com/gautemo/planning-poker"
       type="🕸️"
       color="#006155"

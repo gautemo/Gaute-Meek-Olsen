@@ -35,7 +35,7 @@ title: URLs
 - [https://memory-meek.netlify.app/](https://memory-meek.netlify.app/)
 - [https://ordentlig-radio-app.netlify.app](https://ordentlig-radio-app.netlify.app)
 - [https://ordle.no](https://ordle.no)
-- [https://planning-poker-w.web.app](https://planning-poker-w.web.app)
+- [https://planpoker.app/](https://planpoker.app/)
 - [https://start-1-sommermysterium.web.app/](https://start-1-sommermysterium.web.app/)
 - [https://vue-routes-authentication.web.app](https://vue-routes-authentication.web.app)
 - [https://weather-oslo.netlify.app](https://weather-oslo.netlify.app)
