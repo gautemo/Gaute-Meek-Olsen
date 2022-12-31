@@ -21,7 +21,7 @@ watchEffect(() => {
     updateHeadTag('link[rel=canonical]', 'href', url)
     updateHeadTag(`meta[property='og:url']`, 'content', url)
     updateHeadTag(`meta[property='og:title']`, 'content', page.value.title)
-    if (isArticle) {
+    if (isArticle.value) {
       updateHeadTag(`meta[property='og:type']`, 'content', 'article')
     } else {
       updateHeadTag(`meta[property='og:type']`, 'content', 'website')
