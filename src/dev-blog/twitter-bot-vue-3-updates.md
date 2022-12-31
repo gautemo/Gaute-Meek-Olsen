@@ -10,9 +10,7 @@ Say hello to [Vue 3 bot](https://twitter.com/vue_3)
 <script setup>
 import Tweet from '../components/Tweet.vue'
 </script>
-<Tweet>
-<p lang="fr" dir="ltr">Vue 3, 3.0.0-beta.14 is out! (<a href="https://t.co/huuUAYRyoB">https://t.co/huuUAYRyoB</a>) <a href="https://twitter.com/hashtag/VueJS?src=hash&amp;ref_src=twsrc%5Etfw">#VueJS</a></p>&mdash; Vue 3 bot (@vue_3) <a href="https://twitter.com/vue_3/status/1264515170455388160?ref_src=twsrc%5Etfw">May 24, 2020</a>
-</Tweet>
+<Tweet id="1264515170455388160"/>
 
 I created a Twitter bot that listens to Vue 3 related projects and when a new version is released it will give a tweet about it with a link to the changelog.
 

@@ -37,13 +37,6 @@ Usually settings
 
 ### Embed Tweet
 
-Create card on [publish.twitter.com/](https://publish.twitter.com/) and copy everything inside `<blockquote>` tags and place inside `<Tweet>` component.
-
 ```md
-<script setup>
-import Tweet from '../components/Tweet.vue'
-</script>
-<Tweet>
-
-</Tweet>
+<Tweet id="123" />
 ```

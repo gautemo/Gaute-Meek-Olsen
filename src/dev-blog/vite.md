@@ -10,9 +10,7 @@ Apparently Evan You (creator of Vue.js) wasn't interested in sleeping one night 
 <script setup>
 import Tweet from '../components/Tweet.vue'
 </script>
-<Tweet>
-<p lang="en" dir="ltr">As I was going to bed, I had an idea about a no-bundler dev setup (using native browser ES imports), but with support for Vue SFCs **with hot reload**. Now it&#39;s almost 6AM and I have PoC working. The hot reload is so fast it&#39;s near instant.</p>&mdash; Evan You (@youyuxi) <a href="https://twitter.com/youyuxi/status/1252173663199277058?ref_src=twsrc%5Etfw">April 20, 2020</a>
-</Tweet>
+<Tweet id="1252173663199277058"/>
 
 Vite allows you to develop your Vue application with Single-File Components without any bundle step. Imports are requested by the browser as native ES module imports. The dev server intercepts requests to `.vue` files and compiles them on the fly. And it's instantly fast.
 

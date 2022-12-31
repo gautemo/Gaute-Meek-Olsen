@@ -30,6 +30,4 @@ Thanks puf
 <script setup>
 import Tweet from '../components/Tweet.vue'
 </script>
-<Tweet>
-<p lang="en" dir="ltr">Implementing a write rate-limit in Firestore security rules.<br><br>The link contains examples with a global limit, and a per-user limit.<br><br>I still think this is one of the most fun things I&#39;ve done with Firestore security rules this year...<a href="https://t.co/AUIBD6RNt7">https://t.co/AUIBD6RNt7</a> <a href="https://t.co/gDDCByHmml">pic.twitter.com/gDDCByHmml</a></p>&mdash; Frank van Puffelen (@puf) <a href="https://twitter.com/puf/status/1196444467684884481?ref_src=twsrc%5Etfw">November 18, 2019</a>
-</Tweet>
+<Tweet id="1196444467684884481"/>
