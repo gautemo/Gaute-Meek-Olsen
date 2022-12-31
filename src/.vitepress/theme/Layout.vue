@@ -4,6 +4,7 @@ import { inBrowser, useData } from 'vitepress'
 import ArticleInfo from '../../components/ArticleInfo.vue'
 import Series from '../../dev-blog/components/Series.vue'
 import Menu from './Menu.vue'
+import { getCoverImg, getKey } from '../../utils/blogUtils'
 
 const { page } = useData()
 const isArticle = computed(() => page.value && /(dev-blog|today-i-learned)\//.test(page.value.relativePath))
@@ -25,6 +26,15 @@ watchEffect(() => {
       updateHeadTag(`meta[property='og:type']`, 'content', 'article')
     } else {
       updateHeadTag(`meta[property='og:type']`, 'content', 'website')
+    }
+    if (/dev-blog\//.test(page.value.relativePath) && !page.value.frontmatter.hideCoverImg) {
+      updateHeadTag(
+        `meta[property='og:image']`,
+        'content',
+        `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`
+      )
+    } else {
+      updateHeadTag(`meta[property='og:image']`, 'content', 'https://gaute.dev/images/og_image.jpg')
     }
   }
 })

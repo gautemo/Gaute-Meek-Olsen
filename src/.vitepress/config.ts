@@ -1,4 +1,5 @@
 import { defineConfig, HeadConfig } from 'vitepress'
+import { getCoverImg, getKey } from '../utils/blogUtils'
 
 export default defineConfig({
   title: 'Gaute Meek Olsen',
@@ -78,6 +79,26 @@ export default defineConfig({
         {
           property: 'og:type',
           content: 'website',
+        },
+      ])
+    }
+    if (/dev-blog\//.test(ctx.pageData.relativePath) && !ctx.pageData.frontmatter.hideCoverImg) {
+      addHeads.push([
+        'meta',
+        {
+          property: 'og:image',
+          content: `https://gaute.dev${getCoverImg(
+            getKey(ctx.pageData.relativePath),
+            ctx.pageData.frontmatter.coverImgExtension
+          )}`,
+        },
+      ])
+    } else {
+      addHeads.push([
+        'meta',
+        {
+          property: 'og:image',
+          content: 'https://gaute.dev/images/og_image.jpg',
         },
       ])
     }
