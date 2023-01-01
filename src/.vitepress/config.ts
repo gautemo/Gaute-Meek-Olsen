@@ -37,6 +37,27 @@ export default defineConfig({
         content: 'Gaute Meek Olsen',
       },
     ],
+    [
+      'meta',
+      {
+        name: 'author',
+        content: 'Gaute Meek Olsen',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:card',
+        content: 'summary',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:creator',
+        content: '@GauteMeekOlsen',
+      },
+    ],
   ],
   appearance: false,
   cleanUrls: 'without-subfolders',
