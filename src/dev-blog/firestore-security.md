@@ -3,6 +3,7 @@ title: Firestore and Security
 date: 2018-11-25
 tags: [Firebase]
 series: Firestore
+description: Using Firestore security rules to validate and authorize requests to the database.
 ---
 
 Firestore is a game-changer in databases! It’s never been this easy to save and query data without any hassle of setting up a server and database yourself. Everything is done client-side. But…

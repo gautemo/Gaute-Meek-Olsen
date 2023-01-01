@@ -3,6 +3,7 @@ title: Why I prefer Vue over React
 date: 2020-02-13
 coverImgExtension: png
 tags: [Vue, React]
+description: Some opinions with examples about why I prefer Vue over React.
 ---
 
 There exist a lot of great web development frameworks out there. I believe that every framework can be used to create the website you want. What you should choose only comes down to individual preference. Remember, there also is a possibility to use no framework as well.

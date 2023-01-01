@@ -2,6 +2,7 @@
 title: Formatting large numbers in JavaScript
 date: 2020-04-12
 category: JavaScript
+description: Using Intl to display large numbers formatted.
 ---
 
 How to get a formatted number easily in JavaScript that is human-readable with Intl.NumberFormat.

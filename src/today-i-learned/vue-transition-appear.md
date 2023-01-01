@@ -2,6 +2,7 @@
 title: Transition on appear
 date: 2022-11-27
 category: Vue
+description: How to create an animation when the Vue component appears.
 ---
 
 `<Transition>` in Vue is usually used together with `v-if` on elements or components to add animations. With the transition, you will automatically get the wanted CSS transition classes once the element enters and leaves.

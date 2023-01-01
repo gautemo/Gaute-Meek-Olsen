@@ -2,6 +2,7 @@
 title: Dropdown with Searchable Text
 date: 2019-08-12
 category: HTML
+description: How to create a dropdown input with search just with HTML.
 ---
 
 It is really easy to create an input field with a searchable dropdown with just HTML

@@ -2,6 +2,7 @@
 title: Button with image and text
 date: 2019-08-06
 category: Android
+description: How to create a button with both image and text inside it on Android.
 ---
 
 You can easily create a button with both a drawable and text with the view Button. No need to create an ImageButton and a TextView, align them together and add a click listener twice.

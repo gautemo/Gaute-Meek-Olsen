@@ -3,7 +3,7 @@ import { getCoverImg, getKey } from '../utils/blogUtils'
 
 export default defineConfig({
   title: 'Gaute Meek Olsen',
-  description: 'Portofolio for Gaute Meek Olsen. This is the place you can find my blogs, projects, and more.',
+  description: 'Portfolio for Gaute Meek Olsen. This is the place you can find my blogs, projects, and more.',
   lang: 'en-US',
   head: [
     [
@@ -62,6 +62,13 @@ export default defineConfig({
         {
           property: 'og:title',
           content: ctx.pageData.title,
+        },
+      ],
+      [
+        'meta',
+        {
+          property: 'og:description',
+          content: ctx.pageData.description,
         },
       ],
     ]

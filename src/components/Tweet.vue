@@ -3,6 +3,7 @@
 import { getCurrentInstance, onMounted, ref } from 'vue'
 import { useScriptTag } from '@vueuse/core'
 import { darkMode } from '../store/settings'
+import { inBrowser } from 'vitepress'
 
 const props = defineProps<{
   id: string | number
@@ -11,26 +12,28 @@ const props = defineProps<{
 const div = ref<HTMLElement>()
 const vm = getCurrentInstance()!
 
-async function create() {
-  // @ts-expect-error global
-  await window.twttr.widgets.createTweet(props.id.toString(), div.value, {
-    theme: darkMode.value ? 'dark' : 'light',
-    dnt: true,
-  })
-}
+if (inBrowser) {
+  async function create() {
+    // @ts-expect-error global
+    await window.twttr.widgets.createTweet(props.id.toString(), div.value, {
+      theme: darkMode.value ? 'dark' : 'light',
+      dnt: true,
+    })
+  }
 
-// @ts-expect-error global
-if (window?.twttr?.widgets) {
-  onMounted(create)
-} else {
-  useScriptTag(
-    'https://platform.twitter.com/widgets.js',
-    () => {
-      if (vm.isMounted) create()
-      else onMounted(create, vm)
-    },
-    { async: true }
-  )
+  // @ts-expect-error global
+  if (window?.twttr?.widgets) {
+    onMounted(create)
+  } else {
+    useScriptTag(
+      'https://platform.twitter.com/widgets.js',
+      () => {
+        if (vm.isMounted) create()
+        else onMounted(create, vm)
+      },
+      { async: true }
+    )
+  }
 }
 </script>
 

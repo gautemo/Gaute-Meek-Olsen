@@ -4,6 +4,7 @@ date: 2020-06-09
 coverImgExtension: png
 tags: [AWS]
 series: Twitter bot with Kotlin in AWS
+description: How to run a Lambda function on a scheduled period.
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to run a Lambda function on a scheduled period.

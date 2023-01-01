@@ -2,6 +2,7 @@
 title: Responsive with CSS Grid auto-fill
 date: 2019-11-17
 category: CSS
+description: CSS grid with auto-fill to create a responsive grid.
 ---
 
 If you need a responsive grid, you can use the auto-fill or auto-fit making the elements fit as many as they can with minimum size and filling the remaining space between them.

@@ -1,3 +1,8 @@
+---
+title: Talks
+description: Presentations, workshops, and lightning talks I have given and am ready to give again.
+---
+
 <main id="show">
 
   <div class="vp-doc">

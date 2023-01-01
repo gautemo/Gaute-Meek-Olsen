@@ -2,6 +2,7 @@
 title: Clear all local changes
 date: 2019-09-20
 category: git
+description: How to remove all changes in a git repository that are not committed.
 ---
 
 Today I re-learned how to remove all changes done in your local repository

@@ -2,6 +2,7 @@
 title: Conditional import
 date: 2019-07-10
 category: CSS
+description: How to conditionally import other CSS files.
 ---
 
 ```css

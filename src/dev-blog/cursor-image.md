@@ -3,9 +3,10 @@ title: How to Change the Cursor to an Image
 date: 2018-11-15
 hideCoverImg: true
 tags: [CSS]
+description: Changing the cursor with CSS.
 ---
 
-It only takes on line to have the cursor be an image:
+It only takes one line to have the cursor be an image:
 
 ```css
 .custom {

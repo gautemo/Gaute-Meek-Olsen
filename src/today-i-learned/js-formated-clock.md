@@ -2,6 +2,7 @@
 title: Formatted clock in JavaScript
 date: 2020-04-03
 category: JavaScript
+description: Using Intl to format the time correctly.
 ---
 
 How to get a formatted clock display easily in JavaScript with Intl.DateTimeFormat.

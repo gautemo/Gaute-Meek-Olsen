@@ -2,6 +2,7 @@
 title: Create your own snippets in VS Code
 date: 2020-05-15
 coverImgExtension: png
+description: How to create some handy VS code snippets which help you autocomplete code.
 ---
 
 Often you find yourself typing repetitive code or code you don't always remember by heart. With Visual Studio Code you can easily create your own code snippets so you can use them at any time. Like this:

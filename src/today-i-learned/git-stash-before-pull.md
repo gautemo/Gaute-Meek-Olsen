@@ -2,6 +2,7 @@
 title: Stash local changes before pull
 date: 2019-12-08
 category: git
+description: git stash so you can pull changes and then use git stash pop.
 ---
 
 When you want to pull remote commits but have changes in the same files locally, you get an error.

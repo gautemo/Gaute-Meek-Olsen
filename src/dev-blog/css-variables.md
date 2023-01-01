@@ -3,6 +3,7 @@ title: CSS Variables
 date: 2019-02-03
 hideCoverImg: true
 tags: [CSS]
+description: How to use CSS custom properties in CSS and with JavaScript.
 ---
 
 Previously you needed a CSS extension such as SASS or LESS to use variables in CSS. Not anymore, variables have been introduced in CSS leaving SASS and LESS unnecessary.

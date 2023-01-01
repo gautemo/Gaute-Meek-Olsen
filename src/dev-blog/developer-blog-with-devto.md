@@ -1,6 +1,7 @@
 ---
 title: Developer blog with dev.to as your backend/CMS
 date: 2020-03-08
+description: How to create your own developer blog using dev.to as your CMS.
 ---
 
 ## TLDR

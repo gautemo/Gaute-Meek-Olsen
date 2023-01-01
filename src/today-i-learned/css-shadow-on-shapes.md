@@ -2,6 +2,7 @@
 title: Shadow on Shapes
 date: 2020-03-08
 category: CSS
+description: Creating shadows with filter drop-shadow on transparent elements.
 ---
 
 You can't use `box-shadow` on elements with `clip-path` or images(png or svg) that are transparent. We have to use `filter` and `drop-shadow`. For images, you can use the filter directly. But for clip-path, it needs to be a child element (`::before` can be used to avoid wrapper elements).

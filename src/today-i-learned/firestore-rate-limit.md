@@ -2,6 +2,7 @@
 title: Firestore update rate limit
 date: 2019-11-18
 category: Firebase
+description: Rate limit updates to a document in Firestore.
 ---
 
 This is how to prevent frequent updates to a Firestore document.

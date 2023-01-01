@@ -3,6 +3,7 @@ title: Break Out of Scoped CSS
 date: 2019-08-12
 updated: 2022-02-26
 category: Vue
+description: How to select elements outside the component scope in Vue.
 ---
 
 <script setup>

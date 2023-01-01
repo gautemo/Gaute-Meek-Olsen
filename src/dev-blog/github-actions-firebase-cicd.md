@@ -4,6 +4,7 @@ date: 2019-12-08
 hideCoverImg: true
 coverImgExtension: png
 tags: [GitHub, Firebase]
+description: How you can automate the deploy of your Firebase changes with GitHub Actions.
 ---
 
 GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application, and/or deploy your application.

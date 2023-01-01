@@ -19,10 +19,13 @@ Create `.md` file in [blog](src/blog). Start file with
 ```
 ---
 title: How to Change the Cursor to an Image
+description: Changing the cursor with CSS.
 date: 2018-11-15
+updated: 2022-02-24
 hideCoverImg: true
 coverImgExtension: png
 tags: [CSS]
+series: Twitter bot with Kotlin in AWS
 ---
 ```
 

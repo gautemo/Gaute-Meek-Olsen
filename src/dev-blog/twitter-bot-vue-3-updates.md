@@ -3,6 +3,7 @@ title: Twitter Bot - Vue 3 Updates
 date: 2020-06-05T13:45
 coverImgExtension: png
 series: Twitter bot with Kotlin in AWS
+description: Blog series about how you can create a Twitter bot hosted in AWS written in Kotlin.
 ---
 
 Say hello to [Vue 3 bot](https://twitter.com/vue_3)

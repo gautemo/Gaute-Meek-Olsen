@@ -2,6 +2,7 @@
 title: Fix input width and padding issue
 date: 2019-11-17
 category: CSS
+description: Fixing input element with padding using box-sizing.
 ---
 
 <section>

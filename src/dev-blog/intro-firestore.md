@@ -3,6 +3,7 @@ title: Intro to the easiest DB ever, Firestore
 date: 2018-11-17
 tags: [Firebase]
 series: Firestore
+description: Introduction to Firestore, a Firebase database.
 ---
 
 Let me introduce you to the easiest database in the world. It’s called Firestore and it lives in the cloud. It’s really easy to get started as all coding is done on the front end, but it also scales really well as it is a product by Firebase from Google.

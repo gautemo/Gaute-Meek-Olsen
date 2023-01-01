@@ -2,6 +2,7 @@
 title: Fragment Transactions with Kotlin
 date: 2019-08-11
 category: Android
+description: Helper function for easier fragment transactions.
 ---
 
 First, add a helper method on the FragmentManager

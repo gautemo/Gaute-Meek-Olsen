@@ -3,6 +3,7 @@ title: Vue, guard routes with Firebase Authentication
 date: 2019-11-17
 updated: 2022-12-08
 tags: [Vue, Firebase]
+description: Vue router allows you to create guards before entering a route, this is how we can re-direct a route visit if a user isn't authenticated with Firebase.
 ---
 
 With Vue Router you might want to guard some paths and redirect users to a signup page if they are not authenticated. I will show you how this is done correctly with Firebase Authentication.
