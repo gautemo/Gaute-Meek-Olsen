@@ -2,6 +2,7 @@
 title: Content Security Policy (CSP)
 date: 2019-08-08
 category: Security
+description: How to set CSP headers to control where your website can download files from.
 ---
 
 This is used to prevent your website from downloading files from untrusted domains.

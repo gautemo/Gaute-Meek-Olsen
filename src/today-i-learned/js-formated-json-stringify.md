@@ -2,6 +2,7 @@
 title: How to get JSON.stringify formatted
 date: 2020-05-05
 category: JavaScript
+description: How to stringify JSON formatted.
 ---
 
 Today I learned how to get the JSON stringified string to be human-readable, which could be nice when saving the data to a file, with `JSON.stringify(value, null, 2)`.

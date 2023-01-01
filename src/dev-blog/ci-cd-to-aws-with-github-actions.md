@@ -4,6 +4,7 @@ date: 2020-06-21
 tags: [AWS, Kotlin, GitHub]
 coverImgExtension: png
 series: Twitter bot with Kotlin in AWS
+description: How to automatically deploy to AWS from your GitHub repository.
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to automatically deploy to AWS from your GitHub repository.

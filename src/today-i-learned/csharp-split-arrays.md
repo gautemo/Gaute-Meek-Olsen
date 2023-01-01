@@ -2,6 +2,7 @@
 title: List & Arrays to chunks
 date: 2019-12-07
 category: C#
+description: Creating an extension method in C# to divide a list into chunks.
 ---
 
 When you work with large lists or arrays, you might want to handle the elements in chunks to work with fewer elements. Let's do that with an extension method.

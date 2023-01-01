@@ -3,6 +3,7 @@ title: Posting a tweet from Kotlin
 date: 2020-06-16
 tags: [Kotlin]
 series: Twitter bot with Kotlin in AWS
+description: How to use the Twitter API from Kotlin code.
 ---
 
 This article is part of the **Twitter bot with Kotlin in AWS series** showing how [I created a Twitter bot for Vue 3 updates](/dev-blog/twitter-bot-vue-3-updates.html). But this article works as an independent article on how to use the Twitter API from Kotlin code.

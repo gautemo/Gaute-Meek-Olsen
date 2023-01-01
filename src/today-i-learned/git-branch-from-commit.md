@@ -2,6 +2,7 @@
 title: Create a Branch from a Commit
 date: 2020-03-08
 category: git
+description: How to create a new branch from an earlier commit.
 ---
 
 Let's say you have committed some changes, but you want to continue from a previous commit without deleting your commits from the branch because you might want to go back.

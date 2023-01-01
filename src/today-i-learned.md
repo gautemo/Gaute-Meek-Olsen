@@ -1,5 +1,6 @@
 ---
 title: Today I learned
+description: Today I Learned is a collection of short tips and tricks I have discovered.
 ---
 
 <main class="vp-doc">

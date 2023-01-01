@@ -3,6 +3,7 @@ title: Active router link CSS class
 date: 2019-11-17
 updated: 2022-02-24
 category: Vue
+description: How to style your active links with Vue router.
 ---
 
 <script setup>

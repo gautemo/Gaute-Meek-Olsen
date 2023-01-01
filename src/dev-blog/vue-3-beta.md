@@ -3,6 +3,7 @@ title: Vue 3 is now in Beta 🖖
 date: 2020-04-17
 coverImgExtension: png
 tags: [Vue]
+description: News about Vue 3 reaching beta.
 ---
 
 Vue.js 3 has now reached [Beta](https://github.com/vuejs/vue-next) 🥳

@@ -3,6 +3,7 @@ title: Hosting your website
 date: 2019-06-14
 hideCoverImg: true
 tags: [Firebase, Netlify]
+description: Easy alternatives to host your website.
 ---
 
 Hosting your website has become really simple. I prefer doing it through Firebase or Netlify, which both serve it through HTTPS under their subdomains or your own domain if you own that.

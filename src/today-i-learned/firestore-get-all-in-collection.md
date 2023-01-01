@@ -2,6 +2,7 @@
 title: Firestore, get collection with async/await
 date: 2020-03-18
 category: Firebase
+description: Reading from a Firestore collection using await.
 ---
 
 Today I Learned how to get all documents in a collection in [Firestore](https://firebase.google.com/docs/firestore/) with `async/await` and `for...of` by using the `.docs` property.

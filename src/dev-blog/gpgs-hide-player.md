@@ -2,6 +2,7 @@
 title: Removing Player from Your Google Play Games Services Leaderboard
 date: 2019-01-19
 hideCoverImg: true
+description: How you can manually remove scores from the Google Play Games Services Leaderboard.
 ---
 
 I recommend using the Google Play Games Services leaderboard in your Android game. It's fast to get up, it gives you the UI and stores the scores for you. You should set a limit score to avoid cheaters, but you can't set it too low. Because you don't know how good your players will be before you launch. After a while, you see some players have an unnatural score you want to delete. Let me show you how.

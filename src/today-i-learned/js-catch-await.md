@@ -2,6 +2,7 @@
 title: How to catch errors with async await
 date: 2019-08-13
 category: JavaScript
+description: Alternative way to catch error with async await.
 ---
 
 You could always wrap the `await` inside a `try` `catch`

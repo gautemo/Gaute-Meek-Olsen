@@ -3,6 +3,7 @@ title: How to allow CORS request with Node Express
 date: 2019-03-31
 hideCoverImg: true
 tags: [Node]
+description: How to allow CORS in your Node Express server.
 ---
 
 If you are serving your own Node Express server and calling your API from JavaScript, you might get this error.

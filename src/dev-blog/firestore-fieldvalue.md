@@ -3,6 +3,7 @@ title: Fieldvalue for Firestore
 date: 2019-11-17
 hideCoverImg: true
 tags: [Firebase]
+description: Using Fieldvalue with Firestore for easier updating the data.
 ---
 
 When using the Firestore SDK the [firebase.firestore.FieldValue](https://firebase.google.com/docs/reference/node/firebase.firestore.FieldValue) can be very useful for incrementing fields, altering arrays, using the server time, or deleting fields.

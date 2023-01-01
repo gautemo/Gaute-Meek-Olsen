@@ -2,6 +2,7 @@
 title: Email Validation
 date: 2019-12-07
 category: C#
+description: Simple email validation in C#.
 ---
 
 When I google a regex to validate an email address I get this:

@@ -2,6 +2,7 @@
 title: Intro to TypeScript
 date: 2019-06-28
 tags: [TypeScript]
+description: Short introduction to TypeScript.
 ---
 
 This is how I would have liked to be introduced to TypeScript; short and simple. So if you already know JavaScript, this article is for you.

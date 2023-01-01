@@ -3,6 +3,7 @@ title: Explain React Hooks like I'm (?)
 date: 2020-03-20
 coverImgExtension: png
 tags: [React]
+description: An explanation of every Reack hook.
 ---
 
 Explaining React Hooks (yes there is more than one of them) like I'm... I don't know which age, but I will try to be thorough with good examples. I'm writing this to better understand and learn myself as I have found them a little confusing. I'm not really a React [developer](https://dev.to/gautemeekolsen/why-i-prefer-vue-over-react-3jm6), so if I get something wrong, let me know 👇

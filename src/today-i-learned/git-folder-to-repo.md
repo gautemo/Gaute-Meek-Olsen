@@ -3,6 +3,7 @@ title: Connect a folder to an existing repository
 date: 2019-11-17
 updated: 2022-11-29
 category: git
+description: How to connect a folder to an existing git repository.
 ---
 
 Often when I create a new repository through the GitHub website I initiate it with a Readme and License. When I don't clone this repo directly, but rather want to connect a folder to it, these commands come in handy.

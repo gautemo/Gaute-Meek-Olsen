@@ -3,6 +3,7 @@ title: How to test HttpClient with Moq in C#
 date: 2020-05-01
 coverImgExtension: png
 tags: [C#]
+description: How to mock your HttpClient in C#.
 ---
 
 This is how you can unit test your methods that use [HttpClient](https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient) with [Moq](https://github.com/Moq/moq4/) and xUnit.

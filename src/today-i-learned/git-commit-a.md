@@ -2,6 +2,7 @@
 title: git commit -a
 date: 2020-03-28
 category: git
+description: How to add files in the same command as git commit.
 ---
 
 Today I learned that you can add `-a` to a commit command to automatically stage files that have been modified and deleted.

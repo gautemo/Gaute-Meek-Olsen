@@ -2,6 +2,7 @@
 title: Disallow npm install to run other scripts
 date: 2019-11-17
 category: Security
+description: How to not allow installed packages from running their own scripts.
 ---
 
 When installing packages from NPM, the packages could run preinstall and postinstall scripts. This could potentially be malicious code or viruses allowed to run directly on your computer.

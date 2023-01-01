@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: List of projects I have created. Websites, mobile apps, and more.
 ---
 
 <main id="show">

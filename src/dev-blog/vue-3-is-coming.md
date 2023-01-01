@@ -3,6 +3,7 @@ title: Vue 3 is Coming!
 date: 2020-04-10
 coverImgExtension: png
 tags: [Vue]
+description: New version of Vue is coming, let's look at all the Vue 3 improvements and changes.
 ---
 
 I have been playing around with Vue 3, which is really cool. So let me share some of what I have learned. According to their [roadmap](https://github.com/vuejs/vue/projects/6), they have planned for a release at the end of Q2 (April, May, Juni) 2020. Now it is in Alpha, but it will probably be a Beta release soon.

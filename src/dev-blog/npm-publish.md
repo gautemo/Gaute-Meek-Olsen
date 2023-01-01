@@ -3,6 +3,7 @@ title: How to publish a js library to NPM and CDN
 date: 2018-11-16
 hideCoverImg: true
 tags: [NPM, JavaScript]
+description: A guide to how you can publish your package to NPM.
 ---
 
 Let's say we have made our new JavaScript library to easily select elements from the DOM. A lot of people still use jQuery, but that should be abandoned a long time ago. Let's make something to ease them into living without it.

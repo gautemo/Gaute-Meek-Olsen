@@ -2,6 +2,7 @@
 title: Check for changes in local repository with script
 date: 2019-11-17
 category: git
+description: Using a script to check if the git repository has any changes.
 ---
 
 I needed to check if the repository had any changes in an Azure DevOps pipeline.

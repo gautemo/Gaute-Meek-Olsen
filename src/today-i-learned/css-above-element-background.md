@@ -2,6 +2,7 @@
 title: Above Previous Element's Background
 date: 2020-03-08
 category: CSS
+description: How to use box-shadow to extend the background color without taking up space.
 ---
 
 <Teleport to="#app">

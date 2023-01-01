@@ -3,9 +3,10 @@ title: Vite⚡ Vue no-bundler dev setup
 date: 2020-04-25
 coverImgExtension: png
 tags: [Vite]
+description: Evan You have created Vite, a no-bundler dev setup.
 ---
 
-Apparently Evan You (creator of Vue.js) wasn't interested in sleeping one night and created [Vite](https://github.com/vuejs/vite).
+Apparently, Evan You (creator of Vue.js) wasn't interested in sleeping one night and created [Vite](https://github.com/vuejs/vite).
 
 <script setup>
 import Tweet from '../components/Tweet.vue'

@@ -2,6 +2,7 @@
 title: Loading Bitmaps Efficiently
 date: 2019-08-12
 category: Android
+description: Using Glide for more efficient image handling.
 ---
 
 If you are dealing with loading many bitmaps, chances are you will create a laggy app. To avoid this don't do the bitmap work on the UI thread. Today I learned there is a library called [Glide](https://github.com/bumptech/glide) which does the work for you.
