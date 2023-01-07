@@ -38,9 +38,3 @@ The reason I have wrapped my drawable in another drawable is to control the size
   />
 </layer-list >
 ```
-
-<style scoped>
-figcaption{
-  text-align: center;
-}
-</style>

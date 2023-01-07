@@ -20,7 +20,7 @@ firebase login
 firebase init
 ```
 
-Select "Hosting" with space then enter. Then select the project created in the Firebase console. Then enter the path to the folder in your index.html file is located (i.e. public). If you have a single-page app and want all URLs to point to index.html select yes.
+Select "Hosting" with space then enter. Then select the project created in the Firebase console. Then enter the path to the folder in your index.html file is located (e.g. public). If you have a single-page app and want all URLs to point to index.html select yes.
 
 ```bash
 firebase deploy

@@ -153,6 +153,11 @@ input {
 .vp-doc h2 {
   margin: 0.5rem 0;
 }
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
 </style>
 
 <style scoped>

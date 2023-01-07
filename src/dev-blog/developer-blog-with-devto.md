@@ -132,7 +132,7 @@ With some more styling, our article page is now done. Complete code is here [art
 
 That's how quickly you can have your own developer blog up and running, which is easy to manage. Of course, your articles will be posted on dev.to and you rely on their API, which could be an uncertainty.
 
-All you need to do is fork my [GitHub repository](https://github.com/gautemo/blog-devto-backend/), change it to your username in app.js, write articles on [dev.to](https://dev.to/) and host your blog on i.e. [GitHub Pages](https://pages.github.com/), [Netlify](https://dev.to/gautemeekolsen/hosting-your-website-with-netlify-2ojk) or [Firebase](https://dev.to/gautemeekolsen/hosting-your-website-with-firebase-21ni). Also, maybe change the styling if you want your own theme.
+All you need to do is fork my [GitHub repository](https://github.com/gautemo/blog-devto-backend/), change it to your username in app.js, write articles on [dev.to](https://dev.to/) and host your blog on e.g. [GitHub Pages](https://pages.github.com/), [Netlify](https://dev.to/gautemeekolsen/hosting-your-website-with-netlify-2ojk) or [Firebase](https://dev.to/gautemeekolsen/hosting-your-website-with-firebase-21ni). Also, maybe change the styling if you want your own theme.
 
 I don't know if you are reading this on dev.to or on my blog. But to demonstrate you can see the same article in these two places;
 [dev.to/gautemeekolsen/developer-blog-with-dev-to-as-your-backend-cms-542n](https://dev.to/gautemeekolsen/developer-blog-with-dev-to-as-your-backend-cms-542n) and

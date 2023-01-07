@@ -1,5 +1,5 @@
 ---
-title: Quality Assess your website with Lighthouse
+title: Quality assess your website with Lighthouse
 description: How you can use Lighthouse to assess your website. A guide on how you can do it with no developer skills or automate it with developer skills.
 date: 2020-11-06
 ---
@@ -94,7 +94,7 @@ module.exports = {
 
 The `collect` option is for which pages to audit. If you have multiple .html files in the folder, you might only need the `staticDistDir` set. But if you have a Single Page Application (SPA) with multiple routes, you can add the `staticDistDir`, `isSinglePageApplication: true`, and `url` with an array of routes to assess.
 
-`assert` allows you to control what it asserts. For `preset` you can set `lighthouse:all`, `lighthouse:recommended`, or `lighthouse:no-pwa`. Where all is very aggressive and can't have any failures. Recommended evaluates the assertions on what they recommend, which is a more realistic assessment. No PWA option is the same as recommended, except it doesn't assess the PWA category. You can also be more specific in `assertions`. Since recommended only gives error when the score is below 50, I'm using `"categories:performance": ["error", { "minScore": 0.9 }]` to give an error if it's below 90 to be more strict. You can also turn off specific rules, i.e. `"unsized-images": "off"`.
+`assert` allows you to control what it asserts. For `preset` you can set `lighthouse:all`, `lighthouse:recommended`, or `lighthouse:no-pwa`. Where all is very aggressive and can't have any failures. Recommended evaluates the assertions on what they recommend, which is a more realistic assessment. No PWA option is the same as recommended, except it doesn't assess the PWA category. You can also be more specific in `assertions`. Since recommended only gives error when the score is below 50, I'm using `"categories:performance": ["error", { "minScore": 0.9 }]` to give an error if it's below 90 to be more strict. You can also turn off specific rules, e.g. `"unsized-images": "off"`.
 
 Now if you want to keep the report, you can use `upload` with `target` to upload the report to a server. If you don't want to save them yourself, you can use the `temporary-public-storage` option provided by Lighthouse. This will upload the report on a temporary page you can get access to for free.
 
