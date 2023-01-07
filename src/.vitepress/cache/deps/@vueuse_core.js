@@ -49,7 +49,7 @@ function del(target, key) {
   delete target[key]
 }
 
-// node_modules/.pnpm/@vueuse+shared@9.9.0_vue@3.2.45/node_modules/@vueuse/shared/index.mjs
+// node_modules/.pnpm/@vueuse+shared@9.10.0_vue@3.2.45/node_modules/@vueuse/shared/index.mjs
 var __defProp$9 = Object.defineProperty
 var __defProps$6 = Object.defineProperties
 var __getOwnPropDescs$6 = Object.getOwnPropertyDescriptors
@@ -114,7 +114,11 @@ function resolveUnref(r) {
 }
 function createFilterWrapper(filter, fn) {
   function wrapper(...args) {
-    filter(() => fn.apply(this, args), { fn, thisArg: this, args })
+    return new Promise((resolve, reject) => {
+      Promise.resolve(filter(() => fn.apply(this, args), { fn, thisArg: this, args }))
+        .then(resolve)
+        .catch(reject)
+    })
   }
   return wrapper
 }
@@ -124,45 +128,61 @@ var bypassFilter = (invoke2) => {
 function debounceFilter(ms, options = {}) {
   let timer
   let maxTimer
+  let lastRejector = noop
+  const _clearTimeout = (timer2) => {
+    clearTimeout(timer2)
+    lastRejector()
+    lastRejector = noop
+  }
   const filter = (invoke2) => {
     const duration = resolveUnref(ms)
     const maxDuration = resolveUnref(options.maxWait)
-    if (timer) clearTimeout(timer)
+    if (timer) _clearTimeout(timer)
     if (duration <= 0 || (maxDuration !== void 0 && maxDuration <= 0)) {
       if (maxTimer) {
-        clearTimeout(maxTimer)
+        _clearTimeout(maxTimer)
         maxTimer = null
       }
-      return invoke2()
+      return Promise.resolve(invoke2())
     }
-    if (maxDuration && !maxTimer) {
-      maxTimer = setTimeout(() => {
-        if (timer) clearTimeout(timer)
+    return new Promise((resolve, reject) => {
+      lastRejector = options.rejectOnCancel ? reject : resolve
+      if (maxDuration && !maxTimer) {
+        maxTimer = setTimeout(() => {
+          if (timer) _clearTimeout(timer)
+          maxTimer = null
+          resolve(invoke2())
+        }, maxDuration)
+      }
+      timer = setTimeout(() => {
+        if (maxTimer) _clearTimeout(maxTimer)
         maxTimer = null
-        invoke2()
-      }, maxDuration)
-    }
-    timer = setTimeout(() => {
-      if (maxTimer) clearTimeout(maxTimer)
-      maxTimer = null
-      invoke2()
-    }, duration)
+        resolve(invoke2())
+      }, duration)
+    })
   }
   return filter
 }
-function throttleFilter(ms, trailing = true, leading = true) {
+function throttleFilter(ms, trailing = true, leading = true, rejectOnCancel = false) {
   let lastExec = 0
   let timer
   let isLeading = true
+  let lastRejector = noop
+  let lastValue
   const clear = () => {
     if (timer) {
       clearTimeout(timer)
       timer = void 0
+      lastRejector()
+      lastRejector = noop
     }
   }
-  const filter = (invoke2) => {
+  const filter = (_invoke) => {
     const duration = resolveUnref(ms)
     const elapsed = Date.now() - lastExec
+    const invoke2 = () => {
+      return (lastValue = _invoke())
+    }
     clear()
     if (duration <= 0) {
       lastExec = Date.now()
@@ -172,15 +192,19 @@ function throttleFilter(ms, trailing = true, leading = true) {
       lastExec = Date.now()
       invoke2()
     } else if (trailing) {
-      timer = setTimeout(() => {
-        lastExec = Date.now()
-        isLeading = true
-        clear()
-        invoke2()
-      }, duration - elapsed)
+      return new Promise((resolve, reject) => {
+        lastRejector = rejectOnCancel ? reject : resolve
+        timer = setTimeout(() => {
+          lastExec = Date.now()
+          isLeading = true
+          resolve(invoke2())
+          clear()
+        }, duration - elapsed)
+      })
     }
     if (!leading && !timer) timer = setTimeout(() => (isLeading = true), duration)
     isLeading = false
+    return lastValue
   }
   return filter
 }
@@ -546,8 +570,8 @@ function refDefault(source, defaultValue) {
     },
   })
 }
-function useThrottleFn(fn, ms = 200, trailing = false, leading = true) {
-  return createFilterWrapper(throttleFilter(ms, trailing, leading), fn)
+function useThrottleFn(fn, ms = 200, trailing = false, leading = true, rejectOnCancel = false) {
+  return createFilterWrapper(throttleFilter(ms, trailing, leading, rejectOnCancel), fn)
 }
 function refThrottled(value, delay = 200, trailing = true, leading = true) {
   if (delay <= 0) return value
@@ -872,6 +896,9 @@ function useArrayReduce(list, reducer, ...args) {
 }
 function useArraySome(list, fn) {
   return computed(() => resolveUnref(list).some((element, index, array) => fn(resolveUnref(element), index, array)))
+}
+function useArrayUnique(list) {
+  return computed(() => [...new Set(resolveUnref(list).map((element) => resolveUnref(element)))])
 }
 function useCounter(initialValue = 0, options = {}) {
   const count = ref(initialValue)
@@ -1494,7 +1521,7 @@ function whenever(source, cb, options) {
   )
 }
 
-// node_modules/.pnpm/@vueuse+core@9.9.0_vue@3.2.45/node_modules/@vueuse/core/index.mjs
+// node_modules/.pnpm/@vueuse+core@9.10.0_vue@3.2.45/node_modules/@vueuse/core/index.mjs
 function computedAsync(evaluationCallback, initialState, optionsOrRef) {
   let options
   if (isRef(optionsOrRef)) {
@@ -1821,17 +1848,19 @@ function templateRef(key, initialValue = null) {
   return element
 }
 function useActiveElement(options = {}) {
+  var _a2
   const { window: window2 = defaultWindow } = options
+  const document2 = (_a2 = options.document) != null ? _a2 : window2 == null ? void 0 : window2.document
   const activeElement = computedWithControl(
     () => null,
-    () => (window2 == null ? void 0 : window2.document.activeElement)
+    () => (document2 == null ? void 0 : document2.activeElement)
   )
   if (window2) {
     useEventListener(
       window2,
       'blur',
       (event) => {
-        if (event.relatedTarget === null) return
+        if (event.relatedTarget !== null) return
         activeElement.trigger()
       },
       true
@@ -3444,7 +3473,7 @@ function useElementBounding(target, options = {}) {
     () => unrefElement(target),
     (ele) => !ele && update()
   )
-  if (windowScroll) useEventListener('scroll', update, { passive: true })
+  if (windowScroll) useEventListener('scroll', update, { capture: true, passive: true })
   if (windowResize) useEventListener('resize', update, { passive: true })
   tryOnMounted(() => {
     if (immediate) update()
@@ -5180,6 +5209,9 @@ function useMouse(options = {}) {
     } else if (type === 'client') {
       x.value = event.clientX
       y.value = event.clientY
+    } else if (type === 'movement') {
+      x.value = event.movementX
+      y.value = event.movementY
     }
     sourceType.value = 'mouse'
   }
@@ -5209,7 +5241,7 @@ function useMouse(options = {}) {
   if (window2) {
     useEventListener(window2, 'mousemove', mouseHandlerWrapper, { passive: true })
     useEventListener(window2, 'dragover', mouseHandlerWrapper, { passive: true })
-    if (touch) {
+    if (touch && type !== 'movement') {
       useEventListener(window2, 'touchstart', touchHandlerWrapper, { passive: true })
       useEventListener(window2, 'touchmove', touchHandlerWrapper, { passive: true })
       if (resetOnTouchEnds) useEventListener(window2, 'touchend', reset, { passive: true })
@@ -5983,8 +6015,20 @@ function useScriptTag(src, onLoaded = noop, options = {}) {
   if (!manual) tryOnUnmounted(unload)
   return { scriptTag, load, unload }
 }
+function checkOverflowScroll(ele) {
+  const style = window.getComputedStyle(ele)
+  if (style.overflowX === 'scroll' || style.overflowY === 'scroll') {
+    return true
+  } else {
+    const parent = ele.parentNode
+    if (!parent || parent.tagName === 'BODY') return false
+    return checkOverflowScroll(parent)
+  }
+}
 function preventDefault(rawEvent) {
   const e = rawEvent || window.event
+  const _target = e.target
+  if (checkOverflowScroll(_target)) return false
   if (e.touches.length > 1) return true
   if (e.preventDefault) e.preventDefault()
   return false
@@ -6010,7 +6054,14 @@ function useScrollLock(element, initialState = false) {
     const ele = resolveUnref(element)
     if (!ele || isLocked.value) return
     if (isIOS) {
-      stopTouchMoveListener = useEventListener(ele, 'touchmove', preventDefault, { passive: false })
+      stopTouchMoveListener = useEventListener(
+        ele,
+        'touchmove',
+        (e) => {
+          preventDefault(e)
+        },
+        { passive: false }
+      )
     }
     ele.style.overflow = 'hidden'
     isLocked.value = true
@@ -7130,7 +7181,7 @@ function useVirtualList(list, options) {
     wrapperProps,
   }
 }
-function useVirtualListResourses(list) {
+function useVirtualListResources(list) {
   const containerRef = ref(null)
   const size = useElementSize(containerRef)
   const currentList = ref([])
@@ -7230,7 +7281,7 @@ function createScrollTo(type, calculateRange, getDistance, containerRef) {
   }
 }
 function useHorizontalVirtualList(options, list) {
-  const resources = useVirtualListResourses(list)
+  const resources = useVirtualListResources(list)
   const { state, source, currentList, size, containerRef } = resources
   const containerStyle = { overflowX: 'auto' }
   const { itemWidth, overscan = 5 } = options
@@ -7262,7 +7313,7 @@ function useHorizontalVirtualList(options, list) {
   }
 }
 function useVerticalVirtualList(options, list) {
-  const resources = useVirtualListResourses(list)
+  const resources = useVirtualListResources(list)
   const { state, source, currentList, size, containerRef } = resources
   const containerStyle = { overflowY: 'auto' }
   const { itemHeight, overscan = 5 } = options
@@ -7800,6 +7851,7 @@ export {
   useArrayMap,
   useArrayReduce,
   useArraySome,
+  useArrayUnique,
   useAsyncQueue,
   useAsyncState,
   useBase64,
