@@ -19,7 +19,7 @@ First you want to delete all local branches, except `main`.
 import ToggleView from '../components/ToggleView.vue'
 </script>
 
-<ToggleView :options="['Unix based', 'Powershell']"><template #0>
+<ToggleView :options="['Unix-like', 'Powershell']"><template #0>
 
 ```sh
 git branch | grep -v "main" | xargs git branch -D
