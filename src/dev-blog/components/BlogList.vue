@@ -79,6 +79,10 @@ ul {
   background: var(--vp-c-bg-soft);
 }
 
+html:not(.dark) .content {
+  background: var(--vp-c-bg);
+}
+
 .content > h2 {
   border-bottom: none;
   font-size: 1.25rem;

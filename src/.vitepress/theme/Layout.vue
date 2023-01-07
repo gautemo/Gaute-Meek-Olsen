@@ -70,6 +70,10 @@ body {
   overflow-x: hidden;
 }
 
+html:not(.dark) body {
+  background-color: var(--vp-c-bg-soft);
+}
+
 .dark {
   --primary: #44708d;
   --secondary: #3c8c6a;
@@ -103,6 +107,10 @@ input,
 button {
   color: inherit;
   background-color: var(--vp-c-bg-alt);
+}
+
+html:not(.dark) input {
+  background-color: var(--vp-c-bg);
 }
 
 input {
