@@ -10,6 +10,9 @@ import IconFirebase from '../assets/IconFirebase.vue'
 import IconSecurity from '../assets/IconSecurity.vue'
 import IconHtml from '../assets/IconHtml.vue'
 import IconVue from '../assets/IconVue.vue'
+import IconNpm from '../assets/IconNpm.vue'
+import IconMaven from '../assets/IconMaven.vue'
+import IconTs from '../assets/IconTs.vue'
 import { PageData } from 'vitepress'
 const tilFiles = import.meta.glob<PageData>('../*.md', { import: '__pageData', eager: true })
 
@@ -24,6 +27,9 @@ const icons = {
   Kotlin: IconKotlin,
   Security: IconSecurity,
   Vue: IconVue,
+  npm: IconNpm,
+  maven: IconMaven,
+  TypeScript: IconTs,
 }
 const getIcon = (name: string) => icons[name as keyof typeof icons]
 

@@ -1,7 +1,7 @@
 ---
 title: Disallow npm install to run other scripts
 date: 2019-11-17
-category: Security
+category: npm
 description: How to not allow installed packages from running their own scripts.
 ---
 

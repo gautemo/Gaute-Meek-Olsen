@@ -103,8 +103,7 @@ main {
   max-width: 400px;
 }
 
-input,
-button {
+input {
   color: inherit;
   background-color: var(--vp-c-bg-alt);
 }
