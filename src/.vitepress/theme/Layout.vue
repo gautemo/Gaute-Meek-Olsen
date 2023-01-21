@@ -34,20 +34,8 @@ watchEffect(() => {
         'content',
         `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`
       )
-      updateHeadTag(
-        `meta[property='twitter:image:src']`,
-        'content',
-        `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`
-      )
-      updateHeadTag(
-        `meta[property='twitter:image']`,
-        'content',
-        `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`
-      )
     } else {
       updateHeadTag(`meta[property='og:image']`, 'content', 'https://gaute.dev/images/og_image.jpg')
-      updateHeadTag(`meta[property='twitter:image:src']`, 'content', 'https://gaute.dev/images/og_image.jpg')
-      updateHeadTag(`meta[property='twitter:image']`, 'content', 'https://gaute.dev/images/og_image.jpg')
     }
   }
 })

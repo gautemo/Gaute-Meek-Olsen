@@ -121,45 +121,11 @@ export default defineConfig({
           )}`,
         },
       ])
-      addHeads.push([
-        'meta',
-        {
-          property: 'twitter:image:src',
-          content: `https://gaute.dev${getCoverImg(
-            getKey(ctx.pageData.relativePath),
-            ctx.pageData.frontmatter.coverImgExtension
-          )}`,
-        },
-      ])
-      addHeads.push([
-        'meta',
-        {
-          property: 'twitter:image',
-          content: `https://gaute.dev${getCoverImg(
-            getKey(ctx.pageData.relativePath),
-            ctx.pageData.frontmatter.coverImgExtension
-          )}`,
-        },
-      ])
     } else {
       addHeads.push([
         'meta',
         {
           property: 'og:image',
-          content: 'https://gaute.dev/images/og_image.jpg',
-        },
-      ])
-      addHeads.push([
-        'meta',
-        {
-          property: 'twitter:image:src',
-          content: 'https://gaute.dev/images/og_image.jpg',
-        },
-      ])
-      addHeads.push([
-        'meta',
-        {
-          property: 'twitter:image',
           content: 'https://gaute.dev/images/og_image.jpg',
         },
       ])
