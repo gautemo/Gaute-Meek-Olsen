@@ -23,7 +23,7 @@ const move = useThrottle(
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      preserveAspectRatio="xMinYMin slice"
+      preserveAspectRatio="xMidYMin slice"
       :viewBox="`0 0 211.667 158.75`"
     >
       <defs>
