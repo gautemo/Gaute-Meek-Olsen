@@ -12,3 +12,5 @@ Now we can change the default with `git config`.
 ```sh
 git config --global --add --bool push.autoSetupRemote true
 ```
+
+Requires git version `2.37.0` or later.
