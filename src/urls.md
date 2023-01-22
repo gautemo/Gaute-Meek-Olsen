@@ -57,6 +57,15 @@ description: Links to websites I host and content I have created.
 - [https://www.kode24.no/artikkel/disse-javascript-nyhetene-ma-du-vite-om-klasser-har-blitt-oppgradert/76479992](https://www.kode24.no/artikkel/disse-javascript-nyhetene-ma-du-vite-om-klasser-har-blitt-oppgradert/76479992)
 - [https://www.kode24.no/artikkel/gaute-om-vite---lover-deg-at-du-ikke-gar-tilbake/74608540](https://www.kode24.no/artikkel/gaute-om-vite---lover-deg-at-du-ikke-gar-tilbake/74608540)
 - [https://www.kode24.no/guider/guide-slik-kommer-du-i-gang-med-vue/71113384](https://www.kode24.no/guider/guide-slik-kommer-du-i-gang-med-vue/71113384)
+
+## Recorded talks
+
+- [Beyond ES6 - New things in JavaScript, English, DevFest 2020](https://youtu.be/amSSIK-mQSI?t=10605)
+- [Firebase for a web developer, Norwegian, CapraCon 2021](https://www.youtube.com/watch?v=KfhNnRVk3KA&ab_channel=CapraConsulting)
+- [Vue 3, English, DevFest 2020](https://youtu.be/amSSIK-mQSI?t=12115)
+- [What's new in JavaScript - ES2021, Norwegian, JavaZone 2021](https://vimeo.com/669321152)
+- [What's new in JavaScript - ES2021, English, DevFest 2021](https://youtu.be/EwerUS318LQ?t=1060)
+- [What's new in JavaScript - ES2022, Norwegian, JavaZone 2022](https://vimeo.com/748031775)
 </main>
 
 <style scoped>
