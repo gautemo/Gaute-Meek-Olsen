@@ -22,7 +22,7 @@ const imgUrl = computed(() => {
 
 <template>
   <h1>{{ page.title }}</h1>
-  <img v-if="imgUrl" :src="imgUrl" alt="cover image" />
+  <img v-if="imgUrl" :src="imgUrl" alt="cover image" fetchpriority="high" decoding="sync" />
   <div class="dates">
     <span>Published: {{ date }}</span>
     <span v-if="updated">Updated: {{ updated }}</span>
