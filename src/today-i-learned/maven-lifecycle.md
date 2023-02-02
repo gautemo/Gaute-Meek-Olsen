@@ -1,5 +1,5 @@
 ---
-title: dependency tree
+title: Maven lifecycle
 date: 2022-03-08
 category: maven
 description: Understanding the Maven lifecycle of validate, compile, test, package, verify, install and deploy.
