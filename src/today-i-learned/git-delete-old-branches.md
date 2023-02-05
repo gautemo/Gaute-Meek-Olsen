@@ -15,10 +15,6 @@ Make sure you don't have any local work you want to keep on a brach that has not
 
 First you want to delete all local branches, except `main`.
 
-<script setup>
-import ToggleView from '../components/ToggleView.vue'
-</script>
-
 <ToggleView :options="['Unix-like', 'Powershell']"><template #0>
 
 ```sh

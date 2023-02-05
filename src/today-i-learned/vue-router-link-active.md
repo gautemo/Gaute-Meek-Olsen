@@ -6,10 +6,6 @@ category: Vue
 description: How to style your active links with Vue router.
 ---
 
-<script setup>
-import ToggleView from '../components/ToggleView.vue'
-</script>
-
 <ToggleView :options="['Vue 3', 'Vue 2']"><template #0>
 
 The Vue Router automatically applies `router-link-active` to active router links. No need to compare the URL yourself.

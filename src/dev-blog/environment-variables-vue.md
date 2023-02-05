@@ -7,10 +7,6 @@ tags: [Vue]
 description: How to set environment variables in your Vue app.
 ---
 
-<script setup>
-import ToggleView from '../components/ToggleView.vue'
-</script>
-
 <ToggleView :options="['Vite', 'Vue CLI']"><template #0>
 
 Sometimes you want your app to behave differently in local development and production. Maybe they should point to a different backend or use different API keys. Vite has very good documentation about it, [Env Variables and Modes](https://vitejs.dev/guide/env-and-mode.html#env-variables-and-modes). But I will try to keep it shorter, for the use I often need.

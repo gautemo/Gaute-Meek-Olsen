@@ -8,6 +8,7 @@ import 'vitepress/dist/client/theme-default/styles/components/vp-doc.css'
 import Layout from './Layout.vue'
 import NotFound from './NotFound.vue'
 import ImgWithZoom from '../../components/ImgWithZoom.vue'
+import ToggleView from '../../components/ToggleView.vue'
 import { Theme } from 'vitepress'
 
 const theme: Theme = {
@@ -15,6 +16,7 @@ const theme: Theme = {
   NotFound,
   enhanceApp({ app }) {
     app.component('ImgWithZoom', ImgWithZoom)
+    app.component('ToggleView', ToggleView)
   },
 }
 

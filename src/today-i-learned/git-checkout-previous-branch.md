@@ -13,10 +13,6 @@ git switch -
 
 N number of last visited branch:
 
-<script setup>
-import ToggleView from '../components/ToggleView.vue'
-</script>
-
 <ToggleView :options="['Unix-like', 'Windows']"><template #0>
 
 ```sh

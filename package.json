@@ -34,6 +34,6 @@
     "vue-tsc": "^1.0.22"
   },
   "lint-staged": {
-    "*.(vue|md|js|ts|css|json|svg)": "prettier --write"
+    "*.(vue|md|js|ts|css|json)": "prettier --write"
   }
 }

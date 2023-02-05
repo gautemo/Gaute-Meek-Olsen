@@ -30,10 +30,6 @@ Building this, Vue throws the error:
 Tags with side effect (&lt;script&gt; and &lt;style&gt;) are ignored in client component templates.
 :::
 
-<script setup>
-import ToggleView from '../components/ToggleView.vue'
-</script>
-
 <ToggleView :options="['Vue 3', 'Vue 2']"><template #0>
 
 This is an easy fix by using the [VueUse](https://vueuse.org/) package.
