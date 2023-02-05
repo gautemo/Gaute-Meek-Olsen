@@ -141,15 +141,15 @@ The browser decides which image is best from the `srcset`, but we control it thr
     sizes="
       (min-width: 1000px) 300px,
       (min-width: 500px) 200px,
-      100px,
+      100px
     "
     srcset="
       /images/dev-blog/images-best-practice/large.png 300w,
       /images/dev-blog/images-best-practice/medium.png 200w,
-      /images/dev-blog/images-best-practice/small.png 100w,
+      /images/dev-blog/images-best-practice/small.png 100w
     "
   />
-  <img src="/medium.png" alt="monster evolution demo" width="150"/>
+  <img src="/images/dev-blog/images-best-practice/medium.png" alt="monster evolution demo" width="150"/>
 </picture>
 
 Note that when a larger image is loaded, the browser will keep using that even though the screen size decreases. To play around with this demo you would have to disable the cache in the developer tools and refresh the page on various screen widths.

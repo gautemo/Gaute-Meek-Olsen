@@ -60,7 +60,7 @@ export default defineConfig({
     ],
   ],
   appearance: false,
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
   outDir: '../dist',
   transformHead(ctx) {
     const addHeads: HeadConfig[] = [
