@@ -15,6 +15,22 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
 
   <ul>
     <Card
+      title="Mapping of web rendering"
+      shortTitle="Web Rendering"
+      image="/images/talks/web-rendering.png"
+      type="👨‍🏫"
+      :presented="['24 March 2023 - conference CapraCon']"
+      slides="https://gaute-talks.netlify.app/mapping-of-web-rendering/index.html"
+      color="#347289"
+      :tech="['Frontend']"
+    >
+      <template #description>
+        <p>
+          Websites can be built in many different ways, and we are throwing acronyms and terms all over the place. I will explain every meaning of SPA, MPA, SSG, SSR, CSR, hydration, resumability, islands, and more. And then what you should think about when you consider which approach is best for your site.
+        </p>
+      </template>
+    </Card>  
+    <Card
       title="What's new in JavaScript - ES2022"
       shortTitle="ES2022"
       image="/images/talks/js.png"

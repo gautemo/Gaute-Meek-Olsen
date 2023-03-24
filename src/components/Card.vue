@@ -137,7 +137,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--vp-c-white-soft);
+  color: var(--vp-c-white);
   text-shadow: 2px 2px 1px var(--vp-c-black);
   font-size: 1.5rem;
   line-height: 2.5rem;
