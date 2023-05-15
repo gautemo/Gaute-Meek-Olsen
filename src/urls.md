@@ -41,6 +41,7 @@ description: Links to websites I host and content I have created.
 - [https://vue-routes-authentication.web.app](https://vue-routes-authentication.web.app)
 - [https://weather-oslo.netlify.app](https://weather-oslo.netlify.app)
 - [https://web-safe-fonts.vercel.app/](https://web-safe-fonts.vercel.app/)
+- [https://what-does-this-site-do.vercel.app/](https://what-does-this-site-do.vercel.app/)
 
 ## Websites with content from me
 
