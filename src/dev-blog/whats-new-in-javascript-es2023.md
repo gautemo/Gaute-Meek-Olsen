@@ -147,7 +147,7 @@ registry.register(symbol, 'weakRef is lost')
 
 ## Hashbang
 
-Hashbang/Shebangs are used to point to which binary that runs the script when the file is executable. Meaning you can add e.g. `#!/usr/bin/env node` or `#!/usr/bin/env -S deno run` as the first line and run the file without specifying the runtime. This is for Unix-like operating systems, meaning it won't work on Windows.
+Hashbang/Shebang are used to point to which binary that runs the script when the file is executable. Meaning you can add e.g. `#!/usr/bin/env node` or `#!/usr/bin/env -S deno run` as the first line and run the file without specifying the runtime. This is for Unix-like operating systems, meaning it won't work on Windows.
 
 If you create a JavaScript file named hello.js with the content:
 
