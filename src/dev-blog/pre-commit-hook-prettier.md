@@ -8,12 +8,20 @@ tags: []
 
 This is an easy guide to setting up formatting your frontend code with [Prettier](https://prettier.io/) automatically before every Git commit. Usually guides will point you towards using [huskey](https://github.com/typicode/husky), but it is really simple to do without any additional dependencies.
 
-If you enter the `.git/hooks` folder in a git initialized folder, you can create the file `pre-commit`. There we will use the dependency [lint-staged](https://github.com/okonet/lint-staged), which makes sure to run Prettier only on the changed files. This improves speed compared to running prettier on all files `prettier . --write`. Add this code to your `pre-commit` file:
+If you enter the `.git/hooks` folder in a git initialized folder, you can create the file `pre-commit`. Add this code to your `pre-commit` file:
 
 ```
 #!/bin/sh
 
 exec npx lint-staged
+```
+
+The hook uses the dependency [lint-staged](https://github.com/okonet/lint-staged), which makes sure to run Prettier only on the staged files. This improves speed compared to running prettier on all files `prettier . --write`. lint-staged requires a configuration file, so you can add `lint-staged.config.js` with e.g.
+
+```js
+export default {
+  '*.(vue|md|js|ts|css|json)': (filenames) => filenames.map((filename) => `prettier --write '${filename}'`),
+}
 ```
 
 Now make some changes and perform a commit to see it all in action.
