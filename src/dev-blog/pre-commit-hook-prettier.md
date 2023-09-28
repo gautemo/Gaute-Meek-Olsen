@@ -6,9 +6,9 @@ coverImgExtension: png
 tags: []
 ---
 
-This is an easy guide to setting up formatting your frontend code with [Prettier](https://prettier.io/) automatically before every Git commit. Usually guides will point you towards using [huskey](https://github.com/typicode/husky), but it is really simple to do without any additional dependencies.
+This is an easy guide to setting up formatting your frontend code with [Prettier](https://prettier.io/) automatically before every Git commit. Usually, guides will point you towards using [huskey](https://github.com/typicode/husky), but it is really simple to do without any additional dependencies.
 
-If you enter the `.git/hooks` folder in a git initialized folder, you can create the file `pre-commit`. Add this code to your `pre-commit` file:
+Go to the `.git/hooks` folder in a git-initialized folder and create the file `pre-commit`. Add this code to your `pre-commit` file:
 
 ```
 #!/bin/sh
@@ -26,6 +26,6 @@ export default {
 
 Now make some changes and perform a commit to see it all in action.
 
-Note that the `.git/hooks/pre-commit` file is personal on your computer, and others working on the same repository will not get this pre-commit hook the same way as if it was setup with huskey. But it is probably better to give each developer the choice to run prettier on save, on commit, or whenever they prefer themself.
+Note that the `.git/hooks/pre-commit` file is personal on your computer, and others working on the same repository will not get this pre-commit hook the same way as if it was set up with huskey. But it is probably better to give each developer the choice to run prettier on save, on commit, or whenever they prefer.
 
 Go to [Atlassian](https://www.atlassian.com/git/tutorials/git-hooks) to read more about git hooks.

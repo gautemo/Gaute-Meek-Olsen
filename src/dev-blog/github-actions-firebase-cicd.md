@@ -1,82 +1,56 @@
 ---
-title: Getting started with GitHub Actions - CI/CD Firebase deploy
+title: Getting Started with GitHub Actions - CI/CD Firebase deploy
 date: 2019-12-08
-hideCoverImg: true
+updated: 2023-09-28
 coverImgExtension: png
 tags: [GitHub, Firebase]
-description: How you can automate the deploy of your Firebase changes with GitHub Actions.
+description: How you can automate the deployment of your Firebase changes with GitHub Actions.
 ---
 
 GitHub Actions are used to automatically run a pipeline on a repository. Uses cases can be to run tests on your code, build your application, and/or deploy your application.
 
+First, you need the Firebase CLI installed, which you can do with `npm install -g firebase-tools`.
+
+If you don't have set up Firebase hosting for your project yet, you can run:
+
+```sh
+firebase init hosting
+```
+
+If you already have set up a Firebase project with hosting you can run:
+
+```sh
+firebase init hosting:github
+```
+
+Follow the CLI prompts.
+
 ## Set Up a Workflow
 
-In your repository, click the Actions tab in the middle.
-<ImgWithZoom src="/images/dev-blog/cover-github-actions-firebase-cicd.png" alt="GitHub Actions tab"/>
-Then click <i>Set up a workflow yourself</i> in the top right corner.
-
-## Yaml
-
-This has created a .yml file for you that will contain all your triggers and steps.
-
-First let's change it to trigger on a push, but only on the master branch.
+The CLI prompts should have added the secrets to your GitHub repository and might have set up some workflow files for you. You can alter those, or create a file `.github/workflows/deploy.yml`. Add this to your file, and make changes according to your project.
 
 ```yaml
+name: Deploy
 on:
   push:
     branches:
-      - master
-```
-
-Now let's create a step to build our code.
-
-```yaml
-- name: Build
-      run: |
-        npm install
-        npm run build
-```
-
-## Firebase deploy
-
-Now we will set up continuous deployment to Firebase. To deploy to Firebase on our behalf, we need to get our Firebase token through the CLI in your terminal. Run `firebase login:ci`. Now copy your token. Open a new tab for your GitHub repository and go to <i>Settings</i>, then <i>Secrets</i>. Add your secret and name it FIREBASE_TOKEN.
-
-Now back to your .yml file, and add a deploy step. First install the firebase-tools (if your job run's on linux, remember to add sudo). Then deploy with the token.
-
-```yaml
-- name: Firebase Deploy
-      run: |
-        sudo npm install -g firebase-tools
-        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
-```
-
-## Finishing up
-
-Click <i>Start commit</i> in the top right corner and commit your .yml file.
-Go to the <i>Actions</i> tab and see your pipeline running.
-
-The complete .yml file:
-
-```yaml
-name: CI/CD
-
-on:
-  push:
-    branches:
-      - master
-
+      - main
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v1
-      - name: Build
-        run: |
-          npm install
-          npm run build
-      - name: Firebase Deploy
-        run: |
-          sudo npm install -g firebase-tools
-          firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PLANT_POINTS }}'
+          channelId: live
 ```
+
+This tells the file to run when a commit is pushed to the branch `main`. Then it runs the steps to checkout the code `uses: actions/checkout`, install dependencies `npm ci`, build your application with a script in package.json `npm run build`, and uses `FirebaseExtended/action-hosting-deploy` to deploy the web app.
+
+Make sure that `firebase.json` and `.firebasearc` are present in your codebase for this action to work. You can add the property `entryPoint` to point toward the folder they are located.
+
+You can read more about the configuration for the Firebase action [here](https://github.com/FirebaseExtended/action-hosting-deploy).
