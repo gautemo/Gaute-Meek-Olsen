@@ -32,7 +32,7 @@ description: Links to websites I host and content I have created.
 - [https://gautemo.github.io/escape-room-game-chrono-decoder/](https://gautemo.github.io/escape-room-game-chrono-decoder/)
 - [https://gautemo.github.io/web-components-example](https://gautemo.github.io/web-components-example)
 - [https://gmo-receipt-app.web.app](https://gmo-receipt-app.web.app)
-- [Single <div> snowman](https://i5nv7.csb.app/)
+- [Single div snowman](https://i5nv7.csb.app/)
 - [https://kuizzi.app](https://kuizzi.app)
 - [https://memory-meek.netlify.app/](https://memory-meek.netlify.app/)
 - [https://my-qr-generator.netlify.app/](https://my-qr-generator.netlify.app/)
@@ -72,6 +72,7 @@ description: Links to websites I host and content I have created.
 - [What's new in JavaScript - ES2022, Norwegian, JavaZone 2022](https://vimeo.com/748031775)
 - [What's new in JavaScript - ES2023, Norwegian, JavaZone 2023](https://vimeo.com/861948019)
 - [Reaktivitet i webrammeverk og hva greia med signals er, Norwegian, TDC 2023](https://vimeo.com/877133194)
+
 </main>
 
 <style scoped>
