@@ -86,7 +86,7 @@ x ||= y
 // x is unchanged if it's truthy, otherwise y
 
 x ??= y
-// x is unchanged if it's null or undefined, otherwise y
+// x is unchanged if it's not null or undefined, otherwise y
 ```
 
 This can seem just the same as this:
