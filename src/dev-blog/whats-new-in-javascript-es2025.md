@@ -5,7 +5,7 @@ date: 2025-06-28
 tags: [JavaScript]
 ---
 
-It's June 2025, which means a new version of the specification of JavaScript is out. Let's take a look at the new features added.
+It's June, which means a new version of the specification of JavaScript is out. Let's take a look at the new features added.
 
 ## Set methods
 
