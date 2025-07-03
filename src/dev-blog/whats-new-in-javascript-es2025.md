@@ -187,7 +187,7 @@ const sum = sequence().reduce((acc, value) => acc + value)
 console.log(sum) // 3
 ```
 
-### reduce
+### toArray
 
 ```js
 function* sequence() {
