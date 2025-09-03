@@ -42,6 +42,10 @@ import MePicture from './MePicture.vue'
       </nav>
       <h3>Find me on</h3>
       <div class="social">
+        <a href="https://bsky.app/profile/gaute.bsky.social" target="_blank" rel="noopener">
+          <img src="../../assets/bluesky.svg" alt="Bluesky" class="bluesky" />
+          <span>Bluesky</span>
+        </a>
         <a href="https://twitter.com/GauteMeekOlsen" target="_blank" rel="noopener">
           <img src="../../assets/twitter.svg" alt="Twitter" />
           <span>Twitter</span>
@@ -173,6 +177,10 @@ a {
 
 .social a:hover img {
   animation: pulse 1s ease;
+}
+
+.dark .bluesky {
+  filter: brightness(10);
 }
 
 @keyframes pulse {
