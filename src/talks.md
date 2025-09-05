@@ -17,6 +17,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     title="What's new in JavaScript - ES2025"
     :held="['04 September 2025 - JavaZone']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2025/#/1"
+    watch="https://vimeo.com/1115874820"
   />
 <TalkElement
     title="Signals in frontend and can it become a standard"
