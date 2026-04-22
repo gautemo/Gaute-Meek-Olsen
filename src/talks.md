@@ -14,14 +14,19 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   </div>
 
 <TalkElement
+    title="Visual, automated, and fast component testing with Vitest"
+    :held="['9 April 2026 - Gjensidige TechDay', '24 April 2026 - CapraCon']"
+    slides="https://gaute-talks.netlify.app/visual-automated-and-fast-component-testing-with-vitest/"
+  />
+<TalkElement
     title="What's new in JavaScript - ES2025"
-    :held="['04 September 2025 - JavaZone']"
+    :held="['4 September 2025 - JavaZone', '25 November 2025 - frontendForum, Gjensidige']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2025/#/1"
     watch="https://vimeo.com/1115874820"
   />
 <TalkElement
     title="Signals in frontend and can it become a standard"
-    :held="['04 September 2024 - JavaZone', '25 September 2024 - frontendForum, Gjensidige']"
+    :held="['4 September 2024 - JavaZone', '25 September 2024 - frontendForum, Gjensidige']"
     slides="https://gaute-talks.netlify.app/signals-in-frontend-and-can-it-become-a-standard/"
     watch="https://vimeo.com/1006184282"
   />
@@ -51,7 +56,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   />
 <TalkElement
     title="What's new in JavaScript - ES2023"
-    :held="['07 September 2023 - JavaZone']"
+    :held="['7 September 2023 - JavaZone']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2023/#/1"
     watch="https://vimeo.com/861948019"
   />
@@ -62,7 +67,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   />
 <TalkElement
     title="What's new in JavaScript - ES2022"
-    :held="['08 September 2022 - JavaZone', '05 October 2022 - frontendForum, Gjensidige']"
+    :held="['8 September 2022 - JavaZone', '5 October 2022 - frontendForum, Gjensidige']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2022/index.html"
     watch="https://vimeo.com/748031775"
   />
@@ -83,7 +88,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   />
 <TalkElement
     title="What's new in JavaScript - ES2021"
-    :held="['09 December 2021 - JavaZone', '20 January 2022 - DevFest Norway']"
+    :held="['9 December 2021 - JavaZone', '20 January 2022 - DevFest Norway']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2021/index.html"
     watch="https://youtu.be/EwerUS318LQ?t=1060"
   />
