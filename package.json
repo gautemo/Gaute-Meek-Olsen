@@ -18,7 +18,8 @@
     "serve": "vitepress preview src",
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
-    "lint": "eslint src --ext .js,.ts,.vue"
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@vueuse/core": "^9.13.0",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "typescript": "^5.3.2",
     "vitepress": "1.0.0-alpha.61",
     "vue-tsc": "^1.8.22"
