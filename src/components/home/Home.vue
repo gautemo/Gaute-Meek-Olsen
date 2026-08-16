@@ -108,7 +108,9 @@ h1 {
   white-space: nowrap; /* Keeps the content on a single line */
   width: 0%;
   border-right: 0.15rem solid var(--tertiary);
-  animation: typing 5s linear 3s forwards, blink-caret 0.75s step-end 12 forwards;
+  animation:
+    typing 5s linear 3s forwards,
+    blink-caret 0.75s step-end 12 forwards;
   line-height: normal;
 }
 

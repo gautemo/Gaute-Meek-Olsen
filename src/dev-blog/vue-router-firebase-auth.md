@@ -55,7 +55,7 @@ function getCurrentUser() {
         unsubscribe()
         resolve(user)
       },
-      reject
+      reject,
     )
   })
 }

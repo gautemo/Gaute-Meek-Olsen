@@ -24,7 +24,10 @@ span {
   display: flex;
   align-items: center;
   cursor: text;
-  transition: transform 0.5s ease, font-size 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    font-size 0.5s ease,
+    opacity 0.5s ease;
 }
 
 input:not(:placeholder-shown) + span,

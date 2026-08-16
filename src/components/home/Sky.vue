@@ -13,7 +13,7 @@ const move = useThrottle(
     const y = (midY - elementY.value) / 150
     return { x, y }
   }),
-  45
+  45,
 )
 </script>
 

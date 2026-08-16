@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 import android from '../assets/android.svg'
 import web from '../assets/web.svg'
 
@@ -25,7 +25,7 @@ const icon = computed(() => {
 
 <template>
   <img class="icon" v-if="icon" :src="icon.src" :alt="icon.alt" />
-  <span v-else>{{type}}</span>
+  <span v-else>{{ type }}</span>
 </template>
 
 <style scoped>

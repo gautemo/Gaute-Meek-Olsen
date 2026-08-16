@@ -31,7 +31,7 @@ if (inBrowser) {
         if (vm.isMounted) create()
         else onMounted(create, vm)
       },
-      { async: true }
+      { async: true },
     )
   }
 }

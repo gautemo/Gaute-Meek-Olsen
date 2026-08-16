@@ -32,7 +32,7 @@ watchEffect(() => {
       updateHeadTag(
         `meta[property='og:image']`,
         'content',
-        `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`
+        `https://gaute.dev${getCoverImg(getKey(page.value.relativePath), page.value.frontmatter.coverImgExtension)}`,
       )
     } else {
       updateHeadTag(`meta[property='og:image']`, 'content', 'https://gaute.dev/images/og_image.jpg')

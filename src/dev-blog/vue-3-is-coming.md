@@ -39,9 +39,7 @@ import { ref, reactive, computed } from 'vue'
 export default {
   // the setup method where logic happens
   setup() {
-    return {
-      /* return what logic is exposed to the template */
-    }
+    return {/* return what logic is exposed to the template */}
   },
 }
 ```

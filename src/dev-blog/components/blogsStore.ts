@@ -32,7 +32,7 @@ const blogs = computed(() => {
 
 const selectedTags = ref<string[]>([])
 const tags = computed(() =>
-  Array.from(new Set(blogs.value.flatMap((b) => b.tags ?? []))).filter((tag) => !selectedTags.value.includes(tag))
+  Array.from(new Set(blogs.value.flatMap((b) => b.tags ?? []))).filter((tag) => !selectedTags.value.includes(tag)),
 )
 const search = ref('')
 

@@ -58,7 +58,7 @@ workbox.routing.registerRoute(
   /.*\.css/,
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'css-cache',
-  })
+  }),
 )
 
 //Cache first, but defining duration and maximum files
@@ -72,7 +72,7 @@ workbox.routing.registerRoute(
         maxAgeSeconds: 7 * 24 * 60 * 60,
       }),
     ],
-  })
+  }),
 )
 
 workbox.routing.registerRoute(
@@ -84,7 +84,7 @@ workbox.routing.registerRoute(
         maxEntries: 30,
       }),
     ],
-  })
+  }),
 )
 ```
 
@@ -100,7 +100,7 @@ if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}sw.js`, {
     ready() {
       console.log(
-        'App is being served from cache by a service worker.\n' + 'For more details, visit https://goo.gl/AFskqB'
+        'App is being served from cache by a service worker.\n' + 'For more details, visit https://goo.gl/AFskqB',
       )
     },
     cached() {

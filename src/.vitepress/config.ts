@@ -117,7 +117,7 @@ export default defineConfig({
           property: 'og:image',
           content: `https://gaute.dev${getCoverImg(
             getKey(ctx.pageData.relativePath),
-            ctx.pageData.frontmatter.coverImgExtension
+            ctx.pageData.frontmatter.coverImgExtension,
           )}`,
         },
       ])

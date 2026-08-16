@@ -7,19 +7,18 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - uses: pnpm/action-setup@v4
-      with:
-        version: 8
-    - name: Build
-      run: |
-        pnpm install
-        pnpm run build
-    - name: Firebase Deploy
-      run: |
-        sudo npm install -g firebase-tools
-        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - name: Build
+        run: |
+          pnpm install
+          pnpm run build
+      - name: Firebase Deploy
+        run: |
+          sudo npm install -g firebase-tools
+          firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}

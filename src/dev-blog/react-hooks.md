@@ -199,7 +199,7 @@ With multiple consumers under the same provider, you would see that they update 
 ```js
 const [statefulValue, updateValue] = useReducer(
   (previousValue, inputToUpdateValue) => previousValue + inputToUpdateValue,
-  'initial value'
+  'initial value',
 )
 
 //statefulValue: 'initial value'
@@ -322,7 +322,7 @@ function Memo() {
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((c) => c.code)
         .join(', '),
-    [colors]
+    [colors],
   )
 
   return (
