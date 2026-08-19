@@ -69,35 +69,39 @@ With both Vue and React you don't necessarily need a building step to create you
 ```
 
 <table style="width:100%">
-  <tr>
-    <th></th>
-    <th>Size</th>
-    <th>Characters of Code</th>
-    <th>Drawbacks</th>
-  </tr>
-  <tr>
-    <td>React</td>
-    <td>40.7 KB</td>
-    <td>740</td>
-    <td>
-      <ul>
-        <li>No JSX support, which is React's main way to code</li>
-        <li>Code will start to get messy with many elements</li>
-        <li>Two script imports</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>Vue</td>
-    <td>32.6 KB</td>
-    <td>389</td>
-    <td>
-      <ul>
-        <li>Subcomponents need to use template strings for the HTML</li>
-        <li>Code will start to get messy with many components</li>
-      </ul>
-    </td>
-  </tr>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Size</th>
+      <th>Characters of Code</th>
+      <th>Drawbacks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="white-space:nowrap">React</td>
+      <td>40.7 KB</td>
+      <td>740</td>
+      <td>
+        <ul>
+          <li>No JSX support, which is React's main way to code</li>
+          <li>Code will start to get messy with many elements</li>
+          <li>Two script imports</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Vue</td>
+      <td>32.6 KB</td>
+      <td>389</td>
+      <td>
+        <ul>
+          <li>Subcomponents need to use template strings for the HTML</li>
+          <li>Code will start to get messy with many components</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 I prefer Vue in this scenario because it is pretty easy to add reactivity to a website and the code is pretty much the same as "ordinary" Vue in a project with a build step.
@@ -363,24 +367,28 @@ This is a clear win for Vue, as I don't like the idea that I need to rewrite my 
 ### Examples above project stats
 
 <table style="width:100%">
-  <tr>
-    <th></th>
-    <th>Production Build Size</th>
-    <th>Project Size</th>
-    <th>Characters of Code</th>
-  </tr>
-  <tr>
-    <td>React</td>
-    <td>460 KB</td>
-    <td>146 MB</td>
-    <td>2345</td>
-  </tr>
-  <tr>
-    <td>Vue</td>
-    <td>443 KB</td>
-    <td>67.2 MB</td>
-    <td>1797</td>
-  </tr>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Production Build Size</th>
+      <th>Project Size</th>
+      <th>Characters of Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>React</td>
+      <td>460 KB</td>
+      <td>146 MB</td>
+      <td>2345</td>
+    </tr>
+    <tr>
+      <td>Vue</td>
+      <td>443 KB</td>
+      <td>67.2 MB</td>
+      <td>1797</td>
+    </tr>
+  </tbody>
 </table>
 
 # Conclusion
