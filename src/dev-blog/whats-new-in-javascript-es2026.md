@@ -126,23 +126,6 @@ const data = JSON.parse(json, (key, value, { source }) => {
 console.log(data.money) // 9007199254740993n
 ```
 
-It can also be used to preserve `Date` which otherwise would be parsed into a string.
-
-```js
-const json = JSON.stringify({ date: new Date() })
-
-const date1 = JSON.parse(json).date
-console.log(typeof date1) // string
-
-const date2 = JSON.parse(json, (key, value, { source }) => {
-  if (key === 'date') {
-    return new Date(value)
-  }
-  return value
-}).date
-console.log(typeof date2) // object
-```
-
 ## Uint8Array to/from base64 and hex
 
 If you are working with binary data using Uint8Arrays you now have a built-in mechanism to encode and decode into base64 and hex.
