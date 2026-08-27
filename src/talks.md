@@ -14,7 +14,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   </div>
 
 <TalkElement
-    title="What's new in JavaScript - ES2025"
+    title="What's new in JavaScript - ES2026"
     :held="['2 September 2026 - JavaZone', '17 September 2026 - NDC Oslo']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2026/#/1"
   />
