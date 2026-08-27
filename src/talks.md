@@ -14,6 +14,11 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   </div>
 
 <TalkElement
+    title="What's new in JavaScript - ES2025"
+    :held="['2 September 2026 - JavaZone', '17 September 2026 - NDC Oslo']"
+    slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2026/#/1"
+  />
+<TalkElement
     title="Visual, automated, and fast component testing with Vitest"
     :held="['9 April 2026 - Gjensidige TechDay', '24 April 2026 - CapraCon']"
     slides="https://gaute-talks.netlify.app/visual-automated-and-fast-component-testing-with-vitest/"
@@ -21,7 +26,6 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
 <TalkElement
     title="What's new in JavaScript - ES2025"
     :held="['4 September 2025 - JavaZone', '25 November 2025 - frontendForum, Gjensidige']"
-    slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2025/#/1"
     watch="https://vimeo.com/1115874820"
   />
 <TalkElement
