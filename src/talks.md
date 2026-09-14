@@ -17,6 +17,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
     title="What's new in JavaScript - ES2026"
     :held="['2 September 2026 - JavaZone', '17 September 2026 - NDC Oslo']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2026/#/1"
+    watch="https://vimeo.com/1223423400"
   />
 <TalkElement
     title="Visual, automated, and fast component testing with Vitest"
