@@ -15,7 +15,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
 
 <TalkElement
     title="What's new in JavaScript - ES2026"
-    :held="['2 September 2026 - JavaZone', '17 September 2026 - NDC Oslo']"
+    :held="['2 September 2026 - JavaZone', '17 September 2026 - NDC Oslo', '23 September 2026 - frontendForum, Gjensidige', '13 October 2026 - Framsia']"
     slides="https://gaute-talks.netlify.app/whats-new-in-javascript-es2026/#/1"
     watch="https://vimeo.com/1223423400"
   />
@@ -42,7 +42,7 @@ Presentations, workshops, and lightning talks I have given and am ready to give 
   />
 <TalkElement
     title="How I built Kuizzi"
-    :held="['10 April 2024 - Gjensidige frontend forum']"
+    :held="['10 April 2024 - frontendForum, Gjensidige']"
   />
 <TalkElement
     title="Choosing the correct frontendframework in 2024"
